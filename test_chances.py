@@ -77,6 +77,15 @@ class TestEvaluate(unittest.TestCase):
         result = evaluate(student, program)
         self.assertEqual(result["category"], "реалистично")
 
+    def test_single_year_of_statistics(self):
+        # Всего один год: роста посчитать нельзя, ориентир равен этому баллу
+        program = self.make_program(passing_scores=[165])
+        result = evaluate({"math": 85, "russian": 85}, program)  # сумма 170
+        self.assertEqual(result["reference"], 165)
+        self.assertEqual(result["trend"], 0)
+        self.assertEqual(result["margin"], 5)
+        self.assertEqual(result["category"], "реалистично")
+
 
 if __name__ == "__main__":
     unittest.main()
