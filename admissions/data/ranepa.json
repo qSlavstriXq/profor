@@ -4,3048 +4,135 @@
   "short_name": "РАНХиГС",
   "website": "https://www.ranepa.ru",
   "has_dormitory": true,
-  "source_url": "https://www.ucheba.ru/uz/5692/programs",
+  "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/",
   "verified": false,
   "programs": [
     {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Гражданско-правовой профиль",
-      "direction_code": "",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/671094",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 281,
-          "source_url": "https://www.ucheba.ru/program/671094"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 281,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/671094"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 294,
-          "budget_places": 8,
-          "source_url": "https://www.ucheba.ru/program/671094"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 287,
-          "budget_places": 33,
-          "source_url": "https://www.ucheba.ru/program/671094"
-        },
-        {
-          "year": 2026,
-          "budget_places": 11,
-          "source_url": "https://www.ucheba.ru/program/671094"
-        }
-      ],
-      "tuition_per_year": 560000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Менеджмент в индустрии моды",
-      "direction_code": "38.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/755587",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 295,
-          "source_url": "https://www.ucheba.ru/program/755587"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 279,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/755587"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 281,
-          "budget_places": 7,
-          "source_url": "https://www.ucheba.ru/program/755587"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 270,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/755587"
-        },
-        {
-          "year": 2026,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/755587"
-        }
-      ],
-      "tuition_per_year": 750000
-    },
-    {
-      "faculty": "Институт государственной службы и управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Управление ESG-проектами",
-      "direction_code": "38.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/755600",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 256,
-          "source_url": "https://www.ucheba.ru/program/755600"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 261,
-          "budget_places": 7,
-          "source_url": "https://www.ucheba.ru/program/755600"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 271,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/755600"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 266,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/755600"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 282,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/755600"
-        }
-      ],
-      "tuition_per_year": 605000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Управление бизнесом",
-      "direction_code": "",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/769764",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 279,
-          "source_url": "https://www.ucheba.ru/program/769764"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 279,
-          "budget_places": 7,
-          "source_url": "https://www.ucheba.ru/program/769764"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 295,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/769764"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 304,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/769764"
-        },
-        {
-          "year": 2026,
-          "budget_places": 25,
-          "source_url": "https://www.ucheba.ru/program/769764"
-        }
-      ],
-      "tuition_per_year": 750000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Спортивный менеджмент",
-      "direction_code": "",
-      "study_form": "part_time",
-      "source_url": "https://www.ucheba.ru/program/771015",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 40
-        },
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "social",
-              "min_score": 45
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 370000
-    },
-    {
-      "faculty": "Институт экономики, математики и информационных технологий Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Прикладные системы искусственного интеллекта",
+      "faculty": "ИЭМИТ",
+      "name": "Цифровые технологии и разработка информационных систем",
       "direction_code": "09.03.03",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/771533",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
       "exams": [
         {
           "subject": "math",
-          "min_score": 40
+          "min_score": 60
         },
         {
           "subject": "russian",
-          "min_score": 40
+          "min_score": 70
         },
         {
           "one_of": [
             {
-              "subject": "physics",
-              "min_score": 41
+              "subject": "informatics",
+              "min_score": 60
             },
             {
-              "subject": "informatics",
-              "min_score": 46
+              "subject": "physics",
+              "min_score": 60
             }
           ]
         }
       ],
       "stats": [
         {
-          "year": 2022,
-          "passing_score_budget": 221,
-          "source_url": "https://www.ucheba.ru/program/771533"
+          "year": 2023,
+          "passing_score_budget": 270,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
         },
+        {
+          "year": 2024,
+          "passing_score_budget": 268,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 261,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 23,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИЭМИТ",
+      "name": "Искусственный интеллект и машинное обучение",
+      "direction_code": "09.03.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "physics",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
         {
           "year": 2023,
           "passing_score_budget": 242,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/771533"
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
         },
         {
           "year": 2024,
           "passing_score_budget": 264,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/771533"
-        }
-      ],
-      "tuition_per_year": 485000
-    },
-    {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Экономико-правовое обеспечение экономической безопасности",
-      "direction_code": "38.05.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/504340",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
         },
         {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 267,
-          "source_url": "https://www.ucheba.ru/program/504340"
-        },
-        {
-          "year": 2023,
+          "year": 2025,
           "passing_score_budget": 253,
-          "budget_places": 18,
-          "source_url": "https://www.ucheba.ru/program/504340"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 278,
-          "budget_places": 9,
-          "source_url": "https://www.ucheba.ru/program/504340"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 284,
-          "budget_places": 18,
-          "source_url": "https://www.ucheba.ru/program/504340"
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
         },
         {
           "year": 2026,
-          "passing_score_budget": 279,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/504340"
-        }
-      ],
-      "tuition_per_year": 480000
-    },
-    {
-      "faculty": "Институт экономики, математики и информационных технологий Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Экономика предприятий и организаций",
-      "direction_code": "",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/666522",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "geography",
-              "min_score": 60
-            },
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 270,
-          "source_url": "https://www.ucheba.ru/program/666522"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 276,
-          "source_url": "https://www.ucheba.ru/program/666522"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 281,
-          "budget_places": 17,
-          "source_url": "https://www.ucheba.ru/program/666522"
-        },
-        {
-          "year": 2026,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/666522"
-        }
-      ],
-      "tuition_per_year": 650000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Лидерство и управление в глобальном мире (Global Governance and Leadership)",
-      "direction_code": "38.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/691534",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 300,
-          "source_url": "https://www.ucheba.ru/program/691534"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 300,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/691534"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 294,
-          "budget_places": 7,
-          "source_url": "https://www.ucheba.ru/program/691534"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 300,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/691534"
-        },
-        {
-          "year": 2026,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/691534"
-        }
-      ],
-      "tuition_per_year": 830000
-    },
-    {
-      "faculty": "Институт государственной службы и управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Внутренняя политика и лидерство",
-      "direction_code": "38.03.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/702310",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 304,
-          "source_url": "https://www.ucheba.ru/program/702310"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 289,
-          "budget_places": 38,
-          "source_url": "https://www.ucheba.ru/program/702310"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 300,
-          "budget_places": 9,
-          "source_url": "https://www.ucheba.ru/program/702310"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 300,
-          "budget_places": 16,
-          "source_url": "https://www.ucheba.ru/program/702310"
-        },
-        {
-          "year": 2026,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/702310"
-        }
-      ],
-      "tuition_per_year": 676000
-    },
-    {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Судебная деятельность",
-      "direction_code": "40.05.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/727273",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "social",
-          "min_score": 45
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 480000
-    },
-    {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Финансово-правовой профиль (правовое обеспечение финансовых технологий)",
-      "direction_code": "40.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/727274",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2025,
-          "passing_score_budget": 279,
-          "budget_places": 7,
-          "source_url": "https://www.ucheba.ru/program/727274"
-        },
-        {
-          "year": 2026,
-          "budget_places": 7,
-          "source_url": "https://www.ucheba.ru/program/727274"
-        }
-      ],
-      "tuition_per_year": 560000
-    },
-    {
-      "faculty": "Институт общественных наук Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Политический консалтинг и глобальные изменения",
-      "direction_code": "41.03.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/458635",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "history",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "geography",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 280,
-          "source_url": "https://www.ucheba.ru/program/458635"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 280,
-          "budget_places": 17,
-          "source_url": "https://www.ucheba.ru/program/458635"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 293,
-          "budget_places": 9,
-          "source_url": "https://www.ucheba.ru/program/458635"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 283,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/458635"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 280,
-          "budget_places": 25,
-          "source_url": "https://www.ucheba.ru/program/458635"
-        }
-      ],
-      "tuition_per_year": 550000
-    },
-    {
-      "faculty": "Институт общественных наук Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Реклама и связи с общественностью в цифровой среде (до 2024 \"Диджитал реклама и связи с общественностью\")",
-      "direction_code": "42.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/458649",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "social",
-          "min_score": 45
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "literature",
-              "min_score": 40
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 300,
-          "source_url": "https://www.ucheba.ru/program/458649"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 300,
-          "budget_places": 4,
-          "source_url": "https://www.ucheba.ru/program/458649"
-        },
-        {
-          "year": 2024,
-          "budget_places": 2,
-          "source_url": "https://www.ucheba.ru/program/458649"
-        }
-      ],
-      "tuition_per_year": 600000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Международные отношения: политика, экономика, бизнес",
-      "direction_code": "41.03.05",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/458651",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "history",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "geography",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 287,
-          "source_url": "https://www.ucheba.ru/program/458651"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 277,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/458651"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 283,
-          "budget_places": 8,
-          "source_url": "https://www.ucheba.ru/program/458651"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 300,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/458651"
-        },
-        {
-          "year": 2026,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/458651"
-        }
-      ],
-      "tuition_per_year": 750000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Финансы и кредит",
-      "direction_code": "",
-      "study_form": "part_time",
-      "source_url": "https://www.ucheba.ru/program/458654",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 40
-        },
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "social",
-              "min_score": 45
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2026,
-          "passing_score_budget": 261,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/458654"
-        }
-      ],
-      "tuition_per_year": 380000
-    },
-    {
-      "faculty": "Институт государственной службы и управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Эффективное государственное управление",
-      "direction_code": "38.03.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/458659",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 304,
-          "source_url": "https://www.ucheba.ru/program/458659"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 289,
-          "source_url": "https://www.ucheba.ru/program/458659"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 300,
-          "budget_places": 9,
-          "source_url": "https://www.ucheba.ru/program/458659"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 300,
-          "budget_places": 17,
-          "source_url": "https://www.ucheba.ru/program/458659"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 295,
           "budget_places": 22,
-          "source_url": "https://www.ucheba.ru/program/458659"
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
         }
-      ],
-      "tuition_per_year": 650000
+      ]
     },
     {
-      "faculty": "Институт государственной службы и управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Финансовый контроль и государственный аудит",
-      "direction_code": "38.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/523845",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "geography",
-              "min_score": 60
-            },
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 268,
-          "source_url": "https://www.ucheba.ru/program/523845"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 267,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/523845"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 275,
-          "budget_places": 7,
-          "source_url": "https://www.ucheba.ru/program/523845"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 279,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/523845"
-        },
-        {
-          "year": 2026,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/523845"
-        }
-      ],
-      "tuition_per_year": 640000
-    },
-    {
-      "faculty": "Институт общественных наук Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Урбанистика и городские исследования (ранее Управление городским территориальным развитием)",
-      "direction_code": "38.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/610095",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 300,
-          "source_url": "https://www.ucheba.ru/program/610095"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 300,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/610095"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 268,
-          "budget_places": 7,
-          "source_url": "https://www.ucheba.ru/program/610095"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 265,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/610095"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 275,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/610095"
-        }
-      ],
-      "tuition_per_year": 580000
-    },
-    {
-      "faculty": "Институт общественных наук Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Филология и перевод",
-      "direction_code": "50.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/669068",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "literature",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 277,
-          "source_url": "https://www.ucheba.ru/program/669068"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 291,
-          "budget_places": 7,
-          "source_url": "https://www.ucheba.ru/program/669068"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 265,
-          "budget_places": 6,
-          "source_url": "https://www.ucheba.ru/program/669068"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 294,
-          "budget_places": 6,
-          "source_url": "https://www.ucheba.ru/program/669068"
-        },
-        {
-          "year": 2026,
-          "budget_places": 6,
-          "source_url": "https://www.ucheba.ru/program/669068"
-        }
-      ],
-      "tuition_per_year": 420000
-    },
-    {
-      "faculty": "Дирекция приоритетных образовательных инициатив Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Государственное управление и публичная политика в условиях глобальных вызовов «РЕСУРС России»",
-      "direction_code": "38.03.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/797049",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 80
-        },
-        {
-          "subject": "social",
-          "min_score": 80
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 75
-            },
-            {
-              "subject": "history",
-              "min_score": 75
-            },
-            {
-              "subject": "english",
-              "min_score": 75
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2024,
-          "passing_score_budget": 277,
-          "budget_places": 60,
-          "source_url": "https://www.ucheba.ru/program/797049"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 270,
-          "budget_places": 50,
-          "source_url": "https://www.ucheba.ru/program/797049"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 281,
-          "budget_places": 55,
-          "source_url": "https://www.ucheba.ru/program/797049"
-        }
-      ],
-      "tuition_per_year": 900000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Маркетинг",
-      "direction_code": "",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/829935",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2024,
-          "passing_score_budget": 295,
-          "source_url": "https://www.ucheba.ru/program/829935"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 300,
-          "budget_places": 25,
-          "source_url": "https://www.ucheba.ru/program/829935"
-        },
-        {
-          "year": 2026,
-          "budget_places": 25,
-          "source_url": "https://www.ucheba.ru/program/829935"
-        }
-      ],
-      "tuition_per_year": 670000
-    },
-    {
-      "faculty": "Институт общественных наук Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Публичная политика: общественные коммуникации и искусственный интеллект",
-      "direction_code": "41.03.06",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/829293",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "geography",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2024,
-          "passing_score_budget": 300,
-          "source_url": "https://www.ucheba.ru/program/829293"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 253,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/829293"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 278,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/829293"
-        }
-      ],
-      "tuition_per_year": 550000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Управление производством",
-      "direction_code": "38.03.02",
-      "study_form": "part_time",
-      "source_url": "https://www.ucheba.ru/program/830008",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 40
-        },
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "social",
-              "min_score": 45
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2026,
-          "passing_score_budget": 259,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/830008"
-        }
-      ],
-      "tuition_per_year": 370000
-    },
-    {
-      "faculty": "Институт общественных наук Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Реклама и связи с общественностью",
-      "direction_code": "42.03.01",
-      "study_form": "part_time",
-      "source_url": "https://www.ucheba.ru/program/834732",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "social",
-          "min_score": 45
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "literature",
-              "min_score": 40
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 465000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Корпоративные финансы: учет, анализ и аудит",
-      "direction_code": "38.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/845682",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2026,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/845682"
-        }
-      ],
-      "tuition_per_year": 690000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Инновационный менеджмент",
-      "direction_code": "27.03.05",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/845767",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 40
-        },
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "one_of": [
-            {
-              "subject": "physics",
-              "min_score": 40
-            },
-            {
-              "subject": "chemistry",
-              "min_score": 40
-            },
-            {
-              "subject": "informatics",
-              "min_score": 38
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 550000
-    },
-    {
-      "faculty": "Институт государственной службы и управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Лидеры регионов. Москва",
-      "direction_code": "38.03.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/845799",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2026,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/845799"
-        }
-      ],
-      "tuition_per_year": 650000
-    },
-    {
-      "faculty": "Институт экономики, математики и информационных технологий Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Экономический анализ в современном мире",
-      "direction_code": "38.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/845815",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2026,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/845815"
-        }
-      ],
-      "tuition_per_year": 680000
-    },
-    {
-      "faculty": "Институт общественных наук Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Социология: технологии исследования изменений",
-      "direction_code": "39.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/845820",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2025,
-          "passing_score_budget": 256,
-          "source_url": "https://www.ucheba.ru/program/845820"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 282,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/845820"
-        }
-      ],
-      "tuition_per_year": 465000
-    },
-    {
-      "faculty": "Институт общественных наук Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Стратегические коммуникации",
-      "direction_code": "42.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/845827",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "social",
-          "min_score": 45
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "literature",
-              "min_score": 40
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 620000
-    },
-    {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Информационно-правовой (Правовое обеспечение цифровой экономики)",
-      "direction_code": "40.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/818530",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2023,
-          "passing_score_budget": 281,
-          "source_url": "https://www.ucheba.ru/program/818530"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 294,
-          "budget_places": 9,
-          "source_url": "https://www.ucheba.ru/program/818530"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 287,
-          "budget_places": 33,
-          "source_url": "https://www.ucheba.ru/program/818530"
-        },
-        {
-          "year": 2026,
-          "budget_places": 11,
-          "source_url": "https://www.ucheba.ru/program/818530"
-        }
-      ],
-      "tuition_per_year": 560000
-    },
-    {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Уголовно-правовая специализация",
-      "direction_code": "",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/818536",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "social",
-          "min_score": 45
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2024,
-          "budget_places": 2,
-          "source_url": "https://www.ucheba.ru/program/818536"
-        }
-      ],
-      "tuition_per_year": 495000
-    },
-    {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Прокурорская деятельность",
-      "direction_code": "40.05.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/818537",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "social",
-          "min_score": 45
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 480000
-    },
-    {
-      "faculty": "Институт государственной службы и управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Внешняя политика и государственное управление",
-      "direction_code": "38.03.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/829454",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2024,
-          "passing_score_budget": 300,
-          "source_url": "https://www.ucheba.ru/program/829454"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 300,
-          "budget_places": 16,
-          "source_url": "https://www.ucheba.ru/program/829454"
-        },
-        {
-          "year": 2026,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/829454"
-        }
-      ],
-      "tuition_per_year": 676000
-    },
-    {
-      "faculty": "Институт государственной службы и управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Международное сотрудничество и дипломатия",
-      "direction_code": "41.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/829457",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "history",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "geography",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2025,
-          "passing_score_budget": 288,
-          "budget_places": 14,
-          "source_url": "https://www.ucheba.ru/program/829457"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 291,
-          "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/829457"
-        }
-      ],
-      "tuition_per_year": 660000
-    },
-    {
-      "faculty": "Институт государственной службы и управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Продюсирование и управление медиапроектами",
-      "direction_code": "42.03.05",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/829534",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "literature",
-          "min_score": 40
-        },
-        {
-          "one_of": [
-            {
-              "subject": "geography",
-              "min_score": 40
-            },
-            {
-              "subject": "social",
-              "min_score": 45
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 670000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Индустрия туризма и развитие территорий",
-      "direction_code": "43.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/854516",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "social",
-          "min_score": 45
-        },
-        {
-          "one_of": [
-            {
-              "subject": "geography",
-              "min_score": 40
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 470000
-    },
-    {
-      "faculty": "Институт государственной службы и управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Региональная политика и территориальное развитие",
-      "direction_code": "41.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/610056",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "history",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "geography",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 278,
-          "source_url": "https://www.ucheba.ru/program/610056"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 259,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/610056"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 284,
-          "budget_places": 9,
-          "source_url": "https://www.ucheba.ru/program/610056"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 246,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/610056"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 268,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/610056"
-        }
-      ],
-      "tuition_per_year": 520000
-    },
-    {
-      "faculty": "Институт общественных наук Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Психология организационного поведения",
-      "direction_code": "37.05.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/613382",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "biology",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2023,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/613382"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 256,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/613382"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 237,
-          "budget_places": 12,
-          "source_url": "https://www.ucheba.ru/program/613382"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 243,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/613382"
-        }
-      ],
-      "tuition_per_year": 450000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Производственный менеджмент",
-      "direction_code": "",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/667412",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 267,
-          "source_url": "https://www.ucheba.ru/program/667412"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 261,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/667412"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 273,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/667412"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 267,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/667412"
-        },
-        {
-          "year": 2026,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/667412"
-        }
-      ],
-      "tuition_per_year": 630000
-    },
-    {
-      "faculty": "Институт общественных наук Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Социология рекламы и медиаисследования",
-      "direction_code": "39.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/681508",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 254,
-          "source_url": "https://www.ucheba.ru/program/681508"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 254,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/681508"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 275,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/681508"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 256,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/681508"
-        },
-        {
-          "year": 2026,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/681508"
-        }
-      ],
-      "tuition_per_year": 525000
-    },
-    {
-      "faculty": "Институт государственной службы и управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Региональная экономика (многопрофильный бакалавриат)",
-      "direction_code": "38.03.01",
-      "study_form": "part_time",
-      "source_url": "https://www.ucheba.ru/program/734251",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 40
-        },
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "one_of": [
-            {
-              "subject": "geography",
-              "min_score": 40
-            },
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "social",
-              "min_score": 45
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 436000
-    },
-    {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Международное право и сравнительное правоведение",
-      "direction_code": "",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/738808",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "social",
-          "min_score": 45
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 40
-            },
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 635000
-    },
-    {
-      "faculty": "Институт государственной службы и управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Медиаобеспечение государственных интересов: иновещание и новые медиа",
-      "direction_code": "42.03.05",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/793654",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "literature",
-          "min_score": 40
-        },
-        {
-          "one_of": [
-            {
-              "subject": "geography",
-              "min_score": 40
-            },
-            {
-              "subject": "social",
-              "min_score": 45
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 670000
-    },
-    {
-      "faculty": "Институт общественных наук Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Психологическое консультирование и коучинг",
-      "direction_code": "37.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/698347",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "biology",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2023,
-          "passing_score_budget": 261,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/698347"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 270,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/698347"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 244,
-          "budget_places": 9,
-          "source_url": "https://www.ucheba.ru/program/698347"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 245,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/698347"
-        }
-      ],
-      "tuition_per_year": 450000
-    },
-    {
-      "faculty": "Институт государственной службы и управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Цифровое государство",
-      "direction_code": "38.03.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/721707",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 270,
-          "source_url": "https://www.ucheba.ru/program/721707"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 277,
-          "source_url": "https://www.ucheba.ru/program/721707"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 275,
-          "budget_places": 4,
-          "source_url": "https://www.ucheba.ru/program/721707"
-        },
-        {
-          "year": 2025,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/721707"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 284,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/721707"
-        }
-      ],
-      "tuition_per_year": 650000
-    },
-    {
-      "faculty": "Институт государственной службы и управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Международные программы устойчивого развития",
-      "direction_code": "41.03.05",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/721775",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "history",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "geography",
-              "min_score": 60
-            },
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 274,
-          "source_url": "https://www.ucheba.ru/program/721775"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 275,
-          "budget_places": 7,
-          "source_url": "https://www.ucheba.ru/program/721775"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 279,
-          "budget_places": 8,
-          "source_url": "https://www.ucheba.ru/program/721775"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 283,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/721775"
-        },
-        {
-          "year": 2026,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/721775"
-        }
-      ],
-      "tuition_per_year": 660000
-    },
-    {
-      "faculty": "Институт экономики, математики и информационных технологий Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Бизнес-информатика",
-      "direction_code": "38.03.05",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/727272",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 269,
-          "source_url": "https://www.ucheba.ru/program/727272"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 263,
-          "source_url": "https://www.ucheba.ru/program/727272"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 281,
-          "budget_places": 7,
-          "source_url": "https://www.ucheba.ru/program/727272"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 283,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/727272"
-        },
-        {
-          "year": 2026,
-          "budget_places": 17,
-          "source_url": "https://www.ucheba.ru/program/727272"
-        }
-      ],
-      "tuition_per_year": 485000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Предпринимательство и управление эффективностью бизнеса",
-      "direction_code": "38.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/766412",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 273,
-          "source_url": "https://www.ucheba.ru/program/766412"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 277,
-          "source_url": "https://www.ucheba.ru/program/766412"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 287,
-          "budget_places": 3,
-          "source_url": "https://www.ucheba.ru/program/766412"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 289,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/766412"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 295,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/766412"
-        }
-      ],
-      "tuition_per_year": 750000
-    },
-    {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Юриспруденция (с углубленным изучением юридического английского языка и общего права)",
-      "direction_code": "40.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/783213",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "social",
-          "min_score": 45
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 40
-            },
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 695000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Стратегическое управление компанией",
-      "direction_code": "38.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/601297",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 300,
-          "source_url": "https://www.ucheba.ru/program/601297"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 266,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/601297"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 287,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/601297"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 284,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/601297"
-        },
-        {
-          "year": 2026,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/601297"
-        }
-      ],
-      "tuition_per_year": 695000
-    },
-    {
-      "faculty": "Институт государственной службы и управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Управление персоналом государственной службы и организации",
-      "direction_code": "38.03.04",
-      "study_form": "part_time",
-      "source_url": "https://www.ucheba.ru/program/610552",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "social",
-          "min_score": 45
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 40
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 265,
-          "source_url": "https://www.ucheba.ru/program/610552"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 251,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/610552"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 275,
-          "budget_places": 4,
-          "source_url": "https://www.ucheba.ru/program/610552"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 258,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/610552"
-        }
-      ],
-      "tuition_per_year": 450000
-    },
-    {
-      "faculty": "Институт общественных наук Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Психология: современная теория и практика",
-      "direction_code": "37.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/610595",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "biology",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 275,
-          "source_url": "https://www.ucheba.ru/program/610595"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 284,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/610595"
-        },
-        {
-          "year": 2024,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/610595"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 240,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/610595"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 267,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/610595"
-        }
-      ],
-      "tuition_per_year": 450000
-    },
-    {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Гражданско-правовая специализация",
-      "direction_code": "40.05.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/671099",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "social",
-          "min_score": 45
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2024,
-          "budget_places": 2,
-          "source_url": "https://www.ucheba.ru/program/671099"
-        }
-      ],
-      "tuition_per_year": 495000
-    },
-    {
-      "faculty": "Институт общественных наук Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "История",
-      "direction_code": "46.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/674257",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "history",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 265,
-          "source_url": "https://www.ucheba.ru/program/674257"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 265,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/674257"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 269,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/674257"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 255,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/674257"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 267,
-          "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/674257"
-        }
-      ],
-      "tuition_per_year": 420000
-    },
-    {
-      "faculty": "Институт экономики, математики и информационных технологий Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Веб-разработка",
-      "direction_code": "09.03.03",
-      "study_form": "distance",
-      "source_url": "https://www.ucheba.ru/program/754456",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 40
-        },
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "one_of": [
-            {
-              "subject": "physics",
-              "min_score": 41
-            },
-            {
-              "subject": "informatics",
-              "min_score": 46
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 270000
-    },
-    {
-      "faculty": "Институт экономики, математики и информационных технологий Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
+      "faculty": "ИЭМИТ",
       "name": "Цифровые технологии",
       "direction_code": "09.03.03",
       "study_form": "part_time",
-      "source_url": "https://www.ucheba.ru/program/755483",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
       "exams": [
         {
           "subject": "math",
-          "min_score": 40
+          "min_score": 60
         },
         {
           "subject": "russian",
-          "min_score": 40
+          "min_score": 70
         },
         {
           "one_of": [
             {
-              "subject": "physics",
-              "min_score": 41
+              "subject": "informatics",
+              "min_score": 60
             },
             {
-              "subject": "informatics",
-              "min_score": 46
+              "subject": "physics",
+              "min_score": 60
             }
           ]
         }
@@ -3054,310 +141,33 @@
         {
           "year": 2024,
           "passing_score_budget": 238,
-          "budget_places": 8,
-          "source_url": "https://www.ucheba.ru/program/755483"
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
         },
         {
           "year": 2025,
           "passing_score_budget": 233,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
           "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/755483"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 243,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/755483"
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
         }
-      ],
-      "tuition_per_year": 255000
+      ]
     },
     {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Менеджмент спортивной индустрии",
-      "direction_code": "38.03.02",
+      "faculty": "ИОН",
+      "name": "Психология: современная теория и практика",
+      "direction_code": "37.03.01",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/755598",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
       "exams": [
         {
-          "subject": "math",
+          "subject": "biology",
           "min_score": 60
         },
         {
           "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 264,
-          "source_url": "https://www.ucheba.ru/program/755598"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 259,
-          "budget_places": 12,
-          "source_url": "https://www.ucheba.ru/program/755598"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 271,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/755598"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 267,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/755598"
-        },
-        {
-          "year": 2026,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/755598"
-        }
-      ],
-      "tuition_per_year": 600000
-    },
-    {
-      "faculty": "Институт экономики, математики и информационных технологий Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Прикладные цифровые технологии",
-      "direction_code": "01.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/771526",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 40
-        },
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "one_of": [
-            {
-              "subject": "physics",
-              "min_score": 41
-            },
-            {
-              "subject": "informatics",
-              "min_score": 46
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 450000
-    },
-    {
-      "faculty": "Институт экономики, математики и информационных технологий Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Экономика топливно-энергетического комплекса",
-      "direction_code": "38.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/818413",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2024,
-          "passing_score_budget": 272,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/818413"
-        },
-        {
-          "year": 2026,
-          "budget_places": 8,
-          "source_url": "https://www.ucheba.ru/program/818413"
-        }
-      ],
-      "tuition_per_year": 600000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Банки и финансовые рынки",
-      "direction_code": "38.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/845681",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 58
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2025,
-          "passing_score_budget": 275,
-          "source_url": "https://www.ucheba.ru/program/845681"
-        },
-        {
-          "year": 2026,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/845681"
-        }
-      ],
-      "tuition_per_year": 690000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Финансовый менеджмент и инвестиции",
-      "direction_code": "",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/845683",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2025,
-          "passing_score_budget": 276,
-          "source_url": "https://www.ucheba.ru/program/845683"
-        },
-        {
-          "year": 2026,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/845683"
-        }
-      ],
-      "tuition_per_year": 750000
-    },
-    {
-      "faculty": "Институт общественных наук Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Креативные индустрии и цифровые проекты",
-      "direction_code": "50.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/854511",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "history",
-          "min_score": 40
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 45
-            },
-            {
-              "subject": "literature",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 450000
-    },
-    {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Государственно-правовой профиль",
-      "direction_code": "40.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/818529",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
           "min_score": 70
         },
         {
@@ -3367,74 +177,8 @@
               "min_score": 60
             },
             {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2023,
-          "passing_score_budget": 281,
-          "source_url": "https://www.ucheba.ru/program/818529"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 294,
-          "budget_places": 9,
-          "source_url": "https://www.ucheba.ru/program/818529"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 287,
-          "budget_places": 33,
-          "source_url": "https://www.ucheba.ru/program/818529"
-        },
-        {
-          "year": 2026,
-          "budget_places": 11,
-          "source_url": "https://www.ucheba.ru/program/818529"
-        }
-      ],
-      "tuition_per_year": 560000
-    },
-    {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Обеспечение экономической безопасности бизнеса",
-      "direction_code": "38.05.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/818531",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
               "subject": "social",
               "min_score": 70
-            },
-            {
-              "subject": "history",
-              "min_score": 70
             }
           ]
         }
@@ -3442,491 +186,40 @@
       "stats": [
         {
           "year": 2023,
-          "passing_score_budget": 253,
-          "source_url": "https://www.ucheba.ru/program/818531"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 278,
-          "budget_places": 9,
-          "source_url": "https://www.ucheba.ru/program/818531"
-        },
-        {
-          "year": 2025,
           "passing_score_budget": 284,
-          "budget_places": 18,
-          "source_url": "https://www.ucheba.ru/program/818531"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 281,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/818531"
-        }
-      ],
-      "tuition_per_year": 480000
-    },
-    {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Внешнеэкономическая деятельность",
-      "direction_code": "38.05.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/818532",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "geography",
-              "min_score": 60
-            },
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2023,
-          "passing_score_budget": 263,
-          "source_url": "https://www.ucheba.ru/program/818532"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 278,
-          "budget_places": 4,
-          "source_url": "https://www.ucheba.ru/program/818532"
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
         },
         {
           "year": 2025,
-          "passing_score_budget": 262,
-          "budget_places": 12,
-          "source_url": "https://www.ucheba.ru/program/818532"
+          "passing_score_budget": 240,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
         },
         {
           "year": 2026,
-          "passing_score_budget": 260,
           "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/818532"
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
         }
-      ],
-      "tuition_per_year": 475000
+      ]
     },
     {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Международная логистика и организация таможенного контроля",
-      "direction_code": "38.05.02",
+      "faculty": "ИОН",
+      "name": "Психологическое консультирование и коучинг",
+      "direction_code": "37.03.01",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/818533",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
       "exams": [
         {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "geography",
-              "min_score": 60
-            },
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2023,
-          "passing_score_budget": 263,
-          "source_url": "https://www.ucheba.ru/program/818533"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 278,
-          "budget_places": 4,
-          "source_url": "https://www.ucheba.ru/program/818533"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 262,
-          "budget_places": 12,
-          "source_url": "https://www.ucheba.ru/program/818533"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 272,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/818533"
-        }
-      ],
-      "tuition_per_year": 475000
-    },
-    {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Государственно-правовая специализация",
-      "direction_code": "40.05.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/818534",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "social",
-          "min_score": 45
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2024,
-          "budget_places": 1,
-          "source_url": "https://www.ucheba.ru/program/818534"
-        }
-      ],
-      "tuition_per_year": 495000
-    },
-    {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Международно-правовая специализация",
-      "direction_code": "40.05.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/818535",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "social",
-          "min_score": 45
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2024,
-          "budget_places": 2,
-          "source_url": "https://www.ucheba.ru/program/818535"
-        }
-      ],
-      "tuition_per_year": 495000
-    },
-    {
-      "faculty": "Институт общественных наук Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Цифровые коммуникации и искусственный интеллект",
-      "direction_code": "42.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/819130",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "social",
-          "min_score": 45
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "literature",
-              "min_score": 40
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 650000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Цифровой бизнес и логистика",
-      "direction_code": "38.03.06",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/845759",
-      "exams": [
-        {
-          "subject": "math",
+          "subject": "biology",
           "min_score": 60
         },
         {
           "subject": "russian",
           "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2026,
-          "budget_places": 7,
-          "source_url": "https://www.ucheba.ru/program/845759"
-        }
-      ],
-      "tuition_per_year": 550000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Гостиничный и ресторанный бизнес",
-      "direction_code": "43.03.03",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/845765",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2026,
-          "passing_score_budget": 271,
-          "budget_places": 3,
-          "source_url": "https://www.ucheba.ru/program/845765"
-        }
-      ],
-      "tuition_per_year": 500000
-    },
-    {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Международное и интеграционное право (с углубленным изучением иностранного языка (языка региона))",
-      "direction_code": "",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/845803",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "subject": "social",
-          "min_score": 45
         },
         {
           "one_of": [
             {
               "subject": "math",
-              "min_score": 40
-            },
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "history",
-              "min_score": 40
-            },
-            {
-              "subject": "english",
-              "min_score": 40
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 665000
-    },
-    {
-      "faculty": "Институт экономики, математики и информационных технологий Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Искусственный интеллект и машинное обучение",
-      "direction_code": "09.03.03",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/845812",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "physics",
-              "min_score": 60
-            },
-            {
-              "subject": "informatics",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2025,
-          "passing_score_budget": 253,
-          "source_url": "https://www.ucheba.ru/program/845812"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 274,
-          "budget_places": 22,
-          "source_url": "https://www.ucheba.ru/program/845812"
-        }
-      ],
-      "tuition_per_year": 440000
-    },
-    {
-      "faculty": "Институт экономики, математики и информационных технологий Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Цифровые технологии и разработка информационных систем",
-      "direction_code": "09.03.03",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/845813",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "physics",
-              "min_score": 60
-            },
-            {
-              "subject": "informatics",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2026,
-          "passing_score_budget": 270,
-          "budget_places": 23,
-          "source_url": "https://www.ucheba.ru/program/845813"
-        }
-      ],
-      "tuition_per_year": 475000
-    },
-    {
-      "faculty": "Институт экономики, математики и информационных технологий Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Экономика, финансы и анализ данных",
-      "direction_code": "",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/845814",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
               "min_score": 60
             },
             {
@@ -3937,173 +230,527 @@
         }
       ],
       "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 261,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 270,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 244,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 15,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИЭМИТ",
+      "name": "Экономика, финансы и анализ данных",
+      "direction_code": "38.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 263,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 280,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 270,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
         {
           "year": 2026,
           "budget_places": 50,
-          "source_url": "https://www.ucheba.ru/program/845814"
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
         }
-      ],
-      "tuition_per_year": 545000
+      ]
     },
     {
-      "faculty": "Институт экономики, математики и информационных технологий Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
+      "faculty": "ИЭМИТ",
+      "name": "Экономический анализ в современном мире",
+      "direction_code": "38.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 276,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 273,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 15,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИЭМИТ",
+      "name": "Экономика предприятий и организаций",
+      "direction_code": "38.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "geography",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 276,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 273,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 281,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 20,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИЭМИТ",
+      "name": "Экономика топливно- энергетического комплекса",
+      "direction_code": "38.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": []
+    },
+    {
+      "faculty": "ИУ",
+      "name": "Банки и финансовые рынки",
+      "direction_code": "38.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 277,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 287,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 275,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИУ",
+      "name": "Корпоративные финансы: учет, анализ и аудит",
+      "direction_code": "38.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 274,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Предпринимательство и управление эффективностью бизнеса",
+      "direction_code": "38.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 277,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 287,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 289,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИГСУ",
+      "name": "Финансовый контроль и государственный аудит",
+      "direction_code": "38.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "geography",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 267,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 275,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 279,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 15,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИЭМИТ",
       "name": "Экономика бизнеса",
       "direction_code": "38.03.01",
       "study_form": "part_time",
-      "source_url": "https://www.ucheba.ru/program/829335",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
       "exams": [
         {
           "subject": "math",
-          "min_score": 40
+          "min_score": 60
         },
         {
           "subject": "russian",
-          "min_score": 40
+          "min_score": 70
         },
         {
           "one_of": [
             {
-              "subject": "geography",
-              "min_score": 40
-            },
-            {
-              "subject": "informatics",
-              "min_score": 46
+              "subject": "english",
+              "min_score": 70
             },
             {
               "subject": "social",
-              "min_score": 45
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
             },
             {
               "subject": "history",
-              "min_score": 40
+              "min_score": 70
             },
             {
-              "subject": "english",
-              "min_score": 40
+              "subject": "geography",
+              "min_score": 60
             }
           ]
         }
       ],
       "stats": [
+        {
+          "year": 2024,
+          "passing_score_budget": 254,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
         {
           "year": 2025,
           "passing_score_budget": 258,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/829335"
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
         },
         {
           "year": 2026,
-          "passing_score_budget": 273,
           "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/829335"
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
         }
-      ],
-      "tuition_per_year": 320000
+      ]
     },
     {
-      "faculty": "Институт экономики, математики и информационных технологий Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Технологии экономики и управления",
+      "faculty": "ИУ",
+      "name": "Финансы и кредит",
       "direction_code": "38.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/829336",
+      "study_form": "part_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
       "exams": [
         {
           "subject": "math",
-          "min_score": 40
+          "min_score": 60
         },
         {
           "subject": "russian",
-          "min_score": 40
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 46
-            },
-            {
-              "subject": "social",
-              "min_score": 45
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 705000
-    },
-    {
-      "faculty": "Институт права и национальной безопасности Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Юриспруденция: междисциплинарные исследования",
-      "direction_code": "40.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/829370",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
           "min_score": 70
         },
         {
           "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2025,
-          "passing_score_budget": 300,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/829370"
-        },
-        {
-          "year": 2026,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/829370"
-        }
-      ],
-      "tuition_per_year": 585000
-    },
-    {
-      "faculty": "Институт государственной службы и управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Правовое обеспечение государственного и муниципального управления",
-      "direction_code": "38.03.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/829445",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "history",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
             {
               "subject": "social",
               "min_score": 70
@@ -4111,54 +758,10 @@
             {
               "subject": "english",
               "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2025,
-          "passing_score_budget": 285,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/829445"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 291,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/829445"
-        }
-      ],
-      "tuition_per_year": 650000
-    },
-    {
-      "faculty": "Институт государственной службы и управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Экономика и государственное управление",
-      "direction_code": "38.03.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/829532",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "subject": "social",
-          "min_score": 70
-        },
-        {
-          "one_of": [
+            },
             {
-              "subject": "math",
+              "subject": "informatics",
               "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
-              "min_score": 70
             }
           ]
         }
@@ -4167,17 +770,16 @@
         {
           "year": 2026,
           "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/829532"
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
         }
-      ],
-      "tuition_per_year": 650000
+      ]
     },
     {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Международный бизнес",
+      "faculty": "У",
+      "name": "Маркетинг",
       "direction_code": "38.03.02",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/830000",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
       "exams": [
         {
           "subject": "math",
@@ -4189,63 +791,20 @@
         },
         {
           "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
             {
               "subject": "social",
               "min_score": 70
             },
-            {
-              "subject": "english",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2025,
-          "passing_score_budget": 292,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/830000"
-        },
-        {
-          "year": 2026,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/830000"
-        }
-      ],
-      "tuition_per_year": 760000
-    },
-    {
-      "faculty": "Институт управления Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации",
-      "name": "Управление проектами",
-      "direction_code": "",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/829943",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 70
-        },
-        {
-          "one_of": [
             {
               "subject": "informatics",
               "min_score": 60
             },
             {
-              "subject": "social",
-              "min_score": 70
-            },
-            {
               "subject": "history",
-              "min_score": 70
-            },
-            {
-              "subject": "english",
               "min_score": 70
             }
           ]
@@ -4253,18 +812,2264 @@
       ],
       "stats": [
         {
-          "year": 2025,
-          "passing_score_budget": 300,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/829943"
+          "year": 2023,
+          "passing_score_budget": 279,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 295,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
         },
         {
           "year": 2026,
           "budget_places": 25,
-          "source_url": "https://www.ucheba.ru/program/829943"
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИУ",
+      "name": "Финансовый менеджмент и инвестиции",
+      "direction_code": "38.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            }
+          ]
         }
       ],
-      "tuition_per_year": 750000
+      "stats": [
+        {
+          "year": 2024,
+          "passing_score_budget": 291,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 276,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИУ",
+      "name": "Менеджмент спортивной индустрии",
+      "direction_code": "38.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 259,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 271,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 267,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИУ",
+      "name": "Производственный менеджмент",
+      "direction_code": "38.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 260,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 273,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 267,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИУ",
+      "name": "Управление проектами",
+      "direction_code": "38.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 25,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИУ",
+      "name": "Управление бизнесом",
+      "direction_code": "38.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 267,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 304,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 25,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИУ",
+      "name": "Лидерство и управление в глобальном мире / Global Governance and Leadership",
+      "direction_code": "38.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 20,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИУ",
+      "name": "Международный бизнес",
+      "direction_code": "38.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 267,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 292,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 20,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИУ",
+      "name": "Стратегическое управление компанией",
+      "direction_code": "38.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 266,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 287,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 284,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 15,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИУ",
+      "name": "Менеджмент в индустрии моды",
+      "direction_code": "38.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 279,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 281,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 270,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИГСУ",
+      "name": "Управление ESG - проектами",
+      "direction_code": "38.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 261,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 271,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 266,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИОН",
+      "name": "Урбанистика и городские исследования",
+      "direction_code": "38.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2024,
+          "passing_score_budget": 268,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 265,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИУ",
+      "name": "Управление производством",
+      "direction_code": "38.03.02",
+      "study_form": "part_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИГСУ",
+      "name": "Внешняя политика и государственное управление",
+      "direction_code": "38.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "math",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 289,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 300,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 20,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИГСУ",
+      "name": "Внутренняя политика и лидерство",
+      "direction_code": "38.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "math",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 289,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 300,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 20,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИГСУ",
+      "name": "Эффективное государственное управление",
+      "direction_code": "38.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "math",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 289,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 300,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 22,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИГСУ",
+      "name": "Правовое обеспечение государственного и муниципального управления",
+      "direction_code": "38.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "history",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "math",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 277,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 275,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 285,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 5,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИГСУ",
+      "name": "Лидеры регионов. Москва",
+      "direction_code": "38.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "math",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИГСУ",
+      "name": "Цифровое государство",
+      "direction_code": "38.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "math",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 277,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 275,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 282,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИГСУ",
+      "name": "Экономика и государственное управление",
+      "direction_code": "38.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "math",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ДПОИ",
+      "name": "Государственное управление и публичная политика в условиях глобальных вызовов «РЕСУРС России",
+      "direction_code": "38.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "math",
+              "min_score": 60
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2024,
+          "passing_score_budget": 277,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 270,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 55,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИГСУ",
+      "name": "Управление персоналом государственной службы и организации",
+      "direction_code": "38.03.04",
+      "study_form": "part_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "math",
+              "min_score": 60
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИЭМИТ",
+      "name": "Бизнес-информатика",
+      "direction_code": "38.03.05",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 263,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 281,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 283,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 17,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИУ",
+      "name": "Цифровой бизнес и логистика",
+      "direction_code": "38.03.06",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 254,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 271,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 262,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 7,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИОН",
+      "name": "Социология: технологии исследования изменений",
+      "direction_code": "39.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "math",
+              "min_score": 60
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 254,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 275,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 256,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 15,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИОН",
+      "name": "Социология рекламы и медиаисследования",
+      "direction_code": "39.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "math",
+              "min_score": 60
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 254,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 275,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 256,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИПНБ",
+      "name": "Гражданско-правовой",
+      "direction_code": "40.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "math",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 281,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 294,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 287,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 33,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИПНБ",
+      "name": "Государственно- правовой",
+      "direction_code": "40.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "math",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": []
+    },
+    {
+      "faculty": "ИПНБ",
+      "name": "Информационно- правовой профиль (Правовое обеспечение цифровой экономики)",
+      "direction_code": "40.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "math",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": []
+    },
+    {
+      "faculty": "ИПНБ",
+      "name": "Юриспруденция: междисциплинарные исследования",
+      "direction_code": "40.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "math",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИПНБ",
+      "name": "Финансово-правовой профиль (правовое обеспечение финансовых технологий)",
+      "direction_code": "40.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "math",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 279,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 7,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИПНБ",
+      "name": "Гражданско-правовой профиль",
+      "direction_code": "40.03.01",
+      "study_form": "part_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "math",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 2,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИГСУ",
+      "name": "Международное сотрудничество и дипломатия",
+      "direction_code": "41.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "history",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "geography",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 270,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 288,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 40,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИГСУ",
+      "name": "Региональная политика и территориальное развитие",
+      "direction_code": "41.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "history",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "geography",
+              "min_score": 60
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 259,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 284,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 246,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИОН",
+      "name": "Политический консалтинг и глобальные изменения",
+      "direction_code": "41.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "history",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "geography",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2024,
+          "passing_score_budget": 286,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 283,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 25,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИУ",
+      "name": "Международные отношения: политика, экономика, бизнес",
+      "direction_code": "41.03.05",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "history",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "geography",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 277,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 283,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 30,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИГСУ",
+      "name": "Международные программы устойчивого развития",
+      "direction_code": "41.03.05",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "history",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "geography",
+              "min_score": 60
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 275,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 279,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 283,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИОН",
+      "name": "Публичная политика: общественные коммуникации и искусственный интеллект",
+      "direction_code": "41.03.06",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            },
+            {
+              "subject": "geography",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2024,
+          "passing_score_budget": 300,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 253,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 20,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИУ",
+      "name": "Гостиничный и ресторанный бизнес",
+      "direction_code": "43.03.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 3,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИОН",
+      "name": "История",
+      "direction_code": "46.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "history",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 265,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 279,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 255,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 40,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИОН",
+      "name": "Филология и перевод",
+      "direction_code": "50.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "literature",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 291,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 265,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 294,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 6,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИОН",
+      "name": "Психология организационного поведения",
+      "direction_code": "37.05.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "biology",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "math",
+              "min_score": 60
+            },
+            {
+              "subject": "social",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2024,
+          "passing_score_budget": 256,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 237,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 15,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИПНБ",
+      "name": "Экономико-правовое обеспечение экономической безопасности",
+      "direction_code": "38.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 253,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 278,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 284,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 15,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИПНБ",
+      "name": "Обеспечение экономической безопасности бизнеса",
+      "direction_code": "38.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 70
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 253,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 278,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 284,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИПНБ",
+      "name": "Международная логистика и организация таможенного контроля",
+      "direction_code": "38.05.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "geography",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 263,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 278,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 262,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
+    },
+    {
+      "faculty": "ИПНБ",
+      "name": "Внешнеэкономическая деятельность",
+      "direction_code": "38.05.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 70
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "geography",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 263,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 278,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 262,
+          "source_url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/"
+        },
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://www.ranepa.ru/upload/doc/pk/2026/Академия_БАК_цифры бюд.pdf"
+        }
+      ]
     }
   ]
 }

@@ -4,615 +4,327 @@
   "short_name": "ВШЭ",
   "website": "https://www.hse.ru",
   "has_dormitory": true,
-  "source_url": "https://www.ucheba.ru/uz/5723/programs",
+  "source_url": "https://ba.hse.ru/previous",
   "verified": false,
   "programs": [
     {
-      "faculty": "Факультет экономических наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Экономика и статистика",
-      "direction_code": "38.03.01",
+      "faculty": "",
+      "name": "Компьютерная безопасность",
+      "direction_code": "10.05.01",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/38453",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
         {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 65
+            },
+            {
+              "subject": "informatics",
+              "min_score": 65
+            }
+          ]
+        },
+        {
           "subject": "math",
-          "min_score": 60
+          "min_score": 65
         },
         {
           "subject": "russian",
           "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
         }
       ],
       "stats": [
         {
+          "year": 2021,
+          "passing_score_budget": 291,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
+          "year": 2022,
+          "passing_score_budget": 272,
+          "source_url": "https://ba.hse.ru/result2022"
+        },
+        {
           "year": 2023,
-          "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/38453"
+          "passing_score_budget": 273,
+          "budget_places": 45,
+          "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
-          "budget_places": 35,
-          "source_url": "https://www.ucheba.ru/program/38453"
+          "passing_score_budget": 282,
+          "budget_places": 45,
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
-          "budget_places": 35,
-          "source_url": "https://www.ucheba.ru/program/38453"
+          "passing_score_budget": 276,
+          "budget_places": 45,
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "passing_score_budget": 295,
-          "budget_places": 35,
-          "source_url": "https://www.ucheba.ru/program/38453"
+          "budget_places": 45,
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 890000
+      ]
     },
     {
-      "faculty": "Факультет права Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Юриспруденция",
-      "direction_code": "40.03.01",
+      "faculty": "",
+      "name": "Математика",
+      "direction_code": "01.03.01",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/192854",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
         {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "social",
-          "min_score": 60
+          "subject": "math",
+          "min_score": 75
         },
         {
           "one_of": [
             {
-              "subject": "history",
-              "min_score": 60
+              "subject": "physics",
+              "min_score": 70
             },
             {
-              "subject": "english",
-              "min_score": 60
+              "subject": "informatics",
+              "min_score": 70
             }
           ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 65
         }
       ],
       "stats": [
         {
+          "year": 2021,
+          "passing_score_budget": 294,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
+          "year": 2022,
+          "passing_score_budget": 286,
+          "source_url": "https://ba.hse.ru/result2022"
+        },
+        {
           "year": 2023,
-          "budget_places": 150,
-          "source_url": "https://www.ucheba.ru/program/192854"
+          "passing_score_budget": 285,
+          "budget_places": 60,
+          "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
-          "passing_score_budget": 287,
-          "budget_places": 150,
-          "source_url": "https://www.ucheba.ru/program/192854"
+          "passing_score_budget": 291,
+          "budget_places": 60,
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 282,
-          "budget_places": 150,
-          "source_url": "https://www.ucheba.ru/program/192854"
+          "budget_places": 60,
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "passing_score_budget": 275,
-          "budget_places": 150,
-          "source_url": "https://www.ucheba.ru/program/192854"
+          "budget_places": 60,
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 700000
+      ]
     },
     {
-      "faculty": "Факультет экономических наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Экономика",
-      "direction_code": "38.03.01",
+      "faculty": "",
+      "name": "Совместный бакалавриат НИУ ВШЭ и Центра педагогического мастерства",
+      "direction_code": "01.03.01",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/192861",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
         {
           "subject": "math",
-          "min_score": 65
-        },
-        {
-          "subject": "russian",
-          "min_score": 65
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 65
-            },
-            {
-              "subject": "social",
-              "min_score": 65
-            },
-            {
-              "subject": "english",
-              "min_score": 65
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2023,
-          "budget_places": 71,
-          "source_url": "https://www.ucheba.ru/program/192861"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 294,
-          "budget_places": 110,
-          "source_url": "https://www.ucheba.ru/program/192861"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 291,
-          "budget_places": 100,
-          "source_url": "https://www.ucheba.ru/program/192861"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 309,
-          "budget_places": 100,
-          "source_url": "https://www.ucheba.ru/program/192861"
-        }
-      ],
-      "tuition_per_year": 1000000
-    },
-    {
-      "faculty": "Высшая школа бизнеса Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Маркетинг и рыночная аналитика",
-      "direction_code": "38.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/694063",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 65
-        },
-        {
-          "subject": "english",
-          "min_score": 70
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 291,
-          "source_url": "https://www.ucheba.ru/program/694063"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 283,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/694063"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 292,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/694063"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 289,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/694063"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 291,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/694063"
-        }
-      ],
-      "tuition_per_year": 1100000
-    },
-    {
-      "faculty": "Высшая школа бизнеса Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Управление бизнесом",
-      "direction_code": "38.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/694064",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 65
-        },
-        {
-          "subject": "english",
-          "min_score": 70
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 288,
-          "source_url": "https://www.ucheba.ru/program/694064"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 300,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/694064"
-        },
-        {
-          "year": 2024,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/694064"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 305,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/694064"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 288,
-          "budget_places": 50,
-          "source_url": "https://www.ucheba.ru/program/694064"
-        }
-      ],
-      "tuition_per_year": 1100000
-    },
-    {
-      "faculty": "Факультет права Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Юриспруденция: цифровой юрист",
-      "direction_code": "40.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/694067",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "social",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2023,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/694067"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 276,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/694067"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 277,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/694067"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 278,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/694067"
-        }
-      ],
-      "tuition_per_year": 700000
-    },
-    {
-      "faculty": "Факультет мировой экономики и мировой политики Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Программа двух дипломов НИУ ВШЭ и Университета Кёнхи «Экономика и политика в Азии»/KHU-HSE Double Degree Program Economics and Politics in Asia (707258)",
-      "direction_code": "41.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/707258",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "history",
-          "min_score": 60
-        },
-        {
-          "subject": "english",
-          "min_score": 70
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 910000
-    },
-    {
-      "faculty": "Факультет компьютерных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Прикладной анализ данных",
-      "direction_code": "01.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/707385",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 70
-        },
-        {
-          "subject": "russian",
-          "min_score": 60
+          "min_score": 75
         },
         {
           "one_of": [
             {
               "subject": "physics",
-              "min_score": 60
+              "min_score": 65
             },
             {
               "subject": "informatics",
-              "min_score": 60
+              "min_score": 65
             }
           ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
         }
       ],
-      "stats": [],
-      "tuition_per_year": 1000000
+      "stats": [
+        {
+          "year": 2021,
+          "passing_score_budget": 283,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
+          "year": 2022,
+          "passing_score_budget": 272,
+          "source_url": "https://ba.hse.ru/result2022"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 277,
+          "budget_places": 25,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 283,
+          "budget_places": 25,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 261,
+          "budget_places": 25,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 25,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
     },
     {
-      "faculty": "Факультет компьютерных наук Национального исследовательского университета «Высшая школа экономики»",
+      "faculty": "",
       "name": "Прикладная математика и информатика",
       "direction_code": "01.03.02",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/609933",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
         {
           "subject": "math",
           "min_score": 75
         },
         {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
           "subject": "informatics",
           "min_score": 75
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
         }
       ],
       "stats": [
         {
+          "year": 2021,
+          "passing_score_budget": 310,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
           "year": 2022,
           "passing_score_budget": 310,
-          "source_url": "https://www.ucheba.ru/program/609933"
+          "source_url": "https://ba.hse.ru/result2022"
         },
         {
           "year": 2023,
           "budget_places": 150,
-          "source_url": "https://www.ucheba.ru/program/609933"
+          "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "budget_places": 165,
-          "source_url": "https://www.ucheba.ru/program/609933"
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "budget_places": 180,
-          "source_url": "https://www.ucheba.ru/program/609933"
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 195,
-          "source_url": "https://www.ucheba.ru/program/609933"
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 1000000
+      ]
     },
     {
-      "faculty": "Факультет компьютерных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Программная инженерия",
-      "direction_code": "09.03.04",
+      "faculty": "",
+      "name": "Прикладной анализ данных (реализуется на английском языке)",
+      "direction_code": "01.03.02",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/609934",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
         {
           "subject": "math",
           "min_score": 70
         },
         {
-          "subject": "russian",
-          "min_score": 60
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "physics",
+              "min_score": 60
+            }
+          ]
         },
         {
-          "subject": "informatics",
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": []
+    },
+    {
+      "faculty": "",
+      "name": "Компьютерные науки и анализ данных (онлайн)",
+      "direction_code": "01.03.02",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "math",
           "min_score": 70
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 295,
-          "source_url": "https://www.ucheba.ru/program/609934"
         },
         {
-          "year": 2023,
-          "passing_score_budget": 305,
-          "budget_places": 135,
-          "source_url": "https://www.ucheba.ru/program/609934"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 296,
-          "budget_places": 150,
-          "source_url": "https://www.ucheba.ru/program/609934"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 299,
-          "budget_places": 160,
-          "source_url": "https://www.ucheba.ru/program/609934"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 297,
-          "budget_places": 160,
-          "source_url": "https://www.ucheba.ru/program/609934"
-        }
-      ],
-      "tuition_per_year": 980000
-    },
-    {
-      "faculty": "Факультет социальных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Социология",
-      "direction_code": "39.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/612396",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 65
+            },
+            {
+              "subject": "physics",
+              "min_score": 65
+            }
+          ]
         },
         {
           "subject": "russian",
           "min_score": 60
-        },
-        {
-          "subject": "social",
-          "min_score": 60
         }
       ],
       "stats": [
         {
-          "year": 2023,
-          "budget_places": 115,
-          "source_url": "https://www.ucheba.ru/program/612396"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 276,
-          "budget_places": 115,
-          "source_url": "https://www.ucheba.ru/program/612396"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 288,
-          "budget_places": 115,
-          "source_url": "https://www.ucheba.ru/program/612396"
-        },
-        {
           "year": 2026,
-          "passing_score_budget": 262,
-          "budget_places": 115,
-          "source_url": "https://www.ucheba.ru/program/612396"
+          "budget_places": 10,
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 590000
+      ]
     },
     {
-      "faculty": "Факультет социальных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Психология",
-      "direction_code": "37.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/612405",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "biology",
-          "min_score": 60
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 256,
-          "source_url": "https://www.ucheba.ru/program/612405"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 265,
-          "budget_places": 80,
-          "source_url": "https://www.ucheba.ru/program/612405"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 275,
-          "budget_places": 80,
-          "source_url": "https://www.ucheba.ru/program/612405"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 249,
-          "budget_places": 80,
-          "source_url": "https://www.ucheba.ru/program/612405"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 265,
-          "budget_places": 80,
-          "source_url": "https://www.ucheba.ru/program/612405"
-        }
-      ],
-      "tuition_per_year": 750000
-    },
-    {
-      "faculty": "Московский институт электроники и математики им. А.Н. Тихонова Национального исследовательского университета «Высшая школа экономики»",
+      "faculty": "",
       "name": "Прикладная математика",
       "direction_code": "01.03.04",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/666886",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
-        {
-          "subject": "math",
-          "min_score": 65
-        },
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
         {
           "one_of": [
             {
@@ -624,235 +336,115 @@
               "min_score": 65
             }
           ]
+        },
+        {
+          "subject": "math",
+          "min_score": 65
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
         }
       ],
       "stats": [
         {
+          "year": 2021,
+          "passing_score_budget": 290,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
           "year": 2022,
           "passing_score_budget": 266,
-          "source_url": "https://www.ucheba.ru/program/666886"
+          "source_url": "https://ba.hse.ru/result2022"
         },
         {
           "year": 2023,
           "passing_score_budget": 279,
           "budget_places": 80,
-          "source_url": "https://www.ucheba.ru/program/666886"
+          "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 289,
           "budget_places": 80,
-          "source_url": "https://www.ucheba.ru/program/666886"
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 294,
           "budget_places": 80,
-          "source_url": "https://www.ucheba.ru/program/666886"
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "passing_score_budget": 310,
           "budget_places": 80,
-          "source_url": "https://www.ucheba.ru/program/666886"
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 700000
+      ]
     },
     {
-      "faculty": "Высшая школа бизнеса Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Бизнес-информатика",
-      "direction_code": "38.03.05",
+      "faculty": "",
+      "name": "Физика",
+      "direction_code": "03.03.02",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/666890",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
+        {
+          "subject": "physics",
+          "min_score": 70
+        },
         {
           "subject": "math",
           "min_score": 70
         },
         {
           "subject": "russian",
-          "min_score": 65
-        },
-        {
-          "subject": "informatics",
-          "min_score": 75
+          "min_score": 60
         }
       ],
       "stats": [
         {
+          "year": 2021,
+          "passing_score_budget": 271,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
           "year": 2022,
-          "passing_score_budget": 287,
-          "source_url": "https://www.ucheba.ru/program/666890"
+          "passing_score_budget": 235,
+          "source_url": "https://ba.hse.ru/result2022"
         },
         {
           "year": 2023,
-          "passing_score_budget": 287,
-          "budget_places": 130,
-          "source_url": "https://www.ucheba.ru/program/666890"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 300,
-          "budget_places": 130,
-          "source_url": "https://www.ucheba.ru/program/666890"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 288,
-          "budget_places": 130,
-          "source_url": "https://www.ucheba.ru/program/666890"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 296,
-          "budget_places": 100,
-          "source_url": "https://www.ucheba.ru/program/666890"
-        }
-      ],
-      "tuition_per_year": 1100000
-    },
-    {
-      "faculty": "Факультет мировой экономики и мировой политики Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Востоковедение",
-      "direction_code": "58.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/666891",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "history",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "geography",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 290,
-          "source_url": "https://www.ucheba.ru/program/666891"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 287,
-          "budget_places": 58,
-          "source_url": "https://www.ucheba.ru/program/666891"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 293,
-          "budget_places": 58,
-          "source_url": "https://www.ucheba.ru/program/666891"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 289,
-          "budget_places": 58,
-          "source_url": "https://www.ucheba.ru/program/666891"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 290,
+          "passing_score_budget": 255,
           "budget_places": 50,
-          "source_url": "https://www.ucheba.ru/program/666891"
-        }
-      ],
-      "tuition_per_year": 510000
-    },
-    {
-      "faculty": "Факультет гуманитарных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "История",
-      "direction_code": "46.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/666894",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "history",
-          "min_score": 65
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 60
-            },
-            {
-              "subject": "literature",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 279,
-          "source_url": "https://www.ucheba.ru/program/666894"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 266,
-          "budget_places": 70,
-          "source_url": "https://www.ucheba.ru/program/666894"
+          "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 269,
-          "budget_places": 70,
-          "source_url": "https://www.ucheba.ru/program/666894"
+          "budget_places": 50,
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
-          "passing_score_budget": 267,
-          "budget_places": 70,
-          "source_url": "https://www.ucheba.ru/program/666894"
+          "passing_score_budget": 243,
+          "budget_places": 50,
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "passing_score_budget": 274,
-          "budget_places": 50,
-          "source_url": "https://www.ucheba.ru/program/666894"
+          "budget_places": 40,
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 640000
+      ]
     },
     {
-      "faculty": "Факультет химии Национального исследовательского университета «Высшая школа экономики»",
+      "faculty": "",
       "name": "Химия",
       "direction_code": "04.03.01",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/719212",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
         {
           "subject": "chemistry",
           "min_score": 70
@@ -868,389 +460,97 @@
               "min_score": 70
             }
           ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
         }
       ],
       "stats": [
         {
+          "year": 2021,
+          "passing_score_budget": 273,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
           "year": 2022,
           "passing_score_budget": 274,
-          "source_url": "https://www.ucheba.ru/program/719212"
+          "source_url": "https://ba.hse.ru/result2022"
         },
         {
           "year": 2023,
           "passing_score_budget": 279,
           "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/719212"
+          "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 287,
           "budget_places": 35,
-          "source_url": "https://www.ucheba.ru/program/719212"
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 276,
           "budget_places": 35,
-          "source_url": "https://www.ucheba.ru/program/719212"
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "passing_score_budget": 285,
           "budget_places": 35,
-          "source_url": "https://www.ucheba.ru/program/719212"
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 660000
+      ]
     },
     {
-      "faculty": "Московский институт электроники и математики им. А.Н. Тихонова Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Информационная безопасность",
-      "direction_code": "10.03.01",
+      "faculty": "",
+      "name": "Химия новых материалов",
+      "direction_code": "04.03.02",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/719215",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
         {
-          "subject": "math",
-          "min_score": 65
-        },
-        {
-          "subject": "russian",
-          "min_score": 60
+          "subject": "chemistry",
+          "min_score": 70
         },
         {
           "one_of": [
+            {
+              "subject": "math",
+              "min_score": 70
+            },
             {
               "subject": "physics",
-              "min_score": 65
-            },
-            {
-              "subject": "informatics",
-              "min_score": 65
+              "min_score": 70
             }
           ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
         }
       ],
       "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 270,
-          "source_url": "https://www.ucheba.ru/program/719215"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 283,
-          "budget_places": 60,
-          "source_url": "https://www.ucheba.ru/program/719215"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 288,
-          "budget_places": 60,
-          "source_url": "https://www.ucheba.ru/program/719215"
-        },
         {
           "year": 2025,
-          "passing_score_budget": 276,
-          "budget_places": 80,
-          "source_url": "https://www.ucheba.ru/program/719215"
+          "passing_score_budget": 227,
+          "budget_places": 15,
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "passing_score_budget": 298,
-          "budget_places": 80,
-          "source_url": "https://www.ucheba.ru/program/719215"
+          "budget_places": 15,
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 800000
+      ]
     },
     {
-      "faculty": "Факультет гуманитарных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Классическая филология",
-      "direction_code": "45.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/719217",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "literature",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 291,
-          "source_url": "https://www.ucheba.ru/program/719217"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 293,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/719217"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 284,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/719217"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 262,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/719217"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 278,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/719217"
-        }
-      ],
-      "tuition_per_year": 640000
-    },
-    {
-      "faculty": "Факультет компьютерных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Компьютерные науки и анализ данных",
-      "direction_code": "01.03.02",
-      "study_form": "distance",
-      "source_url": "https://www.ucheba.ru/program/753896",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 70
-        },
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "physics",
-              "min_score": 65
-            },
-            {
-              "subject": "informatics",
-              "min_score": 65
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2026,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/753896"
-        }
-      ],
-      "tuition_per_year": 640000
-    },
-    {
-      "faculty": "Факультет экономических наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Экономика и анализ данных",
-      "direction_code": "38.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/770375",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 70
-        },
-        {
-          "subject": "russian",
-          "min_score": 65
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 65
-            },
-            {
-              "subject": "social",
-              "min_score": 65
-            },
-            {
-              "subject": "english",
-              "min_score": 65
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2023,
-          "budget_places": 73,
-          "source_url": "https://www.ucheba.ru/program/770375"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 308,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/770375"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 305,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/770375"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 302,
-          "budget_places": 60,
-          "source_url": "https://www.ucheba.ru/program/770375"
-        }
-      ],
-      "tuition_per_year": 1000000
-    },
-    {
-      "faculty": "Факультет мировой экономики и мировой политики Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Программа двух дипломов НИУ ВШЭ и Университета Кёнхи «Экономика и политика в Азии»/KHU-HSE Double Degree Program Economics and Politics in Asia (784659)",
-      "direction_code": "41.03.06",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/784659",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "social",
-          "min_score": 60
-        },
-        {
-          "subject": "english",
-          "min_score": 70
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 910000
-    },
-    {
-      "faculty": "Институт развития креативных индустрий  креативных индустрий Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Управление в креативных индустриях. Создание цифрового продукта и продакт-менеджмент",
-      "direction_code": "42.03.05",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/784661",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "literature",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 880000
-    },
-    {
-      "faculty": "Факультет экономических наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Совместная программа по экономике НИУ ВШЭ и РЭШ",
-      "direction_code": "38.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/458104",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 65
-        },
-        {
-          "subject": "russian",
-          "min_score": 65
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 65
-            },
-            {
-              "subject": "social",
-              "min_score": 65
-            },
-            {
-              "subject": "english",
-              "min_score": 65
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2023,
-          "budget_places": 71,
-          "source_url": "https://www.ucheba.ru/program/458104"
-        },
-        {
-          "year": 2024,
-          "budget_places": 55,
-          "source_url": "https://www.ucheba.ru/program/458104"
-        },
-        {
-          "year": 2025,
-          "budget_places": 60,
-          "source_url": "https://www.ucheba.ru/program/458104"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 310,
-          "budget_places": 60,
-          "source_url": "https://www.ucheba.ru/program/458104"
-        }
-      ],
-      "tuition_per_year": 1100000
-    },
-    {
-      "faculty": "Факультет географии и геоинформационных технологий Национального исследовательского университета «Высшая школа экономики»",
+      "faculty": "",
       "name": "География глобальных изменений и геоинформационные технологии",
       "direction_code": "05.03.02",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/730909",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
         {
           "subject": "geography",
           "min_score": 60
@@ -1262,971 +562,63 @@
               "min_score": 60
             },
             {
-              "subject": "physics",
+              "subject": "informatics",
               "min_score": 60
             },
             {
-              "subject": "informatics",
+              "subject": "physics",
               "min_score": 60
             }
           ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
         }
       ],
       "stats": [
         {
+          "year": 2021,
+          "passing_score_budget": 277,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
           "year": 2022,
           "passing_score_budget": 242,
-          "source_url": "https://www.ucheba.ru/program/730909"
+          "source_url": "https://ba.hse.ru/result2022"
         },
         {
           "year": 2023,
           "passing_score_budget": 251,
           "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/730909"
+          "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 252,
           "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/730909"
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
-          "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/730909"
-        },
-        {
-          "year": 2026,
-          "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/730909"
-        }
-      ],
-      "tuition_per_year": 580000
-    },
-    {
-      "faculty": "Школа коммуникаций  Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Глобальные цифровые коммуникации (817776)",
-      "direction_code": "42.03.01",
-      "study_form": "distance",
-      "source_url": "https://www.ucheba.ru/program/817776",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "social",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2026,
-          "passing_score_budget": 293,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/817776"
-        }
-      ],
-      "tuition_per_year": 580000
-    },
-    {
-      "faculty": "Школа инноватики и предпринимательства Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Управление технологическими инновациями",
-      "direction_code": "27.03.05",
-      "study_form": "distance",
-      "source_url": "https://www.ucheba.ru/program/846596",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "physics",
-              "min_score": 60
-            },
-            {
-              "subject": "chemistry",
-              "min_score": 60
-            },
-            {
-              "subject": "informatics",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2026,
-          "passing_score_budget": 299,
-          "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/846596"
-        }
-      ],
-      "tuition_per_year": 580000
-    },
-    {
-      "faculty": "Школа дизайна Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Современное искусство. Экранные искусства",
-      "direction_code": "50.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/826411",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "literature",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 750000
-    },
-    {
-      "faculty": "Школа дизайна Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Современное искусство. Саунд-арт и саунд-дизайн",
-      "direction_code": "50.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/826412",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "literature",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 750000
-    },
-    {
-      "faculty": "Школа дизайна Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Современное искусство. Дизайн и современное искусство",
-      "direction_code": "50.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/826414",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "literature",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 750000
-    },
-    {
-      "faculty": "Институт развития креативных индустрий  креативных индустрий Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Управление в креативных индустриях. Запуск и управление медиастартапом",
-      "direction_code": "42.03.05",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/826420",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "literature",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 880000
-    },
-    {
-      "faculty": "Институт развития креативных индустрий  креативных индустрий Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Управление в креативных индустриях. Ивент-дизайн и экономика впечатлений",
-      "direction_code": "42.03.05",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/826422",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "literature",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 880000
-    },
-    {
-      "faculty": "Институт развития креативных индустрий  креативных индустрий Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Управление в креативных индустриях.  Управление в аудиовизуальных индустриях",
-      "direction_code": "42.03.05",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/826423",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "literature",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 880000
-    },
-    {
-      "faculty": "Факультет компьютерных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Дизайн и разработка информационных продуктов",
-      "direction_code": "09.03.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/819351",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 70
-        },
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "informatics",
-          "min_score": 70
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 950000
-    },
-    {
-      "faculty": "Школа коммуникаций  Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Глобальные цифровые коммуникации (819451)",
-      "direction_code": "42.03.05",
-      "study_form": "distance",
-      "source_url": "https://www.ucheba.ru/program/819451",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "literature",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "geography",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2026,
-          "passing_score_budget": 290,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/819451"
-        }
-      ],
-      "tuition_per_year": 580000
-    },
-    {
-      "faculty": "Факультет химии Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Химия новых материалов",
-      "direction_code": "04.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/838809",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "chemistry",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 70
-            },
-            {
-              "subject": "physics",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2025,
-          "passing_score_budget": 227,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/838809"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 278,
-          "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/838809"
-        }
-      ],
-      "tuition_per_year": 610000
-    },
-    {
-      "faculty": "Международный институт экономики и финансов Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Международная программа по экономике и финансам",
-      "direction_code": "38.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/49596",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "english",
-          "min_score": 70
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 1170000
-    },
-    {
-      "faculty": "Факультет гуманитарных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Современная филология",
-      "direction_code": "45.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/458095",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "literature",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 295,
-          "source_url": "https://www.ucheba.ru/program/458095"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 299,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/458095"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 303,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/458095"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 296,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/458095"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 300,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/458095"
-        }
-      ],
-      "tuition_per_year": 640000
-    },
-    {
-      "faculty": "Факультет гуманитарных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Фундаментальная и компьютерная лингвистика",
-      "direction_code": "45.03.03",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/458097",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 65
-        },
-        {
-          "subject": "english",
-          "min_score": 65
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 70
-            },
-            {
-              "subject": "informatics",
-              "min_score": 70
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 304,
-          "source_url": "https://www.ucheba.ru/program/458097"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 293,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/458097"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 296,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/458097"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 291,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/458097"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 286,
-          "budget_places": 50,
-          "source_url": "https://www.ucheba.ru/program/458097"
-        }
-      ],
-      "tuition_per_year": 640000
-    },
-    {
-      "faculty": "Московский институт электроники и математики им. А.Н. Тихонова Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Цифровые технологии и телекоммуникации",
-      "direction_code": "11.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/502954",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 65
-        },
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "physics",
-              "min_score": 60
-            },
-            {
-              "subject": "informatics",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 218,
-          "source_url": "https://www.ucheba.ru/program/502954"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 268,
-          "budget_places": 65,
-          "source_url": "https://www.ucheba.ru/program/502954"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 272,
-          "budget_places": 70,
-          "source_url": "https://www.ucheba.ru/program/502954"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 238,
-          "budget_places": 79,
-          "source_url": "https://www.ucheba.ru/program/502954"
-        },
-        {
-          "year": 2026,
           "passing_score_budget": 273,
-          "budget_places": 80,
-          "source_url": "https://www.ucheba.ru/program/502954"
-        }
-      ],
-      "tuition_per_year": 700000
-    },
-    {
-      "faculty": "Факультет социальных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Политология",
-      "direction_code": "41.03.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/612402",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "history",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
-            {
-              "subject": "geography",
-              "min_score": 60
-            },
-            {
-              "subject": "informatics",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2023,
           "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/612402"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 303,
-          "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/612402"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 297,
-          "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/612402"
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "passing_score_budget": 300,
           "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/612402"
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 640000
+      ]
     },
     {
-      "faculty": "Факультет социальных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Государственное и муниципальное управление",
-      "direction_code": "38.03.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/612407",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "social",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "math",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2023,
-          "budget_places": 75,
-          "source_url": "https://www.ucheba.ru/program/612407"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 281,
-          "budget_places": 75,
-          "source_url": "https://www.ucheba.ru/program/612407"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 269,
-          "budget_places": 75,
-          "source_url": "https://www.ucheba.ru/program/612407"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 274,
-          "budget_places": 75,
-          "source_url": "https://www.ucheba.ru/program/612407"
-        }
-      ],
-      "tuition_per_year": 720000
-    },
-    {
-      "faculty": "Институт медиа  Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Медиакоммуникации",
-      "direction_code": "42.03.05",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/613148",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "literature",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2023,
-          "passing_score_budget": 301,
-          "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/613148"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 308,
-          "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/613148"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 296,
-          "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/613148"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 296,
-          "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/613148"
-        }
-      ],
-      "tuition_per_year": 990000
-    },
-    {
-      "faculty": "Факультет физики Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Физика",
-      "direction_code": "03.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/694048",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 70
-        },
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "physics",
-          "min_score": 70
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 235,
-          "source_url": "https://www.ucheba.ru/program/694048"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 255,
-          "budget_places": 50,
-          "source_url": "https://www.ucheba.ru/program/694048"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 269,
-          "budget_places": 50,
-          "source_url": "https://www.ucheba.ru/program/694048"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 243,
-          "budget_places": 50,
-          "source_url": "https://www.ucheba.ru/program/694048"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 274,
-          "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/694048"
-        }
-      ],
-      "tuition_per_year": 610000
-    },
-    {
-      "faculty": "Факультет математики Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Совместный бакалавриат ВШЭ и Центра педагогического мастерства",
-      "direction_code": "01.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/694050",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 75
-        },
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "physics",
-              "min_score": 65
-            },
-            {
-              "subject": "informatics",
-              "min_score": 65
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 272,
-          "source_url": "https://www.ucheba.ru/program/694050"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 277,
-          "budget_places": 25,
-          "source_url": "https://www.ucheba.ru/program/694050"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 283,
-          "budget_places": 25,
-          "source_url": "https://www.ucheba.ru/program/694050"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 277,
-          "budget_places": 25,
-          "source_url": "https://www.ucheba.ru/program/694050"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 291,
-          "budget_places": 25,
-          "source_url": "https://www.ucheba.ru/program/694050"
-        }
-      ],
-      "tuition_per_year": 560000
-    },
-    {
-      "faculty": "Факультет биологии и биотехнологии Национального исследовательского университета «Высшая школа экономики»",
+      "faculty": "",
       "name": "Клеточная и молекулярная биотехнология",
       "direction_code": "06.03.01",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/719213",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
         {
           "subject": "biology",
           "min_score": 70
@@ -2242,121 +634,55 @@
               "min_score": 70
             }
           ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
         }
       ],
       "stats": [
         {
+          "year": 2021,
+          "passing_score_budget": 294,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
           "year": 2022,
           "passing_score_budget": 287,
-          "source_url": "https://www.ucheba.ru/program/719213"
+          "source_url": "https://ba.hse.ru/result2022"
         },
         {
           "year": 2023,
           "passing_score_budget": 295,
           "budget_places": 25,
-          "source_url": "https://www.ucheba.ru/program/719213"
+          "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 290,
           "budget_places": 25,
-          "source_url": "https://www.ucheba.ru/program/719213"
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 269,
           "budget_places": 25,
-          "source_url": "https://www.ucheba.ru/program/719213"
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "passing_score_budget": 288,
           "budget_places": 25,
-          "source_url": "https://www.ucheba.ru/program/719213"
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 700000
+      ]
     },
     {
-      "faculty": "Факультет городского и регионального развития Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Девелопмент и городское планирование",
-      "direction_code": "07.03.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/719214",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 65
-        },
-        {
-          "one_of": [
-            {
-              "subject": "physics",
-              "min_score": 65
-            },
-            {
-              "subject": "geography",
-              "min_score": 65
-            },
-            {
-              "subject": "informatics",
-              "min_score": 65
-            },
-            {
-              "subject": "history",
-              "min_score": 65
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 287,
-          "source_url": "https://www.ucheba.ru/program/719214"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 269,
-          "budget_places": 55,
-          "source_url": "https://www.ucheba.ru/program/719214"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 281,
-          "budget_places": 55,
-          "source_url": "https://www.ucheba.ru/program/719214"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 279,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/719214"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 284,
-          "budget_places": 50,
-          "source_url": "https://www.ucheba.ru/program/719214"
-        }
-      ],
-      "tuition_per_year": 750000
-    },
-    {
-      "faculty": "Факультет биологии и биотехнологии Национального исследовательского университета «Высшая школа экономики»",
+      "faculty": "",
       "name": "Когнитивная нейробиология",
       "direction_code": "06.03.01",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/770374",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
         {
           "subject": "biology",
           "min_score": 70
@@ -2372,47 +698,49 @@
               "min_score": 70
             }
           ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
         }
       ],
       "stats": [
         {
           "year": 2022,
           "passing_score_budget": 290,
-          "source_url": "https://www.ucheba.ru/program/770374"
+          "source_url": "https://ba.hse.ru/result2022"
         },
         {
           "year": 2023,
           "passing_score_budget": 287,
           "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/770374"
+          "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 289,
           "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/770374"
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 287,
           "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/770374"
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "passing_score_budget": 285,
           "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/770374"
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 700000
+      ]
     },
     {
-      "faculty": "Высшая школа бизнеса Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Международный бизнес",
-      "direction_code": "38.03.02",
+      "faculty": "",
+      "name": "Девелопмент и городское планирование",
+      "direction_code": "07.03.04",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/784656",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
         {
           "subject": "math",
@@ -2423,194 +751,66 @@
           "min_score": 65
         },
         {
-          "subject": "english",
-          "min_score": 75
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 1300000
-    },
-    {
-      "faculty": "Факультет мировой экономики и мировой политики Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Международная программа «Международные отношения и глобальные исследования»/ International Program «International Relations and Global Studies» (784657)",
-      "direction_code": "41.03.05",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/784657",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "history",
-          "min_score": 60
-        },
-        {
-          "subject": "english",
-          "min_score": 75
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 870000
-    },
-    {
-      "faculty": "Факультет мировой экономики и мировой политики Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Международная программа «Международные отношения и глобальные исследования»/ International Program «International Relations and Global Studies» (784658)",
-      "direction_code": "41.03.06",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/784658",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "social",
-          "min_score": 60
-        },
-        {
-          "subject": "english",
-          "min_score": 75
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 870000
-    },
-    {
-      "faculty": "Факультет мировой экономики и мировой политики Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Международные отношения",
-      "direction_code": "41.03.05",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/192839",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "history",
-          "min_score": 65
-        },
-        {
-          "subject": "english",
-          "min_score": 65
-        },
-        {
           "one_of": [
             {
-              "subject": "geography",
+              "subject": "physics",
               "min_score": 65
-            },
-            {
-              "subject": "social",
-              "min_score": 65
-            }
-          ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 389,
-          "source_url": "https://www.ucheba.ru/program/192839"
-        },
-        {
-          "year": 2023,
-          "passing_score_budget": 377,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/192839"
-        },
-        {
-          "year": 2024,
-          "passing_score_budget": 395,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/192839"
-        },
-        {
-          "year": 2025,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/192839"
-        },
-        {
-          "year": 2026,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/192839"
-        }
-      ],
-      "tuition_per_year": 740000
-    },
-    {
-      "faculty": "Школа иностранных языков Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Иностранные языки и межкультурная коммуникация",
-      "direction_code": "45.03.02",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/613597",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "english",
-          "min_score": 70
-        },
-        {
-          "one_of": [
-            {
-              "subject": "social",
-              "min_score": 60
-            },
-            {
-              "subject": "literature",
-              "min_score": 60
             },
             {
               "subject": "history",
-              "min_score": 60
+              "min_score": 65
+            },
+            {
+              "subject": "informatics",
+              "min_score": 65
+            },
+            {
+              "subject": "geography",
+              "min_score": 65
             }
           ]
         }
       ],
       "stats": [
         {
+          "year": 2021,
+          "passing_score_budget": 271,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
+          "year": 2022,
+          "passing_score_budget": 287,
+          "source_url": "https://ba.hse.ru/result2022"
+        },
+        {
           "year": 2023,
-          "passing_score_budget": 298,
-          "budget_places": 35,
-          "source_url": "https://www.ucheba.ru/program/613597"
+          "passing_score_budget": 269,
+          "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
-          "budget_places": 35,
-          "source_url": "https://www.ucheba.ru/program/613597"
+          "passing_score_budget": 281,
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
-          "budget_places": 35,
-          "source_url": "https://www.ucheba.ru/program/613597"
+          "passing_score_budget": 279,
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "budget_places": 35,
-          "source_url": "https://www.ucheba.ru/program/613597"
+          "budget_places": 50,
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 790000
+      ]
     },
     {
-      "faculty": "Московский институт электроники и математики им. А.Н. Тихонова Национального исследовательского университета «Высшая школа экономики»",
+      "faculty": "",
       "name": "Информатика и вычислительная техника",
       "direction_code": "09.03.01",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/666887",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
-        {
-          "subject": "math",
-          "min_score": 65
-        },
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
         {
           "one_of": [
             {
@@ -2622,56 +822,203 @@
               "min_score": 60
             }
           ]
+        },
+        {
+          "subject": "math",
+          "min_score": 65
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
         }
       ],
       "stats": [
         {
+          "year": 2021,
+          "passing_score_budget": 278,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
           "year": 2022,
           "passing_score_budget": 257,
-          "source_url": "https://www.ucheba.ru/program/666887"
+          "source_url": "https://ba.hse.ru/result2022"
         },
         {
           "year": 2023,
           "passing_score_budget": 280,
           "budget_places": 125,
-          "source_url": "https://www.ucheba.ru/program/666887"
+          "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 286,
           "budget_places": 125,
-          "source_url": "https://www.ucheba.ru/program/666887"
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
-          "passing_score_budget": 281,
+          "passing_score_budget": 278,
           "budget_places": 125,
-          "source_url": "https://www.ucheba.ru/program/666887"
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "passing_score_budget": 292,
           "budget_places": 125,
-          "source_url": "https://www.ucheba.ru/program/666887"
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 750000
+      ]
     },
     {
-      "faculty": "Московский институт электроники и математики им. А.Н. Тихонова Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Компьютерная безопасность",
-      "direction_code": "10.05.01",
+      "faculty": "",
+      "name": "Программная инженерия",
+      "direction_code": "09.03.04",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/666888",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 70
+        },
+        {
+          "subject": "informatics",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": [
+        {
+          "year": 2021,
+          "passing_score_budget": 301,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
+          "year": 2022,
+          "passing_score_budget": 295,
+          "source_url": "https://ba.hse.ru/result2022"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 305,
+          "budget_places": 135,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 296,
+          "budget_places": 150,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 299,
+          "budget_places": 160,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 160,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Дизайн и разработка информационных продуктов",
+      "direction_code": "09.03.04",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 70
+        },
+        {
+          "subject": "informatics",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": []
+    },
+    {
+      "faculty": "",
+      "name": "Разработка игр и цифровых продуктов",
+      "direction_code": "09.03.04",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
         {
           "subject": "math",
           "min_score": 65
         },
         {
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "physics",
+              "min_score": 60
+            }
+          ]
+        },
+        {
           "subject": "russian",
           "min_score": 60
+        }
+      ],
+      "stats": []
+    },
+    {
+      "faculty": "",
+      "name": "Проектирование интеллектуальных робототехнических систем",
+      "direction_code": "09.03.04",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 70
         },
+        {
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 70
+            },
+            {
+              "subject": "physics",
+              "min_score": 70
+            }
+          ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 25,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Информационная безопасность",
+      "direction_code": "10.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
         {
           "one_of": [
             {
@@ -2683,257 +1030,122 @@
               "min_score": 65
             }
           ]
-        }
-      ],
-      "stats": [
-        {
-          "year": 2022,
-          "passing_score_budget": 272,
-          "source_url": "https://www.ucheba.ru/program/666888"
         },
         {
-          "year": 2023,
-          "passing_score_budget": 273,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/666888"
+          "subject": "math",
+          "min_score": 65
         },
-        {
-          "year": 2024,
-          "passing_score_budget": 282,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/666888"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 276,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/666888"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 287,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/666888"
-        }
-      ],
-      "tuition_per_year": 700000
-    },
-    {
-      "faculty": "Факультет гуманитарных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Практическая философия",
-      "direction_code": "47.03.01",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/666895",
-      "exams": [
         {
           "subject": "russian",
           "min_score": 60
-        },
-        {
-          "subject": "social",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "literature",
-              "min_score": 60
-            },
-            {
-              "subject": "history",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
         }
       ],
       "stats": [
         {
-          "year": 2023,
+          "year": 2021,
           "passing_score_budget": 290,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/666895"
+          "source_url": "https://ba.hse.ru/result2021"
         },
-        {
-          "year": 2024,
-          "passing_score_budget": 269,
-          "budget_places": 45,
-          "source_url": "https://www.ucheba.ru/program/666895"
-        },
-        {
-          "year": 2025,
-          "passing_score_budget": 251,
-          "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/666895"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 268,
-          "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/666895"
-        }
-      ],
-      "tuition_per_year": 640000
-    },
-    {
-      "faculty": "Факультет гуманитарных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "История искусств",
-      "direction_code": "50.03.03",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/666896",
-      "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "history",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "literature",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [
         {
           "year": 2022,
-          "passing_score_budget": 285,
-          "source_url": "https://www.ucheba.ru/program/666896"
+          "passing_score_budget": 270,
+          "source_url": "https://ba.hse.ru/result2022"
         },
         {
           "year": 2023,
-          "passing_score_budget": 276,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/666896"
+          "passing_score_budget": 283,
+          "budget_places": 65,
+          "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
-          "passing_score_budget": 285,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/666896"
+          "passing_score_budget": 288,
+          "budget_places": 60,
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
-          "passing_score_budget": 264,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/666896"
+          "passing_score_budget": 276,
+          "budget_places": 80,
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "passing_score_budget": 273,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/666896"
+          "budget_places": 80,
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 640000
+      ]
     },
     {
-      "faculty": "Факультет гуманитарных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Культурология",
-      "direction_code": "51.03.01",
+      "faculty": "",
+      "name": "Цифровые технологии и телекоммуникации",
+      "direction_code": "11.03.02",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/666897",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "subject": "social",
-          "min_score": 60
-        },
         {
           "one_of": [
             {
-              "subject": "literature",
+              "subject": "physics",
               "min_score": 60
             },
             {
-              "subject": "history",
-              "min_score": 60
-            },
-            {
-              "subject": "english",
+              "subject": "informatics",
               "min_score": 60
             }
           ]
+        },
+        {
+          "subject": "math",
+          "min_score": 65
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
         }
       ],
       "stats": [
         {
+          "year": 2021,
+          "passing_score_budget": 267,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
+          "year": 2022,
+          "passing_score_budget": 218,
+          "source_url": "https://ba.hse.ru/result2022"
+        },
+        {
           "year": 2023,
-          "budget_places": 35,
-          "source_url": "https://www.ucheba.ru/program/666897"
+          "passing_score_budget": 268,
+          "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
-          "passing_score_budget": 283,
-          "budget_places": 35,
-          "source_url": "https://www.ucheba.ru/program/666897"
+          "passing_score_budget": 272,
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
-          "passing_score_budget": 256,
-          "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/666897"
+          "passing_score_budget": 236,
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "passing_score_budget": 284,
-          "budget_places": 40,
-          "source_url": "https://www.ucheba.ru/program/666897"
+          "budget_places": 80,
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 640000
+      ]
     },
     {
-      "faculty": "Высшая школа бизнеса Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Управление цифровым продуктом",
-      "direction_code": "38.03.05",
+      "faculty": "",
+      "name": "Управление технологическими инновациями (онлайн)",
+      "direction_code": "27.03.05",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/707386",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
         {
           "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
-          "min_score": 65
-        },
-        {
-          "subject": "informatics",
-          "min_score": 65
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 1100000
-    },
-    {
-      "faculty": "Факультет экономических наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Экономический анализ",
-      "direction_code": "38.03.01",
-      "study_form": "distance",
-      "source_url": "https://www.ucheba.ru/program/778624",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 60
-        },
-        {
-          "subject": "russian",
           "min_score": 60
         },
         {
@@ -2943,33 +1155,39 @@
               "min_score": 60
             },
             {
-              "subject": "social",
+              "subject": "physics",
               "min_score": 60
             },
             {
-              "subject": "english",
+              "subject": "chemistry",
               "min_score": 60
             }
           ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
         }
       ],
       "stats": [
         {
           "year": 2026,
-          "passing_score_budget": 291,
-          "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/778624"
+          "budget_places": 5,
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 590000
+      ]
     },
     {
-      "faculty": "Факультет мировой экономики и мировой политики Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Мировая экономика",
-      "direction_code": "",
+      "faculty": "",
+      "name": "Психология",
+      "direction_code": "37.03.01",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/192840",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
+        {
+          "subject": "biology",
+          "min_score": 60
+        },
         {
           "subject": "math",
           "min_score": 60
@@ -2977,13 +1195,272 @@
         {
           "subject": "russian",
           "min_score": 60
+        }
+      ],
+      "stats": [
+        {
+          "year": 2021,
+          "passing_score_budget": 267,
+          "source_url": "https://ba.hse.ru/result2021"
         },
         {
-          "subject": "english",
+          "year": 2022,
+          "passing_score_budget": 256,
+          "source_url": "https://ba.hse.ru/result2022"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 265,
+          "budget_places": 80,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 275,
+          "budget_places": 80,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 249,
+          "budget_places": 80,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 80,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Экономика",
+      "direction_code": "38.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 65
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 65
+            },
+            {
+              "subject": "informatics",
+              "min_score": 65
+            },
+            {
+              "subject": "english",
+              "min_score": 65
+            }
+          ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 65
+        }
+      ],
+      "stats": [
+        {
+          "year": 2024,
+          "passing_score_budget": 294,
+          "budget_places": 110,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 291,
+          "budget_places": 100,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 100,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Совместная программа по экономике НИУ ВШЭ и РЭШ",
+      "direction_code": "38.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 65
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 65
+            },
+            {
+              "subject": "informatics",
+              "min_score": 65
+            },
+            {
+              "subject": "english",
+              "min_score": 65
+            }
+          ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 65
+        }
+      ],
+      "stats": [
+        {
+          "year": 2024,
+          "passing_score_budget": 302,
+          "budget_places": 55,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "budget_places": 60,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 60,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Экономика и анализ данных",
+      "direction_code": "38.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "math",
           "min_score": 70
         },
         {
           "one_of": [
+            {
+              "subject": "social",
+              "min_score": 65
+            },
+            {
+              "subject": "informatics",
+              "min_score": 65
+            },
+            {
+              "subject": "english",
+              "min_score": 65
+            }
+          ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 65
+        }
+      ],
+      "stats": [
+        {
+          "year": 2024,
+          "passing_score_budget": 308,
+          "budget_places": 30,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 305,
+          "budget_places": 45,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 60,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Экономика и статистика",
+      "direction_code": "38.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 60
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "english",
+              "min_score": 60
+            }
+          ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "budget_places": 40,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 293,
+          "budget_places": 35,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "budget_places": 35,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 35,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Мировая экономика",
+      "direction_code": "38.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 65
+            },
             {
               "subject": "geography",
               "min_score": 65
@@ -2991,117 +1468,513 @@
             {
               "subject": "informatics",
               "min_score": 65
-            },
-            {
-              "subject": "social",
-              "min_score": 65
             }
           ]
+        },
+        {
+          "subject": "english",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
         }
       ],
       "stats": [
         {
+          "year": 2021,
+          "passing_score_budget": 380,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
           "year": 2022,
           "passing_score_budget": 377,
-          "source_url": "https://www.ucheba.ru/program/192840"
+          "source_url": "https://ba.hse.ru/result2022"
         },
         {
           "year": 2023,
           "passing_score_budget": 366,
           "budget_places": 60,
-          "source_url": "https://www.ucheba.ru/program/192840"
+          "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 377,
           "budget_places": 60,
-          "source_url": "https://www.ucheba.ru/program/192840"
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
+          "passing_score_budget": 372,
           "budget_places": 60,
-          "source_url": "https://www.ucheba.ru/program/192840"
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 60,
-          "source_url": "https://www.ucheba.ru/program/192840"
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 1020000
+      ]
     },
     {
-      "faculty": "Факультет математики Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Математика",
-      "direction_code": "01.03.01",
+      "faculty": "",
+      "name": "Международная программа по экономике и финансам (реализуется на английском языке)",
+      "direction_code": "38.03.01",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/192860",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
         {
           "subject": "math",
-          "min_score": 75
+          "min_score": 60
+        },
+        {
+          "subject": "english",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": []
+    },
+    {
+      "faculty": "",
+      "name": "Экономический анализ (онлайн)",
+      "direction_code": "38.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 60
+            },
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "english",
+              "min_score": 60
+            }
+          ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Маркетинг и рыночная аналитика",
+      "direction_code": "38.03.02",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
         },
         {
           "subject": "russian",
           "min_score": 65
         },
         {
-          "one_of": [
-            {
-              "subject": "physics",
-              "min_score": 70
-            },
-            {
-              "subject": "informatics",
-              "min_score": 70
-            }
-          ]
+          "subject": "english",
+          "min_score": 70
         }
       ],
       "stats": [
         {
+          "year": 2021,
+          "passing_score_budget": 289,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
           "year": 2022,
-          "passing_score_budget": 286,
-          "source_url": "https://www.ucheba.ru/program/192860"
+          "passing_score_budget": 291,
+          "source_url": "https://ba.hse.ru/result2022"
         },
         {
           "year": 2023,
-          "passing_score_budget": 285,
-          "budget_places": 60,
-          "source_url": "https://www.ucheba.ru/program/192860"
+          "passing_score_budget": 283,
+          "budget_places": 20,
+          "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
-          "passing_score_budget": 291,
-          "budget_places": 60,
-          "source_url": "https://www.ucheba.ru/program/192860"
+          "passing_score_budget": 292,
+          "budget_places": 20,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 289,
+          "budget_places": 20,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 30,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Управление бизнесом",
+      "direction_code": "38.03.02",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 65
+        },
+        {
+          "subject": "english",
+          "min_score": 70
+        }
+      ],
+      "stats": [
+        {
+          "year": 2021,
+          "passing_score_budget": 279,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
+          "year": 2022,
+          "passing_score_budget": 288,
+          "source_url": "https://ba.hse.ru/result2022"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 300,
+          "budget_places": 30,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "budget_places": 30,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "budget_places": 30,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 50,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Международный бизнес (реализуется на английском языке)",
+      "direction_code": "38.03.02",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 65
+        },
+        {
+          "subject": "english",
+          "min_score": 75
+        }
+      ],
+      "stats": []
+    },
+    {
+      "faculty": "",
+      "name": "Государственное и муниципальное управление",
+      "direction_code": "38.03.04",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
+              "subject": "history",
+              "min_score": 60
+            },
+            {
+              "subject": "math",
+              "min_score": 60
+            }
+          ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "budget_places": 75,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 281,
+          "budget_places": 75,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 269,
+          "budget_places": 75,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 75,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Бизнес-информатика",
+      "direction_code": "38.03.05",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 70
+        },
+        {
+          "subject": "informatics",
+          "min_score": 75
+        },
+        {
+          "subject": "russian",
+          "min_score": 65
+        }
+      ],
+      "stats": [
+        {
+          "year": 2021,
+          "passing_score_budget": 297,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
+          "year": 2022,
+          "passing_score_budget": 287,
+          "source_url": "https://ba.hse.ru/result2022"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 287,
+          "budget_places": 130,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 300,
+          "budget_places": 130,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 288,
+          "budget_places": 130,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 100,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Технологии анализа данных в бизнесе",
+      "direction_code": "38.03.05",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 70
+        },
+        {
+          "subject": "informatics",
+          "min_score": 75
+        },
+        {
+          "subject": "russian",
+          "min_score": 65
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 286,
+          "budget_places": 30,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 30,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Управление цифровым продуктом",
+      "direction_code": "38.03.05",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "informatics",
+          "min_score": 65
+        },
+        {
+          "subject": "russian",
+          "min_score": 65
+        }
+      ],
+      "stats": []
+    },
+    {
+      "faculty": "",
+      "name": "Социология",
+      "direction_code": "39.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 60
+        },
+        {
+          "subject": "math",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "budget_places": 115,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 276,
+          "budget_places": 115,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 288,
+          "budget_places": 115,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 115,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Юриспруденция",
+      "direction_code": "40.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
+              "subject": "history",
+              "min_score": 60
+            },
+            {
+              "subject": "english",
+              "min_score": 60
+            }
+          ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": [
+        {
+          "year": 2024,
+          "passing_score_budget": 287,
+          "budget_places": 150,
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 282,
-          "budget_places": 60,
-          "source_url": "https://www.ucheba.ru/program/192860"
+          "budget_places": 150,
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "passing_score_budget": 297,
-          "budget_places": 60,
-          "source_url": "https://www.ucheba.ru/program/192860"
+          "budget_places": 150,
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 560000
+      ]
     },
     {
-      "faculty": "Школа коммуникаций  Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Реклама и связи с общественностью (610588)",
-      "direction_code": "42.03.01",
+      "faculty": "",
+      "name": "Юриспруденция: цифровой юрист",
+      "direction_code": "40.03.01",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/610588",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
         {
           "subject": "social",
           "min_score": 60
@@ -3109,11 +1982,11 @@
         {
           "one_of": [
             {
-              "subject": "informatics",
+              "subject": "history",
               "min_score": 60
             },
             {
-              "subject": "history",
+              "subject": "informatics",
               "min_score": 60
             },
             {
@@ -3121,57 +1994,272 @@
               "min_score": 60
             }
           ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
         }
       ],
       "stats": [
         {
-          "year": 2022,
-          "passing_score_budget": 307,
-          "source_url": "https://www.ucheba.ru/program/610588"
-        },
-        {
-          "year": 2023,
-          "budget_places": 25,
-          "source_url": "https://www.ucheba.ru/program/610588"
-        },
-        {
           "year": 2024,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/610588"
+          "passing_score_budget": 275,
+          "budget_places": 30,
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/610588"
+          "passing_score_budget": 277,
+          "budget_places": 30,
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "passing_score_budget": 293,
-          "budget_places": 20,
-          "source_url": "https://www.ucheba.ru/program/610588"
+          "budget_places": 30,
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 1030000
+      ]
     },
     {
-      "faculty": "Школа коммуникаций  Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Стратегия и продюсирование в коммуникациях",
-      "direction_code": "42.03.01",
+      "faculty": "",
+      "name": "Программа двух дипломов НИУ ВШЭ и Университета Кёнхи «Экономика и политика в Азии» (реализуется на английском языке) (41.03.01)",
+      "direction_code": "41.03.01",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/770841",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
         {
-          "subject": "russian",
+          "subject": "history",
           "min_score": 60
         },
         {
-          "subject": "social",
+          "subject": "english",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": []
+    },
+    {
+      "faculty": "",
+      "name": "Политология",
+      "direction_code": "41.03.04",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "history",
           "min_score": 60
         },
         {
           "one_of": [
             {
+              "subject": "social",
+              "min_score": 60
+            },
+            {
+              "subject": "geography",
+              "min_score": 60
+            },
+            {
+              "subject": "english",
+              "min_score": 60
+            },
+            {
+              "subject": "math",
+              "min_score": 60
+            },
+            {
               "subject": "informatics",
+              "min_score": 60
+            }
+          ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "budget_places": 40,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 303,
+          "budget_places": 40,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 297,
+          "budget_places": 40,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 40,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Международные отношения",
+      "direction_code": "41.03.05",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "history",
+          "min_score": 65
+        },
+        {
+          "subject": "english",
+          "min_score": 65
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 65
+            },
+            {
+              "subject": "geography",
+              "min_score": 65
+            }
+          ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": [
+        {
+          "year": 2021,
+          "passing_score_budget": 380,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
+          "year": 2022,
+          "passing_score_budget": 389,
+          "source_url": "https://ba.hse.ru/result2022"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 377,
+          "budget_places": 45,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 395,
+          "budget_places": 45,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 353,
+          "budget_places": 45,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 45,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Международная программа «Международные отношения и глобальные исследования» (реализуется на английском языке) (41.03.05)",
+      "direction_code": "41.03.05",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "history",
+          "min_score": 60
+        },
+        {
+          "subject": "english",
+          "min_score": 75
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": []
+    },
+    {
+      "faculty": "",
+      "name": "Международная программа «Международные отношения и глобальные исследования» (реализуется на английском языке) (41.03.06)",
+      "direction_code": "41.03.06",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 60
+        },
+        {
+          "subject": "english",
+          "min_score": 75
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": []
+    },
+    {
+      "faculty": "",
+      "name": "Программа двух дипломов НИУ ВШЭ и Университета Кёнхи «Экономика и политика в Азии» (реализуется на английском языке) (41.03.06)",
+      "direction_code": "41.03.06",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 60
+        },
+        {
+          "subject": "english",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": []
+    },
+    {
+      "faculty": "",
+      "name": "Реклама и связи с общественностью (42.03.01)",
+      "direction_code": "42.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
               "min_score": 60
             },
             {
@@ -3179,7 +2267,73 @@
               "min_score": 60
             },
             {
+              "subject": "informatics",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2021,
+          "passing_score_budget": 298,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
+          "year": 2022,
+          "passing_score_budget": 307,
+          "source_url": "https://ba.hse.ru/result2022"
+        },
+        {
+          "year": 2023,
+          "budget_places": 25,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 300,
+          "budget_places": 20,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "budget_places": 20,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 20,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Стратегия и продюсирование в коммуникациях",
+      "direction_code": "42.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
               "subject": "english",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 60
+            },
+            {
+              "subject": "informatics",
               "min_score": 60
             }
           ]
@@ -3189,41 +2343,79 @@
         {
           "year": 2022,
           "passing_score_budget": 301,
-          "source_url": "https://www.ucheba.ru/program/770841"
+          "source_url": "https://ba.hse.ru/result2022"
         },
         {
           "year": 2023,
           "passing_score_budget": 295,
           "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/770841"
+          "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 300,
           "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/770841"
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 295,
           "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/770841"
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "passing_score_budget": 301,
           "budget_places": 10,
-          "source_url": "https://www.ucheba.ru/program/770841"
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 1030000
+      ]
     },
     {
-      "faculty": "Школа коммуникаций  Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Реклама и связи с общественностью (819453)",
+      "faculty": "",
+      "name": "Глобальные цифровые коммуникации (онлайн) (42.03.01)",
+      "direction_code": "42.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 60
+            },
+            {
+              "subject": "english",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Медиакоммуникации",
       "direction_code": "42.03.05",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/819453",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
         {
           "subject": "russian",
@@ -3236,11 +2428,7 @@
         {
           "one_of": [
             {
-              "subject": "geography",
-              "min_score": 60
-            },
-            {
-              "subject": "social",
+              "subject": "english",
               "min_score": 60
             },
             {
@@ -3248,7 +2436,69 @@
               "min_score": 60
             },
             {
+              "subject": "social",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 301,
+          "budget_places": 40,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 308,
+          "budget_places": 40,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 296,
+          "budget_places": 40,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 40,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Реклама и связи с общественностью (42.03.05)",
+      "direction_code": "42.03.05",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "literature",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
               "subject": "english",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 60
+            },
+            {
+              "subject": "social",
+              "min_score": 60
+            },
+            {
+              "subject": "geography",
               "min_score": 60
             }
           ]
@@ -3259,29 +2509,71 @@
           "year": 2024,
           "passing_score_budget": 306,
           "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/819453"
+          "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 296,
           "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/819453"
+          "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
-          "passing_score_budget": 289,
           "budget_places": 5,
-          "source_url": "https://www.ucheba.ru/program/819453"
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 1030000
+      ]
     },
     {
-      "faculty": "Институт развития креативных индустрий  креативных индустрий Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Управление в креативных индустриях.  Кураторство и арт-менеджмент",
+      "faculty": "",
+      "name": "Глобальные цифровые коммуникации (онлайн) (42.03.05)",
       "direction_code": "42.03.05",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/826419",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "literature",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 60
+            },
+            {
+              "subject": "social",
+              "min_score": 60
+            },
+            {
+              "subject": "geography",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 10,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Управление в креативных индустриях",
+      "direction_code": "42.03.05",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
         {
           "subject": "russian",
@@ -3289,6 +2581,120 @@
         },
         {
           "subject": "literature",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 60
+            },
+            {
+              "subject": "social",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": []
+    },
+    {
+      "faculty": "",
+      "name": "Современная филология",
+      "direction_code": "45.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "literature",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 60
+            },
+            {
+              "subject": "social",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 45,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Классическая филология",
+      "direction_code": "45.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "literature",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 60
+            },
+            {
+              "subject": "social",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 20,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Иностранные языки и межкультурная коммуникация",
+      "direction_code": "45.03.02",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "english",
+          "min_score": 70
+        },
+        {
+          "subject": "russian",
           "min_score": 60
         },
         {
@@ -3302,92 +2708,461 @@
               "min_score": 60
             },
             {
-              "subject": "english",
+              "subject": "literature",
               "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 880000
-    },
-    {
-      "faculty": "Факультет компьютерных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Разработка игр и цифровых продуктов",
-      "direction_code": "09.03.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/846547",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 65
-        },
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "physics",
-              "min_score": 60
-            },
-            {
-              "subject": "informatics",
-              "min_score": 60
-            }
-          ]
-        }
-      ],
-      "stats": [],
-      "tuition_per_year": 900000
-    },
-    {
-      "faculty": "Факультет компьютерных наук Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Проектирование интеллектуальных робототехнических систем",
-      "direction_code": "09.03.04",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/846548",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 70
-        },
-        {
-          "subject": "russian",
-          "min_score": 60
-        },
-        {
-          "one_of": [
-            {
-              "subject": "physics",
-              "min_score": 70
-            },
-            {
-              "subject": "informatics",
-              "min_score": 70
             }
           ]
         }
       ],
       "stats": [
         {
+          "year": 2021,
+          "passing_score_budget": 300,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 298,
+          "budget_places": 35,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 303,
+          "budget_places": 35,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "budget_places": 35,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
           "year": 2026,
-          "budget_places": 25,
-          "source_url": "https://www.ucheba.ru/program/846548"
+          "budget_places": 35,
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 950000
+      ]
     },
     {
-      "faculty": "Факультет гуманитарных наук Национального исследовательского университета «Высшая школа экономики»",
+      "faculty": "",
+      "name": "Фундаментальная и компьютерная лингвистика",
+      "direction_code": "45.03.03",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "one_of": [
+            {
+              "subject": "math",
+              "min_score": 70
+            },
+            {
+              "subject": "informatics",
+              "min_score": 70
+            }
+          ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 65
+        },
+        {
+          "subject": "english",
+          "min_score": 65
+        }
+      ],
+      "stats": [
+        {
+          "year": 2021,
+          "passing_score_budget": 288,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
+          "year": 2022,
+          "passing_score_budget": 304,
+          "source_url": "https://ba.hse.ru/result2022"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 293,
+          "budget_places": 45,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 296,
+          "budget_places": 45,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 291,
+          "budget_places": 45,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 50,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "История",
+      "direction_code": "46.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "history",
+          "min_score": 65
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 60
+            },
+            {
+              "subject": "social",
+              "min_score": 60
+            },
+            {
+              "subject": "literature",
+              "min_score": 60
+            }
+          ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": [
+        {
+          "year": 2021,
+          "passing_score_budget": 278,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
+          "year": 2022,
+          "passing_score_budget": 279,
+          "source_url": "https://ba.hse.ru/result2022"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 266,
+          "budget_places": 70,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 269,
+          "budget_places": 70,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 267,
+          "budget_places": 70,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 50,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Практическая философия",
+      "direction_code": "47.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
+              "subject": "history",
+              "min_score": 60
+            },
+            {
+              "subject": "english",
+              "min_score": 60
+            },
+            {
+              "subject": "literature",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 302,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 269,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 237,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 40,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Современное искусство",
+      "direction_code": "50.03.02",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 60
+        },
+        {
+          "subject": "literature",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 60
+            },
+            {
+              "subject": "social",
+              "min_score": 60
+            },
+            {
+              "subject": "history",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": []
+    },
+    {
+      "faculty": "",
+      "name": "История искусств",
+      "direction_code": "50.03.03",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "history",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 60
+            },
+            {
+              "subject": "literature",
+              "min_score": 60
+            }
+          ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": [
+        {
+          "year": 2021,
+          "passing_score_budget": 285,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
+          "year": 2022,
+          "passing_score_budget": 285,
+          "source_url": "https://ba.hse.ru/result2022"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 276,
+          "budget_places": 30,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 285,
+          "budget_places": 30,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 264,
+          "budget_places": 30,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 30,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Культурология",
+      "direction_code": "51.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "social",
+          "min_score": 60
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
+              "subject": "history",
+              "min_score": 60
+            },
+            {
+              "subject": "english",
+              "min_score": 60
+            },
+            {
+              "subject": "literature",
+              "min_score": 60
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "budget_places": 35,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 283,
+          "budget_places": 35,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 256,
+          "budget_places": 40,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 40,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
+      "name": "Востоковедение",
+      "direction_code": "58.03.01",
+      "study_form": "full_time",
+      "source_url": "https://ba.hse.ru/minkrit",
+      "exams": [
+        {
+          "subject": "history",
+          "min_score": 60
+        },
+        {
+          "one_of": [
+            {
+              "subject": "english",
+              "min_score": 60
+            },
+            {
+              "subject": "social",
+              "min_score": 60
+            },
+            {
+              "subject": "geography",
+              "min_score": 60
+            }
+          ]
+        },
+        {
+          "subject": "russian",
+          "min_score": 60
+        }
+      ],
+      "stats": [
+        {
+          "year": 2021,
+          "passing_score_budget": 289,
+          "source_url": "https://ba.hse.ru/result2021"
+        },
+        {
+          "year": 2022,
+          "passing_score_budget": 290,
+          "source_url": "https://ba.hse.ru/result2022"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 287,
+          "budget_places": 58,
+          "source_url": "https://ba.hse.ru/result2023"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 293,
+          "budget_places": 58,
+          "source_url": "https://ba.hse.ru/result2024"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 289,
+          "budget_places": 58,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "budget_places": 50,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
+    },
+    {
+      "faculty": "",
       "name": "Арабский мир и Христианский Восток",
       "direction_code": "58.03.01",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/846619",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
         {
-          "subject": "russian",
+          "subject": "english",
           "min_score": 60
         },
         {
@@ -3395,29 +3170,27 @@
           "min_score": 60
         },
         {
-          "subject": "english",
+          "subject": "russian",
           "min_score": 60
         }
       ],
       "stats": [
         {
           "year": 2026,
-          "passing_score_budget": 276,
           "budget_places": 16,
-          "source_url": "https://www.ucheba.ru/program/846619"
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 510000
+      ]
     },
     {
-      "faculty": "Факультет гуманитарных наук Национального исследовательского университета «Высшая школа экономики»",
+      "faculty": "",
       "name": "Иран и Центральная Азия",
       "direction_code": "58.03.01",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/846620",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
         {
-          "subject": "russian",
+          "subject": "english",
           "min_score": 60
         },
         {
@@ -3425,29 +3198,27 @@
           "min_score": 60
         },
         {
-          "subject": "english",
+          "subject": "russian",
           "min_score": 60
         }
       ],
       "stats": [
         {
           "year": 2026,
-          "passing_score_budget": 258,
           "budget_places": 15,
-          "source_url": "https://www.ucheba.ru/program/846620"
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 510000
+      ]
     },
     {
-      "faculty": "Факультет гуманитарных наук Национального исследовательского университета «Высшая школа экономики»",
+      "faculty": "",
       "name": "Китай: язык, культура, общество",
       "direction_code": "58.03.01",
       "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/846621",
+      "source_url": "https://ba.hse.ru/minkrit",
       "exams": [
         {
-          "subject": "russian",
+          "subject": "english",
           "min_score": 60
         },
         {
@@ -3455,55 +3226,17 @@
           "min_score": 60
         },
         {
-          "subject": "english",
+          "subject": "russian",
           "min_score": 60
         }
       ],
       "stats": [
         {
           "year": 2026,
-          "passing_score_budget": 275,
           "budget_places": 16,
-          "source_url": "https://www.ucheba.ru/program/846621"
+          "source_url": "https://ba.hse.ru/kolmest"
         }
-      ],
-      "tuition_per_year": 510000
-    },
-    {
-      "faculty": "Высшая школа бизнеса Национального исследовательского университета «Высшая школа экономики»",
-      "name": "Технологии анализа данных в бизнесе",
-      "direction_code": "38.03.05",
-      "study_form": "full_time",
-      "source_url": "https://www.ucheba.ru/program/829984",
-      "exams": [
-        {
-          "subject": "math",
-          "min_score": 70
-        },
-        {
-          "subject": "russian",
-          "min_score": 65
-        },
-        {
-          "subject": "informatics",
-          "min_score": 75
-        }
-      ],
-      "stats": [
-        {
-          "year": 2025,
-          "passing_score_budget": 284,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/829984"
-        },
-        {
-          "year": 2026,
-          "passing_score_budget": 293,
-          "budget_places": 30,
-          "source_url": "https://www.ucheba.ru/program/829984"
-        }
-      ],
-      "tuition_per_year": 1100000
+      ]
     }
   ]
 }
