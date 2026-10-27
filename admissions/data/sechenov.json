@@ -1,0 +1,1220 @@
+{
+  "code": "sechenov",
+  "name": "Первый МГМУ им. И.М. Сеченова (Сеченовский Университет)",
+  "short_name": "Сеченовский",
+  "website": "https://www.sechenov.ru",
+  "has_dormitory": true,
+  "source_url": "https://www.ucheba.ru/uz/5833/programs",
+  "verified": false,
+  "programs": [
+    {
+      "faculty": "",
+      "name": "Медико-профилактическое дело",
+      "direction_code": "32.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/164937",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 45
+        },
+        {
+          "subject": "chemistry",
+          "min_score": 45
+        },
+        {
+          "subject": "biology",
+          "min_score": 45
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 189,
+          "source_url": "https://www.ucheba.ru/program/164937"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 215,
+          "budget_places": 136,
+          "source_url": "https://www.ucheba.ru/program/164937"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 196,
+          "budget_places": 136,
+          "source_url": "https://www.ucheba.ru/program/164937"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 210,
+          "budget_places": 136,
+          "source_url": "https://www.ucheba.ru/program/164937"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 240,
+          "budget_places": 97,
+          "source_url": "https://www.ucheba.ru/program/164937"
+        }
+      ],
+      "tuition_per_year": 850000
+    },
+    {
+      "faculty": "",
+      "name": "Стоматология",
+      "direction_code": "31.05.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/164946",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 55
+        },
+        {
+          "subject": "chemistry",
+          "min_score": 55
+        },
+        {
+          "subject": "biology",
+          "min_score": 55
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 266,
+          "source_url": "https://www.ucheba.ru/program/164946"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 285,
+          "budget_places": 130,
+          "source_url": "https://www.ucheba.ru/program/164946"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 288,
+          "budget_places": 130,
+          "source_url": "https://www.ucheba.ru/program/164946"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 286,
+          "budget_places": 145,
+          "source_url": "https://www.ucheba.ru/program/164946"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 290,
+          "budget_places": 97,
+          "source_url": "https://www.ucheba.ru/program/164946"
+        }
+      ],
+      "tuition_per_year": 1150000
+    },
+    {
+      "faculty": "",
+      "name": "Сестринское дело",
+      "direction_code": "34.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/164949",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 40
+        },
+        {
+          "subject": "chemistry",
+          "min_score": 40
+        },
+        {
+          "subject": "biology",
+          "min_score": 40
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 179,
+          "source_url": "https://www.ucheba.ru/program/164949"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 200,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/164949"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 208,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/164949"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 208,
+          "budget_places": 16,
+          "source_url": "https://www.ucheba.ru/program/164949"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 217,
+          "budget_places": 10,
+          "source_url": "https://www.ucheba.ru/program/164949"
+        }
+      ],
+      "tuition_per_year": 424000
+    },
+    {
+      "faculty": "",
+      "name": "Социальная работа",
+      "direction_code": "39.03.02",
+      "study_form": "distance",
+      "source_url": "https://www.ucheba.ru/program/448171",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 40
+        },
+        {
+          "subject": "social",
+          "min_score": 42
+        },
+        {
+          "subject": "history",
+          "min_score": 40
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 145,
+          "source_url": "https://www.ucheba.ru/program/448171"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 156,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/448171"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 151,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/448171"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 171,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/448171"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 204,
+          "budget_places": 5,
+          "source_url": "https://www.ucheba.ru/program/448171"
+        }
+      ],
+      "tuition_per_year": 182000
+    },
+    {
+      "faculty": "",
+      "name": "Педиатрия",
+      "direction_code": "31.05.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/448173",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 55
+        },
+        {
+          "subject": "chemistry",
+          "min_score": 55
+        },
+        {
+          "subject": "biology",
+          "min_score": 55
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 264,
+          "source_url": "https://www.ucheba.ru/program/448173"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 273,
+          "budget_places": 160,
+          "source_url": "https://www.ucheba.ru/program/448173"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 280,
+          "budget_places": 165,
+          "source_url": "https://www.ucheba.ru/program/448173"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 272,
+          "budget_places": 190,
+          "source_url": "https://www.ucheba.ru/program/448173"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 268,
+          "budget_places": 148,
+          "source_url": "https://www.ucheba.ru/program/448173"
+        }
+      ],
+      "tuition_per_year": 850000
+    },
+    {
+      "faculty": "",
+      "name": "Биоинженерия и биоинформатика",
+      "direction_code": "06.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/448180",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 40
+        },
+        {
+          "subject": "russian",
+          "min_score": 50
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 40
+            },
+            {
+              "subject": "chemistry",
+              "min_score": 50
+            },
+            {
+              "subject": "informatics",
+              "min_score": 40
+            },
+            {
+              "subject": "biology",
+              "min_score": 50
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2024,
+          "passing_score_budget": 267,
+          "budget_places": 25,
+          "source_url": "https://www.ucheba.ru/program/448180"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 257,
+          "budget_places": 29,
+          "source_url": "https://www.ucheba.ru/program/448180"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 274,
+          "budget_places": 30,
+          "source_url": "https://www.ucheba.ru/program/448180"
+        }
+      ],
+      "tuition_per_year": 850000
+    },
+    {
+      "faculty": "",
+      "name": "Биотехнология",
+      "direction_code": "19.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/448181",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 50
+        },
+        {
+          "subject": "biology",
+          "min_score": 50
+        },
+        {
+          "one_of": [
+            {
+              "subject": "math",
+              "min_score": 40
+            },
+            {
+              "subject": "physics",
+              "min_score": 40
+            },
+            {
+              "subject": "chemistry",
+              "min_score": 50
+            },
+            {
+              "subject": "informatics",
+              "min_score": 40
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 246,
+          "source_url": "https://www.ucheba.ru/program/448181"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 256,
+          "budget_places": 45,
+          "source_url": "https://www.ucheba.ru/program/448181"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 257,
+          "budget_places": 45,
+          "source_url": "https://www.ucheba.ru/program/448181"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 262,
+          "budget_places": 45,
+          "source_url": "https://www.ucheba.ru/program/448181"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 272,
+          "budget_places": 45,
+          "source_url": "https://www.ucheba.ru/program/448181"
+        }
+      ],
+      "tuition_per_year": 605000
+    },
+    {
+      "faculty": "",
+      "name": "Механика и математическое моделирование",
+      "direction_code": "01.03.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/715552",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 30
+        },
+        {
+          "subject": "russian",
+          "min_score": 40
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 40
+            },
+            {
+              "subject": "informatics",
+              "min_score": 40
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 197,
+          "source_url": "https://www.ucheba.ru/program/715552"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 202,
+          "budget_places": 30,
+          "source_url": "https://www.ucheba.ru/program/715552"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 215,
+          "budget_places": 18,
+          "source_url": "https://www.ucheba.ru/program/715552"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 203,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/715552"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 234,
+          "budget_places": 10,
+          "source_url": "https://www.ucheba.ru/program/715552"
+        }
+      ],
+      "tuition_per_year": 363000
+    },
+    {
+      "faculty": "",
+      "name": "Информационные системы и технологии",
+      "direction_code": "09.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/715553",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 30
+        },
+        {
+          "subject": "russian",
+          "min_score": 40
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 40
+            },
+            {
+              "subject": "informatics",
+              "min_score": 40
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 164,
+          "source_url": "https://www.ucheba.ru/program/715553"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 215,
+          "budget_places": 15,
+          "source_url": "https://www.ucheba.ru/program/715553"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 219,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/715553"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 226,
+          "budget_places": 25,
+          "source_url": "https://www.ucheba.ru/program/715553"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 235,
+          "budget_places": 10,
+          "source_url": "https://www.ucheba.ru/program/715553"
+        }
+      ],
+      "tuition_per_year": 393000
+    },
+    {
+      "faculty": "",
+      "name": "Интеллектуальные системы в гуманитарной сфере",
+      "direction_code": "45.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/720809",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 30
+        },
+        {
+          "subject": "russian",
+          "min_score": 40
+        },
+        {
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 40
+            },
+            {
+              "subject": "english",
+              "min_score": 40
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 151,
+          "source_url": "https://www.ucheba.ru/program/720809"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 225,
+          "budget_places": 25,
+          "source_url": "https://www.ucheba.ru/program/720809"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 246,
+          "budget_places": 11,
+          "source_url": "https://www.ucheba.ru/program/720809"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 242,
+          "budget_places": 18,
+          "source_url": "https://www.ucheba.ru/program/720809"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 255,
+          "budget_places": 5,
+          "source_url": "https://www.ucheba.ru/program/720809"
+        }
+      ],
+      "tuition_per_year": 363000
+    },
+    {
+      "faculty": "",
+      "name": "Лингвистика",
+      "direction_code": "45.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/770356",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 45
+        },
+        {
+          "subject": "english",
+          "min_score": 45
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 42
+            },
+            {
+              "subject": "history",
+              "min_score": 40
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 254,
+          "source_url": "https://www.ucheba.ru/program/770356"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 262,
+          "budget_places": 30,
+          "source_url": "https://www.ucheba.ru/program/770356"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 251,
+          "budget_places": 15,
+          "source_url": "https://www.ucheba.ru/program/770356"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 248,
+          "budget_places": 24,
+          "source_url": "https://www.ucheba.ru/program/770356"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 256,
+          "budget_places": 15,
+          "source_url": "https://www.ucheba.ru/program/770356"
+        }
+      ],
+      "tuition_per_year": 363000
+    },
+    {
+      "faculty": "",
+      "name": "Фармация",
+      "direction_code": "33.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/515006",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 45
+        },
+        {
+          "subject": "chemistry",
+          "min_score": 45
+        },
+        {
+          "subject": "biology",
+          "min_score": 45
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 181,
+          "source_url": "https://www.ucheba.ru/program/515006"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 207,
+          "budget_places": 200,
+          "source_url": "https://www.ucheba.ru/program/515006"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 201,
+          "budget_places": 200,
+          "source_url": "https://www.ucheba.ru/program/515006"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 224,
+          "budget_places": 200,
+          "source_url": "https://www.ucheba.ru/program/515006"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 244,
+          "budget_places": 124,
+          "source_url": "https://www.ucheba.ru/program/515006"
+        }
+      ],
+      "tuition_per_year": 850000
+    },
+    {
+      "faculty": "",
+      "name": "Медицинская биофизика",
+      "direction_code": "30.05.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/523040",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 40
+        },
+        {
+          "subject": "biology",
+          "min_score": 40
+        },
+        {
+          "one_of": [
+            {
+              "subject": "math",
+              "min_score": 30
+            },
+            {
+              "subject": "physics",
+              "min_score": 40
+            },
+            {
+              "subject": "chemistry",
+              "min_score": 40
+            },
+            {
+              "subject": "informatics",
+              "min_score": 40
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 154,
+          "source_url": "https://www.ucheba.ru/program/523040"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 212,
+          "budget_places": 25,
+          "source_url": "https://www.ucheba.ru/program/523040"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 231,
+          "budget_places": 25,
+          "source_url": "https://www.ucheba.ru/program/523040"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 240,
+          "budget_places": 25,
+          "source_url": "https://www.ucheba.ru/program/523040"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 252,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/523040"
+        }
+      ],
+      "tuition_per_year": 850000
+    },
+    {
+      "faculty": "",
+      "name": "Моделирование здоровья",
+      "direction_code": "31.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/818387",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 55
+        },
+        {
+          "subject": "chemistry",
+          "min_score": 55
+        },
+        {
+          "subject": "biology",
+          "min_score": 55
+        }
+      ],
+      "stats": [],
+      "tuition_per_year": 1500000
+    },
+    {
+      "faculty": "",
+      "name": "Медицинская биохимия",
+      "direction_code": "30.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/523033",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 54
+        },
+        {
+          "subject": "chemistry",
+          "min_score": 54
+        },
+        {
+          "one_of": [
+            {
+              "subject": "math",
+              "min_score": 30
+            },
+            {
+              "subject": "physics",
+              "min_score": 40
+            },
+            {
+              "subject": "biology",
+              "min_score": 54
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 259,
+          "source_url": "https://www.ucheba.ru/program/523033"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 277,
+          "budget_places": 30,
+          "source_url": "https://www.ucheba.ru/program/523033"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 274,
+          "budget_places": 30,
+          "source_url": "https://www.ucheba.ru/program/523033"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 266,
+          "budget_places": 30,
+          "source_url": "https://www.ucheba.ru/program/523033"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 269,
+          "budget_places": 30,
+          "source_url": "https://www.ucheba.ru/program/523033"
+        }
+      ],
+      "tuition_per_year": 850000
+    },
+    {
+      "faculty": "",
+      "name": "Клиническая психология",
+      "direction_code": "37.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/448169",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 50
+        },
+        {
+          "subject": "biology",
+          "min_score": 50
+        },
+        {
+          "one_of": [
+            {
+              "subject": "math",
+              "min_score": 40
+            },
+            {
+              "subject": "chemistry",
+              "min_score": 40
+            },
+            {
+              "subject": "social",
+              "min_score": 42
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 236,
+          "source_url": "https://www.ucheba.ru/program/448169"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 259,
+          "budget_places": 50,
+          "source_url": "https://www.ucheba.ru/program/448169"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 261,
+          "budget_places": 50,
+          "source_url": "https://www.ucheba.ru/program/448169"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 252,
+          "budget_places": 50,
+          "source_url": "https://www.ucheba.ru/program/448169"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 266,
+          "budget_places": 34,
+          "source_url": "https://www.ucheba.ru/program/448169"
+        }
+      ],
+      "tuition_per_year": 850000
+    },
+    {
+      "faculty": "",
+      "name": "Менеджмент",
+      "direction_code": "38.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/459709",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 40
+        },
+        {
+          "subject": "russian",
+          "min_score": 40
+        },
+        {
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 40
+            },
+            {
+              "subject": "history",
+              "min_score": 40
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 206,
+          "source_url": "https://www.ucheba.ru/program/459709"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 234,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/459709"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 242,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/459709"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 153,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/459709"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 231,
+          "budget_places": 5,
+          "source_url": "https://www.ucheba.ru/program/459709"
+        }
+      ],
+      "tuition_per_year": 363000
+    },
+    {
+      "faculty": "",
+      "name": "Материаловедение и технологии материалов",
+      "direction_code": "22.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/715554",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 30
+        },
+        {
+          "subject": "russian",
+          "min_score": 40
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 40
+            },
+            {
+              "subject": "chemistry",
+              "min_score": 40
+            },
+            {
+              "subject": "informatics",
+              "min_score": 40
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 171,
+          "source_url": "https://www.ucheba.ru/program/715554"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 189,
+          "budget_places": 30,
+          "source_url": "https://www.ucheba.ru/program/715554"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 137,
+          "budget_places": 11,
+          "source_url": "https://www.ucheba.ru/program/715554"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 209,
+          "budget_places": 10,
+          "source_url": "https://www.ucheba.ru/program/715554"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 234,
+          "budget_places": 5,
+          "source_url": "https://www.ucheba.ru/program/715554"
+        }
+      ],
+      "tuition_per_year": 393000
+    },
+    {
+      "faculty": "",
+      "name": "Наноматериалы",
+      "direction_code": "28.03.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/715555",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 30
+        },
+        {
+          "subject": "russian",
+          "min_score": 40
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 40
+            },
+            {
+              "subject": "chemistry",
+              "min_score": 40
+            },
+            {
+              "subject": "informatics",
+              "min_score": 40
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 213,
+          "source_url": "https://www.ucheba.ru/program/715555"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 227,
+          "budget_places": 5,
+          "source_url": "https://www.ucheba.ru/program/715555"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 228,
+          "budget_places": 10,
+          "source_url": "https://www.ucheba.ru/program/715555"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 233,
+          "budget_places": 6,
+          "source_url": "https://www.ucheba.ru/program/715555"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 248,
+          "budget_places": 5,
+          "source_url": "https://www.ucheba.ru/program/715555"
+        }
+      ],
+      "tuition_per_year": 444000
+    },
+    {
+      "faculty": "",
+      "name": "Лечебное дело",
+      "direction_code": "31.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/164933",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 55
+        },
+        {
+          "subject": "chemistry",
+          "min_score": 55
+        },
+        {
+          "subject": "biology",
+          "min_score": 55
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 261,
+          "source_url": "https://www.ucheba.ru/program/164933"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 293,
+          "budget_places": 1015,
+          "source_url": "https://www.ucheba.ru/program/164933"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 295,
+          "budget_places": 1020,
+          "source_url": "https://www.ucheba.ru/program/164933"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 252,
+          "budget_places": 1000,
+          "source_url": "https://www.ucheba.ru/program/164933"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 269,
+          "budget_places": 934,
+          "source_url": "https://www.ucheba.ru/program/164933"
+        }
+      ],
+      "tuition_per_year": 1100000
+    },
+    {
+      "faculty": "",
+      "name": "Электронные и оптико-электронные приборы и системы специального назначения",
+      "direction_code": "12.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/796420",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 40
+        },
+        {
+          "subject": "physics",
+          "min_score": 40
+        },
+        {
+          "one_of": [
+            {
+              "subject": "math",
+              "min_score": 30
+            },
+            {
+              "subject": "chemistry",
+              "min_score": 40
+            },
+            {
+              "subject": "informatics",
+              "min_score": 40
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2024,
+          "passing_score_budget": 140,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/796420"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 237,
+          "budget_places": 2,
+          "source_url": "https://www.ucheba.ru/program/796420"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 223,
+          "budget_places": 3,
+          "source_url": "https://www.ucheba.ru/program/796420"
+        }
+      ],
+      "tuition_per_year": 480000
+    }
+  ]
+}

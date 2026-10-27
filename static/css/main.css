@@ -153,6 +153,7 @@ a { color: var(--color-primary); }
 .badge--safe { background: var(--color-safe); }
 .badge--hard { background: var(--color-hard); }
 .badge--blocked { background: var(--color-blocked); }
+.badge--unverified { background: transparent; border: 1px dashed var(--color-muted); color: var(--color-muted); font-weight: 400; }
 
 /* ---------- Стратегия ---------- */
 

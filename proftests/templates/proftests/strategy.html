@@ -55,7 +55,7 @@
           <p><strong>Программы:</strong></p>
           <ul>
             {% for program in direction.programs %}
-              <li>{{ program.university }}, {{ program.name }} — {{ program.category }}</li>
+              <li>{{ program.university }}, {{ program.name }} — {{ program.category }}{% if not program.verified %} <span class="badge badge--unverified">не проверено</span>{% endif %}</li>
             {% endfor %}
           </ul>
         {% endif %}

@@ -12,10 +12,14 @@ class Subject(models.TextChoices):
     HISTORY = "history", "История"
     LITERATURE = "literature", "Литература"
     ENGLISH = "english", "Английский язык"
+    GEOGRAPHY = "geography", "География"
 
 
 class University(models.Model):
+    # Постоянный код вуза (hse, mipt): по нему импорт находит вуз при повторной загрузке
+    code = models.SlugField("Код", max_length=50, unique=True, null=True, blank=True)
     name = models.CharField("Название", max_length=255)
+    short_name = models.CharField("Краткое название", max_length=50, blank=True)
     country = models.CharField("Страна", max_length=2, default="RU")
     city = models.CharField("Город", max_length=100, default="Москва")
     website = models.URLField("Сайт", blank=True)
@@ -29,7 +33,7 @@ class University(models.Model):
         verbose_name_plural = "Вузы"
 
     def __str__(self):
-        return self.name
+        return self.short_name or self.name
 
 
 class Program(models.Model):
@@ -42,6 +46,7 @@ class Program(models.Model):
         University, on_delete=models.CASCADE,
         related_name="programs", verbose_name="Вуз",
     )
+    faculty = models.CharField("Факультет или институт", max_length=255, blank=True)
     name = models.CharField("Название программы", max_length=255)
     direction_code = models.CharField("Код направления", max_length=20, blank=True)
     study_form = models.CharField(
@@ -58,7 +63,7 @@ class Program(models.Model):
         verbose_name_plural = "Программы"
 
     def __str__(self):
-        return f"{self.university.name}: {self.name}"
+        return f"{self.university}: {self.name}"
 
 
 class ProgramExam(models.Model):
@@ -68,6 +73,9 @@ class ProgramExam(models.Model):
     )
     subject = models.CharField("Предмет ЕГЭ", max_length=20, choices=Subject.choices)
     min_score = models.PositiveSmallIntegerField("Минимальный балл", default=0)
+    # Предметы с одинаковым номером группы сдаются на выбор: «физика или информатика».
+    # Пусто: предмет обязательный.
+    choice_group = models.PositiveSmallIntegerField("Группа выбора", null=True, blank=True)
 
     class Meta:
         verbose_name = "Требуемый предмет"
@@ -87,6 +95,7 @@ class AdmissionStat(models.Model):
         "Проходной балл на бюджет (сумма ЕГЭ)", null=True, blank=True,
     )
     budget_places = models.PositiveSmallIntegerField("Бюджетных мест", null=True, blank=True)
+    source_url = models.URLField("Источник данных", blank=True)
 
     class Meta:
         verbose_name = "Статистика приёма"

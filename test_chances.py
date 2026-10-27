@@ -87,5 +87,39 @@ class TestEvaluate(unittest.TestCase):
         self.assertEqual(result["category"], "реалистично")
 
 
+class TestSubjectChoice(unittest.TestCase):
+    """Предмет на выбор: например, «физика или информатика»."""
+
+    def make_program(self, **extra):
+        program = {
+            "subjects": ["math", "russian", ["physics", "informatics"]],
+            "passing_scores": [240],
+        }
+        program.update(extra)
+        return program
+
+    def test_takes_better_subject(self):
+        student = {"math": 80, "russian": 80, "physics": 60, "informatics": 90}
+        result = evaluate(student, self.make_program())
+        self.assertEqual(result["subjects"], ["math", "russian", "informatics"])
+        self.assertEqual(result["total"], 250)
+
+    def test_one_of_alternatives_is_enough(self):
+        student = {"math": 80, "russian": 80, "physics": 70}
+        result = evaluate(student, self.make_program())
+        self.assertEqual(result["subjects"], ["math", "russian", "physics"])
+
+    def test_none_of_alternatives_returns_none(self):
+        self.assertIsNone(evaluate({"math": 80, "russian": 80}, self.make_program()))
+
+    def test_prefers_subject_that_passes_minimum(self):
+        # Информатика выше, но ниже порога, поэтому засчитываем физику
+        program = self.make_program(min_scores={"physics": 40, "informatics": 70})
+        student = {"math": 80, "russian": 80, "physics": 50, "informatics": 65}
+        result = evaluate(student, program)
+        self.assertEqual(result["subjects"], ["math", "russian", "physics"])
+        self.assertEqual(result["below_minimum"], [])
+
+
 if __name__ == "__main__":
     unittest.main()

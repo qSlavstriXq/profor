@@ -7,7 +7,9 @@ from pathlib import Path
 from django.conf import settings
 
 from admissions.services import build_recommendations
+from proftests.directions import matching_scales
 from proftests.models import StrategyReport, Test
+from proftests.scoring import ranked
 from proftests.services import build_result
 
 from . import client
@@ -20,6 +22,9 @@ PROMPT_PATH = Path(__file__).resolve().parent / "prompts" / "strategy_system.txt
 # Сколько программ максимум отдаём модели: больше программ, больше токенов
 MAX_PROGRAMS = 15
 
+# Сколько самых выраженных шкал каждого теста учитываем при подборе программ
+TOP_SCALES = 2
+
 
 def latest_attempts(participant):
     """Последнее прохождение каждого теста: {id теста: прохождение}."""
@@ -29,11 +34,35 @@ def latest_attempts(participant):
     return latest
 
 
-def pick_programs(scores):
-    """Программы с шансами по баллам ЕГЭ. Недоступные модели не отдаём."""
+def strong_scales(participant):
+    """Самые выраженные шкалы по последним тестам: [(код теста, код шкалы, название)]."""
+    result = []
+    for attempt in latest_attempts(participant).values():
+        names = {scale.code: scale.name for scale in attempt.test.scales.all()}
+        for code, points in ranked(attempt.scores)[:TOP_SCALES]:
+            if points > 0:
+                result.append((attempt.test.code, code, names[code]))
+    return result
+
+
+def pick_programs(scores, participant=None):
+    """Программы с шансами по баллам ЕГЭ. Недоступные модели не отдаём.
+
+    Если передан участник, у каждой программы появляется поле fits: каким его
+    сильным сторонам по профтестам она соответствует. Такие программы идут первыми,
+    а внутри порядок по шансам сохраняется (sorted не меняет порядок равных).
+    """
     if not scores:
         return []
     programs = [p for p in build_recommendations(scores) if p["category"] != "недоступно"]
+    if participant is not None:
+        strong = strong_scales(participant)
+        for program in programs:
+            program["fits"] = [
+                name for test_code, code, name in strong
+                if matching_scales(test_code, program["direction_code"], [code])
+            ]
+        programs.sort(key=lambda p: not p["fits"])
     return programs[:MAX_PROGRAMS]
 
 
@@ -56,7 +85,7 @@ def create_strategy(participant, scores, llm_client=None):
 
     Возвращает (стратегия, источник), как generate_strategy.
     """
-    strategy, source = generate_strategy(participant, pick_programs(scores), llm_client)
+    strategy, source = generate_strategy(participant, pick_programs(scores, participant), llm_client)
     if source == "llm":
         StrategyReport.objects.create(
             participant=participant,
@@ -96,7 +125,8 @@ def build_input(participant, programs=None):
 
     # Отправляем только то, что нужно для объяснения: меньше данных, меньше токенов
     programs = [
-        {"id": p["id"], "university": p["university"], "name": p["name"], "category": p["category"]}
+        {"id": p["id"], "university": p["university"], "name": p["name"],
+         "category": p["category"], "fits": p.get("fits", [])}
         for p in (programs or [])
     ]
     return {"tests": tests, "available_tests": available_tests, "programs": programs}

@@ -157,6 +157,11 @@ MAILERS = {
 }
 
 
+# Показывать ли данные о вузах, которые ещё никто не сверил с источником.
+# Для прототипа True (с пометкой «не проверено» на сайте), для реального запуска False.
+SHOW_UNVERIFIED_DATA = os.getenv("SHOW_UNVERIFIED_DATA", "True") == "True"
+
+
 # Языковая модель (сейчас Qwen). Используется только в модуле llm/client.py
 QWEN_API_KEY = os.getenv("QWEN_API_KEY", "")
 QWEN_BASE_URL = os.getenv("QWEN_BASE_URL", "https://dashscope-intl.aliyuncs.com/compatible-mode/v1")

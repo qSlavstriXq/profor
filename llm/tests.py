@@ -6,7 +6,7 @@ from unittest import mock
 from django.test import SimpleTestCase, TestCase, override_settings
 
 from admissions.models import AdmissionStat, Program, ProgramExam, University
-from proftests.loader import load_test
+from proftests.loader import DATA_DIR, load_test, read_test_file
 from proftests.models import Participant, Question, StrategyReport
 from proftests.services import SESSION_KEY
 from proftests.services import save_attempt
@@ -14,7 +14,7 @@ from proftests.tests import small_test_data
 
 from .client import LLMError, LLMNotConfigured, ask_json
 from .schemas import Strategy
-from .strategy import build_input, check_against_data, generate_strategy
+from .strategy import build_input, check_against_data, generate_strategy, pick_programs
 
 
 def setUpModule():
@@ -211,3 +211,46 @@ class TestStrategyPage(TestCase):
         sent = json.loads(fake.calls[0]["messages"][1]["content"])
         self.assertEqual(sent["programs"][0]["id"], program.pk)
         self.assertContains(self.client.get(self.URL), "Тестовый вуз, Информатика")
+
+
+class TestPickProgramsByTest(TestCase):
+    """Программы, подходящие по профтесту, идут первыми."""
+
+    def make_program(self, name, code, passing):
+        university = University.objects.get_or_create(name="Вуз", verified=True)[0]
+        program = Program.objects.create(
+            university=university, name=name, direction_code=code, verified=True,
+        )
+        ProgramExam.objects.create(program=program, subject="math")
+        ProgramExam.objects.create(program=program, subject="russian")
+        AdmissionStat.objects.create(program=program, year=2025, passing_score_budget=passing)
+        return program
+
+    def setUp(self):
+        # Школьник везде выбирает «знаковую систему», если она есть в вопросе
+        test = load_test(read_test_file(DATA_DIR / "klimov_ddo.json"))
+        self.participant = Participant.objects.create()
+        answers = {}
+        for question in test.questions.prefetch_related("options__scale"):
+            options = list(question.options.all())
+            answers[question] = next((o for o in options if o.scale.code == "signs"), options[0])
+        save_attempt(self.participant, test, answers)
+
+        # Медицина по шансам выше (страховка), информатика ниже (реалистично)
+        self.medicine = self.make_program("Лечебное дело", "31.05.01", 140)
+        self.it = self.make_program("Программная инженерия", "09.03.04", 160)
+
+    def test_without_participant_order_by_chances(self):
+        programs = pick_programs({"math": 80, "russian": 80})
+        self.assertEqual(programs[0]["id"], self.it.pk)  # реалистично раньше страховки
+        self.assertNotIn("fits", programs[0])
+
+    def test_matching_program_goes_first(self):
+        programs = pick_programs({"math": 80, "russian": 80}, self.participant)
+        self.assertEqual(programs[0]["id"], self.it.pk)
+        self.assertIn("Человек — знаковая система", programs[0]["fits"])
+
+    def test_fits_sent_to_model(self):
+        programs = pick_programs({"math": 80, "russian": 80}, self.participant)
+        data = build_input(self.participant, programs)
+        self.assertIn("fits", data["programs"][0])

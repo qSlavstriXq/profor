@@ -21,7 +21,12 @@
   <h2>Результат</h2>
   {% for r in results %}
     <div class="card">
-      <strong>{{ r.university }}</strong>, {{ r.name }}<br>
+      <strong>{{ r.university }}</strong>, {{ r.name }}
+      {% if not r.verified %}
+        <span class="badge badge--unverified" title="Данные взяты из открытых источников и ещё не сверены вручную">не проверено</span>
+      {% endif %}
+      <br>
+      {% if r.faculty %}<span class="note">{{ r.faculty }}</span><br>{% endif %}
       Категория:
       {% if r.category == "реалистично" %}
         <span class="badge badge--realistic">{{ r.category }}</span>
@@ -39,6 +44,10 @@
         Ваша сумма {{ r.total }}, ожидаемый проходной {{ r.reference|floatformat:0 }}
         (по данным за {{ r.years }} г., изменение за год {{ r.trend|floatformat:1 }}),
         разница {{ r.margin|floatformat:0 }}
+        <br>
+        Засчитаны предметы: {{ r.subjects|join:", " }}
+        {% if r.budget_places %}· бюджетных мест: {{ r.budget_places }}{% endif %}
+        {% if r.source_url %}· <a href="{{ r.source_url }}" target="_blank" rel="noopener">источник</a>{% endif %}
       </span>
       {% if r.below_minimum %}
         <br>
@@ -46,7 +55,7 @@
       {% endif %}
     </div>
   {% empty %}
-    <p>Подходящих программ в базе не найдено. Проверьте, что у программ стоит галочка «Проверено вручную» и есть предметы и проходные баллы.</p>
+    <p>Подходящих программ в базе не найдено. Проверьте, что у программ есть предметы и проходные баллы, а если непроверенные данные скрыты настройкой, то и галочка «Проверено вручную».</p>
   {% endfor %}
   <p class="note">Это ориентир, а не гарантия поступления.</p>
 {% endif %}

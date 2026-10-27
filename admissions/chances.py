@@ -42,11 +42,34 @@ def classify(margin):
     return "очень сложно"
 
 
+def choose_subjects(student, subjects, min_scores):
+    """Выбирает, какие предметы школьника засчитать.
+
+    subjects: ["math", "russian", ["physics", "informatics"]]
+    Список внутри списка означает «один предмет на выбор». Берём тот,
+    где школьник проходит минимальный порог, а среди них самый высокий балл.
+
+    Возвращает None, если какого-то предмета у школьника нет.
+    """
+    chosen = []
+    for item in subjects:
+        options = [item] if isinstance(item, str) else item
+        available = [s for s in options if s in student]
+        if not available:
+            return None
+        chosen.append(max(
+            available,
+            key=lambda s: (student[s] >= min_scores.get(s, 0), student[s]),
+        ))
+    return chosen
+
+
 def evaluate(student, program):
     """Оценивает одну программу для школьника.
 
     student: {"math": 85, ...}
-    program: {"subjects": [...], "passing_scores": [...],
+    program: {"subjects": ["math", ["physics", "informatics"]],
+              "passing_scores": [...],
               "min_scores": {"russian": 70}  # необязательно
              }
 
@@ -54,24 +77,25 @@ def evaluate(student, program):
     Если по какому-то предмету не хватает минимального балла,
     категория будет "недоступно".
     """
-    for subject in program["subjects"]:
-        if subject not in student:
-            return None
+    min_scores = program.get("min_scores", {})
+    subjects = choose_subjects(student, program["subjects"], min_scores)
+    if subjects is None:
+        return None
 
-    total = sum(student[subject] for subject in program["subjects"])
+    total = sum(student[subject] for subject in subjects)
     reference = expected_score(program["passing_scores"])
     margin = total - reference
 
-    min_scores = program.get("min_scores", {})
     below_minimum = [
         subject
-        for subject in program["subjects"]
+        for subject in subjects
         if student[subject] < min_scores.get(subject, 0)
     ]
 
     category = "недоступно" if below_minimum else classify(margin)
 
     return {
+        "subjects": subjects,
         "total": total,
         "reference": reference,
         "margin": margin,

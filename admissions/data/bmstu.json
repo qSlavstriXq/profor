@@ -1,0 +1,5605 @@
+{
+  "code": "bmstu",
+  "name": "Московский государственный технический университет им. Н.Э. Баумана",
+  "short_name": "МГТУ им. Баумана",
+  "website": "https://bmstu.ru",
+  "has_dormitory": true,
+  "source_url": "https://www.ucheba.ru/uz/6324/programs",
+  "verified": false,
+  "programs": [
+    {
+      "faculty": "Факультет «Фундаментальные науки» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Интеллектуальный анализ, безопасность и управление сложными динамическими системами",
+      "direction_code": "01.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/52245",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 255,
+          "source_url": "https://www.ucheba.ru/program/52245"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 258,
+          "budget_places": 80,
+          "source_url": "https://www.ucheba.ru/program/52245"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 278,
+          "budget_places": 80,
+          "source_url": "https://www.ucheba.ru/program/52245"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 287,
+          "budget_places": 19,
+          "source_url": "https://www.ucheba.ru/program/52245"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 294,
+          "budget_places": 38,
+          "source_url": "https://www.ucheba.ru/program/52245"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Информатика и системы управления» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Проектирование и технологии электронных средств",
+      "direction_code": "11.03.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/35385",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 251,
+          "source_url": "https://www.ucheba.ru/program/35385"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 235,
+          "budget_places": 83,
+          "source_url": "https://www.ucheba.ru/program/35385"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 263,
+          "budget_places": 66,
+          "source_url": "https://www.ucheba.ru/program/35385"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 268,
+          "budget_places": 83,
+          "source_url": "https://www.ucheba.ru/program/35385"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 281,
+          "budget_places": 83,
+          "source_url": "https://www.ucheba.ru/program/35385"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Радиоэлектроника и лазерная техника» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Лазерная техника и прикладная фотоника",
+      "direction_code": "12.03.05",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/557280",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 203,
+          "source_url": "https://www.ucheba.ru/program/557280"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 240,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/557280"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 263,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/557280"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 257,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/557280"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 281,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/557280"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Головной учебно-исследовательский и методический центр Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Материаловедение и технологии материалов",
+      "direction_code": "22.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/557225",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 195,
+          "budget_places": 3,
+          "source_url": "https://www.ucheba.ru/program/557225"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 221,
+          "budget_places": 3,
+          "source_url": "https://www.ucheba.ru/program/557225"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 233,
+          "budget_places": 2,
+          "source_url": "https://www.ucheba.ru/program/557225"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 251,
+          "budget_places": 2,
+          "source_url": "https://www.ucheba.ru/program/557225"
+        }
+      ]
+    },
+    {
+      "faculty": "Головной учебно-исследовательский и методический центр Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Стандартизация и метрология",
+      "direction_code": "27.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/557295",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 211,
+          "budget_places": 3,
+          "source_url": "https://www.ucheba.ru/program/557295"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 226,
+          "budget_places": 2,
+          "source_url": "https://www.ucheba.ru/program/557295"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 239,
+          "budget_places": 2,
+          "source_url": "https://www.ucheba.ru/program/557295"
+        },
+        {
+          "year": 2026,
+          "budget_places": 2,
+          "source_url": "https://www.ucheba.ru/program/557295"
+        }
+      ]
+    },
+    {
+      "faculty": "Головной учебно-исследовательский и методический центр Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Информатика и вычислительная техника",
+      "direction_code": "09.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/557297",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 272,
+          "budget_places": 10,
+          "source_url": "https://www.ucheba.ru/program/557297"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 289,
+          "budget_places": 10,
+          "source_url": "https://www.ucheba.ru/program/557297"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 262,
+          "budget_places": 10,
+          "source_url": "https://www.ucheba.ru/program/557297"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 290,
+          "budget_places": 10,
+          "source_url": "https://www.ucheba.ru/program/557297"
+        }
+      ]
+    },
+    {
+      "faculty": "Факультет «Радиоэлектроника и лазерная техника» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Проектирование и нанотехнологии производства микро и нано компонентной базы для интеллектуальных радиотехнических систем",
+      "direction_code": "28.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/183820",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 246,
+          "source_url": "https://www.ucheba.ru/program/183820"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 238,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/183820"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 259,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/183820"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 271,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/183820"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 282,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/183820"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Радиоэлектроника и лазерная техника» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Интеллектуальные радиоэлектронные системы и комплексы",
+      "direction_code": "11.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/183821",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 188,
+          "source_url": "https://www.ucheba.ru/program/183821"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 225,
+          "budget_places": 78,
+          "source_url": "https://www.ucheba.ru/program/183821"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 263,
+          "budget_places": 58,
+          "source_url": "https://www.ucheba.ru/program/183821"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 252,
+          "budget_places": 76,
+          "source_url": "https://www.ucheba.ru/program/183821"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 267,
+          "budget_places": 80,
+          "source_url": "https://www.ucheba.ru/program/183821"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Космические аппараты и конструкции специального назначения",
+      "direction_code": "24.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/183981",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 221,
+          "source_url": "https://www.ucheba.ru/program/183981"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 243,
+          "budget_places": 45,
+          "source_url": "https://www.ucheba.ru/program/183981"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 265,
+          "budget_places": 44,
+          "source_url": "https://www.ucheba.ru/program/183981"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 266,
+          "budget_places": 21,
+          "source_url": "https://www.ucheba.ru/program/183981"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 291,
+          "budget_places": 19,
+          "source_url": "https://www.ucheba.ru/program/183981"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Крупногабаритные космические конструкции",
+      "direction_code": "24.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/183986",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 161,
+          "source_url": "https://www.ucheba.ru/program/183986"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 223,
+          "budget_places": 144,
+          "source_url": "https://www.ucheba.ru/program/183986"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 266,
+          "budget_places": 121,
+          "source_url": "https://www.ucheba.ru/program/183986"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 283,
+          "budget_places": 113,
+          "source_url": "https://www.ucheba.ru/program/183986"
+        },
+        {
+          "year": 2026,
+          "budget_places": 32,
+          "source_url": "https://www.ucheba.ru/program/183986"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Системное проектирование высокоточных комплексов вооружения",
+      "direction_code": "17.05.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/183987",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 198,
+          "source_url": "https://www.ucheba.ru/program/183987"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 209,
+          "budget_places": 48,
+          "source_url": "https://www.ucheba.ru/program/183987"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 233,
+          "budget_places": 48,
+          "source_url": "https://www.ucheba.ru/program/183987"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 223,
+          "budget_places": 43,
+          "source_url": "https://www.ucheba.ru/program/183987"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 249,
+          "budget_places": 48,
+          "source_url": "https://www.ucheba.ru/program/183987"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Проектирование и интеллектуальное управление робототехническими и мехатронными системами",
+      "direction_code": "15.03.06",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/183988",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 246,
+          "source_url": "https://www.ucheba.ru/program/183988"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 260,
+          "budget_places": 80,
+          "source_url": "https://www.ucheba.ru/program/183988"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 281,
+          "budget_places": 80,
+          "source_url": "https://www.ucheba.ru/program/183988"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 269,
+          "budget_places": 19,
+          "source_url": "https://www.ucheba.ru/program/183988"
+        },
+        {
+          "year": 2026,
+          "budget_places": 38,
+          "source_url": "https://www.ucheba.ru/program/183988"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Высокоавтоматизированные транспортные и тяговые машины специального назначения",
+      "direction_code": "23.05.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/183994",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 179,
+          "source_url": "https://www.ucheba.ru/program/183994"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 215,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/183994"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 246,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/183994"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 247,
+          "budget_places": 39,
+          "source_url": "https://www.ucheba.ru/program/183994"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 260,
+          "budget_places": 21,
+          "source_url": "https://www.ucheba.ru/program/183994"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Машиностроительные технологии» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Автоматизированные процессы механообработки и роботехнические станочные комплексы",
+      "direction_code": "15.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184010",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 187,
+          "source_url": "https://www.ucheba.ru/program/184010"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 192,
+          "budget_places": 276,
+          "source_url": "https://www.ucheba.ru/program/184010"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 224,
+          "budget_places": 292,
+          "source_url": "https://www.ucheba.ru/program/184010"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 231,
+          "budget_places": 261,
+          "source_url": "https://www.ucheba.ru/program/184010"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 265,
+          "budget_places": 35,
+          "source_url": "https://www.ucheba.ru/program/184010"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Системная инженерия вакуумных, компрессорных, пневматических систем и агрегатов",
+      "direction_code": "15.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184042",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 205,
+          "source_url": "https://www.ucheba.ru/program/184042"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 191,
+          "budget_places": 16,
+          "source_url": "https://www.ucheba.ru/program/184042"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 229,
+          "budget_places": 30,
+          "source_url": "https://www.ucheba.ru/program/184042"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 235,
+          "budget_places": 16,
+          "source_url": "https://www.ucheba.ru/program/184042"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 259,
+          "budget_places": 30,
+          "source_url": "https://www.ucheba.ru/program/184042"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Робототехника и комплексная автоматизация» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Цифровые технологии проектирования и информационной поддержки жизненного цикла промышленной продукции",
+      "direction_code": "09.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184081",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 261,
+          "source_url": "https://www.ucheba.ru/program/184081"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 272,
+          "budget_places": 64,
+          "source_url": "https://www.ucheba.ru/program/184081"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 289,
+          "budget_places": 64,
+          "source_url": "https://www.ucheba.ru/program/184081"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 269,
+          "budget_places": 63,
+          "source_url": "https://www.ucheba.ru/program/184081"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 290,
+          "budget_places": 42,
+          "source_url": "https://www.ucheba.ru/program/184081"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Информатика и системы управления» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Системы управления летательных аппаратов/Программное и алгоритмическое обеспечение систем управления",
+      "direction_code": "24.05.06",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184106",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 222,
+          "source_url": "https://www.ucheba.ru/program/184106"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 211,
+          "budget_places": 150,
+          "source_url": "https://www.ucheba.ru/program/184106"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 247,
+          "budget_places": 129,
+          "source_url": "https://www.ucheba.ru/program/184106"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 237,
+          "budget_places": 13,
+          "source_url": "https://www.ucheba.ru/program/184106"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 271,
+          "budget_places": 74,
+          "source_url": "https://www.ucheba.ru/program/184106"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Информатика и системы управления» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Прикладная математика и информатика",
+      "direction_code": "01.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184107",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 272,
+          "source_url": "https://www.ucheba.ru/program/184107"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 295,
+          "budget_places": 34,
+          "source_url": "https://www.ucheba.ru/program/184107"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 301,
+          "budget_places": 34,
+          "source_url": "https://www.ucheba.ru/program/184107"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 295,
+          "budget_places": 51,
+          "source_url": "https://www.ucheba.ru/program/184107"
+        },
+        {
+          "year": 2026,
+          "budget_places": 34,
+          "source_url": "https://www.ucheba.ru/program/184107"
+        }
+      ],
+      "tuition_per_year": 699000
+    },
+    {
+      "faculty": "Факультет «Информатика и системы управления» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Информационные системы и технологии",
+      "direction_code": "09.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184110",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 247,
+          "source_url": "https://www.ucheba.ru/program/184110"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 273,
+          "budget_places": 54,
+          "source_url": "https://www.ucheba.ru/program/184110"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 283,
+          "budget_places": 53,
+          "source_url": "https://www.ucheba.ru/program/184110"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 284,
+          "budget_places": 54,
+          "source_url": "https://www.ucheba.ru/program/184110"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 292,
+          "budget_places": 54,
+          "source_url": "https://www.ucheba.ru/program/184110"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Информатика и системы управления» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Обеспечение информационной безопасности автоматизированных систем",
+      "direction_code": "10.05.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184116",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 257,
+          "source_url": "https://www.ucheba.ru/program/184116"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 281,
+          "budget_places": 36,
+          "source_url": "https://www.ucheba.ru/program/184116"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 282,
+          "budget_places": 43,
+          "source_url": "https://www.ucheba.ru/program/184116"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 285,
+          "budget_places": 11,
+          "source_url": "https://www.ucheba.ru/program/184116"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 296,
+          "budget_places": 22,
+          "source_url": "https://www.ucheba.ru/program/184116"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Информатика и системы управления» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Разработка программно-информационных систем",
+      "direction_code": "09.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184118",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 291,
+          "source_url": "https://www.ucheba.ru/program/184118"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 293,
+          "budget_places": 84,
+          "source_url": "https://www.ucheba.ru/program/184118"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 300,
+          "budget_places": 84,
+          "source_url": "https://www.ucheba.ru/program/184118"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 302,
+          "budget_places": 42,
+          "source_url": "https://www.ucheba.ru/program/184118"
+        },
+        {
+          "year": 2026,
+          "budget_places": 56,
+          "source_url": "https://www.ucheba.ru/program/184118"
+        }
+      ],
+      "tuition_per_year": 699000
+    },
+    {
+      "faculty": "Приборостроительный факультет Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Программные и аппаратные комплексы систем управления космических аппаратов",
+      "direction_code": "24.05.06",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184172",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 174,
+          "source_url": "https://www.ucheba.ru/program/184172"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 211,
+          "budget_places": 54,
+          "source_url": "https://www.ucheba.ru/program/184172"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 240,
+          "budget_places": 51,
+          "source_url": "https://www.ucheba.ru/program/184172"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 232,
+          "budget_places": 51,
+          "source_url": "https://www.ucheba.ru/program/184172"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 252,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184172"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Аэрокосмический факультет Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Моделирование и информационные технологии аэрокосмических систем (отраслевая)",
+      "direction_code": "24.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184188",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 164,
+          "source_url": "https://www.ucheba.ru/program/184188"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 223,
+          "budget_places": 51,
+          "source_url": "https://www.ucheba.ru/program/184188"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 267,
+          "budget_places": 51,
+          "source_url": "https://www.ucheba.ru/program/184188"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 262,
+          "budget_places": 51,
+          "source_url": "https://www.ucheba.ru/program/184188"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 277,
+          "budget_places": 51,
+          "source_url": "https://www.ucheba.ru/program/184188"
+        }
+      ]
+    },
+    {
+      "faculty": "Радиотехнический факультет Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Системы управления летательных аппаратов (отраслевая)",
+      "direction_code": "24.05.06",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/503600",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 157,
+          "source_url": "https://www.ucheba.ru/program/503600"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 211,
+          "budget_places": 36,
+          "source_url": "https://www.ucheba.ru/program/503600"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 240,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/503600"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 238,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/503600"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 257,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/503600"
+        }
+      ]
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Системное проектирование интеллектуальных средств поражения",
+      "direction_code": "17.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/503604",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 202,
+          "source_url": "https://www.ucheba.ru/program/503604"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 208,
+          "budget_places": 57,
+          "source_url": "https://www.ucheba.ru/program/503604"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 218,
+          "budget_places": 57,
+          "source_url": "https://www.ucheba.ru/program/503604"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 219,
+          "budget_places": 57,
+          "source_url": "https://www.ucheba.ru/program/503604"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 245,
+          "budget_places": 57,
+          "source_url": "https://www.ucheba.ru/program/503604"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Социальные и гуманитарные науки» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Информационная аналитика",
+      "direction_code": "09.03.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/610624",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 257,
+          "source_url": "https://www.ucheba.ru/program/610624"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 265,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/610624"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 280,
+          "budget_places": 38,
+          "source_url": "https://www.ucheba.ru/program/610624"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 280,
+          "budget_places": 49,
+          "source_url": "https://www.ucheba.ru/program/610624"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 286,
+          "budget_places": 54,
+          "source_url": "https://www.ucheba.ru/program/610624"
+        }
+      ],
+      "tuition_per_year": 429000
+    },
+    {
+      "faculty": "Радиотехнический факультет Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Инженерия интеллектуальных систем обработки информации и управления (отраслевая)",
+      "direction_code": "09.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/610631",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 257,
+          "source_url": "https://www.ucheba.ru/program/610631"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 273,
+          "budget_places": 84,
+          "source_url": "https://www.ucheba.ru/program/610631"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 289,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/610631"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 268,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/610631"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 290,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/610631"
+        }
+      ],
+      "tuition_per_year": 499000
+    },
+    {
+      "faculty": "Факультет «Ракетно-космическая техника» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Интеллектуальные инструментальные системы и технологии в машиностроении (отраслевая)",
+      "direction_code": "15.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/610637",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 163,
+          "source_url": "https://www.ucheba.ru/program/610637"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 193,
+          "budget_places": 16,
+          "source_url": "https://www.ucheba.ru/program/610637"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 222,
+          "budget_places": 16,
+          "source_url": "https://www.ucheba.ru/program/610637"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 228,
+          "budget_places": 16,
+          "source_url": "https://www.ucheba.ru/program/610637"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 259,
+          "budget_places": 16,
+          "source_url": "https://www.ucheba.ru/program/610637"
+        }
+      ]
+    },
+    {
+      "faculty": "Факультет «Биомедицинская техника» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Биомедицинская инженерия 4.0",
+      "direction_code": "12.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/613268",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "biology",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 225,
+          "source_url": "https://www.ucheba.ru/program/613268"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 262,
+          "budget_places": 67,
+          "source_url": "https://www.ucheba.ru/program/613268"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 276,
+          "budget_places": 67,
+          "source_url": "https://www.ucheba.ru/program/613268"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 287,
+          "budget_places": 22,
+          "source_url": "https://www.ucheba.ru/program/613268"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 295,
+          "budget_places": 80,
+          "source_url": "https://www.ucheba.ru/program/613268"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Информатика и системы управления» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Интеллектуальные системы управления",
+      "direction_code": "27.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/691442",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 254,
+          "source_url": "https://www.ucheba.ru/program/691442"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 247,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/691442"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 277,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/691442"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 278,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/691442"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 289,
+          "budget_places": 31,
+          "source_url": "https://www.ucheba.ru/program/691442"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Бортовые радиоэлектронные системы и устройства",
+      "direction_code": "11.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/691448",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 163,
+          "source_url": "https://www.ucheba.ru/program/691448"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 225,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/691448"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 257,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/691448"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 236,
+          "budget_places": 52,
+          "source_url": "https://www.ucheba.ru/program/691448"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 267,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/691448"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Фундаментальные науки» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Математическое моделирование, суперкомпьютинг и искусственный интеллект в сложных системах",
+      "direction_code": "02.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/557221",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 269,
+          "source_url": "https://www.ucheba.ru/program/557221"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 253,
+          "budget_places": 56,
+          "source_url": "https://www.ucheba.ru/program/557221"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 275,
+          "budget_places": 56,
+          "source_url": "https://www.ucheba.ru/program/557221"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 281,
+          "budget_places": 37,
+          "source_url": "https://www.ucheba.ru/program/557221"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 295,
+          "budget_places": 29,
+          "source_url": "https://www.ucheba.ru/program/557221"
+        }
+      ],
+      "tuition_per_year": 699000
+    },
+    {
+      "faculty": "Головной учебно-исследовательский и методический центр Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Автоматизация технологических процессов и производств",
+      "direction_code": "15.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/557294",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 260,
+          "budget_places": 7,
+          "source_url": "https://www.ucheba.ru/program/557294"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 282,
+          "budget_places": 5,
+          "source_url": "https://www.ucheba.ru/program/557294"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 298,
+          "budget_places": 5,
+          "source_url": "https://www.ucheba.ru/program/557294"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 298,
+          "budget_places": 5,
+          "source_url": "https://www.ucheba.ru/program/557294"
+        }
+      ]
+    },
+    {
+      "faculty": "Факультет «Инженерный бизнес и менеджмент» Московского государственного технического университета им. Н.Э. Баумана",
+      "name": "Маркетинг цифровых технологий",
+      "direction_code": "38.03.05",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/601255",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 46
+            },
+            {
+              "subject": "social",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 278,
+          "source_url": "https://www.ucheba.ru/program/601255"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 276,
+          "budget_places": 45,
+          "source_url": "https://www.ucheba.ru/program/601255"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 285,
+          "budget_places": 45,
+          "source_url": "https://www.ucheba.ru/program/601255"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 283,
+          "budget_places": 24,
+          "source_url": "https://www.ucheba.ru/program/601255"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 291,
+          "budget_places": 28,
+          "source_url": "https://www.ucheba.ru/program/601255"
+        }
+      ],
+      "tuition_per_year": 699000
+    },
+    {
+      "faculty": "Приборостроительный факультет Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Проектирование систем управления ракетно-космическими комплексами",
+      "direction_code": "24.05.06",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852820",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 232,
+          "source_url": "https://www.ucheba.ru/program/852820"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 252,
+          "budget_places": 34,
+          "source_url": "https://www.ucheba.ru/program/852820"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Инженерный бизнес и менеджмент» Московского государственного технического университета им. Н.Э. Баумана",
+      "name": "Цифровая экономика и бизнес анализ",
+      "direction_code": "38.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852823",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 46
+            },
+            {
+              "subject": "english",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Инженерный бизнес и менеджмент» Московского государственного технического университета им. Н.Э. Баумана",
+      "name": "Менеджмент инновационных проектов и стартапов",
+      "direction_code": "38.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852824",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 46
+            },
+            {
+              "subject": "social",
+              "min_score": 46
+            },
+            {
+              "subject": "english",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Инженерный бизнес и менеджмент» Московского государственного технического университета им. Н.Э. Баумана",
+      "name": "Управление промышленными инновациями",
+      "direction_code": "27.03.05",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852826",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 266,
+          "source_url": "https://www.ucheba.ru/program/852826"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 280,
+          "budget_places": 173,
+          "source_url": "https://www.ucheba.ru/program/852826"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Конструирование ядерных реакторов и технологических установок",
+      "direction_code": "14.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852838",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 284,
+          "source_url": "https://www.ucheba.ru/program/852838"
+        },
+        {
+          "year": 2026,
+          "budget_places": 37,
+          "source_url": "https://www.ucheba.ru/program/852838"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Проектирование аэрокосмических ракетных и комбинированных реактивных двигателей",
+      "direction_code": "24.05.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852856",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 248,
+          "source_url": "https://www.ucheba.ru/program/852856"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 277,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/852856"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Проектирование газотурбинных двигателей и установок",
+      "direction_code": "24.05.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852857",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 248,
+          "source_url": "https://www.ucheba.ru/program/852857"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 275,
+          "budget_places": 51,
+          "source_url": "https://www.ucheba.ru/program/852857"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Электроракетные двигатели и энергоустановки космических аппаратов",
+      "direction_code": "24.05.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852859",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 248,
+          "source_url": "https://www.ucheba.ru/program/852859"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 276,
+          "budget_places": 18,
+          "source_url": "https://www.ucheba.ru/program/852859"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Радиоэлектроника и лазерная техника» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Алгоритмическое конструирование радиоэлектронных систем и комплексов",
+      "direction_code": "11.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852861",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 252,
+          "source_url": "https://www.ucheba.ru/program/852861"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 269,
+          "budget_places": 38,
+          "source_url": "https://www.ucheba.ru/program/852861"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Высокоавтоматизированные колесные машины",
+      "direction_code": "23.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852863",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 244,
+          "source_url": "https://www.ucheba.ru/program/852863"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 267,
+          "budget_places": 21,
+          "source_url": "https://www.ucheba.ru/program/852863"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Аэрокосмические системы и комплексы",
+      "direction_code": "24.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852865",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 283,
+          "source_url": "https://www.ucheba.ru/program/852865"
+        },
+        {
+          "year": 2026,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/852865"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Автоматизированные комплексы подготовки, старта и посадки летательных аппаратов и роботизированные напланетные базы",
+      "direction_code": "24.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852866",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 283,
+          "source_url": "https://www.ucheba.ru/program/852866"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 287,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/852866"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Инжиниринг и технологии производства ракетно-космической техники",
+      "direction_code": "24.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852867",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 283,
+          "source_url": "https://www.ucheba.ru/program/852867"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 310,
+          "budget_places": 18,
+          "source_url": "https://www.ucheba.ru/program/852867"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Строительство в космосе",
+      "direction_code": "24.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852868",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 283,
+          "source_url": "https://www.ucheba.ru/program/852868"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 295,
+          "budget_places": 18,
+          "source_url": "https://www.ucheba.ru/program/852868"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Машиностроительные технологии» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Цифровые и гибридные технологии литья",
+      "direction_code": "15.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852871",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 231,
+          "source_url": "https://www.ucheba.ru/program/852871"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 254,
+          "budget_places": 35,
+          "source_url": "https://www.ucheba.ru/program/852871"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Машиностроительные технологии» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Технологии и оборудование сварочного производства",
+      "direction_code": "15.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852873",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 231,
+          "source_url": "https://www.ucheba.ru/program/852873"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 267,
+          "budget_places": 16,
+          "source_url": "https://www.ucheba.ru/program/852873"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Машиностроительные технологии» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Проектирование технологий и оборудования автоматизированных металлургических машин",
+      "direction_code": "15.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852874",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 231,
+          "source_url": "https://www.ucheba.ru/program/852874"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 254,
+          "budget_places": 35,
+          "source_url": "https://www.ucheba.ru/program/852874"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Машиностроительные технологии» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Лазерные технологии и оборудование аддитивного производства",
+      "direction_code": "15.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852875",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 231,
+          "source_url": "https://www.ucheba.ru/program/852875"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 263,
+          "budget_places": 35,
+          "source_url": "https://www.ucheba.ru/program/852875"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Головной учебно-исследовательский и методический центр Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Информационная безопасность автоматизированных систем",
+      "direction_code": "10.05.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/809094",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2023,
+          "passing_score_budget": 281,
+          "source_url": "https://www.ucheba.ru/program/809094"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 282,
+          "budget_places": 2,
+          "source_url": "https://www.ucheba.ru/program/809094"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 285,
+          "budget_places": 2,
+          "source_url": "https://www.ucheba.ru/program/809094"
+        },
+        {
+          "year": 2026,
+          "budget_places": 2,
+          "source_url": "https://www.ucheba.ru/program/809094"
+        }
+      ]
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Электромобили и транспортно-технологические средства с комбинированными энергоустановками",
+      "direction_code": "13.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/830047",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 249,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/830047"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 275,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/830047"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Машиностроительные технологии» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Специализированые робототехнические комплексы для сварки и неразрушающего контроля",
+      "direction_code": "15.05.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/830050",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 235,
+          "budget_places": 16,
+          "source_url": "https://www.ucheba.ru/program/830050"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 258,
+          "budget_places": 16,
+          "source_url": "https://www.ucheba.ru/program/830050"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Мобильные наземные робототехнические комплексы",
+      "direction_code": "15.05.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/830051",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 252,
+          "budget_places": 16,
+          "source_url": "https://www.ucheba.ru/program/830051"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 273,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/830051"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Биомедицинская техника» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Цифровая биомедицинская инженерия",
+      "direction_code": "09.03.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/847865",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 291,
+          "source_url": "https://www.ucheba.ru/program/847865"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 287,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/847865"
+        }
+      ],
+      "tuition_per_year": 429000
+    },
+    {
+      "faculty": "Головной учебно-исследовательский и методический центр Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Инноватика",
+      "direction_code": "27.03.05",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/824435",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2024,
+          "passing_score_budget": 269,
+          "budget_places": 2,
+          "source_url": "https://www.ucheba.ru/program/824435"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 266,
+          "budget_places": 4,
+          "source_url": "https://www.ucheba.ru/program/824435"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 280,
+          "budget_places": 4,
+          "source_url": "https://www.ucheba.ru/program/824435"
+        }
+      ]
+    },
+    {
+      "faculty": "Факультет «Лингвистика» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Фундаментальная и компьютерная лингвистика",
+      "direction_code": "45.03.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835754",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "english",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "math",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Информатика и системы управления» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Искусственный интеллект в системах обработки информации и управления",
+      "direction_code": "09.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835879",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 262,
+          "budget_places": 37,
+          "source_url": "https://www.ucheba.ru/program/835879"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 293,
+          "budget_places": 70,
+          "source_url": "https://www.ucheba.ru/program/835879"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Информатика и системы управления» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Программно-аппаратное обеспечение систем искусственного интеллекта",
+      "direction_code": "09.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835884",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 262,
+          "budget_places": 28,
+          "source_url": "https://www.ucheba.ru/program/835884"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 291,
+          "budget_places": 51,
+          "source_url": "https://www.ucheba.ru/program/835884"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Информатика и системы управления» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Разработка автоматизированных систем в защищенном исполнении",
+      "direction_code": "10.05.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835890",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 285,
+          "budget_places": 11,
+          "source_url": "https://www.ucheba.ru/program/835890"
+        },
+        {
+          "year": 2026,
+          "budget_places": 28,
+          "source_url": "https://www.ucheba.ru/program/835890"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Информатика и системы управления» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Приборы и системы ориентации, стабилизации и навигации",
+      "direction_code": "24.05.06",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835897",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 237,
+          "budget_places": 72,
+          "source_url": "https://www.ucheba.ru/program/835897"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 258,
+          "budget_places": 72,
+          "source_url": "https://www.ucheba.ru/program/835897"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Фундаментальные науки» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Математическое моделирование, вычислительные технологии и искусственный интеллект в науке и технике",
+      "direction_code": "01.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835899",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 287,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/835899"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 294,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/835899"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Фундаментальные науки» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Математические методы искусственного интеллекта и управления",
+      "direction_code": "01.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835900",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 287,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/835900"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 297,
+          "budget_places": 38,
+          "source_url": "https://www.ucheba.ru/program/835900"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Цифровые технологии в автоматизации производства",
+      "direction_code": "15.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835902",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 298,
+          "budget_places": 21,
+          "source_url": "https://www.ucheba.ru/program/835902"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 298,
+          "budget_places": 42,
+          "source_url": "https://www.ucheba.ru/program/835902"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Гидромашины и цифровое управление гидропневмосистемами",
+      "direction_code": "13.03.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835904",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 243,
+          "budget_places": 43,
+          "source_url": "https://www.ucheba.ru/program/835904"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 267,
+          "budget_places": 43,
+          "source_url": "https://www.ucheba.ru/program/835904"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Автономные колесные и гусеничные машины",
+      "direction_code": "15.03.06",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835914",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 269,
+          "budget_places": 19,
+          "source_url": "https://www.ucheba.ru/program/835914"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 296,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/835914"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Инженерный бизнес и менеджмент» Московского государственного технического университета им. Н.Э. Баумана",
+      "name": "Технологии электронного бизнеса",
+      "direction_code": "38.03.05",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835922",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 46
+            },
+            {
+              "subject": "social",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 283,
+          "budget_places": 33,
+          "source_url": "https://www.ucheba.ru/program/835922"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 299,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/835922"
+        }
+      ],
+      "tuition_per_year": 699000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Возобновляемые источники энергии",
+      "direction_code": "13.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852832",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 248,
+          "source_url": "https://www.ucheba.ru/program/852832"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 270,
+          "budget_places": 25,
+          "source_url": "https://www.ucheba.ru/program/852832"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Электротехнические системы и комплексы",
+      "direction_code": "13.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852833",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 248,
+          "source_url": "https://www.ucheba.ru/program/852833"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 275,
+          "budget_places": 25,
+          "source_url": "https://www.ucheba.ru/program/852833"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Приборостроительный факультет Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Оборудование автоматизированных комплексов подготовки, старта и посадки летательных аппаратов (отраслевая)",
+      "direction_code": "24.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/469766",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 250,
+          "source_url": "https://www.ucheba.ru/program/469766"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 223,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/469766"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 266,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/469766"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 277,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/469766"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 279,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/469766"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Криогенная техника",
+      "direction_code": "16.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/469867",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 153,
+          "source_url": "https://www.ucheba.ru/program/469867"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 209,
+          "budget_places": 27,
+          "source_url": "https://www.ucheba.ru/program/469867"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 247,
+          "budget_places": 25,
+          "source_url": "https://www.ucheba.ru/program/469867"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 246,
+          "budget_places": 24,
+          "source_url": "https://www.ucheba.ru/program/469867"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 259,
+          "budget_places": 25,
+          "source_url": "https://www.ucheba.ru/program/469867"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Кафедра «Безопасность в цифровом мире» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Безопасность цифровой среды",
+      "direction_code": "10.05.05",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/781107",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 256,
+          "source_url": "https://www.ucheba.ru/program/781107"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 256,
+          "budget_places": 13,
+          "source_url": "https://www.ucheba.ru/program/781107"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 275,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/781107"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 279,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/781107"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 279,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/781107"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Радиоэлектроника и лазерная техника» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Лазерные и оптико-электронные информационно-измерительные системы",
+      "direction_code": "12.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/183817",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 226,
+          "source_url": "https://www.ucheba.ru/program/183817"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 228,
+          "budget_places": 83,
+          "source_url": "https://www.ucheba.ru/program/183817"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 237,
+          "budget_places": 84,
+          "source_url": "https://www.ucheba.ru/program/183817"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 248,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/183817"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 265,
+          "budget_places": 83,
+          "source_url": "https://www.ucheba.ru/program/183817"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Фундаментальные науки» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Техническая физика",
+      "direction_code": "16.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/183899",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 238,
+          "source_url": "https://www.ucheba.ru/program/183899"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 241,
+          "budget_places": 44,
+          "source_url": "https://www.ucheba.ru/program/183899"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 263,
+          "budget_places": 42,
+          "source_url": "https://www.ucheba.ru/program/183899"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 259,
+          "budget_places": 42,
+          "source_url": "https://www.ucheba.ru/program/183899"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 282,
+          "budget_places": 42,
+          "source_url": "https://www.ucheba.ru/program/183899"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Автономные системы и устройства обработки информации и управления",
+      "direction_code": "27.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/183990",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 160,
+          "source_url": "https://www.ucheba.ru/program/183990"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 247,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/183990"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 269,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/183990"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 263,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/183990"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 284,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/183990"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Высокоавтоматизированные транспортные и тяговые машины",
+      "direction_code": "23.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/183995",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 201,
+          "source_url": "https://www.ucheba.ru/program/183995"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 216,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/183995"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 256,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/183995"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 244,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/183995"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 291,
+          "budget_places": 21,
+          "source_url": "https://www.ucheba.ru/program/183995"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Машиностроительные технологии» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Технологии и оборудование микро и наноэлектроники",
+      "direction_code": "11.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184006",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 226,
+          "source_url": "https://www.ucheba.ru/program/184006"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 245,
+          "budget_places": 22,
+          "source_url": "https://www.ucheba.ru/program/184006"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 267,
+          "budget_places": 22,
+          "source_url": "https://www.ucheba.ru/program/184006"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 273,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/184006"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 294,
+          "budget_places": 18,
+          "source_url": "https://www.ucheba.ru/program/184006"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Машиностроительные технологии» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Материаловедение и технологии современных материалов",
+      "direction_code": "22.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184012",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 185,
+          "source_url": "https://www.ucheba.ru/program/184012"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 195,
+          "budget_places": 37,
+          "source_url": "https://www.ucheba.ru/program/184012"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 221,
+          "budget_places": 39,
+          "source_url": "https://www.ucheba.ru/program/184012"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 233,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/184012"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 251,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/184012"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Машиностроительные технологии» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Метрология и метрологическое обеспечение интеллектуальных измерительных систем",
+      "direction_code": "27.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184015",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 206,
+          "source_url": "https://www.ucheba.ru/program/184015"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 211,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/184015"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 226,
+          "budget_places": 18,
+          "source_url": "https://www.ucheba.ru/program/184015"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 239,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/184015"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 255,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/184015"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Машиностроительные технологии» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Наноинженерия в машиностроении",
+      "direction_code": "28.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184016",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 238,
+          "source_url": "https://www.ucheba.ru/program/184016"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 237,
+          "budget_places": 39,
+          "source_url": "https://www.ucheba.ru/program/184016"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 259,
+          "budget_places": 38,
+          "source_url": "https://www.ucheba.ru/program/184016"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 259,
+          "budget_places": 38,
+          "source_url": "https://www.ucheba.ru/program/184016"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 276,
+          "budget_places": 38,
+          "source_url": "https://www.ucheba.ru/program/184016"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Высокотехнологические вакуумные, компрессорные, пневматические системы и агрегаты",
+      "direction_code": "15.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184050",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "chemistry",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 189,
+          "source_url": "https://www.ucheba.ru/program/184050"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 201,
+          "budget_places": 30,
+          "source_url": "https://www.ucheba.ru/program/184050"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 236,
+          "budget_places": 30,
+          "source_url": "https://www.ucheba.ru/program/184050"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 240,
+          "budget_places": 30,
+          "source_url": "https://www.ucheba.ru/program/184050"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 265,
+          "budget_places": 16,
+          "source_url": "https://www.ucheba.ru/program/184050"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Безопасность жизнедеятельности в техносфере",
+      "direction_code": "20.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184062",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "chemistry",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 167,
+          "source_url": "https://www.ucheba.ru/program/184062"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 191,
+          "budget_places": 44,
+          "source_url": "https://www.ucheba.ru/program/184062"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 226,
+          "budget_places": 42,
+          "source_url": "https://www.ucheba.ru/program/184062"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 223,
+          "budget_places": 42,
+          "source_url": "https://www.ucheba.ru/program/184062"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 245,
+          "budget_places": 42,
+          "source_url": "https://www.ucheba.ru/program/184062"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Робототехника и комплексная автоматизация» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Динамика и прочность машин",
+      "direction_code": "15.03.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184083",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 202,
+          "source_url": "https://www.ucheba.ru/program/184083"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 242,
+          "budget_places": 51,
+          "source_url": "https://www.ucheba.ru/program/184083"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 265,
+          "budget_places": 42,
+          "source_url": "https://www.ucheba.ru/program/184083"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 269,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/184083"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 293,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/184083"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Робототехника и комплексная автоматизация» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Подъемно-транспортные системы и роботы",
+      "direction_code": "23.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184084",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 224,
+          "source_url": "https://www.ucheba.ru/program/184084"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 219,
+          "budget_places": 28,
+          "source_url": "https://www.ucheba.ru/program/184084"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 247,
+          "budget_places": 24,
+          "source_url": "https://www.ucheba.ru/program/184084"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 244,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/184084"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 269,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/184084"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Информатика и системы управления» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Инженерия интеллектуальных систем обработки информации и управления",
+      "direction_code": "09.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184111",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 287,
+          "source_url": "https://www.ucheba.ru/program/184111"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 274,
+          "budget_places": 179,
+          "source_url": "https://www.ucheba.ru/program/184111"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 294,
+          "budget_places": 158,
+          "source_url": "https://www.ucheba.ru/program/184111"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 262,
+          "budget_places": 37,
+          "source_url": "https://www.ucheba.ru/program/184111"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 293,
+          "budget_places": 59,
+          "source_url": "https://www.ucheba.ru/program/184111"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Информатика и системы управления» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Математические методы защиты информации",
+      "direction_code": "10.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184114",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 247,
+          "source_url": "https://www.ucheba.ru/program/184114"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 277,
+          "budget_places": 18,
+          "source_url": "https://www.ucheba.ru/program/184114"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 286,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184114"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 275,
+          "budget_places": 9,
+          "source_url": "https://www.ucheba.ru/program/184114"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 290,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184114"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Радиотехнический факультет Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Проектирование и технологии электронных средств (отраслевая)",
+      "direction_code": "11.03.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184145",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 237,
+          "source_url": "https://www.ucheba.ru/program/184145"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 235,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184145"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 261,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184145"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 271,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184145"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 281,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184145"
+        }
+      ]
+    },
+    {
+      "faculty": "Радиотехнический факультет Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Интеллектуальные радиоэлектронные системы и комплексы (отраслевая)",
+      "direction_code": "11.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184149",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 203,
+          "source_url": "https://www.ucheba.ru/program/184149"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 221,
+          "budget_places": 78,
+          "source_url": "https://www.ucheba.ru/program/184149"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 260,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/184149"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 247,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/184149"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 266,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184149"
+        }
+      ]
+    },
+    {
+      "faculty": "Факультет «Ракетно-космическая техника» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Крупногабаритные космические конструкции (отраслевая)",
+      "direction_code": "24.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184161",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 158,
+          "source_url": "https://www.ucheba.ru/program/184161"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 223,
+          "budget_places": 36,
+          "source_url": "https://www.ucheba.ru/program/184161"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 262,
+          "budget_places": 34,
+          "source_url": "https://www.ucheba.ru/program/184161"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 261,
+          "budget_places": 34,
+          "source_url": "https://www.ucheba.ru/program/184161"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 278,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184161"
+        }
+      ]
+    },
+    {
+      "faculty": "Факультет «Ракетно-космическая техника» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Системы управления космических аппаратов (отраслевая)",
+      "direction_code": "24.05.06",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184165",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 175,
+          "source_url": "https://www.ucheba.ru/program/184165"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 211,
+          "budget_places": 36,
+          "source_url": "https://www.ucheba.ru/program/184165"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 240,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184165"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 243,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184165"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 253,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184165"
+        }
+      ]
+    },
+    {
+      "faculty": "Аэрокосмический факультет Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Системы управления летательных и космических аппаратов",
+      "direction_code": "24.05.06",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184187",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 230,
+          "source_url": "https://www.ucheba.ru/program/184187"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 211,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184187"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 259,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184187"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 249,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184187"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 262,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184187"
+        }
+      ]
+    },
+    {
+      "faculty": "Аэрокосмический факультет Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Математическое и компьютерное моделирование в инженерных задачах (отраслевая)",
+      "direction_code": "02.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/184190",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 228,
+          "source_url": "https://www.ucheba.ru/program/184190"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 254,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184190"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 274,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184190"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 277,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184190"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 291,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/184190"
+        }
+      ]
+    },
+    {
+      "faculty": "Факультет «Машиностроительные технологии» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Технологическое обеспечение машиностроительных производств",
+      "direction_code": "15.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/549915",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 158,
+          "source_url": "https://www.ucheba.ru/program/549915"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 229,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/549915"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 255,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/549915"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 252,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/549915"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 289,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/549915"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Холодильная техника и кондиционирование воздуха",
+      "direction_code": "16.03.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/549917",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 148,
+          "source_url": "https://www.ucheba.ru/program/549917"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 188,
+          "budget_places": 44,
+          "source_url": "https://www.ucheba.ru/program/549917"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 229,
+          "budget_places": 43,
+          "source_url": "https://www.ucheba.ru/program/549917"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 241,
+          "budget_places": 43,
+          "source_url": "https://www.ucheba.ru/program/549917"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 266,
+          "budget_places": 23,
+          "source_url": "https://www.ucheba.ru/program/549917"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Управление движением и процессами обтекания специальных аппаратов различного назначения",
+      "direction_code": "24.05.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/557299",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 200,
+          "source_url": "https://www.ucheba.ru/program/557299"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 220,
+          "budget_places": 46,
+          "source_url": "https://www.ucheba.ru/program/557299"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 241,
+          "budget_places": 36,
+          "source_url": "https://www.ucheba.ru/program/557299"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 254,
+          "budget_places": 43,
+          "source_url": "https://www.ucheba.ru/program/557299"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 270,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/557299"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Лингвистика» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Теоретическая и прикладная лингвистика",
+      "direction_code": "45.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/610626",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "english",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "social",
+              "min_score": 46
+            },
+            {
+              "subject": "history",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Технологии создания интегральных композитных конструкций",
+      "direction_code": "22.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/691446",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2022,
+          "passing_score_budget": 218,
+          "source_url": "https://www.ucheba.ru/program/691446"
+        },
+        {
+          "year": 2023,
+          "passing_score_budget": 196,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/691446"
+        },
+        {
+          "year": 2024,
+          "passing_score_budget": 226,
+          "budget_places": 21,
+          "source_url": "https://www.ucheba.ru/program/691446"
+        },
+        {
+          "year": 2025,
+          "passing_score_budget": 239,
+          "budget_places": 40,
+          "source_url": "https://www.ucheba.ru/program/691446"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 252,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/691446"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Информатика и системы управления» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Разработка высокоинтерактивных систем и компьютерных игр",
+      "direction_code": "09.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852816",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 14,
+          "source_url": "https://www.ucheba.ru/program/852816"
+        }
+      ],
+      "tuition_per_year": 699000
+    },
+    {
+      "faculty": "Факультет «Ракетно-космическая техника» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Инжиниринг и технологии производства ракетно-космической техники (отраслевая)",
+      "direction_code": "24.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852821",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 261,
+          "source_url": "https://www.ucheba.ru/program/852821"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 278,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/852821"
+        }
+      ]
+    },
+    {
+      "faculty": "Факультет «Фундаментальные науки» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Интеллектуальные электромеханические системы преобразования энергии",
+      "direction_code": "13.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852822",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 255,
+          "source_url": "https://www.ucheba.ru/program/852822"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 278,
+          "budget_places": 19,
+          "source_url": "https://www.ucheba.ru/program/852822"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Кафедра «Безопасность в цифровом мире» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Цифровая безопасность (852827)",
+      "direction_code": "40.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852827",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "social",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 46
+            },
+            {
+              "subject": "history",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "budget_places": 5,
+          "source_url": "https://www.ucheba.ru/program/852827"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Робототехника и комплексная автоматизация» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Информационные технологии в реальном секторе цифровой экономики",
+      "direction_code": "09.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852828",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 269,
+          "source_url": "https://www.ucheba.ru/program/852828"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 290,
+          "budget_places": 33,
+          "source_url": "https://www.ucheba.ru/program/852828"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Робототехника и комплексная автоматизация» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Интеграция технических систем в креативную экономику",
+      "direction_code": "15.03.06",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852829",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 274,
+          "source_url": "https://www.ucheba.ru/program/852829"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 301,
+          "budget_places": 16,
+          "source_url": "https://www.ucheba.ru/program/852829"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Робототехника и комплексная автоматизация» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Механические устройства робототехнических систем",
+      "direction_code": "15.03.06",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852830",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 274,
+          "source_url": "https://www.ucheba.ru/program/852830"
+        },
+        {
+          "year": 2026,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/852830"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Оборудование и плазменные технологии в микроэлектронике",
+      "direction_code": "11.03.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852831",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 268,
+          "source_url": "https://www.ucheba.ru/program/852831"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 279,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/852831"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Комбинированные двигатели внутреннего сгорания",
+      "direction_code": "13.03.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852837",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 243,
+          "source_url": "https://www.ucheba.ru/program/852837"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 277,
+          "budget_places": 25,
+          "source_url": "https://www.ucheba.ru/program/852837"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Ионно-плазменные установки и технологии",
+      "direction_code": "16.03.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852839",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 256,
+          "source_url": "https://www.ucheba.ru/program/852839"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 273,
+          "budget_places": 50,
+          "source_url": "https://www.ucheba.ru/program/852839"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Прикладная теплофизика и теоретическая теплотехника",
+      "direction_code": "24.05.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852858",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 248,
+          "source_url": "https://www.ucheba.ru/program/852858"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 273,
+          "budget_places": 18,
+          "source_url": "https://www.ucheba.ru/program/852858"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Высокоавтоматизированные колесные машины специального назначения",
+      "direction_code": "23.05.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852864",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 247,
+          "source_url": "https://www.ucheba.ru/program/852864"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 265,
+          "budget_places": 21,
+          "source_url": "https://www.ucheba.ru/program/852864"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Машиностроительные технологии» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Интеллектуальные инструментальные системы и технологии в машиностроении",
+      "direction_code": "15.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852869",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 231,
+          "source_url": "https://www.ucheba.ru/program/852869"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 268,
+          "budget_places": 36,
+          "source_url": "https://www.ucheba.ru/program/852869"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Машиностроительные технологии» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Проектирование высокопроизводительных механосборочных производств",
+      "direction_code": "15.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852870",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 231,
+          "source_url": "https://www.ucheba.ru/program/852870"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 284,
+          "budget_places": 49,
+          "source_url": "https://www.ucheba.ru/program/852870"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Машиностроительные технологии» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Технологии и машины обработки давлением",
+      "direction_code": "15.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/852872",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 231,
+          "source_url": "https://www.ucheba.ru/program/852872"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 258,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/852872"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Информатика и системы управления» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Киберфизические системы и технологии искусственного интеллекта",
+      "direction_code": "09.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835883",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 262,
+          "budget_places": 28,
+          "source_url": "https://www.ucheba.ru/program/835883"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 291,
+          "budget_places": 33,
+          "source_url": "https://www.ucheba.ru/program/835883"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Информатика и системы управления» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Программное обеспечение систем искусственного интеллекта",
+      "direction_code": "09.03.04",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835885",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "physics",
+              "min_score": 46
+            },
+            {
+              "subject": "informatics",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 302,
+          "budget_places": 42,
+          "source_url": "https://www.ucheba.ru/program/835885"
+        },
+        {
+          "year": 2026,
+          "budget_places": 14,
+          "source_url": "https://www.ucheba.ru/program/835885"
+        }
+      ],
+      "tuition_per_year": 699000
+    },
+    {
+      "faculty": "Кафедра «Безопасность в цифровом мире» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Цифровая безопасность (835898)",
+      "direction_code": "40.05.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835898",
+      "exams": [
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "social",
+          "min_score": 46
+        },
+        {
+          "one_of": [
+            {
+              "subject": "informatics",
+              "min_score": 46
+            },
+            {
+              "subject": "history",
+              "min_score": 46
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "year": 2026,
+          "passing_score_budget": 246,
+          "budget_places": 5,
+          "source_url": "https://www.ucheba.ru/program/835898"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Фундаментальные науки» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Математическое моделирование, анализ и оптимизация динамических систем",
+      "direction_code": "01.03.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835901",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 271,
+          "budget_places": 18,
+          "source_url": "https://www.ucheba.ru/program/835901"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 288,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/835901"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Робототехника и комплексная автоматизация» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Роботы гибких производственных систем",
+      "direction_code": "15.03.06",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835903",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 274,
+          "budget_places": 15,
+          "source_url": "https://www.ucheba.ru/program/835903"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 301,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/835903"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Поршневые двигатели летательных аппаратов",
+      "direction_code": "24.05.02",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835907",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 248,
+          "budget_places": 18,
+          "source_url": "https://www.ucheba.ru/program/835907"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 275,
+          "budget_places": 18,
+          "source_url": "https://www.ucheba.ru/program/835907"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Подводные робототехнические комплексы",
+      "direction_code": "15.03.06",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835916",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 269,
+          "budget_places": 17,
+          "source_url": "https://www.ucheba.ru/program/835916"
+        },
+        {
+          "year": 2026,
+          "budget_places": 20,
+          "source_url": "https://www.ucheba.ru/program/835916"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Специальное машиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Композитные конструкции ракет и космических аппаратов",
+      "direction_code": "24.03.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/835917",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 266,
+          "budget_places": 19,
+          "source_url": "https://www.ucheba.ru/program/835917"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 283,
+          "budget_places": 19,
+          "source_url": "https://www.ucheba.ru/program/835917"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Фундаментальные науки» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Вычислительная механика сплошной среды и математическое моделирование",
+      "direction_code": "01.03.03",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/830028",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 271,
+          "budget_places": 18,
+          "source_url": "https://www.ucheba.ru/program/830028"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 288,
+          "budget_places": 38,
+          "source_url": "https://www.ucheba.ru/program/830028"
+        }
+      ],
+      "tuition_per_year": 529000
+    },
+    {
+      "faculty": "Факультет «Энергомашиностроение» Московского государственного технического университета им. Н.Э. Баумана (национальный исследовательский университет)",
+      "name": "Системы термостатирования и заправки криогенными топливами летательных аппаратов",
+      "direction_code": "24.05.01",
+      "study_form": "full_time",
+      "source_url": "https://www.ucheba.ru/program/830059",
+      "exams": [
+        {
+          "subject": "math",
+          "min_score": 46
+        },
+        {
+          "subject": "russian",
+          "min_score": 46
+        },
+        {
+          "subject": "physics",
+          "min_score": 46
+        }
+      ],
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_budget": 271,
+          "budget_places": 18,
+          "source_url": "https://www.ucheba.ru/program/830059"
+        },
+        {
+          "year": 2026,
+          "passing_score_budget": 277,
+          "budget_places": 18,
+          "source_url": "https://www.ucheba.ru/program/830059"
+        }
+      ],
+      "tuition_per_year": 529000
+    }
+  ]
+}

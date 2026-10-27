@@ -120,14 +120,14 @@ def strategy(request):
         "has_tests": has_tests,
         "has_scores": bool(scores),
         "source": source,
-        "strategy": _present(current, scores) if current else None,
+        "strategy": _present(current, scores, participant) if current else None,
     })
 
 
-def _present(strategy, scores):
+def _present(strategy, scores, participant):
     """Подставляет названия тестов и программ вместо кодов и id."""
     tests = {test.code: test for test in Test.objects.all()}
-    programs = {p["id"]: p for p in llm_strategy.pick_programs(scores)}
+    programs = {p["id"]: p for p in llm_strategy.pick_programs(scores, participant)}
 
     return {
         "summary": strategy.summary,

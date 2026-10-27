@@ -195,3 +195,31 @@ class TestTakeTest(TestCase):
         self.answer([0, 0])
         self.client.post("/tests/my/forget/")
         self.assertContains(self.client.get("/tests/my/"), "введите свой код")
+
+
+class TestDirectionsMapping(SimpleTestCase):
+    """Таблица «тип профессий → направления обучения»."""
+
+    def test_klimov_mapping_is_valid(self):
+        from .directions import load_mapping, validate_mapping
+
+        test = read_test_file(DATA_DIR / "klimov_ddo.json")
+        mapping = load_mapping(test["code"])
+        self.assertIsNotNone(mapping)
+        self.assertEqual(validate_mapping(mapping, {s["code"] for s in test["scales"]}), [])
+
+    def test_validation_finds_errors(self):
+        from .directions import validate_mapping
+
+        data = {"scales": {"zzz": {"groups": ["9"], "codes": ["09.03"]}}}
+        self.assertEqual(len(validate_mapping(data, {"signs"})), 3)
+
+    def test_group_and_exact_code(self):
+        from .directions import matching_scales
+
+        # Программная инженерия: группа 09 у «знаковой системы»
+        self.assertEqual(matching_scales("klimov-ddo", "09.03.04", ["signs", "art"]), ["signs"])
+        # Менеджмент: вся группа 38 у «знаковой», а отдельным кодом ещё и у «человек — человек»
+        self.assertEqual(matching_scales("klimov-ddo", "38.03.02", ["people", "signs"]), ["people", "signs"])
+        self.assertEqual(matching_scales("klimov-ddo", "", ["signs"]), [])
+        self.assertEqual(matching_scales("no-such-test", "09.03.04", ["signs"]), [])
