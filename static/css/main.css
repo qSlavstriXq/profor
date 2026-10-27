@@ -155,6 +155,12 @@ a { color: var(--color-primary); }
 .badge--blocked { background: var(--color-blocked); }
 .badge--unverified { background: transparent; border: 1px dashed var(--color-muted); color: var(--color-muted); font-weight: 400; }
 
+.filters { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; align-items: center; padding: 1rem; margin-bottom: 1rem; background: var(--color-surface); border-radius: 8px; }
+.filters__row { display: flex; gap: 0.5rem; align-items: center; }
+.filters select, .filters input[type="search"] { padding: 0.4rem; max-width: 100%; }
+.filters__categories { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; border: none; margin: 0; padding: 0; }
+.filters__categories legend { float: left; margin-right: 0.5rem; padding: 0; }
+
 /* ---------- Стратегия ---------- */
 
 .strategy__summary { font-size: 1.1rem; }

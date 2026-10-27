@@ -4,7 +4,7 @@ from django.test import TestCase, override_settings
 
 from .loader import UniversityDataError, load_university, validate_university_data
 from .models import Program
-from .services import build_recommendations
+from .services import apply_filters, build_recommendations
 
 SAMPLE = {
     "code": "test-u",
@@ -105,3 +105,71 @@ class RecommendationTests(TestCase):
     @override_settings(SHOW_UNVERIFIED_DATA=False)
     def test_unverified_hidden_by_setting(self):
         self.assertEqual(build_recommendations({"math": 80, "russian": 80, "physics": 90}), [])
+
+
+class FilterTests(TestCase):
+    RESULTS = [
+        {"university_code": "hse", "name": "Экономика", "faculty": "Факультет экономических наук",
+         "category": "реалистично"},
+        {"university_code": "hse", "name": "Программная инженерия", "faculty": "ФКН",
+         "category": "амбициозно"},
+        {"university_code": "mipt", "name": "Прикладная математика", "faculty": "",
+         "category": "очень сложно"},
+    ]
+
+    def names(self, **filters):
+        return [r["name"] for r in apply_filters(self.RESULTS, **filters)]
+
+    def test_no_filters_keeps_all(self):
+        self.assertEqual(len(self.names()), 3)
+
+    def test_by_university(self):
+        self.assertEqual(self.names(university="mipt"), ["Прикладная математика"])
+
+    def test_by_categories(self):
+        self.assertEqual(self.names(categories=["реалистично", "амбициозно"]),
+                         ["Экономика", "Программная инженерия"])
+
+    def test_query_searches_name_and_faculty_ignoring_case(self):
+        self.assertEqual(self.names(query="ПРОГРАММ"), ["Программная инженерия"])
+        self.assertEqual(self.names(query="экономических"), ["Экономика"])
+
+
+class ProgramsPageTests(TestCase):
+    URL = "/programs/"
+
+    def setUp(self):
+        load_university(sample())  # проходной 240-250: с суммой 240 «реалистично»
+        hard = sample(code="hard-u", short_name="Сложный")
+        for stat in hard["programs"][0]["stats"]:
+            stat["passing_score_budget"] = 299  # «очень сложно»
+        load_university(hard)
+
+    def enter_scores(self):
+        return self.client.post(self.URL, {"math": "80", "russian": "80", "physics": "80"})
+
+    def test_post_redirects_and_remembers_scores(self):
+        response = self.enter_scores()
+        self.assertRedirects(response, self.URL)
+        self.assertEqual(self.client.session["ege_scores"]["math"], 80)
+
+    def test_without_scores_only_form(self):
+        response = self.client.get(self.URL)
+        self.assertIsNone(response.context["results"])
+
+    def test_by_default_hides_very_hard(self):
+        self.enter_scores()
+        response = self.client.get(self.URL)
+        self.assertEqual([r["university"] for r in response.context["results"]], ["ТУ"])
+        self.assertEqual(response.context["total"], 2)
+
+    def test_all_categories_when_none_checked(self):
+        self.enter_scores()
+        response = self.client.get(self.URL, {"filtered": "1"})
+        self.assertEqual(len(response.context["results"]), 2)
+
+    def test_university_filter(self):
+        self.enter_scores()
+        response = self.client.get(self.URL, {"filtered": "1", "university": "hard-u"})
+        self.assertEqual([r["university"] for r in response.context["results"]], ["Сложный"])
+        self.assertContains(response, "Очень сложно (1)")

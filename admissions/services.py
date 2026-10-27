@@ -69,6 +69,7 @@ def build_recommendations(student_scores):
         results.append({
             "id": program.pk,
             "university": program.university.short_name or program.university.name,
+            "university_code": program.university.code or str(program.university.pk),
             "name": program.name,
             "faculty": program.faculty,
             "direction_code": program.direction_code,
@@ -79,6 +80,7 @@ def build_recommendations(student_scores):
             "total": result["total"],
             "reference": result["reference"],
             "margin": result["margin"],
+            "margin_points": round(result["margin"]),  # для текста: «запас 5 баллов»
             "trend": result["trend"],
             "category": result["category"],
             "below_minimum": [Subject(code).label for code in result["below_minimum"]],
@@ -87,6 +89,26 @@ def build_recommendations(student_scores):
 
     results.sort(key=lambda r: (CATEGORY_ORDER[r["category"]], -r["margin"]))
     return results
+
+
+# Что показываем, пока школьник не выбрал категории сам: реальные варианты
+DEFAULT_CATEGORIES = ["страховка", "реалистично", "амбициозно"]
+
+
+def apply_filters(results, university="", categories=None, query=""):
+    """Оставляет программы, подходящие под фильтры.
+
+    university: код вуза, пусто = все вузы.
+    categories: список категорий, пусто или None = все.
+    query: часть названия программы или факультета, без учёта регистра.
+    """
+    query = query.strip().lower()
+    return [
+        r for r in results
+        if (not university or r["university_code"] == university)
+        and (not categories or r["category"] in categories)
+        and (not query or query in r["name"].lower() or query in r["faculty"].lower())
+    ]
 
 
 def _latest_places(program):

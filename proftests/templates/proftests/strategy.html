@@ -6,15 +6,15 @@
 <h1>Моя стратегия</h1>
 
 {% if not has_tests %}
-  <p>Стратегия строится по результатам профтестов. Сначала пройди хотя бы один тест.</p>
+  <p>Стратегия строится по результатам профтестов. Сначала пройдите хотя бы один тест.</p>
   <a class="button button--primary" href="{% url 'proftests:list' %}">Пройти профтест</a>
 
 {% elif not strategy %}
   {# Ключ Qwen есть, но стратегию ещё не составляли (или данные поменялись) #}
-  <p>ИИ-помощник разберёт твои результаты, предложит направления поступления
+  <p>ИИ-помощник разберёт ваши результаты, предложит направления поступления
      и подскажет, какие курсы и тесты пройти дальше.</p>
   {% if not has_scores %}
-    <p class="note">Чтобы в стратегии были конкретные программы вузов, сначала введи баллы ЕГЭ
+    <p class="note">Чтобы в стратегии были конкретные программы вузов, сначала введите баллы ЕГЭ
        на странице <a href="{% url 'admissions:programs' %}">подбора программ</a>.</p>
   {% endif %}
   <form method="post">
@@ -55,7 +55,7 @@
           <p><strong>Программы:</strong></p>
           <ul>
             {% for program in direction.programs %}
-              <li>{{ program.university }}, {{ program.name }} — {{ program.category }}{% if not program.verified %} <span class="badge badge--unverified">не проверено</span>{% endif %}</li>
+              <li>{{ program.university }}, {{ program.name }} — {{ program.category }}{% if not program.verified %} <span class="badge badge--unverified">Не проверено</span>{% endif %}</li>
             {% endfor %}
           </ul>
         {% endif %}

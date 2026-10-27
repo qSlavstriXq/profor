@@ -175,24 +175,24 @@ def stub_strategy(data):
         ))
         directions.append(Direction(
             title=top["name"],
-            why=top["about"] or "Это самая выраженная шкала в твоём результате.",
+            why=top["about"] or "Это самая выраженная шкала в вашем результате.",
         ))
 
     if not directions:
         directions.append(Direction(
-            title="Сначала пройди профтест",
+            title="Сначала пройдите профтест",
             why="Без результатов тестов подобрать направления не получится.",
         ))
 
     next_steps = [
         NextStep(
             kind="test", title=t["title"], test_code=t["test_code"],
-            why=t["description"] or "Поможет лучше понять твои интересы.",
+            why=t["description"] or "Поможет лучше понять ваши интересы.",
         )
         for t in data["available_tests"]
     ]
     return Strategy(
-        summary="Помощник на основе ИИ пока не подключён. Ниже краткие итоги по твоим тестам.",
+        summary="Помощник на основе ИИ пока не подключён. Ниже краткие итоги по вашим тестам.",
         test_analysis=analysis,
         directions=directions,
         next_steps=next_steps[:6],

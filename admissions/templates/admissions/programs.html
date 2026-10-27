@@ -1,10 +1,11 @@
 {% extends "base.html" %}
+{% load russian %}
 
 {% block title %}Подбор программ — {{ SITE_NAME }}{% endblock %}
 
 {% block content %}
 <h1>Подбор программ</h1>
-<p>Введите баллы ЕГЭ по предметам (или прогноз по пробникам). Пустые поля можно оставить.</p>
+<p>Введите баллы ЕГЭ или ожидаемые баллы по результатам пробных экзаменов. Предметы, которые вы не сдаёте, оставьте пустыми.</p>
 
 <form method="post">
   {% csrf_token %}
@@ -19,43 +20,82 @@
 
 {% if results is not None %}
   <h2>Результат</h2>
+
+  <form method="get" class="filters">
+    <input type="hidden" name="filtered" value="1">
+    <div class="filters__row">
+      <label for="university">Вуз</label>
+      <select id="university" name="university">
+        <option value="">Все вузы</option>
+        {% for code, name in universities %}
+          <option value="{{ code }}"{% if code == selected_university %} selected{% endif %}>{{ name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="filters__row">
+      <label for="q">Поиск</label>
+      <input id="q" name="q" type="search" value="{{ query }}" placeholder="Название или факультет">
+    </div>
+    <fieldset class="filters__categories">
+      <legend>Шансы</legend>
+      {% for c in categories %}
+        <label>
+          <input type="checkbox" name="category" value="{{ c.name }}"{% if c.checked %} checked{% endif %}>
+          {{ c.name|capfirst }} ({{ c.count }})
+        </label>
+      {% endfor %}
+    </fieldset>
+    <button class="button button--primary" type="submit">Применить</button>
+    <a href="{% url 'admissions:programs' %}">Сбросить</a>
+  </form>
+
+  <p class="note">Показано: {{ results|length }} из {{ total|plural:"программы,программ,программ" }}, подходящих по предметам.</p>
   {% for r in results %}
     <div class="card">
       <strong>{{ r.university }}</strong>, {{ r.name }}
       {% if not r.verified %}
-        <span class="badge badge--unverified" title="Данные взяты из открытых источников и ещё не сверены вручную">не проверено</span>
+        <span class="badge badge--unverified" title="Данные взяты из открытых источников и ещё не сверены вручную">Не проверено</span>
       {% endif %}
       <br>
       {% if r.faculty %}<span class="note">{{ r.faculty }}</span><br>{% endif %}
-      Категория:
+      Шансы:
       {% if r.category == "реалистично" %}
-        <span class="badge badge--realistic">{{ r.category }}</span>
+        <span class="badge badge--realistic">{{ r.category|capfirst }}</span>
       {% elif r.category == "амбициозно" %}
-        <span class="badge badge--ambitious">{{ r.category }}</span>
+        <span class="badge badge--ambitious">{{ r.category|capfirst }}</span>
       {% elif r.category == "страховка" %}
-        <span class="badge badge--safe">{{ r.category }}</span>
+        <span class="badge badge--safe">{{ r.category|capfirst }}</span>
       {% elif r.category == "очень сложно" %}
-        <span class="badge badge--hard">{{ r.category }}</span>
+        <span class="badge badge--hard">{{ r.category|capfirst }}</span>
       {% else %}
-        <span class="badge badge--blocked">{{ r.category }}</span>
+        <span class="badge badge--blocked">{{ r.category|capfirst }}</span>
       {% endif %}
-      <br>
-      <span class="note">
-        Ваша сумма {{ r.total }}, ожидаемый проходной {{ r.reference|floatformat:0 }}
-        (по данным за {{ r.years }} г., изменение за год {{ r.trend|floatformat:1 }}),
-        разница {{ r.margin|floatformat:0 }}
+      <p class="note">
+        Ваша сумма — {{ r.total|plural:"балл,балла,баллов" }}, ожидаемый проходной балл — {{ r.reference|floatformat:0 }}.
+        {% if r.margin_points > 0 %}
+          Запас — {{ r.margin_points|plural:"балл,балла,баллов" }}.
+        {% elif r.margin_points < 0 %}
+          Не хватает {{ r.margin_points|plural:"балла,баллов,баллов" }}.
+        {% else %}
+          Ваша сумма равна ожидаемому проходному баллу.
+        {% endif %}
         <br>
-        Засчитаны предметы: {{ r.subjects|join:", " }}
-        {% if r.budget_places %}· бюджетных мест: {{ r.budget_places }}{% endif %}
-        {% if r.source_url %}· <a href="{{ r.source_url }}" target="_blank" rel="noopener">источник</a>{% endif %}
-      </span>
+        Оценка по данным за {{ r.years|plural:"год,года,лет" }}{% if r.years > 1 %}{% if r.trend >= 0.5 %}: проходной балл растёт в среднем на {{ r.trend|plural:"балл,балла,баллов" }} в год{% elif r.trend <= -0.5 %}: проходной балл снижается в среднем на {{ r.trend|plural:"балл,балла,баллов" }} в год{% else %}: проходной балл почти не меняется{% endif %}{% endif %}.
+        <br>
+        Засчитаны предметы: {{ r.subjects|join:", "|lower }}.
+        {% if r.budget_places %}Бюджетных мест: {{ r.budget_places }}.{% endif %}
+        {% if r.source_url %}<a href="{{ r.source_url }}" target="_blank" rel="noopener">Источник данных</a>{% endif %}
+      </p>
       {% if r.below_minimum %}
-        <br>
-        <span class="note">Не хватает минимального балла по предмету: {{ r.below_minimum|join:", " }}</span>
+        <p class="note">Не набран минимальный балл по {% if r.below_minimum|length == 1 %}предмету{% else %}предметам{% endif %}: {{ r.below_minimum|join:", "|lower }}.</p>
       {% endif %}
     </div>
   {% empty %}
-    <p>Подходящих программ в базе не найдено. Проверьте, что у программ есть предметы и проходные баллы, а если непроверенные данные скрыты настройкой, то и галочка «Проверено вручную».</p>
+    {% if total %}
+      <p>Под выбранные фильтры программ нет. Отметьте другие категории или выберите все вузы.</p>
+    {% else %}
+      <p>В базе пока нет программ, куда можно поступить с вашим набором предметов.</p>
+    {% endif %}
   {% endfor %}
   <p class="note">Это ориентир, а не гарантия поступления.</p>
 {% endif %}

@@ -149,7 +149,7 @@ class TestStrategyPage(TestCase):
         session = self.client.session
         session[SESSION_KEY] = Participant.objects.create().code
         session.save()
-        self.assertContains(self.client.get(self.URL), "Сначала пройди хотя бы один тест")
+        self.assertContains(self.client.get(self.URL), "Сначала пройдите хотя бы один тест")
 
     @override_settings(QWEN_API_KEY="")
     def test_without_key_shows_stub(self):

@@ -26,7 +26,7 @@
 
   <form method="post" action="{% url 'proftests:forget_code' %}">
     {% csrf_token %}
-    <button class="button button--link" type="submit">Это не мой код / выйти на этом устройстве</button>
+    <button class="button button--link" type="submit">Это не мой код: выйти на этом устройстве</button>
   </form>
 {% else %}
   <p>Если вы уже проходили тесты, введите свой код участника.</p>
