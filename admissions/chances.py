@@ -1,40 +1,34 @@
-# ВСЕ ДАННЫЕ ВЫМЫШЛЕННЫЕ, только для обучения.
+# Расчёт шансов поступления. Не зависит от Django, поэтому легко тестируется.
 
-# Баллы школьника по предметам ЕГЭ (ключ: предмет, значение: балл)
-STUDENT = {"math": 85, "informatics": 80, "russian": 88, "physics": 70}
-
-# Список программ. Каждая программа это словарь с её данными.
-PROGRAMS = [
-    {
-        "university": "Университет А",
-        "name": "Прикладная информатика",
-        "subjects": ["math", "informatics", "russian"],
-        "passing_scores": [245, 250, 258],  # проходные за 3 года, от старого к новому
-    },
-    {
-        "university": "Университет Б",
-        "name": "Экономика",
-        "subjects": ["math", "russian", "social"],
-        "passing_scores": [240, 246, 249],
-    },
-    {
-        "university": "Университет В",
-        "name": "Физика",
-        "subjects": ["math", "physics", "russian"],
-        "passing_scores": [220, 226, 228],
-    },
-    {
-        "university": "Университет Г",
-        "name": "Прикладная математика",
-        "subjects": ["math", "informatics", "russian"],
-        "passing_scores": [262, 266, 270],
-    },
-]
+# Сколько годовых приростов проходного балла добавляем к ориентиру,
+# если проходной балл растёт. Значение подбирается на реальных данных.
+TREND_WEIGHT = 1.0
 
 
 def reference_score(passing_scores):
-    """Ориентир: средний проходной балл за прошлые годы."""
-    return sum(passing_scores) / len(passing_scores)
+    """Взвешенное среднее проходных баллов: чем новее год, тем больший вес.
+
+    Баллы идут от старого года к новому, веса 1, 2, 3, ...
+    """
+    weights = range(1, len(passing_scores) + 1)
+    weighted_sum = sum(score * w for score, w in zip(passing_scores, weights))
+    return weighted_sum / sum(weights)
+
+
+def trend_per_year(passing_scores):
+    """Средний годовой прирост проходного балла (от первого года к последнему)."""
+    if len(passing_scores) < 2:
+        return 0.0
+    return (passing_scores[-1] - passing_scores[0]) / (len(passing_scores) - 1)
+
+
+def expected_score(passing_scores):
+    """Ожидаемый проходной балл: взвешенное среднее плюс рост, если он есть.
+
+    Если проходной балл падает, ориентир не снижаем: осторожная оценка лучше.
+    """
+    growth = max(trend_per_year(passing_scores), 0)
+    return reference_score(passing_scores) + TREND_WEIGHT * growth
 
 
 def classify(margin):
@@ -49,36 +43,39 @@ def classify(margin):
 
 
 def evaluate(student, program):
-    """Оценивает одну программу. Если не хватает предмета, возвращает None."""
+    """Оценивает одну программу для школьника.
+
+    student: {"math": 85, ...}
+    program: {"subjects": [...], "passing_scores": [...],
+              "min_scores": {"russian": 70}  # необязательно
+             }
+
+    Возвращает None, если у школьника нет нужного предмета.
+    Если по какому-то предмету не хватает минимального балла,
+    категория будет "недоступно".
+    """
     for subject in program["subjects"]:
         if subject not in student:
             return None
 
     total = sum(student[subject] for subject in program["subjects"])
-    reference = reference_score(program["passing_scores"])
+    reference = expected_score(program["passing_scores"])
     margin = total - reference
+
+    min_scores = program.get("min_scores", {})
+    below_minimum = [
+        subject
+        for subject in program["subjects"]
+        if student[subject] < min_scores.get(subject, 0)
+    ]
+
+    category = "недоступно" if below_minimum else classify(margin)
 
     return {
         "total": total,
         "reference": reference,
         "margin": margin,
-        "category": classify(margin),
+        "trend": trend_per_year(program["passing_scores"]),
+        "below_minimum": below_minimum,
+        "category": category,
     }
-
-
-def main():
-    for program in PROGRAMS:
-        result = evaluate(STUDENT, program)
-        title = f"{program['university']}, {program['name']}"
-        if result is None:
-            print(f"{title}: нет нужного предмета, пропускаем")
-        else:
-            print(
-                f"{title}: {result['category']} "
-                f"(ваши {result['total']}, ориентир {result['reference']:.0f}, "
-                f"разница {result['margin']:+.0f})"
-            )
-
-
-if __name__ == "__main__":
-    main()
