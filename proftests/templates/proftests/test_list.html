@@ -9,6 +9,7 @@
 <div class="cards">
   {% for test in tests %}
     <article class="card">
+      <p class="note">{{ test.get_kind_display }}</p>
       <h2 class="card__title">{{ test.title }}</h2>
       <p class="card__text">{{ test.description }}</p>
       <a class="button" href="{% url 'proftests:detail' test.code %}">Подробнее</a>

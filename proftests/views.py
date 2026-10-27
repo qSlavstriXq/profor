@@ -73,9 +73,11 @@ def my_results(request):
             return redirect("proftests:my_results")
 
     attempts = participant.attempts.select_related("test") if participant else []
+    external = participant.external_results.all() if participant else []
     return render(request, "proftests/my_results.html", {
         "participant": participant,
         "attempts": attempts,
+        "external": external,
         "error": error,
     })
 
@@ -94,7 +96,7 @@ def strategy(request):
 
     scores = request.session.get(SCORES_SESSION_KEY, {})
     basis = llm_strategy.make_basis(participant, scores)
-    has_tests = bool(basis["attempts"])
+    has_tests = bool(basis["attempts"] or basis["external"])
     saved = llm_strategy.saved_strategy(participant, basis) if has_tests else None
 
     if request.method == "POST":

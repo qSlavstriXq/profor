@@ -223,3 +223,141 @@ class TestDirectionsMapping(SimpleTestCase):
         self.assertEqual(matching_scales("klimov-ddo", "38.03.02", ["people", "signs"]), ["people", "signs"])
         self.assertEqual(matching_scales("klimov-ddo", "", ["signs"]), [])
         self.assertEqual(matching_scales("no-such-test", "09.03.04", ["signs"]), [])
+
+
+class TestFormatShortcuts(SimpleTestCase):
+    """Сокращения формата: шкала ответов, обратные вопросы, правильный ответ."""
+
+    def test_answer_scale_and_reverse(self):
+        from .scoring import expand_test_data
+
+        data = expand_test_data({
+            "answer_scale": [{"text": "Нет", "points": 1}, {"text": "Да", "points": 3}],
+            "questions": [{"text": "А", "scale": "s"}, {"text": "Б", "scale": "s", "reverse": True}],
+        })
+        direct, reverse = data["questions"]
+        self.assertEqual([(o["text"], o["scale"], o["points"]) for o in direct["options"]],
+                         [("Нет", "s", 1), ("Да", "s", 3)])
+        self.assertEqual([o["points"] for o in reverse["options"]], [3, 1])
+
+    def test_correct_answer(self):
+        from .scoring import expand_test_data
+
+        data = expand_test_data({"questions": [{"scale": "alg", "options": [
+            {"text": "1", "correct": False}, {"text": "2", "correct": True},
+        ]}]})
+        self.assertEqual([o["points"] for o in data["questions"][0]["options"]], [0, 1])
+
+    def test_examples_are_valid(self):
+        from .scoring import expand_test_data
+
+        for name in ("personality_example.json", "knowledge_example.json"):
+            data = expand_test_data(read_test_file(DATA_DIR / "examples" / name))
+            self.assertEqual(validate_test_data(data), [], name)
+
+    def test_knowledge_needs_one_correct_answer(self):
+        from .scoring import expand_test_data
+
+        data = expand_test_data(read_test_file(DATA_DIR / "examples" / "knowledge_example.json"))
+        data["questions"][0]["options"][0]["correct"] = True  # теперь правильных два
+        self.assertIn("ровно один правильный", " ".join(validate_test_data(data)))
+
+
+class TestNewKindsLoad(TestCase):
+    def test_knowledge_test_loads_with_subject_and_scores(self):
+        test = load_test(read_test_file(DATA_DIR / "examples" / "knowledge_example.json"))
+        self.assertEqual(test.kind, "knowledge")
+        self.assertFalse(test.is_active)  # образцы на сайте не показываются
+        self.assertEqual(test.scales.get(code="algebra").subject, "math")
+        # Все ответы правильные: алгебра 2 из 2, геометрия 1 из 1
+        participant = Participant.objects.create()
+        answers = {q: q.options.get(points=1) for q in test.questions.all()}
+        from .services import save_attempt
+        attempt = save_attempt(participant, test, answers)
+        self.assertEqual(attempt.scores, {"algebra": 2, "geometry": 1})
+
+    def test_unknown_subject_is_rejected(self):
+        data = read_test_file(DATA_DIR / "examples" / "knowledge_example.json")
+        data["scales"][0]["subject"] = "astrology"
+        with self.assertRaises(TestDataError):
+            load_test(data)
+
+
+class TestExternalImport(TestCase):
+    MAPPING = {
+        "source": "center", "source_name": "Центр", "participant_code_column": "Код",
+        "date_column": "Дата", "tests": [{"test_name": "Тест центра", "scales": [
+            {"column": "Техника", "name": "Человек — техника", "max": 8,
+             "levels": [{"min": 0, "max": 4, "level": "низкий"}, {"min": 5, "max": 8, "level": "высокий"}]},
+        ]}],
+    }
+
+    def setUp(self):
+        self.participant = Participant.objects.create()
+
+    def rows(self, code=None, value="6", **extra):
+        row = {"Код": (code or self.participant.code).lower(), "Дата": "15.10.2026",
+               "Техника": value, "ФИО": "Иванов Иван"}
+        row.update(extra)
+        return [row]
+
+    def test_saves_only_mapped_data(self):
+        from .external import import_rows
+        from .models import ExternalResult
+
+        report = import_rows(self.MAPPING, self.rows())
+        self.assertEqual(report["saved"], 1)
+        result = ExternalResult.objects.get()
+        self.assertEqual(result.scales, [{"name": "Человек — техника", "value": 6, "max": 8, "level": "высокий"}])
+        self.assertNotIn("Иванов", str(result.__dict__))  # имя из таблицы не сохранилось
+
+    def test_reimport_updates_instead_of_duplicating(self):
+        from .external import import_rows
+        from .models import ExternalResult
+
+        import_rows(self.MAPPING, self.rows(value="6"))
+        import_rows(self.MAPPING, self.rows(value="3"))
+        self.assertEqual(ExternalResult.objects.get().scales[0]["value"], 3)
+
+    def test_unknown_code_is_reported_not_created(self):
+        from .external import import_rows
+
+        report = import_rows(self.MAPPING, self.rows(code="P-NOSUCH"))
+        self.assertEqual(report["unknown_codes"], [2])
+        self.assertEqual(Participant.objects.count(), 1)
+
+    def test_bad_date_saves_nothing(self):
+        from .external import import_rows
+        from .models import ExternalResult
+
+        report = import_rows(self.MAPPING, self.rows(Дата="31.02.2026"))
+        self.assertTrue(report["errors"])
+        self.assertFalse(ExternalResult.objects.exists())
+
+    def test_missing_column_is_an_error(self):
+        from .external import ExternalDataError, import_rows
+
+        with self.assertRaises(ExternalDataError):
+            import_rows(self.MAPPING, [{"Код": self.participant.code}])
+
+    def test_dry_run_saves_nothing(self):
+        from .external import import_rows
+        from .models import ExternalResult
+
+        report = import_rows(self.MAPPING, self.rows(), dry_run=True)
+        self.assertEqual(report["saved"], 1)
+        self.assertFalse(ExternalResult.objects.exists())
+
+    def test_example_mapping_is_valid(self):
+        from .external import EXTERNAL_DIR, read_mapping
+
+        read_mapping(EXTERNAL_DIR / "example-center.json")  # не бросает ошибку
+
+    def test_results_go_to_strategy_input(self):
+        from llm.strategy import build_input, make_basis
+        from .external import import_rows
+
+        import_rows(self.MAPPING, self.rows())
+        data = build_input(self.participant)
+        self.assertEqual(data["external_results"][0]["test"], "Тест центра")
+        self.assertEqual(len(make_basis(self.participant, {})["external"]), 1)

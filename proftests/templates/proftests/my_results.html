@@ -10,7 +10,23 @@
     Ваш код участника: <strong class="code-box__code">{{ participant.code }}</strong>
   </div>
 
-  {% if attempts %}
+  {% if external %}
+    <h2>Результаты из других источников</h2>
+    {% for result in external %}
+      <article class="card">
+        <h3 class="card__title">{{ result.test_name }}</h3>
+        <p class="note">{{ result.source_name }}{% if result.taken_at %}, {{ result.taken_at|date:"j E Y" }}{% endif %}</p>
+        <ul>
+          {% for scale in result.scales %}
+            <li>{{ scale.name }}: {{ scale.value }}{% if scale.max %} из {{ scale.max }}{% endif %}{% if scale.level %} — {{ scale.level }}{% endif %}</li>
+          {% endfor %}
+        </ul>
+      </article>
+    {% endfor %}
+  {% endif %}
+
+  {% if attempts or external %}
+    {% if attempts %}<h2>Тесты на сайте</h2>{% endif %}
     <ul class="attempts">
       {% for attempt in attempts %}
         <li class="attempts__item">

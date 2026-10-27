@@ -2,6 +2,8 @@ import secrets
 
 from django.db import models
 
+from admissions.models import Subject
+
 # Буквы и цифры для кода участника. Убраны похожие символы (0/O, 1/I/L),
 # чтобы код было легко переписать с экрана.
 CODE_ALPHABET = "23456789ABCDEFGHJKMNPQRSTUVWXYZ"
@@ -16,7 +18,13 @@ def generate_participant_code():
 class Test(models.Model):
     """Профтест. Содержание загружается из JSON командой load_tests."""
 
+    class Kind(models.TextChoices):
+        CAREER = "career", "Профориентационный"
+        PERSONALITY = "personality", "Личностные качества"
+        KNOWLEDGE = "knowledge", "Знание предмета"
+
     code = models.SlugField("Код теста", unique=True)
+    kind = models.CharField("Вид теста", max_length=20, choices=Kind.choices, default=Kind.CAREER)
     title = models.CharField("Название", max_length=255)
     description = models.TextField("Описание", blank=True)
     instruction = models.TextField("Инструкция для школьника", blank=True)
@@ -43,6 +51,8 @@ class Scale(models.Model):
     name = models.CharField("Название", max_length=255)
     description = models.TextField("Описание", blank=True)
     order = models.PositiveSmallIntegerField("Порядок", default=0)
+    # Для тестов на знания: к какому предмету ЕГЭ относится шкала (тема)
+    subject = models.CharField("Предмет ЕГЭ", max_length=20, choices=Subject.choices, blank=True)
 
     class Meta:
         verbose_name = "Шкала"
@@ -202,3 +212,37 @@ class StrategyReport(models.Model):
 
     def __str__(self):
         return f"{self.participant} — {self.created_at:%d.%m.%Y %H:%M}"
+
+
+class ExternalResult(models.Model):
+    """Результат теста, пройденного вне сайта, например в центре профориентации.
+
+    Загружается из таблицы центра командой import_external. Храним только код участника,
+    название теста и баллы по шкалам: имена и контакты из таблицы центра не сохраняются.
+    """
+
+    participant = models.ForeignKey(
+        Participant, on_delete=models.CASCADE,
+        related_name="external_results", verbose_name="Участник",
+    )
+    source = models.SlugField("Код источника")
+    source_name = models.CharField("Источник", max_length=255)
+    test_name = models.CharField("Тест", max_length=255)
+    taken_at = models.DateField("Дата прохождения", null=True, blank=True)
+    # [{"name": "Человек — техника", "value": 7, "max": 10, "level": "высокий"}, ...]
+    scales = models.JSONField("Баллы по шкалам")
+    imported_at = models.DateTimeField("Загружено", auto_now=True)
+
+    class Meta:
+        verbose_name = "Внешний результат"
+        verbose_name_plural = "Внешние результаты"
+        ordering = ["-taken_at", "-imported_at"]
+        constraints = [
+            # Повторная загрузка той же таблицы обновляет запись, а не создаёт копию
+            models.UniqueConstraint(
+                fields=["participant", "source", "test_name", "taken_at"], name="unique_external_result",
+            ),
+        ]
+
+    def __str__(self):
+        return f"{self.participant} — {self.test_name} ({self.source_name})"

@@ -1,7 +1,8 @@
 from django.contrib import admin
 
 from .models import (
-    Answer, Attempt, Interpretation, Option, Participant, Question, Scale, StrategyReport, Test,
+    Answer, Attempt, ExternalResult, Interpretation, Option, Participant, Question, Scale,
+    StrategyReport, Test,
 )
 
 
@@ -18,7 +19,8 @@ class QuestionInline(admin.TabularInline):
 
 @admin.register(Test)
 class TestAdmin(admin.ModelAdmin):
-    list_display = ("title", "code", "is_active", "updated_at")
+    list_display = ("title", "code", "kind", "is_active", "updated_at")
+    list_filter = ("kind", "is_active")
     inlines = [ScaleInline, QuestionInline]
 
 
@@ -79,3 +81,10 @@ class StrategyReportAdmin(admin.ModelAdmin):
     list_display = ("participant", "model_name", "created_at")
     search_fields = ("participant__code",)
     readonly_fields = ("participant", "model_name", "basis", "content", "created_at")
+
+
+@admin.register(ExternalResult)
+class ExternalResultAdmin(admin.ModelAdmin):
+    list_display = ("participant", "test_name", "source_name", "taken_at", "imported_at")
+    list_filter = ("source_name", "test_name")
+    search_fields = ("participant__code",)

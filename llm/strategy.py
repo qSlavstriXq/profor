@@ -69,7 +69,9 @@ def pick_programs(scores, participant=None):
 def make_basis(participant, scores):
     """На каких данных строится стратегия. Если это поменялось, старая устарела."""
     attempt_ids = sorted(a.pk for a in latest_attempts(participant).values())
-    return {"attempts": attempt_ids, "scores": scores or {}}
+    # Внешние результаты: id и время загрузки, чтобы заметить и новые, и обновлённые
+    external = sorted([r.pk, r.imported_at.isoformat()] for r in participant.external_results.all())
+    return {"attempts": attempt_ids, "external": external, "scores": scores or {}}
 
 
 def saved_strategy(participant, basis):
@@ -106,6 +108,7 @@ def build_input(participant, programs=None):
         tests.append({
             "test_code": attempt.test.code,
             "title": attempt.test.title,
+            "kind": attempt.test.kind,
             "scales": [
                 {
                     "name": row["name"],
@@ -129,7 +132,18 @@ def build_input(participant, programs=None):
          "category": p["category"], "fits": p.get("fits", [])}
         for p in (programs or [])
     ]
-    return {"tests": tests, "available_tests": available_tests, "programs": programs}
+    # Результаты из центра профориентации и других источников вне сайта
+    external_results = [
+        {
+            "source": r.source_name,
+            "test": r.test_name,
+            "date": r.taken_at.isoformat() if r.taken_at else None,
+            "scales": r.scales,
+        }
+        for r in participant.external_results.all()
+    ]
+    return {"tests": tests, "external_results": external_results,
+            "available_tests": available_tests, "programs": programs}
 
 
 def check_against_data(strategy, data):
@@ -203,7 +217,7 @@ def generate_strategy(participant, programs=None, llm_client=None):
     """Возвращает (стратегия, источник). Источник: "llm" или "stub"."""
     data = build_input(participant, programs)
 
-    if not data["tests"]:
+    if not data["tests"] and not data["external_results"]:
         return stub_strategy(data), "stub"  # нечего анализировать, токены не тратим
     if llm_client is None and not client.is_configured():
         return stub_strategy(data), "stub"

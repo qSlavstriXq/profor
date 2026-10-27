@@ -1,0 +1,59 @@
+{
+  "code": "knowledge-math-example",
+  "kind": "knowledge",
+  "title": "ОБРАЗЕЦ ФОРМАТА: тест по математике",
+  "description": "Образец структуры файла. Задания условные, это не проверенный тест.",
+  "instruction": "В каждом задании выберите один правильный ответ.",
+  "source": "Укажите, кто составил задания (например, методист школы)",
+  "is_active": false,
+  "scales": [
+    {
+      "code": "algebra",
+      "name": "Алгебра",
+      "subject": "math",
+      "interpretations": [
+        {"min": 0, "max": 0, "level": "нужно повторить", "text": "Условная расшифровка."},
+        {"min": 1, "max": 1, "level": "базовый уровень", "text": "Условная расшифровка."},
+        {"min": 2, "max": 2, "level": "уверенный уровень", "text": "Условная расшифровка."}
+      ]
+    },
+    {
+      "code": "geometry",
+      "name": "Геометрия",
+      "subject": "math",
+      "interpretations": [
+        {"min": 0, "max": 0, "level": "нужно повторить", "text": "Условная расшифровка."},
+        {"min": 1, "max": 1, "level": "уверенный уровень", "text": "Условная расшифровка."}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "text": "Решите уравнение 2x + 6 = 0.",
+      "scale": "algebra",
+      "options": [
+        {"text": "x = 3", "correct": false},
+        {"text": "x = −3", "correct": true},
+        {"text": "x = 6", "correct": false}
+      ]
+    },
+    {
+      "text": "Чему равно 2 в степени 5?",
+      "scale": "algebra",
+      "options": [
+        {"text": "10", "correct": false},
+        {"text": "25", "correct": false},
+        {"text": "32", "correct": true}
+      ]
+    },
+    {
+      "text": "Сумма углов треугольника равна…",
+      "scale": "geometry",
+      "options": [
+        {"text": "90°", "correct": false},
+        {"text": "180°", "correct": true},
+        {"text": "360°", "correct": false}
+      ]
+    }
+  ]
+}

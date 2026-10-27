@@ -18,7 +18,7 @@
       {# Полоска результата: ширину задаёт значение points из max_points #}
       <meter class="result__meter" min="0" max="{{ row.max_points }}" value="{{ row.points }}"></meter>
       <p class="result__points">
-        {{ row.points }} из {{ row.max_points }}
+        {{ row.points }} из {{ row.max_points }}{% if attempt.test.kind == "knowledge" %} правильных{% endif %}
         {% if row.interpretation %}— {{ row.interpretation.level }}{% endif %}
       </p>
       {% if row.interpretation %}<p>{{ row.interpretation.text }}</p>{% endif %}

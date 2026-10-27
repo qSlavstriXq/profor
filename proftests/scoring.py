@@ -2,8 +2,51 @@
 # Не зависит от Django, поэтому легко тестируется (как admissions/chances.py).
 
 
+KINDS = ("career", "personality", "knowledge")
+
+
+def expand_test_data(data):
+    """Разворачивает сокращения формата в обычные варианты ответа «шкала + баллы».
+
+    1. Шкала ответов на весь тест (для личностных опросников):
+       "answer_scale": [{"text": "Не согласен", "points": 1}, ..., {"text": "Согласен", "points": 5}]
+       Вопрос без своих вариантов получает эти варианты для своей шкалы "scale".
+       "reverse": true переворачивает баллы: согласие с обратным утверждением даёт 1, а не 5.
+    2. Правильный ответ (для тестов на знания): у вопроса есть "scale", у вариантов
+       "correct": true/false. Правильный даёт 1 балл, остальные 0.
+    3. Вариант без "scale" берёт шкалу вопроса.
+
+    Исходный словарь не меняется: возвращается новый.
+    """
+    answer_scale = data.get("answer_scale") or []
+    all_points = [item["points"] for item in answer_scale]
+    questions = []
+    for question in data.get("questions", []):
+        question = dict(question)
+        scale = question.get("scale")
+        if not question.get("options") and answer_scale:
+            question["options"] = [
+                {
+                    "text": item["text"],
+                    "points": (min(all_points) + max(all_points) - item["points"])
+                    if question.get("reverse") else item["points"],
+                }
+                for item in answer_scale
+            ]
+        options = []
+        for option in question.get("options", []):
+            option = dict(option)
+            option.setdefault("scale", scale)
+            if "correct" in option:
+                option.setdefault("points", 1 if option["correct"] else 0)
+            options.append(option)
+        question["options"] = options
+        questions.append(question)
+    return {**data, "questions": questions}
+
+
 def validate_test_data(data):
-    """Проверяет содержимое JSON-файла теста. Возвращает список ошибок.
+    """Проверяет содержимое JSON-файла теста (уже развёрнутого). Возвращает список ошибок.
 
     Пустой список значит, что файл в порядке.
     """
@@ -13,12 +56,18 @@ def validate_test_data(data):
             errors.append(f"нет поля {field}")
     if errors:
         return errors
+    if data.get("kind", "career") not in KINDS:
+        errors.append(f"неизвестный вид теста {data['kind']!r}, допустимы: {', '.join(KINDS)}")
 
     scale_codes = [scale["code"] for scale in data["scales"]]
     if len(scale_codes) != len(set(scale_codes)):
         errors.append("коды шкал повторяются")
 
     for number, question in enumerate(data["questions"], start=1):
+        if data.get("kind") == "knowledge":
+            correct = [o for o in question.get("options", []) if o.get("correct")]
+            if len(correct) != 1:
+                errors.append(f"вопрос {number}: в тесте на знания нужен ровно один правильный ответ")
         options = question.get("options", [])
         if len(options) < 2:
             errors.append(f"вопрос {number}: меньше двух вариантов ответа")

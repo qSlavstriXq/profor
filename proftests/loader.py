@@ -3,8 +3,10 @@ from pathlib import Path
 
 from django.db import transaction
 
+from admissions.models import Subject
+
 from .models import Interpretation, Option, Question, Scale, Test
-from .scoring import validate_test_data
+from .scoring import expand_test_data, validate_test_data
 
 DATA_DIR = Path(__file__).resolve().parent / "data"
 
@@ -25,7 +27,12 @@ def load_test(data):
     transaction.atomic: если что-то сломается посередине,
     база вернётся к прежнему состоянию, полутеста не останется.
     """
+    data = expand_test_data(data)  # сокращения формата -> обычные варианты ответа
     errors = validate_test_data(data)
+    errors += [
+        f"шкала {s['code']}: неизвестный предмет {s['subject']!r}"
+        for s in data.get("scales", []) if s.get("subject") and s["subject"] not in Subject.values
+    ]
     if errors:
         raise TestDataError("; ".join(errors))
 
@@ -45,6 +52,8 @@ def load_test(data):
     test.description = data.get("description", "")
     test.instruction = data.get("instruction", "")
     test.source = data.get("source", "")
+    test.kind = data.get("kind", Test.Kind.CAREER)
+    test.is_active = data.get("is_active", True)
     test.save()
 
     scales = {}
@@ -52,6 +61,7 @@ def load_test(data):
         scale = Scale.objects.create(
             test=test, code=item["code"], name=item["name"],
             description=item.get("description", ""), order=order,
+            subject=item.get("subject", ""),
         )
         scales[scale.code] = scale
         Interpretation.objects.bulk_create(
