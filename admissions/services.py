@@ -44,6 +44,7 @@ def build_recommendations(student_scores):
             continue  # у школьника нет нужного предмета
 
         results.append({
+            "id": program.pk,
             "university": program.university.name,
             "name": program.name,
             "total": result["total"],

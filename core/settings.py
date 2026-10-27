@@ -10,22 +10,36 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 
+import os
 from pathlib import Path
+
+from django.core.exceptions import ImproperlyConfigured
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Секреты и настройки, которые отличаются на ноутбуке и на сервере,
+# читаются из файла .env (образец: .env.example). В Git он не попадает.
+load_dotenv(BASE_DIR / ".env")
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-$k&w_jf60le%l*(%6_r8ni)32cm*amm6zk757nss#+17yaut(5'
+def env_list(name, default=""):
+    """Строку «a,b,c» из .env превращает в список ["a", "b", "c"]."""
+    return [item.strip() for item in os.getenv(name, default).split(",") if item.strip()]
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = []
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
+if not SECRET_KEY:
+    raise ImproperlyConfigured(
+        "Не задан DJANGO_SECRET_KEY. Скопируйте .env.example в .env и впишите ключ."
+    )
+
+# На сервере DEBUG обязательно False: иначе при ошибке посетители увидят код и настройки
+DEBUG = os.getenv("DJANGO_DEBUG", "False") == "True"
+
+ALLOWED_HOSTS = env_list("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost")
+CSRF_TRUSTED_ORIGINS = env_list("DJANGO_CSRF_TRUSTED_ORIGINS")
 
 
 # Application definition
@@ -140,4 +154,20 @@ MAILERS = {
     'default': {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
+}
+
+
+# Языковая модель (сейчас Qwen). Используется только в модуле llm/client.py
+QWEN_API_KEY = os.getenv("QWEN_API_KEY", "")
+QWEN_BASE_URL = os.getenv("QWEN_BASE_URL", "https://dashscope-intl.aliyuncs.com/compatible-mode/v1")
+QWEN_MODEL = os.getenv("QWEN_MODEL", "qwen-plus")
+QWEN_MAX_TOKENS = int(os.getenv("QWEN_MAX_TOKENS", "1500"))
+QWEN_TIMEOUT = int(os.getenv("QWEN_TIMEOUT", "60"))
+
+# Журнал: сообщения модуля llm (в том числе расход токенов) выводятся в консоль
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {"console": {"class": "logging.StreamHandler"}},
+    "loggers": {"llm": {"handlers": ["console"], "level": "INFO"}},
 }
