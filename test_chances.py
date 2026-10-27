@@ -1,6 +1,5 @@
 import unittest
-
-from chances import classify, evaluate, reference_score
+from admissions.chances import classify, evaluate, reference_score
 
 
 class TestChances(unittest.TestCase):
