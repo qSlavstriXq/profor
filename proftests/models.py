@@ -178,3 +178,27 @@ class Answer(models.Model):
         constraints = [
             models.UniqueConstraint(fields=["attempt", "question"], name="unique_answer"),
         ]
+
+
+class StrategyReport(models.Model):
+    """Сохранённый ответ модели со стратегией, чтобы не тратить токены
+    при каждом открытии страницы. Заглушки сюда не сохраняются."""
+
+    participant = models.ForeignKey(
+        Participant, on_delete=models.CASCADE,
+        related_name="strategy_reports", verbose_name="Участник",
+    )
+    created_at = models.DateTimeField("Создано", auto_now_add=True)
+    model_name = models.CharField("Модель", max_length=100)
+    # На каких данных построено: id прохождений и баллы ЕГЭ.
+    # Если данные поменялись, стратегию нужно составить заново.
+    basis = models.JSONField("Исходные данные")
+    content = models.JSONField("Стратегия")
+
+    class Meta:
+        verbose_name = "Стратегия"
+        verbose_name_plural = "Стратегии"
+        ordering = ["-created_at"]
+
+    def __str__(self):
+        return f"{self.participant} — {self.created_at:%d.%m.%Y %H:%M}"

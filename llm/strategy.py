@@ -4,7 +4,10 @@
 import logging
 from pathlib import Path
 
-from proftests.models import Test
+from django.conf import settings
+
+from admissions.services import build_recommendations
+from proftests.models import StrategyReport, Test
 from proftests.services import build_result
 
 from . import client
@@ -14,13 +17,60 @@ logger = logging.getLogger("llm")
 
 PROMPT_PATH = Path(__file__).resolve().parent / "prompts" / "strategy_system.txt"
 
+# Сколько программ максимум отдаём модели: больше программ, больше токенов
+MAX_PROGRAMS = 15
+
+
+def latest_attempts(participant):
+    """Последнее прохождение каждого теста: {id теста: прохождение}."""
+    latest = {}
+    for attempt in participant.attempts.select_related("test"):  # от новых к старым
+        latest.setdefault(attempt.test_id, attempt)
+    return latest
+
+
+def pick_programs(scores):
+    """Программы с шансами по баллам ЕГЭ. Недоступные модели не отдаём."""
+    if not scores:
+        return []
+    programs = [p for p in build_recommendations(scores) if p["category"] != "недоступно"]
+    return programs[:MAX_PROGRAMS]
+
+
+def make_basis(participant, scores):
+    """На каких данных строится стратегия. Если это поменялось, старая устарела."""
+    attempt_ids = sorted(a.pk for a in latest_attempts(participant).values())
+    return {"attempts": attempt_ids, "scores": scores or {}}
+
+
+def saved_strategy(participant, basis):
+    """Сохранённая стратегия, если она построена на тех же данных, иначе None."""
+    report = participant.strategy_reports.first()  # самая новая
+    if report is None or report.basis != basis:
+        return None
+    return Strategy.model_validate(report.content)
+
+
+def create_strategy(participant, scores, llm_client=None):
+    """Составляет стратегию и сохраняет её, если ответила модель.
+
+    Возвращает (стратегия, источник), как generate_strategy.
+    """
+    strategy, source = generate_strategy(participant, pick_programs(scores), llm_client)
+    if source == "llm":
+        StrategyReport.objects.create(
+            participant=participant,
+            model_name=settings.QWEN_MODEL,
+            basis=make_basis(participant, scores),
+            content=strategy.model_dump(),
+        )
+    return strategy, source
+
 
 def build_input(participant, programs=None):
     """Данные для модели. Только результаты, без кода участника:
     модели не нужно знать, кто это, поэтому и не отправляем."""
-    latest = {}  # последнее прохождение каждого теста
-    for attempt in participant.attempts.select_related("test"):  # от новых к старым
-        latest.setdefault(attempt.test_id, attempt)
+    latest = latest_attempts(participant)
 
     tests = []
     for attempt in latest.values():

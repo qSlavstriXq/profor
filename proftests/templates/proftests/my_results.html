@@ -19,6 +19,7 @@
         </li>
       {% endfor %}
     </ul>
+    <a class="button button--primary" href="{% url 'proftests:strategy' %}">Моя стратегия</a>
   {% else %}
     <p>Вы ещё не проходили тесты. <a href="{% url 'proftests:list' %}">Перейти к тестам</a></p>
   {% endif %}

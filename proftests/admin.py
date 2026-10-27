@@ -1,6 +1,8 @@
 from django.contrib import admin
 
-from .models import Answer, Attempt, Interpretation, Option, Participant, Question, Scale, Test
+from .models import (
+    Answer, Attempt, Interpretation, Option, Participant, Question, Scale, StrategyReport, Test,
+)
 
 
 class ScaleInline(admin.TabularInline):
@@ -70,3 +72,10 @@ class AttemptAdmin(admin.ModelAdmin):
     list_filter = ("test",)
     search_fields = ("participant__code",)
     inlines = [AnswerInline]
+
+
+@admin.register(StrategyReport)
+class StrategyReportAdmin(admin.ModelAdmin):
+    list_display = ("participant", "model_name", "created_at")
+    search_fields = ("participant__code",)
+    readonly_fields = ("participant", "model_name", "basis", "content", "created_at")

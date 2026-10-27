@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}Моя стратегия — {{ SITE_NAME }}{% endblock %}
+
+{% block content %}
+<h1>Моя стратегия</h1>
+
+{% if not has_tests %}
+  <p>Стратегия строится по результатам профтестов. Сначала пройди хотя бы один тест.</p>
+  <a class="button button--primary" href="{% url 'proftests:list' %}">Пройти профтест</a>
+
+{% elif not strategy %}
+  {# Ключ Qwen есть, но стратегию ещё не составляли (или данные поменялись) #}
+  <p>ИИ-помощник разберёт твои результаты, предложит направления поступления
+     и подскажет, какие курсы и тесты пройти дальше.</p>
+  {% if not has_scores %}
+    <p class="note">Чтобы в стратегии были конкретные программы вузов, сначала введи баллы ЕГЭ
+       на странице <a href="{% url 'admissions:programs' %}">подбора программ</a>.</p>
+  {% endif %}
+  <form method="post">
+    {% csrf_token %}
+    <button class="button button--primary" type="submit">Составить стратегию</button>
+  </form>
+  <p class="note">Это займёт до минуты.</p>
+
+{% else %}
+  {% if source == "stub" %}
+    <div class="alert alert--info">Это краткие итоги без ИИ-помощника. Полная стратегия появится, когда он будет подключён.</div>
+  {% endif %}
+
+  <p class="strategy__summary">{{ strategy.summary }}</p>
+
+  {% if strategy.test_analysis %}
+    <section class="strategy__section">
+      <h2>Разбор тестов</h2>
+      {% for item in strategy.test_analysis %}
+        <article class="card">
+          <h3 class="card__title">{{ item.title }}</h3>
+          <p>{{ item.summary }}</p>
+        </article>
+      {% endfor %}
+    </section>
+  {% endif %}
+
+  <section class="strategy__section">
+    <h2>Возможные направления</h2>
+    {% for direction in strategy.directions %}
+      <article class="card">
+        <h3 class="card__title">{{ direction.title }}</h3>
+        <p>{{ direction.why }}</p>
+        {% if direction.professions %}
+          <p><strong>Профессии:</strong> {{ direction.professions|join:", " }}</p>
+        {% endif %}
+        {% if direction.programs %}
+          <p><strong>Программы:</strong></p>
+          <ul>
+            {% for program in direction.programs %}
+              <li>{{ program.university }}, {{ program.name }} — {{ program.category }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </section>
+
+  {% if strategy.next_steps %}
+    <section class="strategy__section">
+      <h2>Что пройти дальше</h2>
+      <ul class="next-steps">
+        {% for step in strategy.next_steps %}
+          <li class="next-steps__item next-steps__item--{{ step.kind }}">
+            <strong>{% if step.kind == "test" %}Тест{% else %}Курс{% endif %}:</strong>
+            {% if step.test_code %}
+              <a href="{% url 'proftests:detail' step.test_code %}">{{ step.title }}</a>
+            {% else %}
+              {{ step.title }}
+            {% endif %}
+            {% if step.for_profession %}<span class="note">(для профессии: {{ step.for_profession }})</span>{% endif %}
+            <br>{{ step.why }}
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  <p class="note">Стратегия носит рекомендательный характер. Шансы поступления рассчитаны программой
+     по проходным баллам прошлых лет, а не ИИ.</p>
+{% endif %}
+{% endblock %}

@@ -1,6 +1,11 @@
+from django.contrib import messages
 from django.http import Http404
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views.decorators.http import require_POST
+
+from admissions.views import SCORES_SESSION_KEY
+from llm import client as llm_client
+from llm import strategy as llm_strategy
 
 from . import services
 from .models import Test
@@ -80,3 +85,75 @@ def forget_code(request):
     """Убрать код из этого браузера, например на общем компьютере в школе."""
     services.forget_participant(request)
     return redirect("proftests:my_results")
+
+
+def strategy(request):
+    participant = services.current_participant(request)
+    if participant is None:
+        return redirect("proftests:my_results")
+
+    scores = request.session.get(SCORES_SESSION_KEY, {})
+    basis = llm_strategy.make_basis(participant, scores)
+    has_tests = bool(basis["attempts"])
+    saved = llm_strategy.saved_strategy(participant, basis) if has_tests else None
+
+    if request.method == "POST":
+        # Модель зовём только по кнопке и только если готовой стратегии нет:
+        # так обновление страницы не тратит токены
+        if has_tests and saved is None:
+            _strategy, source = llm_strategy.create_strategy(participant, scores)
+            if source == "stub" and llm_client.is_configured():
+                messages.warning(
+                    request,
+                    "Не удалось получить ответ ИИ-помощника. Показаны краткие итоги, попробуйте позже.",
+                )
+        return redirect("proftests:strategy")
+
+    if saved is not None:
+        current, source = saved, "llm"
+    elif has_tests and not llm_client.is_configured():
+        current, source = llm_strategy.generate_strategy(participant)  # бесплатная заглушка
+    else:
+        current, source = None, None  # покажем кнопку «Составить стратегию»
+
+    return render(request, "proftests/strategy.html", {
+        "has_tests": has_tests,
+        "has_scores": bool(scores),
+        "source": source,
+        "strategy": _present(current, scores) if current else None,
+    })
+
+
+def _present(strategy, scores):
+    """Подставляет названия тестов и программ вместо кодов и id."""
+    tests = {test.code: test for test in Test.objects.all()}
+    programs = {p["id"]: p for p in llm_strategy.pick_programs(scores)}
+
+    return {
+        "summary": strategy.summary,
+        "test_analysis": [
+            {"title": tests[item.test_code].title if item.test_code in tests else item.test_code,
+             "summary": item.summary}
+            for item in strategy.test_analysis
+        ],
+        "directions": [
+            {
+                "title": d.title,
+                "why": d.why,
+                "professions": d.professions,
+                # Программа могла пропасть из подбора (поменялись баллы), такие не показываем
+                "programs": [programs[pid] for pid in d.program_ids if pid in programs],
+            }
+            for d in strategy.directions
+        ],
+        "next_steps": [
+            {
+                "kind": step.kind,
+                "title": step.title,
+                "why": step.why,
+                "for_profession": step.for_profession,
+                "test_code": step.test_code if step.test_code in tests else None,
+            }
+            for step in strategy.next_steps
+        ],
+    }

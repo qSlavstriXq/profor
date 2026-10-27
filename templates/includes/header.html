@@ -12,11 +12,11 @@
     <nav class="nav" aria-label="Основное меню">
       <a class="nav__link{% if ns == 'pages' and name == 'home' %} is-active{% endif %}"
          href="{% url 'pages:home' %}">Главная</a>
-      <a class="nav__link{% if ns == 'proftests' and name != 'my_results' %} is-active{% endif %}"
+      <a class="nav__link{% if ns == 'proftests' and name != 'my_results' and name != 'strategy' %} is-active{% endif %}"
          href="{% url 'proftests:list' %}">Профтесты</a>
       <a class="nav__link{% if ns == 'admissions' %} is-active{% endif %}"
          href="{% url 'admissions:programs' %}">Подбор программ</a>
-      <a class="nav__link{% if name == 'my_results' %} is-active{% endif %}"
+      <a class="nav__link{% if name == 'my_results' or name == 'strategy' %} is-active{% endif %}"
          href="{% url 'proftests:my_results' %}">Мои результаты</a>
       <a class="nav__link{% if ns == 'pages' and name == 'about' %} is-active{% endif %}"
          href="{% url 'pages:about' %}">О проекте</a>

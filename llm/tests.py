@@ -1,16 +1,29 @@
 import json
+import logging
 from types import SimpleNamespace
+from unittest import mock
 
 from django.test import SimpleTestCase, TestCase, override_settings
 
+from admissions.models import AdmissionStat, Program, ProgramExam, University
 from proftests.loader import load_test
-from proftests.models import Participant
+from proftests.models import Participant, Question, StrategyReport
+from proftests.services import SESSION_KEY
 from proftests.services import save_attempt
 from proftests.tests import small_test_data
 
 from .client import LLMError, LLMNotConfigured, ask_json
 from .schemas import Strategy
 from .strategy import build_input, check_against_data, generate_strategy
+
+
+def setUpModule():
+    # Тесты нарочно подсовывают плохие ответы, и журнал засоряет вывод. Глушим его
+    logging.disable(logging.CRITICAL)
+
+
+def tearDownModule():
+    logging.disable(logging.NOTSET)
 
 
 class FakeClient:
@@ -105,3 +118,96 @@ class TestStrategy(TestCase):
     def test_model_failure_falls_back_to_stub(self):
         strategy, source = generate_strategy(self.participant, llm_client=FakeClient("{}", "{}"))
         self.assertEqual(source, "stub")
+
+
+class TestStrategyPage(TestCase):
+    URL = "/tests/my/strategy/"
+
+    def setUp(self):
+        load_test(small_test_data())
+
+    def pass_test(self):
+        """Проходит мини-тест через сайт: в сессии появляется код участника."""
+        data = {
+            f"q{q.pk}": q.options.first().pk
+            for q in Question.objects.filter(test__code="mini")
+        }
+        self.client.post("/tests/mini/take/", data)
+
+    def use_fake_model(self, *answers):
+        """Подменяет настоящего клиента модели фальшивым на время теста."""
+        fake = FakeClient(*answers)
+        patcher = mock.patch("llm.client._make_client", return_value=fake)
+        patcher.start()
+        self.addCleanup(patcher.stop)
+        return fake
+
+    def test_without_participant_redirects(self):
+        self.assertRedirects(self.client.get(self.URL), "/tests/my/")
+
+    def test_without_tests_asks_to_pass_one(self):
+        session = self.client.session
+        session[SESSION_KEY] = Participant.objects.create().code
+        session.save()
+        self.assertContains(self.client.get(self.URL), "Сначала пройди хотя бы один тест")
+
+    @override_settings(QWEN_API_KEY="")
+    def test_without_key_shows_stub(self):
+        self.pass_test()
+        response = self.client.get(self.URL)
+        self.assertContains(response, "краткие итоги без ИИ-помощника")
+        self.assertContains(response, "Шкала А")
+        self.assertFalse(StrategyReport.objects.exists())
+
+    @override_settings(QWEN_API_KEY="test-key")
+    def test_get_does_not_call_model(self):
+        fake = self.use_fake_model()
+        self.pass_test()
+        self.assertContains(self.client.get(self.URL), "Составить стратегию")
+        self.assertEqual(fake.calls, [])
+
+    @override_settings(QWEN_API_KEY="test-key")
+    def test_button_calls_model_once_and_saves(self):
+        fake = self.use_fake_model(strategy_json())
+        self.pass_test()
+
+        self.assertRedirects(self.client.post(self.URL), self.URL)
+        self.assertContains(self.client.get(self.URL), "Итог")
+        self.client.post(self.URL)  # повторное нажатие не тратит токены
+        self.assertEqual(len(fake.calls), 1)
+        self.assertEqual(StrategyReport.objects.count(), 1)
+
+    @override_settings(QWEN_API_KEY="test-key")
+    def test_new_test_result_makes_strategy_outdated(self):
+        self.use_fake_model(strategy_json())
+        self.pass_test()
+        self.client.post(self.URL)
+        self.pass_test()  # прошёл тест ещё раз
+        self.assertContains(self.client.get(self.URL), "Составить стратегию")
+
+    @override_settings(QWEN_API_KEY="test-key")
+    def test_model_failure_shows_warning(self):
+        self.use_fake_model("{}", "{}")
+        self.pass_test()
+        response = self.client.post(self.URL, follow=True)
+        self.assertContains(response, "Не удалось получить ответ ИИ-помощника")
+        self.assertFalse(StrategyReport.objects.exists())
+
+    @override_settings(QWEN_API_KEY="test-key")
+    def test_programs_from_ege_scores(self):
+        university = University.objects.create(name="Тестовый вуз", verified=True)
+        program = Program.objects.create(university=university, name="Информатика", verified=True)
+        ProgramExam.objects.create(program=program, subject="math")
+        ProgramExam.objects.create(program=program, subject="russian")
+        AdmissionStat.objects.create(program=program, year=2025, passing_score_budget=150)
+
+        self.client.post("/programs/", {"math": "80", "russian": "80"})  # баллы запомнятся
+        fake = self.use_fake_model(strategy_json(directions=[
+            {"title": "ИТ", "why": "Потому что", "program_ids": [program.pk]},
+        ]))
+        self.pass_test()
+        self.client.post(self.URL)
+
+        sent = json.loads(fake.calls[0]["messages"][1]["content"])
+        self.assertEqual(sent["programs"][0]["id"], program.pk)
+        self.assertContains(self.client.get(self.URL), "Тестовый вуз, Информатика")
