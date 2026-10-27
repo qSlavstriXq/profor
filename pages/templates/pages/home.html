@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body_class %}page-home{% endblock %}
+
+{% block hero %}
+<section class="hero">
+  {# Фото для баннера: положите файл в static/img/hero.jpg и раскомментируйте строку #}
+  {# <img class="hero__image" src="{% static 'img/hero.jpg' %}" alt=""> #}
+  <div class="container hero__content">
+    <h1 class="hero__title">Выбери направление и вуз осознанно</h1>
+    <p class="hero__text">Пройди профтест, узнай свои склонности и посмотри, в какие московские вузы реально поступить с твоими баллами ЕГЭ.</p>
+    <a class="button button--primary" href="{% url 'proftests:list' %}">Пройти профтест</a>
+  </div>
+</section>
+{% endblock %}
+
+{% block content %}
+<section class="steps">
+  <h2 class="section-title">Как это работает</h2>
+  <ol class="steps__list">
+    <li class="steps__item">
+      <h3>Профтест</h3>
+      <p>Короткий опросник покажет, к какому типу профессий у тебя склонность.</p>
+      <a href="{% url 'proftests:list' %}">Перейти к тестам</a>
+    </li>
+    <li class="steps__item">
+      <h3>Подбор программ</h3>
+      <p>Введи баллы ЕГЭ или прогноз по пробникам и увидь шансы: амбициозно, реалистично или страховка.</p>
+      <a href="{% url 'admissions:programs' %}">Подобрать программы</a>
+    </li>
+    <li class="steps__item">
+      <h3>Стратегия</h3>
+      <p>Скоро: персональная стратегия поступления на основе твоих результатов.</p>
+    </li>
+  </ol>
+</section>
+{% endblock %}

@@ -112,3 +112,86 @@ class TestLoader(TestCase):
         Attempt.objects.create(participant=Participant.objects.create(), test=test)
         with self.assertRaises(TestDataError):
             load_test(small_test_data())
+
+
+class TestSitePages(TestCase):
+    def test_all_sections_open(self):
+        load_test(small_test_data())
+        for url in ["/", "/about/", "/tests/", "/tests/mini/", "/tests/mini/take/",
+                    "/tests/my/", "/programs/"]:
+            with self.subTest(url=url):
+                self.assertEqual(self.client.get(url).status_code, 200)
+
+    def test_unknown_test_is_404(self):
+        self.assertEqual(self.client.get("/tests/nope/").status_code, 404)
+
+
+class TestTakeTest(TestCase):
+    def setUp(self):
+        self.test = load_test(small_test_data())
+        self.questions = list(self.test.questions.prefetch_related("options"))
+
+    def answer(self, picks):
+        """picks: номер варианта (0 или 1) для каждого вопроса по порядку."""
+        data = {
+            f"q{question.pk}": question.options.all()[pick].pk
+            for question, pick in zip(self.questions, picks)
+        }
+        return self.client.post("/tests/mini/take/", data)
+
+    def test_full_answers_save_attempt_and_show_result(self):
+        response = self.answer([0, 1])  # одна «А», одна «Б»
+        attempt = Attempt.objects.get()
+        self.assertRedirects(response, f"/tests/result/{attempt.pk}/")
+        self.assertEqual(attempt.scores, {"a": 1, "b": 1})
+        self.assertEqual(attempt.answers.count(), 2)
+
+        page = self.client.get(f"/tests/result/{attempt.pk}/")
+        self.assertContains(page, attempt.participant.code)
+
+    def test_missing_answer_shows_form_again(self):
+        response = self.answer([0])  # на второй вопрос не ответили
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Пропущены: 2")
+        self.assertFalse(Attempt.objects.exists())
+        self.assertFalse(Participant.objects.exists())  # участник не создаётся зря
+
+    def test_option_from_other_question_is_ignored(self):
+        first, second = self.questions
+        data = {
+            f"q{first.pk}": second.options.first().pk,  # чужой вариант
+            f"q{second.pk}": second.options.first().pk,
+        }
+        response = self.client.post("/tests/mini/take/", data)
+        self.assertContains(response, "Пропущены: 1")
+
+    def test_second_test_uses_same_participant(self):
+        self.answer([0, 0])
+        self.answer([1, 1])
+        self.assertEqual(Participant.objects.count(), 1)
+        self.assertEqual(Attempt.objects.count(), 2)
+
+    def test_other_people_cannot_see_result(self):
+        self.answer([0, 0])
+        attempt = Attempt.objects.get()
+        self.client.logout()  # новая сессия, как у другого человека
+        self.client.cookies.clear()
+        self.assertEqual(self.client.get(f"/tests/result/{attempt.pk}/").status_code, 404)
+
+    def test_return_by_code(self):
+        self.answer([0, 0])
+        code = Participant.objects.get().code
+        self.client.cookies.clear()
+
+        response = self.client.post("/tests/my/", {"code": code.lower()})
+        self.assertRedirects(response, "/tests/my/")
+        self.assertContains(self.client.get("/tests/my/"), "Мини-тест")
+
+    def test_wrong_code(self):
+        response = self.client.post("/tests/my/", {"code": "P-AAAAAA"})
+        self.assertContains(response, "Такого кода нет")
+
+    def test_forget_code(self):
+        self.answer([0, 0])
+        self.client.post("/tests/my/forget/")
+        self.assertContains(self.client.get("/tests/my/"), "введите свой код")

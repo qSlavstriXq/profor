@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Профтесты — {{ SITE_NAME }}{% endblock %}
+
+{% block content %}
+<h1>Профтесты</h1>
+<p>Выберите тест. Ответы анонимны: вместо имени вы получите код, по которому можно вернуться к результатам.</p>
+
+<div class="cards">
+  {% for test in tests %}
+    <article class="card">
+      <h2 class="card__title">{{ test.title }}</h2>
+      <p class="card__text">{{ test.description }}</p>
+      <a class="button" href="{% url 'proftests:detail' test.code %}">Подробнее</a>
+    </article>
+  {% empty %}
+    <p>Тестов пока нет. Загрузите их командой <code>python manage.py load_tests</code>.</p>
+  {% endfor %}
+</div>
+{% endblock %}

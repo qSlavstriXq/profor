@@ -1,0 +1,159 @@
+/*
+  Основные стили сайта. Сейчас это черновая разметка без дизайна:
+  только чтобы страницы были читаемыми.
+
+  Чтобы поменять цвета и шрифты по всему сайту, достаточно
+  изменить переменные в блоке :root ниже.
+*/
+
+:root {
+  /* Цвета */
+  --color-primary: #2f5bea;       /* кнопки, ссылки, акценты */
+  --color-primary-text: #ffffff;  /* текст на основном цвете */
+  --color-text: #1f2328;
+  --color-muted: #667085;         /* второстепенный текст */
+  --color-bg: #ffffff;
+  --color-surface: #f5f6f8;       /* фон карточек, шапки, подвала */
+  --color-border: #d0d5dd;
+  --color-error: #b42318;
+
+  /* Цвета категорий шансов */
+  --color-realistic: #dff3e3;
+  --color-ambitious: #fff1d6;
+  --color-safe: #dbeafe;
+  --color-hard: #fde2e2;
+  --color-blocked: #e5e5e5;
+
+  /* Шрифты: подключите свой в base.html и впишите его название сюда */
+  --font-main: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Размеры */
+  --container-width: 960px;
+  --radius: 8px;
+  --gap: 1rem;
+}
+
+/* ---------- Основа ---------- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+img { max-width: 100%; height: auto; }
+
+a { color: var(--color-primary); }
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
+.page { padding: 2rem 0; }
+
+.note { color: var(--color-muted); font-size: 0.9rem; }
+
+/* ---------- Шапка ---------- */
+
+.site-header { background: var(--color-surface); border-bottom: 1px solid var(--color-border); }
+
+.site-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+  padding-block: 0.75rem;
+}
+
+.logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: inherit; font-weight: 700; }
+
+.nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; }
+.nav__link { text-decoration: none; color: var(--color-text); }
+.nav__link.is-active { color: var(--color-primary); font-weight: 600; }
+
+/* ---------- Баннер на главной ---------- */
+
+.hero { position: relative; background: var(--color-surface); padding: 3rem 0; }
+.hero__image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero__content { position: relative; }  /* текст поверх фото */
+.hero__title { margin-top: 0; }
+
+/* ---------- Кнопки ---------- */
+
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--color-primary);
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button--primary { background: var(--color-primary); color: var(--color-primary-text); }
+.button--link { border: none; padding: 0; text-decoration: underline; }
+
+/* ---------- Карточки и списки ---------- */
+
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--gap); }
+
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin: 0.8rem 0;
+}
+
+.steps__list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--gap); padding-left: 1.2rem; }
+
+.attempts { padding-left: 1.2rem; }
+.attempts__item .note { margin-left: 0.5rem; }
+
+/* ---------- Сообщения ---------- */
+
+.alert { padding: 0.75rem 1rem; border-radius: var(--radius); margin: 1rem 0; }
+.alert--error { background: var(--color-hard); color: var(--color-error); }
+
+.code-box { padding: 1rem; border-radius: var(--radius); background: var(--color-surface); margin: 1rem 0; }
+.code-box__code { font-size: 1.3rem; letter-spacing: 0.05em; }
+
+/* ---------- Прохождение теста ---------- */
+
+.quiz__question { border: 1px solid var(--color-border); border-radius: var(--radius); margin: 0 0 1rem; padding: 0.75rem 1rem; }
+.quiz__question.is-missing { border-color: var(--color-error); }
+.quiz__number { font-weight: 600; }
+.quiz__option { display: flex; gap: 0.5rem; padding: 0.25rem 0; cursor: pointer; }
+
+/* ---------- Результат теста ---------- */
+
+.result { border-bottom: 1px solid var(--color-border); padding: 1rem 0; }
+.result--top .result__name { color: var(--color-primary); }
+.result__name { margin: 0 0 0.25rem; font-size: 1.15rem; }
+.result__meter { width: 100%; max-width: 400px; height: 1rem; }
+.result__points { margin: 0.25rem 0; font-weight: 600; }
+
+/* ---------- Подбор программ ---------- */
+
+.scores-grid { display: grid; grid-template-columns: 1fr 100px; gap: 0.5rem 1rem; align-items: center; max-width: 400px; margin-bottom: 1rem; }
+.scores-grid input { padding: 0.4rem; }
+
+.badge { display: inline-block; padding: 0.1rem 0.6rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600; }
+.badge--realistic { background: var(--color-realistic); }
+.badge--ambitious { background: var(--color-ambitious); }
+.badge--safe { background: var(--color-safe); }
+.badge--hard { background: var(--color-hard); }
+.badge--blocked { background: var(--color-blocked); }
+
+/* ---------- Подвал ---------- */
+
+.site-footer { background: var(--color-surface); border-top: 1px solid var(--color-border); padding: 1.5rem 0; color: var(--color-muted); font-size: 0.9rem; }
+.partners { display: flex; flex-wrap: wrap; gap: var(--gap); align-items: center; }
+.partners__logo { height: 40px; width: auto; }

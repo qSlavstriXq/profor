@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}{{ test.title }} — {{ SITE_NAME }}{% endblock %}
+
+{% block content %}
+<h1>{{ test.title }}</h1>
+<p>{{ test.instruction }}</p>
+
+{% if missing %}
+  <div class="alert alert--error" role="alert">
+    Ответьте, пожалуйста, на все вопросы. Пропущены: {{ missing|join:", " }}.
+  </div>
+{% endif %}
+
+<form class="quiz" method="post">
+  {% csrf_token %}
+  {% for question in questions %}
+    <fieldset class="quiz__question{% if question.order in missing %} is-missing{% endif %}">
+      <legend class="quiz__number">
+        {{ question.order }}.{% if question.text %} {{ question.text }}{% endif %}
+      </legend>
+      {% for option in question.options.all %}
+        <label class="quiz__option">
+          <input type="radio" name="q{{ question.pk }}" value="{{ option.pk }}"
+            {% if option.pk == question.selected %}checked{% endif %}>
+          <span>{{ option.text }}</span>
+        </label>
+      {% endfor %}
+    </fieldset>
+  {% endfor %}
+  <button class="button button--primary" type="submit">Узнать результат</button>
+</form>
+{% endblock %}

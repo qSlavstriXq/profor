@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}Подбор программ — {{ SITE_NAME }}{% endblock %}
+
+{% block content %}
+<h1>Подбор программ</h1>
+<p>Введите баллы ЕГЭ по предметам (или прогноз по пробникам). Пустые поля можно оставить.</p>
+
+<form method="post">
+  {% csrf_token %}
+  <div class="scores-grid">
+    {% for f in fields %}
+      <label for="{{ f.code }}">{{ f.label }}</label>
+      <input id="{{ f.code }}" name="{{ f.code }}" type="number" min="0" max="100" value="{{ f.value }}">
+    {% endfor %}
+  </div>
+  <button class="button button--primary" type="submit">Показать варианты</button>
+</form>
+
+{% if results is not None %}
+  <h2>Результат</h2>
+  {% for r in results %}
+    <div class="card">
+      <strong>{{ r.university }}</strong>, {{ r.name }}<br>
+      Категория:
+      {% if r.category == "реалистично" %}
+        <span class="badge badge--realistic">{{ r.category }}</span>
+      {% elif r.category == "амбициозно" %}
+        <span class="badge badge--ambitious">{{ r.category }}</span>
+      {% elif r.category == "страховка" %}
+        <span class="badge badge--safe">{{ r.category }}</span>
+      {% elif r.category == "очень сложно" %}
+        <span class="badge badge--hard">{{ r.category }}</span>
+      {% else %}
+        <span class="badge badge--blocked">{{ r.category }}</span>
+      {% endif %}
+      <br>
+      <span class="note">
+        Ваша сумма {{ r.total }}, ожидаемый проходной {{ r.reference|floatformat:0 }}
+        (по данным за {{ r.years }} г., изменение за год {{ r.trend|floatformat:1 }}),
+        разница {{ r.margin|floatformat:0 }}
+      </span>
+      {% if r.below_minimum %}
+        <br>
+        <span class="note">Не хватает минимального балла по предмету: {{ r.below_minimum|join:", " }}</span>
+      {% endif %}
+    </div>
+  {% empty %}
+    <p>Подходящих программ в базе не найдено. Проверьте, что у программ стоит галочка «Проверено вручную» и есть предметы и проходные баллы.</p>
+  {% endfor %}
+  <p class="note">Это ориентир, а не гарантия поступления.</p>
+{% endif %}
+{% endblock %}

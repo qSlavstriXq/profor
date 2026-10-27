@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "admissions",
     "proftests",
+    "pages",
 ]
 
 MIDDLEWARE = [
@@ -56,13 +57,15 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # Общие шаблоны сайта (base.html и т. п.) лежат в папке templates в корне
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                "core.context_processors.site",
             ],
         },
     },
@@ -117,6 +120,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = 'static/'
+# Стили, скрипты, логотип и картинки оформления сайта
+STATICFILES_DIRS = [BASE_DIR / "static"]
+
+# Файлы, которые загружают через админку (например, фото и логотипы вузов).
+# Папка media не попадает в Git.
+MEDIA_URL = "media/"
+MEDIA_ROOT = BASE_DIR / "media"
+
+# Название сайта: показывается в шапке и заголовках страниц
+SITE_NAME = "Профориентир"
+SITE_TAGLINE = "Помогаем выбрать направление и вуз в Москве"
 
 
 # Email

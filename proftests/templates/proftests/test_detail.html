@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}{{ test.title }} — {{ SITE_NAME }}{% endblock %}
+
+{% block content %}
+<h1>{{ test.title }}</h1>
+<p>{{ test.description }}</p>
+
+<h2>Инструкция</h2>
+<p>{{ test.instruction }}</p>
+<p class="note">Вопросов: {{ test.questions.count }}. Правильных и неправильных ответов нет.</p>
+
+<a class="button button--primary" href="{% url 'proftests:take' test.code %}">Начать тест</a>
+
+{% if test.source %}
+  <p class="note">Методика: {{ test.source }}</p>
+{% endif %}
+{% endblock %}

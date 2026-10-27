@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Результат: {{ attempt.test.title }} — {{ SITE_NAME }}{% endblock %}
+
+{% block content %}
+<h1>Ваш результат</h1>
+<p>{{ attempt.test.title }}, {{ attempt.finished_at|date:"j E Y" }}</p>
+
+<div class="code-box">
+  Ваш код участника: <strong class="code-box__code">{{ attempt.participant.code }}</strong>
+  <p class="note">Запишите его: по коду можно вернуться к результатам с другого устройства.</p>
+</div>
+
+<div class="results">
+  {% for row in rows %}
+    <article class="result{% if forloop.first %} result--top{% endif %}">
+      <h2 class="result__name">{{ row.name }}</h2>
+      {# Полоска результата: ширину задаёт значение points из max_points #}
+      <meter class="result__meter" min="0" max="{{ row.max_points }}" value="{{ row.points }}"></meter>
+      <p class="result__points">
+        {{ row.points }} из {{ row.max_points }}
+        {% if row.interpretation %}— {{ row.interpretation.level }}{% endif %}
+      </p>
+      {% if row.interpretation %}<p>{{ row.interpretation.text }}</p>{% endif %}
+      <p class="note">{{ row.description }}</p>
+    </article>
+  {% endfor %}
+</div>
+
+<p>
+  <a class="button button--primary" href="{% url 'admissions:programs' %}">Подобрать программы</a>
+  <a class="button" href="{% url 'proftests:my_results' %}">Все мои результаты</a>
+</p>
+{% endblock %}

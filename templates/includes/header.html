@@ -1,0 +1,26 @@
+{% load static %}
+{# Шапка сайта: логотип и меню. Активный пункт меню получает класс is-active #}
+{% with ns=request.resolver_match.namespace name=request.resolver_match.url_name %}
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="{% url 'pages:home' %}">
+      {# Логотип: замените файл static/img/logo.svg на свой #}
+      <img class="logo__image" src="{% static 'img/logo.svg' %}" alt="" width="40" height="40">
+      <span class="logo__text">{{ SITE_NAME }}</span>
+    </a>
+
+    <nav class="nav" aria-label="Основное меню">
+      <a class="nav__link{% if ns == 'pages' and name == 'home' %} is-active{% endif %}"
+         href="{% url 'pages:home' %}">Главная</a>
+      <a class="nav__link{% if ns == 'proftests' and name != 'my_results' %} is-active{% endif %}"
+         href="{% url 'proftests:list' %}">Профтесты</a>
+      <a class="nav__link{% if ns == 'admissions' %} is-active{% endif %}"
+         href="{% url 'admissions:programs' %}">Подбор программ</a>
+      <a class="nav__link{% if name == 'my_results' %} is-active{% endif %}"
+         href="{% url 'proftests:my_results' %}">Мои результаты</a>
+      <a class="nav__link{% if ns == 'pages' and name == 'about' %} is-active{% endif %}"
+         href="{% url 'pages:about' %}">О проекте</a>
+    </nav>
+  </div>
+</header>
+{% endwith %}

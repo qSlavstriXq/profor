@@ -4,7 +4,7 @@ from .models import Subject
 from .services import build_recommendations
 
 
-def home(request):
+def programs(request):
     scores = {}
     results = None
 
@@ -19,4 +19,4 @@ def home(request):
         {"code": code, "label": label, "value": scores.get(code, "")}
         for code, label in Subject.choices
     ]
-    return render(request, "admissions/home.html", {"fields": fields, "results": results})
+    return render(request, "admissions/programs.html", {"fields": fields, "results": results})
