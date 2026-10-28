@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load russian %}
+
+{% block title %}Профессии — {{ SITE_NAME }}{% endblock %}
+
+{% block content %}
+<h1>Профессии</h1>
+<p>В каталоге {{ total|plural:"профессия,профессии,профессий" }}. Пройдите профтест, и мы подскажем, какие из них подходят именно вам.</p>
+
+<form method="get" class="filters">
+  <fieldset class="filters__categories">
+    <legend>Предметы</legend>
+    {% for s in subjects %}
+      <label>
+        <input type="checkbox" name="subject" value="{{ s.code }}"{% if s.checked %} checked{% endif %}>
+        {{ s.name }}
+      </label>
+    {% endfor %}
+  </fieldset>
+  <button class="button button--primary" type="submit">Применить</button>
+  {% if filtered %}<a href="{% url 'careers:list' %}">Сбросить</a>{% endif %}
+</form>
+
+{% if filtered %}
+  <p class="note">Профессии, где пригодятся все выбранные предметы: {{ professions|length }} из {{ total }}.</p>
+{% endif %}
+
+<div class="cards">
+  {% for profession in professions %}
+    <article class="card">
+      <h2 class="card__title">{{ profession.title }}</h2>
+      {% if not profession.verified %}
+        <span class="badge badge--unverified" title="Описание составлено нами и ещё не проверено экспертом">Не проверено</span>
+      {% endif %}
+      <p class="card__text">{{ profession.description|truncatewords:20 }}</p>
+      <a class="button" href="{% url 'careers:detail' profession.code %}">Подробнее</a>
+    </article>
+  {% empty %}
+    {% if filtered %}
+      <p>Профессий, где пригодятся сразу все выбранные предметы, нет. Уберите один из предметов.</p>
+    {% else %}
+      <p>Профессий пока нет. Загрузите их командой <code>python manage.py load_professions</code>.</p>
+    {% endif %}
+  {% endfor %}
+</div>
+{% endblock %}

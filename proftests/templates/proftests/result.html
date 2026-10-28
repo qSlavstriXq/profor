@@ -27,6 +27,21 @@
   {% endfor %}
 </div>
 
+{% if professions %}
+<section class="strategy__section">
+  <h2>Какие профессии вам подходят</h2>
+  <ul class="professions-fit">
+    {% for item in professions %}
+      <li class="professions-fit__item">
+        <a href="{% url 'careers:detail' item.profession.code %}">{{ item.profession.title }}</a>
+        <span class="note">{{ item.fits|join:", " }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+  {% if more_professions %}<p><a href="{% url 'careers:list' %}">Все профессии</a></p>{% endif %}
+</section>
+{% endif %}
+
 <p>
   <a class="button button--primary" href="{% url 'proftests:strategy' %}">Моя стратегия</a>
   <a class="button" href="{% url 'admissions:programs' %}">Подобрать программы</a>

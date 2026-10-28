@@ -4,12 +4,16 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.views.decorators.http import require_POST
 
 from admissions.models import Course
+from careers.services import professions_for_attempt
 from admissions.views import SCORES_SESSION_KEY
 from llm import client as llm_client
 from llm import strategy as llm_strategy
 
 from . import services
 from .models import Test
+
+# Сколько подходящих профессий показываем на странице результата
+MAX_PROFESSIONS = 10
 
 
 def test_list(request):
@@ -55,9 +59,14 @@ def result(request, attempt_id):
     attempt = get_object_or_404(
         participant.attempts.select_related("test"), pk=attempt_id,
     )
+    professions = []
+    if attempt.test.kind == Test.Kind.CAREER:
+        professions = professions_for_attempt(attempt)
     return render(request, "proftests/result.html", {
         "attempt": attempt,
         "rows": services.build_result(attempt),
+        "professions": professions[:MAX_PROFESSIONS],
+        "more_professions": len(professions) > MAX_PROFESSIONS,
     })
 
 

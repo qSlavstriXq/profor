@@ -14,6 +14,8 @@
          href="{% url 'pages:home' %}">Главная</a>
       <a class="nav__link{% if ns == 'proftests' and name != 'my_results' and name != 'strategy' %} is-active{% endif %}"
          href="{% url 'proftests:list' %}">Профтесты</a>
+      <a class="nav__link{% if ns == 'careers' %} is-active{% endif %}"
+         href="{% url 'careers:list' %}">Профессии</a>
       <a class="nav__link{% if ns == 'admissions' %} is-active{% endif %}"
          href="{% url 'admissions:programs' %}">Подбор программ</a>
       <a class="nav__link{% if name == 'my_results' or name == 'strategy' %} is-active{% endif %}"

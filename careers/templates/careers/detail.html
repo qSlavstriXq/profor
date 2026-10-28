@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}{{ profession.title }} — {{ SITE_NAME }}{% endblock %}
+{% block description %}{{ profession.description|truncatewords:25 }}{% endblock %}
+
+{% block content %}
+<p><a href="{% url 'careers:list' %}">← Все профессии</a></p>
+<h1>{{ profession.title }}</h1>
+{% if not profession.verified %}
+  <span class="badge badge--unverified" title="Описание составлено нами и ещё не проверено экспертом">Не проверено</span>
+{% endif %}
+
+<p class="profession__description">{{ profession.description }}</p>
+
+{# Место под видео о профессии: откуда брать ролики, решается (вопрос 34) #}
+<section class="profession__section">
+  <h2>Видео о профессии</h2>
+  <p class="note">Видео появится позже.</p>
+</section>
+
+{% if subjects %}
+<section class="profession__section">
+  <h2>Какие предметы пригодятся</h2>
+  <p>{{ subjects|join:", " }}.</p>
+  <p class="note">Для 9 класса это предметы ОГЭ, для 10–11 класса — ЕГЭ. Точный список экзаменов зависит от вуза или колледжа.</p>
+</section>
+{% endif %}
+
+{% if tests %}
+<section class="profession__section">
+  <h2>Кому подходит</h2>
+  <ul>
+    {% for test in tests %}
+      <li>{{ test.title }}: {{ test.scales|join:", " }}</li>
+    {% endfor %}
+  </ul>
+  <p><a href="{% url 'proftests:list' %}">Пройти профтест</a></p>
+</section>
+{% endif %}
+
+<section class="profession__section">
+  <h2>Где учиться</h2>
+  {% if programs %}
+    <ul>
+      {% for program in programs %}
+        <li>{{ program.university.short_name|default:program.university.name }}: {{ program.name }} ({{ program.direction_code }})</li>
+      {% endfor %}
+    </ul>
+    <p><a href="{% url 'admissions:programs' %}">Узнать свои шансы на поступление</a></p>
+  {% else %}
+    <p>Подходящих программ в нашей базе пока нет. База вузов пополняется.</p>
+  {% endif %}
+</section>
+
+{% if profession.links %}
+<section class="profession__section">
+  <h2>Подробнее</h2>
+  <ul>
+    {% for link in profession.links %}
+      <li><a href="{{ link.url }}" rel="noopener" target="_blank">{{ link.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% endblock %}
