@@ -6,6 +6,10 @@
 Образцы формата лежат в `examples/` (их команда не загружает):
 `personality_example.json` и `knowledge_example.json`.
 
+Посмотреть образцы на сайте: `python manage.py load_tests --examples`.
+Команда загружает их и показывает на сайте, сами файлы не меняются.
+Скрыть перед конференцией: `python manage.py load_tests --hide-examples`.
+
 Поле `kind` задаёт вид теста:
 
 | kind | Вид | Пример |

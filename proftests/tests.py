@@ -282,6 +282,18 @@ class TestNewKindsLoad(TestCase):
         with self.assertRaises(TestDataError):
             load_test(data)
 
+    def test_examples_can_be_shown_and_hidden(self):
+        from io import StringIO
+
+        from django.core.management import call_command
+
+        from .models import Test
+        codes = ["personality-example", "knowledge-math-example"]
+        call_command("load_tests", "--examples", stdout=StringIO())
+        self.assertEqual(Test.objects.filter(code__in=codes, is_active=True).count(), 2)
+        call_command("load_tests", "--hide-examples", stdout=StringIO())
+        self.assertEqual(Test.objects.filter(code__in=codes, is_active=True).count(), 0)
+
 
 class TestExternalImport(TestCase):
     MAPPING = {
