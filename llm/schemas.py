@@ -18,7 +18,8 @@ class Direction(BaseModel):
 
     title: str = Field(min_length=1)
     why: str = Field(min_length=1)
-    professions: list[str] = []
+    # Только code из каталога профессий, который мы передали модели. Сверяется в strategy.py
+    profession_codes: list[str] = []
     # Только id из списка программ, который мы передали модели. Сверяется в strategy.py
     program_ids: list[int] = []
 

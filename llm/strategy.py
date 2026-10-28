@@ -6,8 +6,9 @@ from pathlib import Path
 
 from django.conf import settings
 
-from admissions.models import Course
+from admissions.models import Course, Subject
 from admissions.services import build_recommendations
+from careers.services import professions_for_attempt
 from proftests.directions import matching_scales
 from proftests.models import StrategyReport, Test
 from proftests.scoring import ranked
@@ -25,6 +26,12 @@ MAX_PROGRAMS = 15
 
 # Сколько курсов из каталога максимум отдаём модели
 MAX_COURSES = 15
+
+# Сколько профессий из каталога максимум отдаём модели
+MAX_PROFESSIONS = 15
+
+# Сколько профессий показываем в направлении, когда стратегию собирает код без модели
+STUB_PROFESSIONS = 5
 
 # Сколько самых выраженных шкал каждого теста учитываем при подборе программ
 TOP_SCALES = 2
@@ -102,6 +109,33 @@ def create_strategy(participant, scores, llm_client=None):
     return strategy, source
 
 
+def pick_professions(participant):
+    """Профессии из каталога по самым выраженным шкалам профтестов.
+
+    Модель выбирает профессии только из этого списка. Если профессия подходит
+    шкалам нескольких тестов, она идёт выше.
+    """
+    found = {}
+    for attempt in latest_attempts(participant).values():
+        if attempt.test.kind != Test.Kind.CAREER:
+            continue
+        for item in professions_for_attempt(attempt):
+            entry = found.setdefault(item["profession"].code, {"profession": item["profession"], "fits": []})
+            entry["fits"].extend(item["fits"])
+    # sorted не меняет порядок равных: внутри остаётся порядок подбора по тесту
+    entries = sorted(found.values(), key=lambda entry: -len(entry["fits"]))
+    return [
+        {
+            "code": entry["profession"].code,
+            "title": entry["profession"].title,
+            "fits": entry["fits"],
+            "subjects": [Subject(code).label for code in entry["profession"].subjects],
+            "directions": entry["profession"].directions,
+        }
+        for entry in entries[:MAX_PROFESSIONS]
+    ]
+
+
 def build_input(participant, programs=None):
     """Данные для модели. Только результаты, без кода участника:
     модели не нужно знать, кто это, поэтому и не отправляем."""
@@ -150,6 +184,7 @@ def build_input(participant, programs=None):
     ]
     return {"tests": tests, "external_results": external_results,
             "available_tests": available_tests, "programs": programs,
+            "professions": pick_professions(participant),
             "courses": pick_courses(programs)}
 
 
@@ -176,6 +211,7 @@ def check_against_data(strategy, data):
     Такое в отчёт не попадает, а в журнал пишется предупреждение.
     """
     program_ids = {p["id"] for p in data["programs"]}
+    profession_codes = {p["code"] for p in data.get("professions", [])}
     taken_codes = {t["test_code"] for t in data["tests"]}
     available_codes = {t["test_code"] for t in data["available_tests"]}
     course_ids = {c["id"] for c in data.get("courses", [])}
@@ -185,6 +221,10 @@ def check_against_data(strategy, data):
         if unknown:
             logger.warning("Модель указала программы не из базы: %s", unknown)
             direction.program_ids = [pid for pid in direction.program_ids if pid in program_ids]
+        unknown = [code for code in direction.profession_codes if code not in profession_codes]
+        if unknown:
+            logger.warning("Модель указала профессии не из каталога: %s", unknown)
+            direction.profession_codes = [c for c in direction.profession_codes if c in profession_codes]
 
     strategy.test_analysis = [
         item for item in strategy.test_analysis if item.test_code in taken_codes
@@ -217,6 +257,9 @@ def stub_strategy(data):
         directions.append(Direction(
             title=top["name"],
             why=top["about"] or "Это самая выраженная шкала в вашем результате.",
+            profession_codes=[
+                p["code"] for p in data.get("professions", []) if top["name"] in p["fits"]
+            ][:STUB_PROFESSIONS],
         ))
 
     if not directions:

@@ -49,7 +49,9 @@
         <h3 class="card__title">{{ direction.title }}</h3>
         <p>{{ direction.why }}</p>
         {% if direction.professions %}
-          <p><strong>Профессии:</strong> {{ direction.professions|join:", " }}</p>
+          <p><strong>Профессии:</strong>
+            {% for profession in direction.professions %}<a href="{% url 'careers:detail' profession.code %}">{{ profession.title }}</a>{% if not forloop.last %}, {% endif %}{% endfor %}
+          </p>
         {% endif %}
         {% if direction.programs %}
           <p><strong>Программы:</strong></p>

@@ -136,6 +136,53 @@ class TestStrategy(TestCase):
         self.assertEqual(source, "stub")
 
 
+class TestProfessions(TestCase):
+    """Профессии в стратегии: только из каталога и только подходящие по профтесту."""
+
+    def setUp(self):
+        from careers.models import Profession
+
+        test = load_test(small_test_data())
+        self.participant = Participant.objects.create()
+        question1, question2 = test.questions.prefetch_related("options")
+        # Оба ответа на шкалу А: А = 2 балла, Б = 0
+        save_attempt(self.participant, test, {
+            question1: question1.options.all()[0],
+            question2: question2.options.all()[0],
+        })
+        Profession.objects.create(code="fits-a", title="Подходит А", description="...",
+                                  test_scales={"mini": ["a"]}, subjects=["math"], directions=["09"])
+        Profession.objects.create(code="fits-b", title="Подходит Б", description="...",
+                                  test_scales={"mini": ["b"]})
+
+    def test_input_has_professions_by_strong_scales(self):
+        data = build_input(self.participant)
+        self.assertEqual(data["professions"], [{
+            "code": "fits-a", "title": "Подходит А", "fits": ["Шкала А"],
+            "subjects": ["Математика"], "directions": ["09"],
+        }])  # шкала Б с нулём баллов не в счёт
+
+    def test_unknown_profession_codes_are_removed(self):
+        data = build_input(self.participant)
+        direction = {"title": "Н", "why": "П", "profession_codes": ["fits-a", "fits-b", "astronaut"]}
+        strategy = check_against_data(Strategy.model_validate_json(strategy_json(directions=[direction])), data)
+        self.assertEqual(strategy.directions[0].profession_codes, ["fits-a"])
+
+    @override_settings(QWEN_API_KEY="")
+    def test_stub_shows_professions(self):
+        strategy, source = generate_strategy(self.participant)
+        self.assertEqual(source, "stub")
+        self.assertEqual(strategy.directions[0].profession_codes, ["fits-a"])
+
+    @override_settings(QWEN_API_KEY="")
+    def test_strategy_page_links_professions(self):
+        session = self.client.session
+        session[SESSION_KEY] = self.participant.code
+        session.save()
+        response = self.client.get("/tests/my/strategy/")
+        self.assertContains(response, '<a href="/professions/fits-a/">Подходит А</a>', html=True)
+
+
 class TestStrategyPage(TestCase):
     URL = "/tests/my/strategy/"
 

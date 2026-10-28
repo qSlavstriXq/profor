@@ -4,6 +4,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.views.decorators.http import require_POST
 
 from admissions.models import Course
+from careers.models import Profession
 from careers.services import professions_for_attempt
 from admissions.views import SCORES_SESSION_KEY
 from llm import client as llm_client
@@ -141,6 +142,9 @@ def _present(strategy, scores, participant):
     tests = {test.code: test for test in Test.objects.all()}
     programs = {p["id"]: p for p in llm_strategy.pick_programs(scores, participant)}
     courses = Course.objects.in_bulk([s.course_id for s in strategy.next_steps if s.course_id])
+    professions = Profession.objects.in_bulk(
+        [code for d in strategy.directions for code in d.profession_codes], field_name="code",
+    )
 
     return {
         "summary": strategy.summary,
@@ -153,7 +157,8 @@ def _present(strategy, scores, participant):
             {
                 "title": d.title,
                 "why": d.why,
-                "professions": d.professions,
+                # Профессию могли убрать из каталога после того, как стратегия сохранена
+                "professions": [professions[code] for code in d.profession_codes if code in professions],
                 # Программа могла пропасть из подбора (поменялись баллы), такие не показываем
                 "programs": [programs[pid] for pid in d.program_ids if pid in programs],
             }
