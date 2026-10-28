@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import AdmissionStat, Program, ProgramExam, University
+from .models import AdmissionStat, Course, Program, ProgramExam, University
 
 
 class ProgramExamInline(admin.TabularInline):
@@ -26,3 +26,9 @@ class ProgramAdmin(admin.ModelAdmin):
     list_filter = ("verified", "university", "study_form")
     search_fields = ("name", "faculty", "direction_code", "university__name", "university__short_name")
     inlines = [ProgramExamInline, AdmissionStatInline]
+
+@admin.register(Course)
+class CourseAdmin(admin.ModelAdmin):
+    list_display = ("title", "provider", "is_free", "verified", "updated_at")
+    list_filter = ("verified", "is_free")
+    search_fields = ("title", "provider", "professions")

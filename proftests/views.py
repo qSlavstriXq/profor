@@ -3,6 +3,7 @@ from django.http import Http404
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views.decorators.http import require_POST
 
+from admissions.models import Course
 from admissions.views import SCORES_SESSION_KEY
 from llm import client as llm_client
 from llm import strategy as llm_strategy
@@ -130,6 +131,7 @@ def _present(strategy, scores, participant):
     """Подставляет названия тестов и программ вместо кодов и id."""
     tests = {test.code: test for test in Test.objects.all()}
     programs = {p["id"]: p for p in llm_strategy.pick_programs(scores, participant)}
+    courses = Course.objects.in_bulk([s.course_id for s in strategy.next_steps if s.course_id])
 
     return {
         "summary": strategy.summary,
@@ -155,6 +157,8 @@ def _present(strategy, scores, participant):
                 "why": step.why,
                 "for_profession": step.for_profession,
                 "test_code": step.test_code if step.test_code in tests else None,
+                # Курс могли убрать из каталога после того, как стратегия сохранена
+                "course": courses.get(step.course_id),
             }
             for step in strategy.next_steps
         ],

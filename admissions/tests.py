@@ -102,6 +102,20 @@ class RecommendationTests(TestCase):
         self.assertEqual(result["budget_places"], 90)
         self.assertFalse(result["verified"])
 
+    def test_paid_chances_unknown_without_paid_scores(self):
+        [result] = build_recommendations({"math": 80, "russian": 80, "physics": 90})
+        self.assertIsNone(result["paid_category"])
+
+    def test_paid_chances_from_paid_scores(self):
+        data = sample()
+        data["programs"][0]["tuition_per_year"] = 450000
+        data["programs"][0]["stats"][1]["passing_score_paid"] = 200
+        load_university(data)
+        [result] = build_recommendations({"math": 80, "russian": 80, "physics": 90})
+        self.assertEqual(result["tuition_per_year"], 450000)
+        self.assertEqual(result["paid_category"], "страховка")  # сумма 250 против 200 на платное
+        self.assertNotEqual(result["category"], "страховка")  # на бюджет запаса нет
+
     @override_settings(SHOW_UNVERIFIED_DATA=False)
     def test_unverified_hidden_by_setting(self):
         self.assertEqual(build_recommendations({"math": 80, "russian": 80, "physics": 90}), [])
@@ -173,3 +187,31 @@ class ProgramsPageTests(TestCase):
         response = self.client.get(self.URL, {"filtered": "1", "university": "hard-u"})
         self.assertEqual([r["university"] for r in response.context["results"]], ["Сложный"])
         self.assertContains(response, "Очень сложно (1)")
+
+
+class CourseCatalogTests(TestCase):
+    COURSE = {"code": "c1", "title": "Курс", "provider": "Вуз",
+              "url": "https://example.ru/c1", "directions": ["09", "01.03.02"]}
+
+    def test_load_and_remove(self):
+        from .courses import load_courses
+        from .models import Course
+        load_courses({"courses": [self.COURSE]})
+        course = Course.objects.get(code="c1")
+        self.assertTrue(course.fits_direction("09.03.04"))
+        self.assertFalse(course.fits_direction("38.03.01"))
+        load_courses({"courses": []})
+        self.assertFalse(Course.objects.exists())
+
+    def test_bad_course_rejected(self):
+        from .courses import CourseDataError, load_courses
+        bad = dict(self.COURSE, url="http://example.ru", directions=["информатика"])
+        with self.assertRaises(CourseDataError):
+            load_courses({"courses": [bad]})
+
+    def test_catalog_file_is_valid(self):
+        import json
+
+        from .courses import COURSES_FILE, validate_courses
+        with open(COURSES_FILE, encoding="utf-8") as file:
+            self.assertEqual(validate_courses(json.load(file)), [])

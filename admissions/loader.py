@@ -69,9 +69,10 @@ def validate_university_data(data):
             if year in years:
                 errors.append(f"{where}: год {year} указан дважды")
             years.add(year)
-            score = stat.get("passing_score_budget")
-            if score is not None and (not isinstance(score, int) or not 0 <= score <= 500):
-                errors.append(f"{where}, {year}: проходной балл должен быть числом от 0 до 500")
+            for field in ("passing_score_budget", "passing_score_paid"):
+                score = stat.get(field)
+                if score is not None and (not isinstance(score, int) or not 0 <= score <= 500):
+                    errors.append(f"{where}, {year}: {field} должен быть числом от 0 до 500")
     return errors
 
 
@@ -137,6 +138,8 @@ def load_university(data):
                 program=program, year=s["year"],
                 passing_score_budget=s.get("passing_score_budget"),
                 budget_places=s.get("budget_places"),
+                passing_score_paid=s.get("passing_score_paid"),
+                paid_places=s.get("paid_places"),
                 source_url=s.get("source_url", ""),
             )
             for s in item.get("stats", [])

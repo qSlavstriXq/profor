@@ -95,6 +95,10 @@ class AdmissionStat(models.Model):
         "Проходной балл на бюджет (сумма ЕГЭ)", null=True, blank=True,
     )
     budget_places = models.PositiveSmallIntegerField("Бюджетных мест", null=True, blank=True)
+    passing_score_paid = models.PositiveSmallIntegerField(
+        "Проходной балл на платное (сумма ЕГЭ)", null=True, blank=True,
+    )
+    paid_places = models.PositiveSmallIntegerField("Платных мест", null=True, blank=True)
     source_url = models.URLField("Источник данных", blank=True)
 
     class Meta:
@@ -107,3 +111,30 @@ class AdmissionStat(models.Model):
 
     def __str__(self):
         return f"{self.program} ({self.year})"
+
+class Course(models.Model):
+    """Проверенный курс из нашего каталога. ИИ-помощник советует курсы только отсюда,
+    чтобы не придумывать несуществующие. Каталог загружается командой load_courses."""
+
+    code = models.SlugField("Код", max_length=100, unique=True)
+    title = models.CharField("Название", max_length=255)
+    provider = models.CharField("Кто проводит", max_length=255)
+    url = models.URLField("Страница курса")
+    description = models.TextField("Описание", blank=True)
+    # Для каких направлений: группа ("09") или код направления ("09.03.04")
+    directions = models.JSONField("Направления", default=list, blank=True)
+    professions = models.CharField("Для каких профессий", max_length=255, blank=True)
+    is_free = models.BooleanField("Бесплатный", null=True, blank=True)
+    verified = models.BooleanField("Проверено вручную", default=False)
+    updated_at = models.DateTimeField("Обновлено", auto_now=True)
+
+    class Meta:
+        verbose_name = "Курс"
+        verbose_name_plural = "Курсы"
+
+    def __str__(self):
+        return f"{self.title} ({self.provider})"
+
+    def fits_direction(self, direction_code):
+        """Подходит ли курс к направлению 09.03.04: по группе 09 или по полному коду."""
+        return any(direction_code.startswith(d) for d in self.directions)

@@ -72,6 +72,12 @@
             <strong>{% if step.kind == "test" %}Тест{% else %}Курс{% endif %}:</strong>
             {% if step.test_code %}
               <a href="{% url 'proftests:detail' step.test_code %}">{{ step.title }}</a>
+            {% elif step.course %}
+              <a href="{{ step.course.url }}" target="_blank" rel="noopener">{{ step.course.title }}</a>
+              <span class="note">({{ step.course.provider }}{% if step.course.is_free %}, бесплатно{% endif %})</span>
+              {% if not step.course.verified %}
+                <span class="badge badge--unverified" title="Курс ещё не проверен вручную">Не проверено</span>
+              {% endif %}
             {% else %}
               {{ step.title }}
             {% endif %}

@@ -50,23 +50,28 @@
           "year": 2023,
           "passing_score_budget": 273,
           "budget_places": 45,
+          "paid_places": 30,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 282,
           "budget_places": 45,
+          "paid_places": 20,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 276,
+          "passing_score_paid": 207,
           "budget_places": 45,
+          "paid_places": 35,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 45,
+          "paid_places": 40,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -114,23 +119,28 @@
           "year": 2023,
           "passing_score_budget": 285,
           "budget_places": 60,
+          "paid_places": 10,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 291,
           "budget_places": 60,
+          "paid_places": 10,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 282,
+          "passing_score_paid": 250,
           "budget_places": 60,
+          "paid_places": 30,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 60,
+          "paid_places": 25,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -178,23 +188,28 @@
           "year": 2023,
           "passing_score_budget": 277,
           "budget_places": 25,
+          "paid_places": 5,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 283,
           "budget_places": 25,
+          "paid_places": 5,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 261,
+          "passing_score_paid": 230,
           "budget_places": 25,
+          "paid_places": 15,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 25,
+          "paid_places": 15,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -233,21 +248,26 @@
         {
           "year": 2023,
           "budget_places": 150,
+          "paid_places": 110,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "budget_places": 165,
+          "paid_places": 130,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
+          "passing_score_paid": 260,
           "budget_places": 180,
+          "paid_places": 220,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 195,
+          "paid_places": 220,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -280,7 +300,13 @@
           "min_score": 60
         }
       ],
-      "stats": []
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_paid": 220,
+          "source_url": "https://ba.hse.ru/result2025"
+        }
+      ]
     },
     {
       "faculty": "",
@@ -312,8 +338,14 @@
       ],
       "stats": [
         {
+          "year": 2025,
+          "passing_score_paid": 200,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
           "year": 2026,
           "budget_places": 10,
+          "paid_places": 150,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -361,23 +393,28 @@
           "year": 2023,
           "passing_score_budget": 279,
           "budget_places": 80,
+          "paid_places": 35,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 289,
           "budget_places": 80,
+          "paid_places": 35,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 294,
+          "passing_score_paid": 210,
           "budget_places": 80,
+          "paid_places": 70,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 80,
+          "paid_places": 70,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -417,23 +454,28 @@
           "year": 2023,
           "passing_score_budget": 255,
           "budget_places": 50,
+          "paid_places": 5,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 269,
           "budget_places": 50,
+          "paid_places": 5,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 243,
+          "passing_score_paid": 209,
           "budget_places": 50,
+          "paid_places": 30,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 40,
+          "paid_places": 30,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -481,23 +523,28 @@
           "year": 2023,
           "passing_score_budget": 279,
           "budget_places": 30,
+          "paid_places": 5,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 287,
           "budget_places": 35,
+          "paid_places": 10,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 276,
+          "passing_score_paid": 258,
           "budget_places": 35,
+          "paid_places": 12,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 35,
+          "paid_places": 10,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -535,11 +582,13 @@
           "year": 2025,
           "passing_score_budget": 227,
           "budget_places": 15,
+          "paid_places": 5,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 15,
+          "paid_places": 5,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -591,23 +640,28 @@
           "year": 2023,
           "passing_score_budget": 251,
           "budget_places": 40,
+          "paid_places": 15,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 252,
           "budget_places": 40,
+          "paid_places": 15,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 273,
+          "passing_score_paid": 202,
           "budget_places": 40,
+          "paid_places": 20,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 40,
+          "paid_places": 20,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -655,23 +709,28 @@
           "year": 2023,
           "passing_score_budget": 295,
           "budget_places": 25,
+          "paid_places": 10,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 290,
           "budget_places": 25,
+          "paid_places": 10,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 269,
+          "passing_score_paid": 224,
           "budget_places": 25,
+          "paid_places": 15,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 25,
+          "paid_places": 15,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -714,23 +773,28 @@
           "year": 2023,
           "passing_score_budget": 287,
           "budget_places": 15,
+          "paid_places": 10,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 289,
           "budget_places": 15,
+          "paid_places": 15,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 287,
+          "passing_score_paid": 239,
           "budget_places": 15,
+          "paid_places": 15,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 15,
+          "paid_places": 10,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -795,11 +859,13 @@
         {
           "year": 2025,
           "passing_score_budget": 279,
+          "passing_score_paid": 201,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 50,
+          "paid_places": 50,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -847,23 +913,28 @@
           "year": 2023,
           "passing_score_budget": 280,
           "budget_places": 125,
+          "paid_places": 140,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 286,
           "budget_places": 125,
+          "paid_places": 80,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 278,
+          "passing_score_paid": 210,
           "budget_places": 125,
+          "paid_places": 90,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 125,
+          "paid_places": 90,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -903,23 +974,28 @@
           "year": 2023,
           "passing_score_budget": 305,
           "budget_places": 135,
+          "paid_places": 80,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 296,
           "budget_places": 150,
+          "paid_places": 80,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 299,
+          "passing_score_paid": 260,
           "budget_places": 160,
+          "paid_places": 125,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 160,
+          "paid_places": 125,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -944,7 +1020,24 @@
           "min_score": 60
         }
       ],
-      "stats": []
+      "stats": [
+        {
+          "year": 2024,
+          "paid_places": 50,
+          "source_url": "https://ba.hse.ru/kolmest24"
+        },
+        {
+          "year": 2025,
+          "passing_score_paid": 241,
+          "paid_places": 70,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "paid_places": 90,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
     },
     {
       "faculty": "",
@@ -974,7 +1067,19 @@
           "min_score": 60
         }
       ],
-      "stats": []
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_paid": 217,
+          "paid_places": 50,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "paid_places": 50,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
     },
     {
       "faculty": "",
@@ -1008,6 +1113,7 @@
         {
           "year": 2026,
           "budget_places": 25,
+          "paid_places": 35,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1055,23 +1161,28 @@
           "year": 2023,
           "passing_score_budget": 283,
           "budget_places": 65,
+          "paid_places": 60,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 288,
           "budget_places": 60,
+          "paid_places": 50,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 276,
+          "passing_score_paid": 210,
           "budget_places": 80,
+          "paid_places": 65,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 80,
+          "paid_places": 70,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1128,11 +1239,13 @@
         {
           "year": 2025,
           "passing_score_budget": 236,
+          "passing_score_paid": 201,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 80,
+          "paid_places": 15,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1173,6 +1286,7 @@
         {
           "year": 2026,
           "budget_places": 5,
+          "paid_places": 90,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1212,23 +1326,28 @@
           "year": 2023,
           "passing_score_budget": 265,
           "budget_places": 80,
+          "paid_places": 50,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 275,
           "budget_places": 80,
+          "paid_places": 60,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 249,
+          "passing_score_paid": 196,
           "budget_places": 80,
+          "paid_places": 65,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 80,
+          "paid_places": 29,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1270,17 +1389,21 @@
           "year": 2024,
           "passing_score_budget": 294,
           "budget_places": 110,
+          "paid_places": 140,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 291,
+          "passing_score_paid": 223,
           "budget_places": 100,
+          "paid_places": 190,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 100,
+          "paid_places": 165,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1322,16 +1445,20 @@
           "year": 2024,
           "passing_score_budget": 302,
           "budget_places": 55,
+          "paid_places": 40,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
+          "passing_score_paid": 255,
           "budget_places": 60,
+          "paid_places": 60,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 60,
+          "paid_places": 45,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1373,17 +1500,21 @@
           "year": 2024,
           "passing_score_budget": 308,
           "budget_places": 30,
+          "paid_places": 90,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 305,
+          "passing_score_paid": 250,
           "budget_places": 45,
+          "paid_places": 130,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 60,
+          "paid_places": 110,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1424,22 +1555,27 @@
         {
           "year": 2023,
           "budget_places": 40,
+          "paid_places": 60,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 293,
           "budget_places": 35,
+          "paid_places": 70,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
+          "passing_score_paid": 222,
           "budget_places": 35,
+          "paid_places": 135,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 35,
+          "paid_places": 120,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1495,23 +1631,28 @@
           "year": 2023,
           "passing_score_budget": 366,
           "budget_places": 60,
+          "paid_places": 100,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 377,
           "budget_places": 60,
+          "paid_places": 90,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 372,
+          "passing_score_paid": 280,
           "budget_places": 60,
+          "paid_places": 120,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 60,
+          "paid_places": 103,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1536,7 +1677,13 @@
           "min_score": 60
         }
       ],
-      "stats": []
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_paid": 234,
+          "source_url": "https://ba.hse.ru/result2025"
+        }
+      ]
     },
     {
       "faculty": "",
@@ -1572,8 +1719,14 @@
       ],
       "stats": [
         {
+          "year": 2025,
+          "passing_score_paid": 194,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
           "year": 2026,
           "budget_places": 10,
+          "paid_places": 76,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1613,23 +1766,28 @@
           "year": 2023,
           "passing_score_budget": 283,
           "budget_places": 20,
+          "paid_places": 100,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 292,
           "budget_places": 20,
+          "paid_places": 100,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 289,
+          "passing_score_paid": 225,
           "budget_places": 20,
+          "paid_places": 100,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 30,
+          "paid_places": 100,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1669,21 +1827,26 @@
           "year": 2023,
           "passing_score_budget": 300,
           "budget_places": 30,
+          "paid_places": 180,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "budget_places": 30,
+          "paid_places": 170,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
+          "passing_score_paid": 225,
           "budget_places": 30,
+          "paid_places": 215,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 50,
+          "paid_places": 160,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1708,7 +1871,29 @@
           "min_score": 75
         }
       ],
-      "stats": []
+      "stats": [
+        {
+          "year": 2023,
+          "paid_places": 60,
+          "source_url": "https://ba.hse.ru/kolmest2023"
+        },
+        {
+          "year": 2024,
+          "paid_places": 50,
+          "source_url": "https://ba.hse.ru/kolmest24"
+        },
+        {
+          "year": 2025,
+          "passing_score_paid": 227,
+          "paid_places": 65,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "paid_places": 90,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
     },
     {
       "faculty": "",
@@ -1742,23 +1927,28 @@
         {
           "year": 2023,
           "budget_places": 75,
+          "paid_places": 50,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 281,
           "budget_places": 75,
+          "paid_places": 60,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 269,
+          "passing_score_paid": 211,
           "budget_places": 75,
+          "paid_places": 55,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 75,
+          "paid_places": 51,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1798,23 +1988,28 @@
           "year": 2023,
           "passing_score_budget": 287,
           "budget_places": 130,
+          "paid_places": 110,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 300,
           "budget_places": 130,
+          "paid_places": 110,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 288,
+          "passing_score_paid": 241,
           "budget_places": 130,
+          "paid_places": 130,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 100,
+          "paid_places": 110,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1843,12 +2038,15 @@
         {
           "year": 2025,
           "passing_score_budget": 286,
+          "passing_score_paid": 230,
           "budget_places": 30,
+          "paid_places": 35,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 30,
+          "paid_places": 35,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1873,7 +2071,19 @@
           "min_score": 65
         }
       ],
-      "stats": []
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_paid": 203,
+          "paid_places": 65,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "paid_places": 65,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
     },
     {
       "faculty": "",
@@ -1899,23 +2109,28 @@
         {
           "year": 2023,
           "budget_places": 115,
+          "paid_places": 50,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 276,
           "budget_places": 115,
+          "paid_places": 50,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 288,
+          "passing_score_paid": 193,
           "budget_places": 115,
+          "paid_places": 50,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 115,
+          "paid_places": 50,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -1953,17 +2168,21 @@
           "year": 2024,
           "passing_score_budget": 287,
           "budget_places": 150,
+          "paid_places": 90,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 282,
+          "passing_score_paid": 212,
           "budget_places": 150,
+          "paid_places": 115,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 150,
+          "paid_places": 111,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -2005,17 +2224,21 @@
           "year": 2024,
           "passing_score_budget": 275,
           "budget_places": 30,
+          "paid_places": 35,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 277,
+          "passing_score_paid": 203,
           "budget_places": 30,
+          "paid_places": 40,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 30,
+          "paid_places": 38,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -2040,7 +2263,13 @@
           "min_score": 60
         }
       ],
-      "stats": []
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_paid": 228,
+          "source_url": "https://ba.hse.ru/result2025"
+        }
+      ]
     },
     {
       "faculty": "",
@@ -2086,23 +2315,28 @@
         {
           "year": 2023,
           "budget_places": 40,
+          "paid_places": 50,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 303,
           "budget_places": 40,
+          "paid_places": 50,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 297,
+          "passing_score_paid": 196,
           "budget_places": 40,
+          "paid_places": 50,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 40,
+          "paid_places": 50,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -2154,23 +2388,28 @@
           "year": 2023,
           "passing_score_budget": 377,
           "budget_places": 45,
+          "paid_places": 50,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 395,
           "budget_places": 45,
+          "paid_places": 40,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 353,
+          "passing_score_paid": 275,
           "budget_places": 45,
+          "paid_places": 55,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 45,
+          "paid_places": 14,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -2195,7 +2434,13 @@
           "min_score": 60
         }
       ],
-      "stats": []
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_paid": 207,
+          "source_url": "https://ba.hse.ru/result2025"
+        }
+      ]
     },
     {
       "faculty": "",
@@ -2217,7 +2462,13 @@
           "min_score": 60
         }
       ],
-      "stats": []
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_paid": 201,
+          "source_url": "https://ba.hse.ru/result2025"
+        }
+      ]
     },
     {
       "faculty": "",
@@ -2239,7 +2490,13 @@
           "min_score": 60
         }
       ],
-      "stats": []
+      "stats": [
+        {
+          "year": 2025,
+          "passing_score_paid": 205,
+          "source_url": "https://ba.hse.ru/result2025"
+        }
+      ]
     },
     {
       "faculty": "",
@@ -2287,22 +2544,27 @@
         {
           "year": 2023,
           "budget_places": 25,
+          "paid_places": 250,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 300,
           "budget_places": 20,
+          "paid_places": 200,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
+          "passing_score_paid": 226,
           "budget_places": 20,
+          "paid_places": 135,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 20,
+          "paid_places": 137,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -2349,23 +2611,28 @@
           "year": 2023,
           "passing_score_budget": 295,
           "budget_places": 10,
+          "paid_places": 90,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 300,
           "budget_places": 10,
+          "paid_places": 90,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 295,
+          "passing_score_paid": 195,
           "budget_places": 10,
+          "paid_places": 50,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 10,
+          "paid_places": 60,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -2404,8 +2671,14 @@
       ],
       "stats": [
         {
+          "year": 2025,
+          "passing_score_paid": 183,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
           "year": 2026,
           "budget_places": 10,
+          "paid_places": 42,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -2447,23 +2720,28 @@
           "year": 2023,
           "passing_score_budget": 301,
           "budget_places": 40,
+          "paid_places": 200,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 308,
           "budget_places": 40,
+          "paid_places": 300,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 296,
+          "passing_score_paid": 231,
           "budget_places": 40,
+          "paid_places": 130,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 40,
+          "paid_places": 127,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -2509,17 +2787,21 @@
           "year": 2024,
           "passing_score_budget": 306,
           "budget_places": 5,
+          "paid_places": 50,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 296,
+          "passing_score_paid": 225,
           "budget_places": 5,
+          "paid_places": 25,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 5,
+          "paid_places": 25,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -2562,8 +2844,14 @@
       ],
       "stats": [
         {
+          "year": 2025,
+          "passing_score_paid": 194,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
           "year": 2026,
           "budget_places": 10,
+          "paid_places": 25,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -2600,7 +2888,29 @@
           ]
         }
       ],
-      "stats": []
+      "stats": [
+        {
+          "year": 2023,
+          "paid_places": 100,
+          "source_url": "https://ba.hse.ru/kolmest2023"
+        },
+        {
+          "year": 2024,
+          "paid_places": 100,
+          "source_url": "https://ba.hse.ru/kolmest24"
+        },
+        {
+          "year": 2025,
+          "passing_score_paid": 202,
+          "paid_places": 90,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "paid_places": 77,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
     },
     {
       "faculty": "",
@@ -2638,6 +2948,7 @@
         {
           "year": 2026,
           "budget_places": 45,
+          "paid_places": 21,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -2678,6 +2989,7 @@
         {
           "year": 2026,
           "budget_places": 20,
+          "paid_places": 3,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -2724,22 +3036,27 @@
           "year": 2023,
           "passing_score_budget": 298,
           "budget_places": 35,
+          "paid_places": 180,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 303,
           "budget_places": 35,
+          "paid_places": 150,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
+          "passing_score_paid": 193,
           "budget_places": 35,
+          "paid_places": 180,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 35,
+          "paid_places": 137,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -2787,23 +3104,28 @@
           "year": 2023,
           "passing_score_budget": 293,
           "budget_places": 45,
+          "paid_places": 45,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 296,
           "budget_places": 45,
+          "paid_places": 45,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 291,
+          "passing_score_paid": 210,
           "budget_places": 45,
+          "paid_places": 70,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 50,
+          "paid_places": 39,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -2855,23 +3177,28 @@
           "year": 2023,
           "passing_score_budget": 266,
           "budget_places": 70,
+          "paid_places": 25,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 269,
           "budget_places": 70,
+          "paid_places": 15,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 267,
+          "passing_score_paid": 202,
           "budget_places": 70,
+          "paid_places": 35,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 50,
+          "paid_places": 50,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -2922,11 +3249,13 @@
         {
           "year": 2025,
           "passing_score_budget": 237,
+          "passing_score_paid": 197,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 40,
+          "paid_places": 40,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -2963,7 +3292,29 @@
           ]
         }
       ],
-      "stats": []
+      "stats": [
+        {
+          "year": 2023,
+          "paid_places": 60,
+          "source_url": "https://ba.hse.ru/kolmest2023"
+        },
+        {
+          "year": 2024,
+          "paid_places": 60,
+          "source_url": "https://ba.hse.ru/kolmest24"
+        },
+        {
+          "year": 2025,
+          "passing_score_paid": 197,
+          "paid_places": 60,
+          "source_url": "https://ba.hse.ru/result2025"
+        },
+        {
+          "year": 2026,
+          "paid_places": 60,
+          "source_url": "https://ba.hse.ru/kolmest"
+        }
+      ]
     },
     {
       "faculty": "",
@@ -3008,23 +3359,28 @@
           "year": 2023,
           "passing_score_budget": 276,
           "budget_places": 30,
+          "paid_places": 25,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 285,
           "budget_places": 30,
+          "paid_places": 20,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 264,
+          "passing_score_paid": 224,
           "budget_places": 30,
+          "paid_places": 30,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 30,
+          "paid_places": 40,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -3065,23 +3421,28 @@
         {
           "year": 2023,
           "budget_places": 35,
+          "paid_places": 20,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 283,
           "budget_places": 35,
+          "paid_places": 15,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 256,
+          "passing_score_paid": 201,
           "budget_places": 40,
+          "paid_places": 25,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 40,
+          "paid_places": 40,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -3133,23 +3494,28 @@
           "year": 2023,
           "passing_score_budget": 287,
           "budget_places": 58,
+          "paid_places": 105,
           "source_url": "https://ba.hse.ru/result2023"
         },
         {
           "year": 2024,
           "passing_score_budget": 293,
           "budget_places": 58,
+          "paid_places": 90,
           "source_url": "https://ba.hse.ru/result2024"
         },
         {
           "year": 2025,
           "passing_score_budget": 289,
+          "passing_score_paid": 192,
           "budget_places": 58,
+          "paid_places": 115,
           "source_url": "https://ba.hse.ru/result2025"
         },
         {
           "year": 2026,
           "budget_places": 50,
+          "paid_places": 110,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -3178,6 +3544,7 @@
         {
           "year": 2026,
           "budget_places": 16,
+          "paid_places": 14,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -3206,6 +3573,7 @@
         {
           "year": 2026,
           "budget_places": 15,
+          "paid_places": 14,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]
@@ -3234,6 +3602,7 @@
         {
           "year": 2026,
           "budget_places": 16,
+          "paid_places": 20,
           "source_url": "https://ba.hse.ru/kolmest"
         }
       ]

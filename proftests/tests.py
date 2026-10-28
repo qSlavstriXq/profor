@@ -57,6 +57,15 @@ class TestValidation(SimpleTestCase):
         for scale in data["scales"]:
             self.assertEqual(max_points(data, scale["code"]), 8)
 
+    def test_holland_file_is_valid(self):
+        data = read_test_file(DATA_DIR / "holland.json")
+        self.assertEqual(validate_test_data(data), [])
+        self.assertEqual(len(data["questions"]), 42)
+        self.assertFalse(data["is_active"])  # черновик, пока психологи не сверят
+        # В опроснике Голланда по каждому из шести типов ровно 14 профессий
+        for scale in data["scales"]:
+            self.assertEqual(max_points(data, scale["code"]), 14)
+
 
 class TestScoring(SimpleTestCase):
     def test_scales_without_answers_get_zero(self):
@@ -107,11 +116,23 @@ class TestLoader(TestCase):
         with self.assertRaises(TestDataError):
             load_test(data)
 
-    def test_cannot_reload_test_with_attempts(self):
+    def test_cannot_change_structure_of_test_with_attempts(self):
         test = load_test(small_test_data())
         Attempt.objects.create(participant=Participant.objects.create(), test=test)
+        data = small_test_data()
+        data["questions"][0]["options"][0]["scale"] = "b"  # другая шкала у варианта
         with self.assertRaises(TestDataError):
-            load_test(small_test_data())
+            load_test(data)
+
+    def test_texts_of_test_with_attempts_are_updated_in_place(self):
+        test = load_test(small_test_data())
+        option = test.questions.first().options.first()
+        Attempt.objects.create(participant=Participant.objects.create(), test=test)
+        data = small_test_data()
+        data["questions"][0]["options"][0]["text"] = "А1 по-новому"
+        load_test(data)
+        option.refresh_from_db()  # тот же вариант (ответы на него ссылаются), новый текст
+        self.assertEqual(option.text, "А1 по-новому")
 
 
 class TestSitePages(TestCase):

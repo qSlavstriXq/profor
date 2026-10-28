@@ -6,6 +6,7 @@ from pathlib import Path
 
 from django.conf import settings
 
+from admissions.models import Course
 from admissions.services import build_recommendations
 from proftests.directions import matching_scales
 from proftests.models import StrategyReport, Test
@@ -21,6 +22,9 @@ PROMPT_PATH = Path(__file__).resolve().parent / "prompts" / "strategy_system.txt
 
 # Сколько программ максимум отдаём модели: больше программ, больше токенов
 MAX_PROGRAMS = 15
+
+# Сколько курсов из каталога максимум отдаём модели
+MAX_COURSES = 15
 
 # Сколько самых выраженных шкал каждого теста учитываем при подборе программ
 TOP_SCALES = 2
@@ -129,7 +133,9 @@ def build_input(participant, programs=None):
     # Отправляем только то, что нужно для объяснения: меньше данных, меньше токенов
     programs = [
         {"id": p["id"], "university": p["university"], "name": p["name"],
-         "category": p["category"], "fits": p.get("fits", [])}
+         "direction_code": p.get("direction_code", ""),
+         "category": p["category"], "fits": p.get("fits", []),
+         "tuition_per_year": p.get("tuition_per_year"), "paid_category": p.get("paid_category")}
         for p in (programs or [])
     ]
     # Результаты из центра профориентации и других источников вне сайта
@@ -143,7 +149,24 @@ def build_input(participant, programs=None):
         for r in participant.external_results.all()
     ]
     return {"tests": tests, "external_results": external_results,
-            "available_tests": available_tests, "programs": programs}
+            "available_tests": available_tests, "programs": programs,
+            "courses": pick_courses(programs)}
+
+
+def pick_courses(programs):
+    """Курсы из каталога, подходящие к направлениям программ из подбора.
+    Если программ нет (школьник не ввёл баллы), отдаём любые курсы каталога."""
+    courses = Course.objects.order_by("pk")
+    if not settings.SHOW_UNVERIFIED_DATA:
+        courses = courses.filter(verified=True)
+    codes = [p["direction_code"] for p in programs if p.get("direction_code")]
+    if codes:
+        courses = [c for c in courses if any(c.fits_direction(code) for code in codes)]
+    return [
+        {"id": c.pk, "title": c.title, "provider": c.provider,
+         "description": c.description, "professions": c.professions}
+        for c in list(courses)[:MAX_COURSES]
+    ]
 
 
 def check_against_data(strategy, data):
@@ -155,6 +178,7 @@ def check_against_data(strategy, data):
     program_ids = {p["id"] for p in data["programs"]}
     taken_codes = {t["test_code"] for t in data["tests"]}
     available_codes = {t["test_code"] for t in data["available_tests"]}
+    course_ids = {c["id"] for c in data.get("courses", [])}
 
     for direction in strategy.directions:
         unknown = [pid for pid in direction.program_ids if pid not in program_ids]
@@ -170,6 +194,9 @@ def check_against_data(strategy, data):
         if step.test_code is not None and step.test_code not in available_codes:
             logger.warning("Модель указала тест не с сайта: %s", step.test_code)
             step.test_code = None
+        if step.course_id is not None and step.course_id not in course_ids:
+            logger.warning("Модель указала курс не из каталога: %s", step.course_id)
+            step.course_id = None
     return strategy
 
 

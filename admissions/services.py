@@ -65,6 +65,7 @@ def build_recommendations(student_scores):
         )
         if result is None:
             continue  # у школьника нет нужного предмета
+        paid = _paid_chances(student_scores, program, subjects, min_scores)
 
         results.append({
             "id": program.pk,
@@ -85,6 +86,10 @@ def build_recommendations(student_scores):
             "category": result["category"],
             "below_minimum": [Subject(code).label for code in result["below_minimum"]],
             "years": len(passing_scores),
+            "tuition_per_year": program.tuition_per_year,
+            "paid_category": paid["category"] if paid else None,
+            "paid_reference": paid["reference"] if paid else None,
+            "paid_margin_points": round(paid["margin"]) if paid else None,
         })
 
     results.sort(key=lambda r: (CATEGORY_ORDER[r["category"]], -r["margin"]))
@@ -109,6 +114,22 @@ def apply_filters(results, university="", categories=None, query=""):
         and (not categories or r["category"] in categories)
         and (not query or query in r["name"].lower() or query in r["faculty"].lower())
     ]
+
+
+def _paid_chances(student_scores, program, subjects, min_scores):
+    """Шансы на платное: тот же расчёт, что и на бюджет, но по проходным баллам на платное.
+    Если вуз их не публикует, возвращает None: шансы не выдумываем."""
+    paid_scores = [
+        stat.passing_score_paid
+        for stat in program.stats.all()
+        if stat.passing_score_paid is not None
+    ]
+    if not paid_scores:
+        return None
+    return evaluate(
+        student_scores,
+        {"subjects": subjects, "passing_scores": paid_scores, "min_scores": min_scores},
+    )
 
 
 def _latest_places(program):

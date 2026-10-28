@@ -104,6 +104,22 @@ class TestStrategy(TestCase):
         self.assertEqual(strategy.directions[0].program_ids, [1])
         self.assertIsNone(strategy.next_steps[0].test_code)
 
+    def test_courses_from_catalog_by_direction(self):
+        from admissions.models import Course
+        it = Course.objects.create(code="it", title="Курс ИТ", provider="Вуз",
+                                   url="https://example.ru/it", directions=["09"])
+        Course.objects.create(code="med", title="Курс медицины", provider="Вуз",
+                              url="https://example.ru/med", directions=["31.05.01"])
+        data = build_input(self.participant, programs=[
+            {"id": 1, "university": "Вуз", "name": "ПИ", "category": "реалистично",
+             "direction_code": "09.03.04"},
+        ])
+        self.assertEqual([c["id"] for c in data["courses"]], [it.pk])
+        # Курс не из переданного списка модель указать не может
+        step = {"kind": "course", "title": "Курс", "why": "Нужен", "course_id": 999}
+        strategy = check_against_data(Strategy.model_validate_json(strategy_json(next_steps=[step])), data)
+        self.assertIsNone(strategy.next_steps[0].course_id)
+
     @override_settings(QWEN_API_KEY="")
     def test_without_key_returns_stub(self):
         strategy, source = generate_strategy(self.participant)

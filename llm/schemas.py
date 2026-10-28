@@ -32,6 +32,8 @@ class NextStep(BaseModel):
     for_profession: str = ""
     # Если это тест с нашего сайта, его код. Сверяется в strategy.py
     test_code: str | None = None
+    # Если это курс из нашего каталога, его id. Сверяется в strategy.py
+    course_id: int | None = None
 
 
 class Strategy(BaseModel):

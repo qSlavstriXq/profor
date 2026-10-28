@@ -92,18 +92,24 @@ def number(text):
     return int(text) if re.fullmatch(r"\d+", text) else None
 
 
-def add_stats(record, by_year, places_by_year, sources, skipped, title):
+def add_stats(record, by_year, places_by_year, sources, skipped, title,
+              paid_by_year=None, paid_places_by_year=None):
     """Записывает статистику по годам. Слишком большой балл значит другой набор экзаменов."""
     max_sum = 100 * len(record["exams"]) + 10
-    for year in sorted(set(by_year) | set(places_by_year)):
+    paid_by_year, paid_places_by_year = paid_by_year or {}, paid_places_by_year or {}
+    years = set(by_year) | set(places_by_year) | set(paid_by_year) | set(paid_places_by_year)
+    for year in sorted(years):
         stat = {"year": year}
-        score = by_year.get(year)
-        if score is not None and score > max_sum:
-            skipped.append(f"{title}, {year}: балл {score} больше {max_sum}, не берём")
-        elif score is not None:
-            stat["passing_score_budget"] = score
+        for field, value in [("passing_score_budget", by_year.get(year)),
+                             ("passing_score_paid", paid_by_year.get(year))]:
+            if value is not None and value > max_sum:
+                skipped.append(f"{title}, {year}: балл {value} больше {max_sum}, не берём")
+            elif value is not None:
+                stat[field] = value
         if places_by_year.get(year):
             stat["budget_places"] = places_by_year[year]
+        if paid_places_by_year.get(year):
+            stat["paid_places"] = paid_places_by_year[year]
         if len(stat) > 1:
             stat["source_url"] = sources.get(year, record["source_url"])
             record["stats"].append(stat)
@@ -134,16 +140,23 @@ def hse(skipped):
                 result[(code, norm(re.sub(r"\(.*?платная.*?\)", "", first)), form)] = row
         return result
 
-    # Проходные баллы по годам
-    scores = {}
+    def column(header, start):
+        """Номер столбца, заголовок которого начинается с start, или None."""
+        return next((i for i, h in enumerate(header) if h.startswith(start)), None)
+
+    # Проходные баллы по годам. С 2025 года рядом публикуется и балл на платные места
+    scores, paid_scores = {}, {}
     for year in range(2021, 2026):
         url = f"{base}result{year}"
-        for key, row in table_by_program(fetch(url)).items():
-            if key != "header":
-                scores.setdefault(key[:2], {})[year] = number(row[1])
+        rows = table_by_program(fetch(url))
+        paid_column = column(rows.pop("header", []), "Проходной балл на платные")
+        for key, row in rows.items():
+            scores.setdefault(key[:2], {})[year] = number(row[1])
+            if paid_column is not None and len(row) > paid_column:
+                paid_scores.setdefault(key[:2], {})[year] = number(row[paid_column])
 
     # Бюджетные места: текущий год и прошлые
-    places, places_sources = {}, {}
+    places, paid_places, places_sources = {}, {}, {}
     for year, path in [(2026, "kolmest"), (2025, "kolmest25"), (2024, "kolmest24"), (2023, "kolmest2023")]:
         url = base + path
         try:
@@ -153,10 +166,14 @@ def hse(skipped):
             continue
         places_sources[year] = url
         # Столбец ищем по заголовку: в разные годы набор столбцов разный
-        column = next(i for i, h in enumerate(rows.pop("header")) if h.startswith("Бюджетные места"))
+        header = rows.pop("header")
+        budget_column = column(header, "Бюджетные места")
+        paid_column = column(header, "Места для поступающих по договорам")
         for key, row in rows.items():
-            if len(row) > column:
-                places.setdefault(key, {})[year] = number(row[column])
+            if len(row) > budget_column:
+                places.setdefault(key, {})[year] = number(row[budget_column])
+            if paid_column is not None and len(row) > paid_column:
+                paid_places.setdefault(key, {})[year] = number(row[paid_column])
 
     # Программы и предметы берём из действующего перечня вступительных испытаний
     url = base + "minkrit"
@@ -198,14 +215,17 @@ def hse(skipped):
             exams.append(exam[0] if len(exam) == 1 else {"one_of": exam})
         else:
             key = (p["code"], norm(re.sub(r"\(.*?\)", "", p["name"])))
-            by_year = scores.get(key) or scores.get((p["code"], norm(p["name"])))
+            if key not in scores:
+                key = (p["code"], norm(p["name"]))
+            by_year = scores.get(key)
             if by_year is None:
                 # Программу могли переименовать. Если на направлении ровно одна программа
                 # и в баллах, и в перечне, считаем их одной; иначе не угадываем
                 same_code = [k for k in scores if k[0] == p["code"]]
                 in_list = [q for q in programs if q["code"] == p["code"] and q["form"] == p["form"]]
                 if len(same_code) == 1 and len(in_list) == 1:
-                    by_year = scores[same_code[0]]
+                    key = same_code[0]
+                    by_year = scores[key]
                     skipped.append(f"{title}: баллы взяты у «{same_code[0][1]}» (единственная программа направления)")
                 else:
                     by_year = {}
@@ -223,7 +243,9 @@ def hse(skipped):
             for year, src in places_sources.items():
                 sources.setdefault(year, src)
             add_stats(record, {y: s for y, s in by_year.items() if s}, places.get(place_key, {}),
-                      sources, skipped, title)
+                      sources, skipped, title,
+                      paid_by_year={y: s for y, s in paid_scores.get(key, {}).items() if s},
+                      paid_places_by_year=paid_places.get(place_key, {}))
             records.append(record)
     return {
         "name": "Национальный исследовательский университет «Высшая школа экономики»",

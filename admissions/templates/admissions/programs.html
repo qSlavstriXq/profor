@@ -86,6 +86,17 @@
         {% if r.budget_places %}Бюджетных мест: {{ r.budget_places }}.{% endif %}
         {% if r.source_url %}<a href="{{ r.source_url }}" target="_blank" rel="noopener">Источник данных</a>{% endif %}
       </p>
+      {% if r.tuition_per_year or r.paid_category %}
+        <p class="note">
+          Платное обучение:
+          {% if r.tuition_per_year %}{{ r.tuition_per_year|floatformat:"0g" }} руб. в год.{% else %}стоимость пока неизвестна.{% endif %}
+          {% if r.paid_category %}
+            Шансы на платное — {{ r.paid_category }}, ожидаемый проходной балл — {{ r.paid_reference|floatformat:0 }}.
+          {% else %}
+            Проходной балл на платное вуз не публикует или мы его ещё не собрали, поэтому шансы на платное не оцениваем.
+          {% endif %}
+        </p>
+      {% endif %}
       {% if r.below_minimum %}
         <p class="note">Не набран минимальный балл по {% if r.below_minimum|length == 1 %}предмету{% else %}предметам{% endif %}: {{ r.below_minimum|join:", "|lower }}.</p>
       {% endif %}
