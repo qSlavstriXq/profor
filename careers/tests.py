@@ -189,3 +189,51 @@ class SiteTests(TestCase):
         with override_settings(SHOW_UNVERIFIED_DATA=False):
             self.assertEqual(self.client.get("/professions/both/").status_code, 404)
             self.assertContains(self.client.get("/professions/"), "Бухгалтер")
+
+
+def video(**extra):
+    item = {
+        "platform": "rutube", "video_id": "abc", "title": "Профессия – инженер", "channel": "Ростех",
+        "page_url": "https://rutube.ru/video/abc/", "embed_url": "https://rutube.ru/play/embed/abc",
+        "duration": 274, "professions": ["p1"],
+    }
+    item.update(extra)
+    return item
+
+
+class VideoTests(TestCase):
+    def errors(self, *items):
+        from .videos import validate_videos
+        return validate_videos({"videos": list(items)}, {"p1"})
+
+    def test_good_video(self):
+        self.assertEqual(self.errors(video()), [])
+        vk = video(platform="vk", video_id="-1_2", embed_url="https://vkvideo.ru/video_ext.php?oid=-1&id=2&hash=x")
+        self.assertEqual(self.errors(vk), [])
+
+    def test_embed_only_from_platform(self):
+        [error] = self.errors(video(embed_url="https://evil.example/play/embed/abc"))
+        self.assertIn("адрес плеера", error)
+        [error] = self.errors(video(platform="youtube"))
+        self.assertIn("rutube или vk", error)
+
+    def test_unknown_profession_and_duplicate(self):
+        self.assertEqual(len(self.errors(video(professions=["astronaut"]))), 1)
+        self.assertEqual(len(self.errors(video(), video())), 1)
+
+    def test_load_and_page(self):
+        from .models import Video
+        from .videos import load_videos
+        load_professions({"professions": [profession()]}, SCALES)
+        load_videos({"videos": [video()]}, {"p1"})
+        self.assertEqual(Video.objects.get().duration_display, "4:34")
+        response = self.client.get("/professions/p1/")
+        self.assertContains(response, '<iframe src="https://rutube.ru/play/embed/abc"')
+        self.assertContains(response, "Ростех · 4:34")
+        load_videos({"videos": []}, {"p1"})
+        self.assertContains(self.client.get("/professions/p1/"), "Видео появится позже")
+
+    def test_real_file_is_valid(self):
+        from .videos import VIDEOS_FILE, validate_videos
+        with open(VIDEOS_FILE, encoding="utf-8") as file:
+            self.assertEqual(validate_videos(json.load(file)), [])

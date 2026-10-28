@@ -6,7 +6,7 @@ from admissions.models import Course, Program, Subject
 from proftests.models import Scale
 from proftests.scoring import ranked
 
-from .models import Profession
+from .models import Profession, Video
 
 # Сколько самых выраженных шкал теста учитываем при подборе (как в стратегии)
 TOP_SCALES = 2
@@ -85,7 +85,13 @@ def profession_details(profession):
         courses = courses.filter(verified=True)
     courses = [c for c in courses if c.fits_profession(profession)]
 
+    videos = Video.objects.all()
+    if not settings.SHOW_UNVERIFIED_DATA:
+        videos = videos.filter(verified=True)
+    videos = [v for v in videos if profession.code in v.professions]
+
     return {
+        "videos": videos,
         "subjects": subjects,
         "tests": [{"title": title, "scales": names} for title, names in tests.items()],
         "programs": programs,

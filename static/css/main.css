@@ -177,6 +177,10 @@ a { color: var(--color-primary); }
 .professions-fit { padding-left: 1.2rem; }
 .professions-fit__item { margin-bottom: 0.5rem; }
 .courses { padding-left: 1.2rem; }
+/* Плеер 16:9, по ширине страницы, но не шире 720px */
+.video { margin: 0 0 1.5rem; max-width: 720px; }
+.video__frame { position: relative; aspect-ratio: 16 / 9; background: var(--color-surface); border-radius: var(--radius); overflow: hidden; }
+.video__frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .courses__item { margin-bottom: 0.75rem; }
 
 /* ---------- Подвал ---------- */

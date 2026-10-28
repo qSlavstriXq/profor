@@ -12,10 +12,25 @@
 
 <p class="profession__description">{{ profession.description }}</p>
 
-{# Место под видео о профессии: откуда брать ролики, решается (вопрос 34) #}
+{# Плеер RuTube или VK Видео: ролики с официальных каналов, файлы у себя не храним #}
 <section class="profession__section">
   <h2>Видео о профессии</h2>
-  <p class="note">Видео появится позже.</p>
+  {% for video in videos %}
+    <figure class="video">
+      <div class="video__frame">
+        <iframe src="{{ video.embed_url }}" title="{{ video.title }}" loading="lazy"
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write"
+                allowfullscreen></iframe>
+      </div>
+      <figcaption class="note">
+        {{ video.title }} · {{ video.channel }}{% if video.duration_display %} · {{ video.duration_display }}{% endif %}
+        · <a href="{{ video.page_url }}" target="_blank" rel="noopener">открыть на {{ video.get_platform_display }}</a>
+        {% if not video.verified %}<span class="badge badge--unverified" title="Ролик ещё не проверен вручную">Не проверено</span>{% endif %}
+      </figcaption>
+    </figure>
+  {% empty %}
+    <p class="note">Видео появится позже.</p>
+  {% endfor %}
 </section>
 
 {% if subjects %}

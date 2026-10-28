@@ -1,0 +1,57 @@
+{
+  "videos": [
+    {
+      "platform": "rutube",
+      "video_id": "cbbcc3ced5da49252a587c5b88295c8c",
+      "title": "Профессия – инженер",
+      "channel": "Ростех",
+      "page_url": "https://rutube.ru/video/cbbcc3ced5da49252a587c5b88295c8c/",
+      "embed_url": "https://rutube.ru/play/embed/cbbcc3ced5da49252a587c5b88295c8c",
+      "duration": 274,
+      "professions": [
+        "inzhener-konstruktor",
+        "inzhener-elektronshik"
+      ],
+      "verified": false
+    },
+    {
+      "platform": "rutube",
+      "video_id": "dde701a3c975cb5840d8e8a35d8a560f",
+      "title": "Профессии будущего. Инженер-робототехник",
+      "channel": "Пермский АгроТехноУнивер",
+      "page_url": "https://rutube.ru/video/dde701a3c975cb5840d8e8a35d8a560f/",
+      "embed_url": "https://rutube.ru/play/embed/dde701a3c975cb5840d8e8a35d8a560f",
+      "duration": 214,
+      "professions": [
+        "inzhener-robototekhnik"
+      ],
+      "verified": false
+    },
+    {
+      "platform": "rutube",
+      "video_id": "50b8c67c2d28c14364792aea55bee9ba",
+      "title": "Суть профессии. Инженер-энергетик",
+      "channel": "Алмазный край",
+      "page_url": "https://rutube.ru/video/50b8c67c2d28c14364792aea55bee9ba/",
+      "embed_url": "https://rutube.ru/play/embed/50b8c67c2d28c14364792aea55bee9ba",
+      "duration": 113,
+      "professions": [
+        "inzhener-energetik"
+      ],
+      "verified": false
+    },
+    {
+      "platform": "rutube",
+      "video_id": "3b1066feba9376f49a3af4845092a0d6",
+      "title": "Суть профессии. Пилот вертолета",
+      "channel": "Алмазный край",
+      "page_url": "https://rutube.ru/video/3b1066feba9376f49a3af4845092a0d6/",
+      "embed_url": "https://rutube.ru/play/embed/3b1066feba9376f49a3af4845092a0d6",
+      "duration": 208,
+      "professions": [
+        "pilot"
+      ],
+      "verified": false
+    }
+  ]
+}
