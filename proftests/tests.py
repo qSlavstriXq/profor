@@ -394,3 +394,34 @@ class TestExternalImport(TestCase):
         data = build_input(self.participant)
         self.assertEqual(data["external_results"][0]["test"], "Тест центра")
         self.assertEqual(len(make_basis(self.participant, {})["external"]), 1)
+
+
+class TestGradeForm(TestCase):
+    URL = "/tests/my/grade/"
+
+    def setUp(self):
+        from .models import Participant
+        from .services import SESSION_KEY
+
+        self.participant = Participant.objects.create()
+        session = self.client.session
+        session[SESSION_KEY] = self.participant.code
+        session.save()
+
+    def test_saves_grade_and_returns_back(self):
+        response = self.client.post(self.URL, {"grade": "9", "next": "/tests/my/strategy/"})
+        self.assertRedirects(response, "/tests/my/strategy/", fetch_redirect_response=False)
+        self.participant.refresh_from_db()
+        self.assertEqual(self.participant.grade, 9)
+
+    def test_wrong_grade_ignored(self):
+        self.client.post(self.URL, {"grade": "7"})
+        self.participant.refresh_from_db()
+        self.assertIsNone(self.participant.grade)
+
+    def test_no_redirect_to_other_site(self):
+        response = self.client.post(self.URL, {"grade": "11", "next": "https://evil.example/"})
+        self.assertRedirects(response, "/tests/my/", fetch_redirect_response=False)
+
+    def test_form_on_my_results(self):
+        self.assertContains(self.client.get("/tests/my/"), "В каком вы классе?")

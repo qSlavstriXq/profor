@@ -37,8 +37,17 @@ class NextStep(BaseModel):
     course_id: int | None = None
 
 
+class PlanStep(BaseModel):
+    """Что сделать в одном классе."""
+
+    grade: int = Field(ge=9, le=11)
+    steps: list[str] = Field(min_length=1, max_length=6)
+
+
 class Strategy(BaseModel):
     summary: str = Field(min_length=1)
     test_analysis: list[TestAnalysis]
     directions: list[Direction] = Field(min_length=1, max_length=5)
     next_steps: list[NextStep] = Field(max_length=6)
+    # План по оставшимся классам. Сверяется в strategy.py: прошедших классов в нём нет
+    plan: list[PlanStep] = []

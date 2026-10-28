@@ -5,6 +5,11 @@
 {% block content %}
 <h1>Моя стратегия</h1>
 
+{% include "proftests/includes/grade_form.html" %}
+{% if not participant.grade %}
+  <p class="note">Укажите класс: от него зависят советы. В 9 классе важно выбрать профиль или колледж, в 11 — вуз.</p>
+{% endif %}
+
 {% if not has_tests %}
   <p>Стратегия строится по результатам профтестов. Сначала пройдите хотя бы один тест.</p>
   <a class="button button--primary" href="{% url 'proftests:list' %}">Пройти профтест</a>
@@ -13,7 +18,7 @@
   {# Ключ Qwen есть, но стратегию ещё не составляли (или данные поменялись) #}
   <p>ИИ-помощник разберёт ваши результаты, предложит направления поступления
      и подскажет, какие курсы и тесты пройти дальше.</p>
-  {% if not has_scores %}
+  {% if not has_scores and participant.grade != 9 %}
     <p class="note">Чтобы в стратегии были конкретные программы вузов, сначала введите баллы ЕГЭ
        на странице <a href="{% url 'admissions:programs' %}">подбора программ</a>.</p>
   {% endif %}
@@ -64,6 +69,20 @@
       </article>
     {% endfor %}
   </section>
+
+  {% if strategy.plan %}
+    <section class="strategy__section">
+      <h2>План по классам</h2>
+      {% for item in strategy.plan %}
+        <article class="card">
+          <h3 class="card__title">{{ item.grade }} класс</h3>
+          <ul>
+            {% for step in item.steps %}<li>{{ step }}</li>{% endfor %}
+          </ul>
+        </article>
+      {% endfor %}
+    </section>
+  {% endif %}
 
   {% if strategy.next_steps %}
     <section class="strategy__section">

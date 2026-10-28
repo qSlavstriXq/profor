@@ -1,0 +1,13 @@
+{# Выбор класса. Нужен participant в контексте. После сохранения возвращает на эту же страницу #}
+<form class="grade-form" method="post" action="{% url 'proftests:set_grade' %}">
+  {% csrf_token %}
+  <input type="hidden" name="next" value="{{ request.get_full_path }}">
+  <label for="grade">В каком вы классе?</label>
+  <select id="grade" name="grade" required>
+    {% if not participant.grade %}<option value="">Выберите класс</option>{% endif %}
+    {% for value, label in participant.Grade.choices %}
+      <option value="{{ value }}"{% if value == participant.grade %} selected{% endif %}>{{ label }}</option>
+    {% endfor %}
+  </select>
+  <button class="button" type="submit">Сохранить</button>
+</form>

@@ -8,6 +8,7 @@ urlpatterns = [
     path("", views.test_list, name="list"),
     path("my/", views.my_results, name="my_results"),
     path("my/forget/", views.forget_code, name="forget_code"),
+    path("my/grade/", views.set_grade, name="set_grade"),
     path("my/strategy/", views.strategy, name="strategy"),
     path("result/<int:attempt_id>/", views.result, name="result"),
     path("<slug:code>/", views.test_detail, name="detail"),

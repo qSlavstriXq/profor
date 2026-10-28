@@ -82,7 +82,8 @@ def make_basis(participant, scores):
     attempt_ids = sorted(a.pk for a in latest_attempts(participant).values())
     # Внешние результаты: id и время загрузки, чтобы заметить и новые, и обновлённые
     external = sorted([r.pk, r.imported_at.isoformat()] for r in participant.external_results.all())
-    return {"attempts": attempt_ids, "external": external, "scores": scores or {}}
+    return {"attempts": attempt_ids, "external": external, "scores": scores or {},
+            "grade": participant.grade}
 
 
 def saved_strategy(participant, basis):
@@ -182,7 +183,7 @@ def build_input(participant, programs=None):
         }
         for r in participant.external_results.all()
     ]
-    return {"tests": tests, "external_results": external_results,
+    return {"grade": participant.grade, "tests": tests, "external_results": external_results,
             "available_tests": available_tests, "programs": programs,
             "professions": pick_professions(participant),
             "courses": pick_courses(programs)}
@@ -229,6 +230,14 @@ def check_against_data(strategy, data):
     strategy.test_analysis = [
         item for item in strategy.test_analysis if item.test_code in taken_codes
     ]
+
+    # План только на текущий и следующие классы, по одному пункту на класс, по порядку
+    grade = data.get("grade") or 9
+    plan = {}
+    for item in strategy.plan:
+        if item.grade >= grade:
+            plan.setdefault(item.grade, item)
+    strategy.plan = [plan[g] for g in sorted(plan)]
 
     for step in strategy.next_steps:
         if step.test_code is not None and step.test_code not in available_codes:

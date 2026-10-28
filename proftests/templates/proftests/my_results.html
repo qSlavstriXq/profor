@@ -9,6 +9,7 @@
   <div class="code-box">
     Ваш код участника: <strong class="code-box__code">{{ participant.code }}</strong>
   </div>
+  {% include "proftests/includes/grade_form.html" %}
 
   {% if external %}
     <h2>Результаты из других источников</h2>

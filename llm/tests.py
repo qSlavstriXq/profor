@@ -136,6 +136,27 @@ class TestStrategy(TestCase):
         self.assertEqual(source, "stub")
 
 
+class TestGrade(TestCase):
+    """Класс школьника: передаётся модели, прошедшие классы убираются из плана."""
+
+    def setUp(self):
+        self.participant = Participant.objects.create(grade=10)
+
+    def test_grade_sent_to_model(self):
+        self.assertEqual(build_input(self.participant)["grade"], 10)
+
+    def test_plan_keeps_current_and_later_grades(self):
+        plan = [{"grade": 11, "steps": ["Б"]}, {"grade": 9, "steps": ["Прошло"]},
+                {"grade": 10, "steps": ["А"]}, {"grade": 10, "steps": ["Повтор"]}]
+        strategy = Strategy.model_validate_json(strategy_json(plan=plan))
+        strategy = check_against_data(strategy, build_input(self.participant))
+        self.assertEqual([(i.grade, i.steps) for i in strategy.plan], [(10, ["А"]), (11, ["Б"])])
+
+    def test_old_strategy_without_plan_is_valid(self):
+        # Стратегии, сохранённые до появления плана, по-прежнему читаются
+        self.assertEqual(Strategy.model_validate_json(strategy_json()).plan, [])
+
+
 class TestProfessions(TestCase):
     """Профессии в стратегии: только из каталога и только подходящие по профтесту."""
 
@@ -247,6 +268,25 @@ class TestStrategyPage(TestCase):
         self.client.post(self.URL)
         self.pass_test()  # прошёл тест ещё раз
         self.assertContains(self.client.get(self.URL), "Составить стратегию")
+
+    @override_settings(QWEN_API_KEY="test-key")
+    def test_grade_change_makes_strategy_outdated(self):
+        self.use_fake_model(strategy_json())
+        self.pass_test()
+        self.client.post(self.URL)
+        self.client.post("/tests/my/grade/", {"grade": "10", "next": self.URL})
+        self.assertContains(self.client.get(self.URL), "Составить стратегию")
+
+    @override_settings(QWEN_API_KEY="test-key")
+    def test_plan_by_grade_shown(self):
+        plan = [{"grade": 10, "steps": ["Выбрать предметы ЕГЭ"]}, {"grade": 11, "steps": ["Подать документы"]}]
+        self.use_fake_model(strategy_json(plan=plan))
+        self.pass_test()
+        self.client.post("/tests/my/grade/", {"grade": "10"})
+        self.client.post(self.URL)
+        response = self.client.get(self.URL)
+        self.assertContains(response, "План по классам")
+        self.assertContains(response, "Выбрать предметы ЕГЭ")
 
     @override_settings(QWEN_API_KEY="test-key")
     def test_model_failure_shows_warning(self):

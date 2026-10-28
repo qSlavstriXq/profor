@@ -135,9 +135,16 @@ class Option(models.Model):
 class Participant(models.Model):
     """Участник. Только код, никаких персональных данных."""
 
+    class Grade(models.IntegerChoices):
+        NINTH = 9, "9 класс"
+        TENTH = 10, "10 класс"
+        ELEVENTH = 11, "11 класс"
+
     code = models.CharField(
         "Код", max_length=20, unique=True, default=generate_participant_code,
     )
+    # От класса зависит стратегия: в 9 классе выбирают профиль или колледж, в 11 — вуз
+    grade = models.PositiveSmallIntegerField("Класс", choices=Grade.choices, null=True, blank=True)
     created_at = models.DateTimeField("Создан", auto_now_add=True)
 
     class Meta:

@@ -10,6 +10,7 @@
   Ваш код участника: <strong class="code-box__code">{{ attempt.participant.code }}</strong>
   <p class="note">Запишите его: по коду можно вернуться к результатам с другого устройства.</p>
 </div>
+{% with participant=attempt.participant %}{% include "proftests/includes/grade_form.html" %}{% endwith %}
 
 <div class="results">
   {% for row in rows %}

@@ -126,6 +126,8 @@ a { color: var(--color-primary); }
 
 .code-box { padding: 1rem; border-radius: var(--radius); background: var(--color-surface); margin: 1rem 0; }
 .code-box__code { font-size: 1.3rem; letter-spacing: 0.05em; }
+.grade-form { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin: 1rem 0; }
+.grade-form select { padding: 0.4rem; }
 
 /* ---------- Прохождение теста ---------- */
 

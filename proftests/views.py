@@ -1,6 +1,7 @@
 from django.contrib import messages
 from django.http import Http404
 from django.shortcuts import get_object_or_404, redirect, render
+from django.utils.http import url_has_allowed_host_and_scheme
 from django.views.decorators.http import require_POST
 
 from admissions.models import Course
@@ -11,7 +12,7 @@ from llm import client as llm_client
 from llm import strategy as llm_strategy
 
 from . import services
-from .models import Test
+from .models import Participant, Test
 
 # Сколько подходящих профессий показываем на странице результата
 MAX_PROFESSIONS = 10
@@ -94,6 +95,23 @@ def my_results(request):
 
 
 @require_POST
+def set_grade(request):
+    """Сохраняет класс участника и возвращает на страницу, с которой пришли."""
+    participant = services.current_participant(request)
+    if participant is None:
+        return redirect("proftests:my_results")
+    grade = request.POST.get("grade", "")
+    if grade.isdigit() and int(grade) in Participant.Grade.values:
+        participant.grade = int(grade)
+        participant.save(update_fields=["grade"])
+    # Возвращаемся только на страницы нашего сайта, чтобы ссылкой нельзя было увести на чужой
+    next_url = request.POST.get("next", "")
+    if not url_has_allowed_host_and_scheme(next_url, allowed_hosts={request.get_host()}):
+        next_url = "/tests/my/"
+    return redirect(next_url)
+
+
+@require_POST
 def forget_code(request):
     """Убрать код из этого браузера, например на общем компьютере в школе."""
     services.forget_participant(request)
@@ -130,6 +148,7 @@ def strategy(request):
         current, source = None, None  # покажем кнопку «Составить стратегию»
 
     return render(request, "proftests/strategy.html", {
+        "participant": participant,
         "has_tests": has_tests,
         "has_scores": bool(scores),
         "source": source,
@@ -164,6 +183,7 @@ def _present(strategy, scores, participant):
             }
             for d in strategy.directions
         ],
+        "plan": [{"grade": item.grade, "steps": item.steps} for item in strategy.plan],
         "next_steps": [
             {
                 "kind": step.kind,
