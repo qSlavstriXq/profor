@@ -5,113 +5,1422 @@
       "code": "programmist",
       "title": "Программист",
       "description": "Пишет программы: сайты, мобильные приложения, игры, системы для банков и заводов. Большую часть дня думает над задачей, пишет и проверяет код, обсуждает решения с командой.",
-      "test_scales": {"klimov-ddo": ["signs", "tech"], "holland": ["i", "c"]},
-      "subjects": ["math", "informatics", "russian"],
-      "directions": ["09", "02", "01.03.02"]
+      "test_scales": {
+        "klimov-ddo": [
+          "signs",
+          "tech"
+        ],
+        "holland": [
+          "i",
+          "c"
+        ]
+      },
+      "subjects": [
+        "math",
+        "informatics",
+        "russian"
+      ],
+      "directions": [
+        "09",
+        "02",
+        "01.03.02"
+      ]
     },
     {
       "code": "analitik-dannyh",
       "title": "Аналитик данных",
       "description": "Ищет закономерности в больших таблицах и базах данных: почему покупатели уходят, какой товар закончится, где растёт спрос. Работает с цифрами, графиками и программами для анализа.",
-      "test_scales": {"klimov-ddo": ["signs"], "holland": ["i", "c"]},
-      "subjects": ["math", "informatics", "russian"],
-      "directions": ["01.03.02", "09", "38.03.05"]
+      "test_scales": {
+        "klimov-ddo": [
+          "signs"
+        ],
+        "holland": [
+          "i",
+          "c"
+        ]
+      },
+      "subjects": [
+        "math",
+        "informatics",
+        "russian"
+      ],
+      "directions": [
+        "01.03.02",
+        "09",
+        "38.03.05"
+      ]
     },
     {
       "code": "inzhener-konstruktor",
       "title": "Инженер-конструктор",
       "description": "Придумывает и рассчитывает машины, механизмы и их детали: от станка до самолёта. Делает чертежи и трёхмерные модели на компьютере, проверяет, выдержит ли конструкция нагрузку.",
-      "test_scales": {"klimov-ddo": ["tech"], "holland": ["r", "i"]},
-      "subjects": ["math", "physics", "russian"],
-      "directions": ["15", "24"]
+      "test_scales": {
+        "klimov-ddo": [
+          "tech"
+        ],
+        "holland": [
+          "r",
+          "i"
+        ]
+      },
+      "subjects": [
+        "math",
+        "physics",
+        "russian"
+      ],
+      "directions": [
+        "15",
+        "24"
+      ]
     },
     {
       "code": "inzhener-elektronshik",
       "title": "Инженер-электроник",
       "description": "Разрабатывает электронные устройства: платы, датчики, системы связи, бытовую технику. Собирает и испытывает схемы, ищет неисправности, пишет программы для микроконтроллеров.",
-      "test_scales": {"klimov-ddo": ["tech"], "holland": ["r", "i"]},
-      "subjects": ["math", "physics", "informatics", "russian"],
-      "directions": ["11"]
+      "test_scales": {
+        "klimov-ddo": [
+          "tech"
+        ],
+        "holland": [
+          "r",
+          "i"
+        ]
+      },
+      "subjects": [
+        "math",
+        "physics",
+        "informatics",
+        "russian"
+      ],
+      "directions": [
+        "11"
+      ]
     },
     {
       "code": "vrach",
       "title": "Врач",
       "description": "Выясняет, чем болеет человек, назначает лечение и следит, чтобы пациент поправился. Много общается с людьми, принимает ответственные решения, постоянно учится новому.",
-      "test_scales": {"klimov-ddo": ["people", "nature"], "holland": ["s", "i"]},
-      "subjects": ["biology", "chemistry", "russian"],
-      "directions": ["31"]
+      "test_scales": {
+        "klimov-ddo": [
+          "people",
+          "nature"
+        ],
+        "holland": [
+          "s",
+          "i"
+        ]
+      },
+      "subjects": [
+        "biology",
+        "chemistry",
+        "russian"
+      ],
+      "directions": [
+        "31"
+      ]
     },
     {
       "code": "biotehnolog",
       "title": "Биотехнолог",
       "description": "Использует живые клетки и микроорганизмы, чтобы получать лекарства, продукты питания и новые материалы. Работает в лаборатории: ставит опыты, ведёт записи, анализирует результаты.",
-      "test_scales": {"klimov-ddo": ["nature"], "holland": ["i", "r"]},
-      "subjects": ["biology", "chemistry", "math", "russian"],
-      "directions": ["19", "06"]
+      "test_scales": {
+        "klimov-ddo": [
+          "nature"
+        ],
+        "holland": [
+          "i",
+          "r"
+        ]
+      },
+      "subjects": [
+        "biology",
+        "chemistry",
+        "math",
+        "russian"
+      ],
+      "directions": [
+        "19",
+        "06"
+      ]
     },
     {
       "code": "ekolog",
       "title": "Эколог",
       "description": "Проверяет, как предприятия и города влияют на природу: берёт пробы воды, воздуха и почвы, считает вред и предлагает, как его уменьшить. Работает и в лаборатории, и на выездах.",
-      "test_scales": {"klimov-ddo": ["nature"], "holland": ["i", "r"]},
-      "subjects": ["biology", "chemistry", "geography", "russian"],
-      "directions": ["05.03.06", "20"]
+      "test_scales": {
+        "klimov-ddo": [
+          "nature"
+        ],
+        "holland": [
+          "i",
+          "r"
+        ]
+      },
+      "subjects": [
+        "biology",
+        "chemistry",
+        "geography",
+        "russian"
+      ],
+      "directions": [
+        "05.03.06",
+        "20"
+      ]
     },
     {
       "code": "uchitel",
       "title": "Учитель",
       "description": "Объясняет детям свой предмет, готовит уроки, проверяет работы, помогает ученикам с трудностями и общается с родителями. Нужно любить свой предмет и уметь находить подход к разным людям.",
-      "test_scales": {"klimov-ddo": ["people"], "holland": ["s"]},
-      "subjects": ["russian", "social"],
-      "directions": ["44"]
+      "test_scales": {
+        "klimov-ddo": [
+          "people"
+        ],
+        "holland": [
+          "s"
+        ]
+      },
+      "subjects": [
+        "russian",
+        "social"
+      ],
+      "directions": [
+        "44"
+      ]
     },
     {
       "code": "psiholog",
       "title": "Психолог",
       "description": "Помогает людям разобраться в чувствах, отношениях и трудных ситуациях. Проводит беседы и тесты, работает в школах, больницах, компаниях или ведёт частный приём.",
-      "test_scales": {"klimov-ddo": ["people"], "holland": ["s", "i"]},
-      "subjects": ["biology", "social", "russian"],
-      "directions": ["37"]
+      "test_scales": {
+        "klimov-ddo": [
+          "people"
+        ],
+        "holland": [
+          "s",
+          "i"
+        ]
+      },
+      "subjects": [
+        "biology",
+        "social",
+        "russian"
+      ],
+      "directions": [
+        "37"
+      ]
     },
     {
       "code": "yurist",
       "title": "Юрист",
       "description": "Знает законы и помогает людям и компаниям их соблюдать: составляет договоры, консультирует, защищает интересы клиента в суде. Много читает, пишет и спорит по делу.",
-      "test_scales": {"klimov-ddo": ["signs", "people"], "holland": ["e", "c"]},
-      "subjects": ["social", "history", "russian"],
-      "directions": ["40"]
+      "test_scales": {
+        "klimov-ddo": [
+          "signs",
+          "people"
+        ],
+        "holland": [
+          "e",
+          "c"
+        ]
+      },
+      "subjects": [
+        "social",
+        "history",
+        "russian"
+      ],
+      "directions": [
+        "40"
+      ]
     },
     {
       "code": "ekonomist",
       "title": "Экономист",
       "description": "Считает деньги компании или города: доходы, расходы, выгоду от новых проектов. Составляет планы и прогнозы, работает с таблицами и отчётами.",
-      "test_scales": {"klimov-ddo": ["signs"], "holland": ["c", "e"]},
-      "subjects": ["math", "social", "russian"],
-      "directions": ["38"]
+      "test_scales": {
+        "klimov-ddo": [
+          "signs"
+        ],
+        "holland": [
+          "c",
+          "e"
+        ]
+      },
+      "subjects": [
+        "math",
+        "social",
+        "russian"
+      ],
+      "directions": [
+        "38"
+      ]
     },
     {
       "code": "dizayner",
       "title": "Дизайнер",
       "description": "Придумывает, как будут выглядеть вещи, сайты, упаковка или интерьеры, чтобы ими было удобно и приятно пользоваться. Рисует эскизы, работает в графических программах, обсуждает идеи с заказчиком.",
-      "test_scales": {"klimov-ddo": ["art"], "holland": ["a"]},
-      "subjects": ["russian", "literature"],
-      "directions": ["54"]
+      "test_scales": {
+        "klimov-ddo": [
+          "art"
+        ],
+        "holland": [
+          "a"
+        ]
+      },
+      "subjects": [
+        "russian",
+        "literature"
+      ],
+      "directions": [
+        "54"
+      ]
     },
     {
       "code": "zhurnalist",
       "title": "Журналист",
       "description": "Находит интересные события и рассказывает о них: пишет статьи, снимает видео, ведёт подкасты. Берёт интервью, проверяет факты, работает быстро и к сроку.",
-      "test_scales": {"klimov-ddo": ["art", "people"], "holland": ["a", "s"]},
-      "subjects": ["russian", "literature", "social"],
-      "directions": ["42.03.02"]
+      "test_scales": {
+        "klimov-ddo": [
+          "art",
+          "people"
+        ],
+        "holland": [
+          "a",
+          "s"
+        ]
+      },
+      "subjects": [
+        "russian",
+        "literature",
+        "social"
+      ],
+      "directions": [
+        "42.03.02"
+      ]
     },
     {
       "code": "arhitektor",
       "title": "Архитектор",
       "description": "Проектирует здания и городские пространства: каким будет дом, как в нём будет удобно жить и как он впишется в улицу. Рисует, делает расчёты и трёхмерные модели.",
-      "test_scales": {"klimov-ddo": ["art", "tech"], "holland": ["a", "r"]},
-      "subjects": ["math", "russian", "literature"],
-      "directions": ["07"]
+      "test_scales": {
+        "klimov-ddo": [
+          "art",
+          "tech"
+        ],
+        "holland": [
+          "a",
+          "r"
+        ]
+      },
+      "subjects": [
+        "math",
+        "russian",
+        "literature"
+      ],
+      "directions": [
+        "07"
+      ]
+    },
+    {
+      "code": "testirovshchik",
+      "title": "Тестировщик",
+      "description": "Проверяет программы и сайты до того, как ими начнут пользоваться люди: ищет ошибки, описывает их и следит, чтобы разработчики их исправили. Нужны внимательность и любопытство.",
+      "test_scales": {
+        "klimov-ddo": [
+          "signs",
+          "tech"
+        ],
+        "holland": [
+          "i",
+          "c"
+        ]
+      },
+      "subjects": [
+        "math",
+        "informatics",
+        "russian"
+      ],
+      "directions": [
+        "09"
+      ]
+    },
+    {
+      "code": "specialist-po-infobezopasnosti",
+      "title": "Специалист по информационной безопасности",
+      "description": "Защищает компьютеры, сети и данные от взлома и утечек. Ищет слабые места в системах, расследует атаки и учит сотрудников не попадаться на уловки мошенников.",
+      "test_scales": {
+        "klimov-ddo": [
+          "signs",
+          "tech"
+        ],
+        "holland": [
+          "i",
+          "c"
+        ]
+      },
+      "subjects": [
+        "math",
+        "informatics",
+        "physics",
+        "russian"
+      ],
+      "directions": [
+        "10"
+      ]
+    },
+    {
+      "code": "sistemnyy-administrator",
+      "title": "Системный администратор",
+      "description": "Следит, чтобы в компании работали компьютеры, серверы, сеть и почта. Настраивает оборудование, устанавливает программы и быстро чинит то, что сломалось.",
+      "test_scales": {
+        "klimov-ddo": [
+          "tech",
+          "signs"
+        ],
+        "holland": [
+          "r",
+          "c"
+        ]
+      },
+      "subjects": [
+        "math",
+        "informatics",
+        "russian"
+      ],
+      "directions": [
+        "09.03.01",
+        "09.03.02"
+      ]
+    },
+    {
+      "code": "razrabotchik-igr",
+      "title": "Разработчик игр",
+      "description": "Создаёт компьютерные и мобильные игры: программирует правила, физику и поведение персонажей. Работает в команде с художниками, дизайнерами уровней и сценаристами.",
+      "test_scales": {
+        "klimov-ddo": [
+          "signs",
+          "art"
+        ],
+        "holland": [
+          "i",
+          "a"
+        ]
+      },
+      "subjects": [
+        "math",
+        "informatics",
+        "russian"
+      ],
+      "directions": [
+        "09"
+      ]
+    },
+    {
+      "code": "specialist-po-mashinnomu-obucheniyu",
+      "title": "Специалист по машинному обучению",
+      "description": "Учит компьютер решать задачи на примерах: распознавать речь и картинки, переводить тексты, давать подсказки. Много работает с математикой, данными и программным кодом.",
+      "test_scales": {
+        "klimov-ddo": [
+          "signs"
+        ],
+        "holland": [
+          "i"
+        ]
+      },
+      "subjects": [
+        "math",
+        "informatics",
+        "russian"
+      ],
+      "directions": [
+        "01.03.02",
+        "02",
+        "09"
+      ]
+    },
+    {
+      "code": "dizayner-interfeysov",
+      "title": "Дизайнер интерфейсов",
+      "description": "Придумывает, как будут выглядеть и работать экраны приложений и сайтов, чтобы человеку было понятно, куда нажать. Рисует макеты, проверяет их на пользователях и работает вместе с программистами.",
+      "test_scales": {
+        "klimov-ddo": [
+          "art",
+          "signs"
+        ],
+        "holland": [
+          "a",
+          "i"
+        ]
+      },
+      "subjects": [
+        "russian",
+        "literature",
+        "informatics"
+      ],
+      "directions": [
+        "54",
+        "09.03.03"
+      ]
+    },
+    {
+      "code": "matematik",
+      "title": "Математик",
+      "description": "Решает задачи, которые ещё никто не решил, и придумывает новые методы расчёта. Работает в университетах, научных институтах, а также в компаниях, где нужны сложные вычисления.",
+      "test_scales": {
+        "klimov-ddo": [
+          "signs"
+        ],
+        "holland": [
+          "i"
+        ]
+      },
+      "subjects": [
+        "math",
+        "informatics",
+        "physics",
+        "russian"
+      ],
+      "directions": [
+        "01"
+      ]
+    },
+    {
+      "code": "fizik",
+      "title": "Физик",
+      "description": "Изучает, как устроены вещество, энергия, свет и космос. Ставит эксперименты на приборах, строит модели и проверяет их расчётами; работает в лабораториях и на высокотехнологичных производствах.",
+      "test_scales": {
+        "klimov-ddo": [
+          "signs",
+          "tech"
+        ],
+        "holland": [
+          "i"
+        ]
+      },
+      "subjects": [
+        "math",
+        "physics",
+        "informatics",
+        "russian"
+      ],
+      "directions": [
+        "03",
+        "16"
+      ]
+    },
+    {
+      "code": "khimik",
+      "title": "Химик",
+      "description": "Исследует вещества и их превращения: создаёт новые материалы, проверяет состав продуктов, лекарств и воды. Работает в лаборатории с приборами и реактивами.",
+      "test_scales": {
+        "klimov-ddo": [
+          "nature"
+        ],
+        "holland": [
+          "i",
+          "r"
+        ]
+      },
+      "subjects": [
+        "chemistry",
+        "math",
+        "biology",
+        "russian"
+      ],
+      "directions": [
+        "04"
+      ]
+    },
+    {
+      "code": "biolog",
+      "title": "Биолог",
+      "description": "Изучает живые организмы: растения, животных, микробы, клетки. Ведёт наблюдения в природе и опыты в лаборатории, помогает медицине, сельскому хозяйству и охране природы.",
+      "test_scales": {
+        "klimov-ddo": [
+          "nature"
+        ],
+        "holland": [
+          "i"
+        ]
+      },
+      "subjects": [
+        "biology",
+        "chemistry",
+        "russian"
+      ],
+      "directions": [
+        "06"
+      ]
+    },
+    {
+      "code": "geolog",
+      "title": "Геолог",
+      "description": "Изучает, из чего состоит Земля, и ищет полезные ископаемые: нефть, газ, металлы, воду. Часть времени работает в экспедициях, часть — в лаборатории и с картами.",
+      "test_scales": {
+        "klimov-ddo": [
+          "nature",
+          "tech"
+        ],
+        "holland": [
+          "r",
+          "i"
+        ]
+      },
+      "subjects": [
+        "math",
+        "physics",
+        "geography",
+        "russian"
+      ],
+      "directions": [
+        "05.03.01",
+        "21"
+      ]
+    },
+    {
+      "code": "meteorolog",
+      "title": "Метеоролог",
+      "description": "Наблюдает за погодой и климатом и составляет прогнозы для людей, аэропортов, судов и сельского хозяйства. Работает с данными спутников и станций, компьютерными моделями и картами.",
+      "test_scales": {
+        "klimov-ddo": [
+          "nature"
+        ],
+        "holland": [
+          "i"
+        ]
+      },
+      "subjects": [
+        "math",
+        "physics",
+        "geography",
+        "russian"
+      ],
+      "directions": [
+        "05"
+      ]
+    },
+    {
+      "code": "inzhener-robototekhnik",
+      "title": "Инженер-робототехник",
+      "description": "Проектирует и собирает роботов для заводов, складов, медицины и быта. Соединяет механику, электронику и программирование, испытывает роботов и учит их новым действиям.",
+      "test_scales": {
+        "klimov-ddo": [
+          "tech"
+        ],
+        "holland": [
+          "r",
+          "i"
+        ]
+      },
+      "subjects": [
+        "math",
+        "physics",
+        "informatics",
+        "russian"
+      ],
+      "directions": [
+        "15.03.06",
+        "27"
+      ]
+    },
+    {
+      "code": "inzhener-stroitel",
+      "title": "Инженер-строитель",
+      "description": "Проектирует и строит дома, мосты и дороги: рассчитывает прочность, выбирает материалы, следит за работой на стройке. Отвечает за то, чтобы здание было надёжным.",
+      "test_scales": {
+        "klimov-ddo": [
+          "tech"
+        ],
+        "holland": [
+          "r",
+          "c"
+        ]
+      },
+      "subjects": [
+        "math",
+        "physics",
+        "russian"
+      ],
+      "directions": [
+        "08"
+      ]
+    },
+    {
+      "code": "inzhener-energetik",
+      "title": "Инженер-энергетик",
+      "description": "Отвечает за то, чтобы в домах и на заводах было электричество и тепло. Проектирует и обслуживает электростанции, сети и подстанции, рассчитывает нагрузки.",
+      "test_scales": {
+        "klimov-ddo": [
+          "tech"
+        ],
+        "holland": [
+          "r",
+          "i"
+        ]
+      },
+      "subjects": [
+        "math",
+        "physics",
+        "russian"
+      ],
+      "directions": [
+        "13"
+      ]
+    },
+    {
+      "code": "inzhener-tekhnolog-khimik",
+      "title": "Инженер-химик-технолог",
+      "description": "Налаживает производство на химических заводах: пластмасс, удобрений, топлива, бытовой химии. Следит за процессом, качеством и безопасностью, улучшает технологию.",
+      "test_scales": {
+        "klimov-ddo": [
+          "tech",
+          "nature"
+        ],
+        "holland": [
+          "r",
+          "i"
+        ]
+      },
+      "subjects": [
+        "chemistry",
+        "math",
+        "russian"
+      ],
+      "directions": [
+        "18"
+      ]
+    },
+    {
+      "code": "inzhener-kosmicheskoy-tekhniki",
+      "title": "Инженер ракетно-космической техники",
+      "description": "Разрабатывает и испытывает ракеты, спутники и их системы. Делает расчёты, модели и чертежи, работает в больших командах над долгими проектами.",
+      "test_scales": {
+        "klimov-ddo": [
+          "tech"
+        ],
+        "holland": [
+          "r",
+          "i"
+        ]
+      },
+      "subjects": [
+        "math",
+        "physics",
+        "informatics",
+        "russian"
+      ],
+      "directions": [
+        "24"
+      ]
+    },
+    {
+      "code": "pilot",
+      "title": "Пилот",
+      "description": "Управляет самолётом или вертолётом, отвечает за безопасность пассажиров и груза. Перед полётом проверяет технику и погоду, в полёте работает с приборами и диспетчерами.",
+      "test_scales": {
+        "klimov-ddo": [
+          "tech"
+        ],
+        "holland": [
+          "r"
+        ]
+      },
+      "subjects": [
+        "math",
+        "physics",
+        "russian"
+      ],
+      "directions": [
+        "25"
+      ]
+    },
+    {
+      "code": "operator-bespilotnikov",
+      "title": "Оператор беспилотных авиационных систем",
+      "description": "Управляет беспилотниками: снимает местность, следит за полями и трубопроводами, доставляет грузы. Готовит дрон к полёту, планирует маршрут и обрабатывает собранные данные.",
+      "test_scales": {
+        "klimov-ddo": [
+          "tech"
+        ],
+        "holland": [
+          "r"
+        ]
+      },
+      "subjects": [
+        "math",
+        "physics",
+        "informatics",
+        "russian"
+      ],
+      "directions": [
+        "24",
+        "25"
+      ]
+    },
+    {
+      "code": "avtomekhanik",
+      "title": "Автомеханик",
+      "description": "Находит и устраняет неисправности автомобилей: двигателя, тормозов, электроники. Работает с инструментами и диагностическими компьютерами в автосервисе.",
+      "test_scales": {
+        "klimov-ddo": [
+          "tech"
+        ],
+        "holland": [
+          "r"
+        ]
+      },
+      "subjects": [
+        "math",
+        "physics",
+        "russian"
+      ],
+      "directions": [
+        "23"
+      ]
+    },
+    {
+      "code": "elektromontazhnik",
+      "title": "Электромонтажник",
+      "description": "Прокладывает электрические провода и подключает оборудование в домах, офисах и на заводах. Читает схемы, работает руками и строго соблюдает правила безопасности.",
+      "test_scales": {
+        "klimov-ddo": [
+          "tech"
+        ],
+        "holland": [
+          "r"
+        ]
+      },
+      "subjects": [
+        "math",
+        "physics",
+        "russian"
+      ],
+      "directions": [
+        "13"
+      ]
+    },
+    {
+      "code": "tekhnolog-pishchevogo-proizvodstva",
+      "title": "Технолог пищевого производства",
+      "description": "Придумывает и налаживает выпуск продуктов на фабриках: хлеба, сладостей, молочных продуктов. Следит за рецептурой, качеством и безопасностью еды.",
+      "test_scales": {
+        "klimov-ddo": [
+          "nature",
+          "tech"
+        ],
+        "holland": [
+          "r",
+          "c"
+        ]
+      },
+      "subjects": [
+        "chemistry",
+        "biology",
+        "math",
+        "russian"
+      ],
+      "directions": [
+        "19"
+      ]
+    },
+    {
+      "code": "povar",
+      "title": "Повар-кондитер",
+      "description": "Готовит блюда и десерты в ресторанах, кафе и на производстве. Придумывает рецепты и оформление, работает быстро и следит за чистотой на кухне.",
+      "test_scales": {
+        "klimov-ddo": [
+          "nature",
+          "art"
+        ],
+        "holland": [
+          "r",
+          "a"
+        ]
+      },
+      "subjects": [
+        "math",
+        "russian"
+      ],
+      "directions": [
+        "19.03.04"
+      ]
+    },
+    {
+      "code": "stomatolog",
+      "title": "Стоматолог",
+      "description": "Лечит зубы и дёсны, ставит пломбы и протезы, учит пациентов ухаживать за зубами. Нужны точные движения рук и умение успокоить человека.",
+      "test_scales": {
+        "klimov-ddo": [
+          "people",
+          "tech"
+        ],
+        "holland": [
+          "s",
+          "r"
+        ]
+      },
+      "subjects": [
+        "biology",
+        "chemistry",
+        "russian"
+      ],
+      "directions": [
+        "31.05.03"
+      ]
+    },
+    {
+      "code": "pediatr",
+      "title": "Педиатр",
+      "description": "Врач, который лечит детей от рождения до 18 лет: следит за их развитием, ставит прививки, лечит болезни. Много общается и с детьми, и с родителями.",
+      "test_scales": {
+        "klimov-ddo": [
+          "people",
+          "nature"
+        ],
+        "holland": [
+          "s",
+          "i"
+        ]
+      },
+      "subjects": [
+        "biology",
+        "chemistry",
+        "russian"
+      ],
+      "directions": [
+        "31.05.02"
+      ]
+    },
+    {
+      "code": "provizor",
+      "title": "Провизор",
+      "description": "Специалист по лекарствам: проверяет их качество, готовит некоторые лекарства сам и объясняет, как их правильно принимать. Работает в аптеках, лабораториях и на фармацевтических заводах.",
+      "test_scales": {
+        "klimov-ddo": [
+          "nature",
+          "people"
+        ],
+        "holland": [
+          "i",
+          "c"
+        ]
+      },
+      "subjects": [
+        "chemistry",
+        "biology",
+        "russian"
+      ],
+      "directions": [
+        "33"
+      ]
+    },
+    {
+      "code": "medsestra",
+      "title": "Медицинская сестра или медицинский брат",
+      "description": "Помогает врачу лечить пациентов: делает уколы и перевязки, следит за состоянием больных, готовит к операциям. Нужны аккуратность, выдержка и доброе отношение к людям.",
+      "test_scales": {
+        "klimov-ddo": [
+          "people"
+        ],
+        "holland": [
+          "s"
+        ]
+      },
+      "subjects": [
+        "biology",
+        "chemistry",
+        "russian"
+      ],
+      "directions": [
+        "34"
+      ]
+    },
+    {
+      "code": "veterinar",
+      "title": "Ветеринарный врач",
+      "description": "Лечит домашних и сельскохозяйственных животных, делает прививки и операции, следит за безопасностью продуктов животного происхождения. Работает в клиниках, на фермах и в зоопарках.",
+      "test_scales": {
+        "klimov-ddo": [
+          "nature"
+        ],
+        "holland": [
+          "i",
+          "r"
+        ]
+      },
+      "subjects": [
+        "biology",
+        "chemistry",
+        "russian"
+      ],
+      "directions": [
+        "36.05.01"
+      ]
+    },
+    {
+      "code": "agronom",
+      "title": "Агроном",
+      "description": "Помогает выращивать хороший урожай: выбирает сорта, удобрения и сроки работ, борется с болезнями растений. Работает и в поле, и с данными спутников и датчиков.",
+      "test_scales": {
+        "klimov-ddo": [
+          "nature"
+        ],
+        "holland": [
+          "r",
+          "i"
+        ]
+      },
+      "subjects": [
+        "biology",
+        "chemistry",
+        "math",
+        "russian"
+      ],
+      "directions": [
+        "35"
+      ]
+    },
+    {
+      "code": "sotsialnyy-rabotnik",
+      "title": "Специалист по социальной работе",
+      "description": "Помогает людям в трудной ситуации: пожилым, семьям с детьми, людям с инвалидностью. Узнаёт, что им нужно, и помогает получить поддержку и решить проблемы.",
+      "test_scales": {
+        "klimov-ddo": [
+          "people"
+        ],
+        "holland": [
+          "s"
+        ]
+      },
+      "subjects": [
+        "social",
+        "history",
+        "russian"
+      ],
+      "directions": [
+        "39.03.02"
+      ]
+    },
+    {
+      "code": "menedzher-proektov",
+      "title": "Менеджер проектов",
+      "description": "Организует работу команды так, чтобы проект был сделан вовремя и в рамках бюджета. Составляет планы, распределяет задачи, договаривается с заказчиком и решает возникающие проблемы.",
+      "test_scales": {
+        "klimov-ddo": [
+          "people",
+          "signs"
+        ],
+        "holland": [
+          "e",
+          "c"
+        ]
+      },
+      "subjects": [
+        "math",
+        "social",
+        "russian"
+      ],
+      "directions": [
+        "38.03.02"
+      ]
+    },
+    {
+      "code": "marketolog",
+      "title": "Маркетолог",
+      "description": "Изучает, что нужно покупателям, и придумывает, как рассказать им о товаре. Проводит опросы, анализирует продажи, планирует рекламу.",
+      "test_scales": {
+        "klimov-ddo": [
+          "people",
+          "signs"
+        ],
+        "holland": [
+          "e",
+          "a"
+        ]
+      },
+      "subjects": [
+        "math",
+        "social",
+        "russian"
+      ],
+      "directions": [
+        "38.03.02",
+        "42.03.01"
+      ]
+    },
+    {
+      "code": "specialist-po-podboru-personala",
+      "title": "Специалист по подбору персонала",
+      "description": "Ищет для компании подходящих сотрудников: пишет объявления, проводит собеседования, помогает новичкам освоиться. Много общается с людьми.",
+      "test_scales": {
+        "klimov-ddo": [
+          "people"
+        ],
+        "holland": [
+          "s",
+          "e"
+        ]
+      },
+      "subjects": [
+        "social",
+        "math",
+        "russian"
+      ],
+      "directions": [
+        "38.03.03"
+      ]
+    },
+    {
+      "code": "pr-menedzher",
+      "title": "Специалист по связям с общественностью",
+      "description": "Отвечает за то, что люди знают и думают о компании: пишет новости, готовит выступления, общается с журналистами, ведёт соцсети.",
+      "test_scales": {
+        "klimov-ddo": [
+          "people",
+          "art"
+        ],
+        "holland": [
+          "e",
+          "a"
+        ]
+      },
+      "subjects": [
+        "social",
+        "history",
+        "russian"
+      ],
+      "directions": [
+        "42.03.01"
+      ]
+    },
+    {
+      "code": "predprinimatel",
+      "title": "Предприниматель",
+      "description": "Открывает и развивает своё дело: придумывает, что продавать, ищет клиентов и деньги, нанимает команду. Принимает решения и сам отвечает за результат.",
+      "test_scales": {
+        "klimov-ddo": [
+          "people",
+          "signs"
+        ],
+        "holland": [
+          "e"
+        ]
+      },
+      "subjects": [
+        "math",
+        "social",
+        "russian"
+      ],
+      "directions": [
+        "38"
+      ]
+    },
+    {
+      "code": "trener",
+      "title": "Тренер",
+      "description": "Готовит спортсменов к соревнованиям или помогает людям заниматься спортом для здоровья. Составляет программы тренировок, следит за техникой и мотивирует.",
+      "test_scales": {
+        "klimov-ddo": [
+          "people"
+        ],
+        "holland": [
+          "s",
+          "r"
+        ]
+      },
+      "subjects": [
+        "biology",
+        "social",
+        "russian"
+      ],
+      "directions": [
+        "49"
+      ]
+    },
+    {
+      "code": "menedzher-po-turizmu",
+      "title": "Менеджер по туризму",
+      "description": "Придумывает и организует поездки: подбирает маршруты, гостиницы и экскурсии, решает проблемы туристов. Знание иностранного языка очень пригодится.",
+      "test_scales": {
+        "klimov-ddo": [
+          "people"
+        ],
+        "holland": [
+          "e",
+          "s"
+        ]
+      },
+      "subjects": [
+        "social",
+        "geography",
+        "english",
+        "russian"
+      ],
+      "directions": [
+        "43"
+      ]
+    },
+    {
+      "code": "diplomat",
+      "title": "Дипломат",
+      "description": "Представляет страну за рубежом: ведёт переговоры, готовит соглашения, помогает гражданам за границей. Нужно знать иностранные языки, историю и политику.",
+      "test_scales": {
+        "klimov-ddo": [
+          "people",
+          "signs"
+        ],
+        "holland": [
+          "e",
+          "s"
+        ]
+      },
+      "subjects": [
+        "history",
+        "social",
+        "english",
+        "russian"
+      ],
+      "directions": [
+        "41.03.05"
+      ]
+    },
+    {
+      "code": "sledovatel",
+      "title": "Следователь",
+      "description": "Расследует преступления: собирает доказательства, допрашивает свидетелей, восстанавливает картину событий. Работа требует внимательности, выдержки и знания законов.",
+      "test_scales": {
+        "klimov-ddo": [
+          "people",
+          "signs"
+        ],
+        "holland": [
+          "e",
+          "i"
+        ]
+      },
+      "subjects": [
+        "social",
+        "history",
+        "russian"
+      ],
+      "directions": [
+        "40.05.01",
+        "40.05.02"
+      ]
+    },
+    {
+      "code": "spasatel",
+      "title": "Спасатель",
+      "description": "Помогает людям при пожарах, авариях, наводнениях и в горах. Нужна хорошая физическая подготовка, умение работать со снаряжением и сохранять спокойствие.",
+      "test_scales": {
+        "klimov-ddo": [
+          "people",
+          "tech"
+        ],
+        "holland": [
+          "r",
+          "s"
+        ]
+      },
+      "subjects": [
+        "math",
+        "physics",
+        "russian"
+      ],
+      "directions": [
+        "20.05.01"
+      ]
+    },
+    {
+      "code": "logoped",
+      "title": "Логопед",
+      "description": "Помогает детям и взрослым научиться правильно говорить: исправляет звуки, развивает речь, восстанавливает её после болезней. Занятия проходят один на один или в небольших группах.",
+      "test_scales": {
+        "klimov-ddo": [
+          "people"
+        ],
+        "holland": [
+          "s"
+        ]
+      },
+      "subjects": [
+        "biology",
+        "russian",
+        "social"
+      ],
+      "directions": [
+        "44.03.03"
+      ]
+    },
+    {
+      "code": "perevodchik",
+      "title": "Переводчик",
+      "description": "Переводит тексты и устную речь с одного языка на другой: книги, документы, переговоры, фильмы. Важно хорошо знать не только язык, но и культуру страны.",
+      "test_scales": {
+        "klimov-ddo": [
+          "signs"
+        ],
+        "holland": [
+          "a",
+          "c"
+        ]
+      },
+      "subjects": [
+        "english",
+        "russian",
+        "history",
+        "social"
+      ],
+      "directions": [
+        "45.03.02"
+      ]
+    },
+    {
+      "code": "bukhgalter",
+      "title": "Бухгалтер",
+      "description": "Ведёт учёт денег компании: доходы, расходы, зарплаты, налоги. Составляет отчёты и следит, чтобы всё было по закону. Нужны точность и аккуратность.",
+      "test_scales": {
+        "klimov-ddo": [
+          "signs"
+        ],
+        "holland": [
+          "c"
+        ]
+      },
+      "subjects": [
+        "math",
+        "social",
+        "russian"
+      ],
+      "directions": [
+        "38.03.01"
+      ]
+    },
+    {
+      "code": "istorik",
+      "title": "Историк",
+      "description": "Изучает прошлое по документам, археологическим находкам и воспоминаниям людей. Работает в музеях, архивах, университетах, пишет книги и статьи.",
+      "test_scales": {
+        "klimov-ddo": [
+          "signs"
+        ],
+        "holland": [
+          "i"
+        ]
+      },
+      "subjects": [
+        "history",
+        "social",
+        "russian"
+      ],
+      "directions": [
+        "46"
+      ]
+    },
+    {
+      "code": "akter",
+      "title": "Актёр",
+      "description": "Играет роли в театре, кино и на телевидении. Каждый день репетирует, работает над речью, движением и образом, учится понимать характеры людей.",
+      "test_scales": {
+        "klimov-ddo": [
+          "art",
+          "people"
+        ],
+        "holland": [
+          "a",
+          "s"
+        ]
+      },
+      "subjects": [
+        "russian",
+        "literature"
+      ],
+      "directions": [
+        "52.05.01"
+      ]
+    },
+    {
+      "code": "rezhisser-videomontazher",
+      "title": "Видеорежиссёр и монтажёр",
+      "description": "Снимает и монтирует видео: фильмы, рекламу, клипы, ролики для соцсетей. Придумывает, как рассказать историю картинкой и звуком.",
+      "test_scales": {
+        "klimov-ddo": [
+          "art"
+        ],
+        "holland": [
+          "a"
+        ]
+      },
+      "subjects": [
+        "russian",
+        "literature"
+      ],
+      "directions": [
+        "55"
+      ]
+    },
+    {
+      "code": "fotograf",
+      "title": "Фотограф",
+      "description": "Снимает людей, события, товары и природу для журналов, сайтов и выставок. Работает со светом, камерой и программами для обработки снимков.",
+      "test_scales": {
+        "klimov-ddo": [
+          "art"
+        ],
+        "holland": [
+          "a",
+          "r"
+        ]
+      },
+      "subjects": [
+        "russian",
+        "literature"
+      ],
+      "directions": [
+        "54"
+      ]
+    },
+    {
+      "code": "muzykant",
+      "title": "Музыкант",
+      "description": "Исполняет или сочиняет музыку: играет в оркестре или группе, записывает треки, преподаёт. Требует ежедневных занятий и хорошего слуха.",
+      "test_scales": {
+        "klimov-ddo": [
+          "art"
+        ],
+        "holland": [
+          "a"
+        ]
+      },
+      "subjects": [
+        "russian",
+        "literature"
+      ],
+      "directions": [
+        "53"
+      ]
+    },
+    {
+      "code": "kopirayter",
+      "title": "Копирайтер",
+      "description": "Пишет тексты для сайтов, рекламы, соцсетей и рассылок так, чтобы их хотелось дочитать. Изучает товар и читателя, работает с редактором и дизайнером.",
+      "test_scales": {
+        "klimov-ddo": [
+          "art",
+          "signs"
+        ],
+        "holland": [
+          "a",
+          "c"
+        ]
+      },
+      "subjects": [
+        "russian",
+        "literature",
+        "social"
+      ],
+      "directions": [
+        "42"
+      ]
     }
   ]
 }
