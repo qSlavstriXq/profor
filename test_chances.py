@@ -31,8 +31,8 @@ class TestReferenceAndTrend(unittest.TestCase):
 
 class TestClassify(unittest.TestCase):
     def test_boundaries(self):
-        self.assertEqual(classify(10), "страховка")
-        self.assertEqual(classify(9), "реалистично")
+        self.assertEqual(classify(15), "страховка")
+        self.assertEqual(classify(14), "реалистично")
         self.assertEqual(classify(-5), "реалистично")
         self.assertEqual(classify(-6), "амбициозно")
         self.assertEqual(classify(-20), "амбициозно")
@@ -53,7 +53,7 @@ class TestEvaluate(unittest.TestCase):
         self.assertIsNone(evaluate({"math": 80}, program))
 
     def test_insurance(self):
-        result = evaluate({"math": 90, "russian": 90}, self.make_program())
+        result = evaluate({"math": 95, "russian": 90}, self.make_program())  # запас 15
         self.assertEqual(result["category"], "страховка")
 
     def test_below_minimum_makes_program_unavailable(self):
@@ -64,7 +64,7 @@ class TestEvaluate(unittest.TestCase):
 
     def test_minimum_met_does_not_block(self):
         program = self.make_program(min_scores={"russian": 70})
-        result = evaluate({"math": 90, "russian": 90}, program)
+        result = evaluate({"math": 95, "russian": 90}, program)
         self.assertEqual(result["below_minimum"], [])
         self.assertEqual(result["category"], "страховка")
 

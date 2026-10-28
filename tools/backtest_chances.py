@@ -8,7 +8,7 @@
 плюс значит, что проходной оказался выше, чем мы ждали (школьник мог не пройти).
 
 По ошибкам видно, насколько широкими должны быть категории шансов: например,
-если в 9 случаях из 10 ошибка не больше +10, то запас в 10 баллов («страховка»)
+если в 9 случаях из 10 ошибка не больше +14, то запас в 15 баллов («страховка», SAFE_MARGIN)
 действительно почти гарантирует поступление.
 """
 import os
@@ -54,11 +54,12 @@ def main():
         errors = [actual - chances.expected_score(history) for _name, history, actual in cases]
         above_10 = sum(e > 10 for e in errors) / len(errors)
         above_5 = sum(e > 5 for e in errors) / len(errors)
+        above_15 = sum(e > 15 for e in errors) / len(errors)
         print(
             f"TREND_WEIGHT={weight}: средняя ошибка {statistics.mean(errors):+.1f}, "
             f"средняя по модулю {statistics.mean(abs(e) for e in errors):.1f}, "
             f"90% ошибок не больше {percentile(errors, 0.9):+.1f}; "
-            f"проходной выше ожидаемого больше чем на 5 баллов: {above_5:.0%}, на 10: {above_10:.0%}"
+            f"проходной выше ожидаемого больше чем на 5 баллов: {above_5:.0%}, на 10: {above_10:.0%}, на 15: {above_15:.0%}"
         )
 
 
