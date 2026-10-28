@@ -29,6 +29,6 @@ class ProgramAdmin(admin.ModelAdmin):
 
 @admin.register(Course)
 class CourseAdmin(admin.ModelAdmin):
-    list_display = ("title", "provider", "is_free", "verified", "updated_at")
-    list_filter = ("verified", "is_free")
+    list_display = ("title", "provider", "kind", "is_free", "verified", "updated_at")
+    list_filter = ("verified", "kind", "is_free")
     search_fields = ("title", "provider", "professions")

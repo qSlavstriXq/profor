@@ -167,7 +167,7 @@ SHOW_UNVERIFIED_DATA = os.getenv("SHOW_UNVERIFIED_DATA", "True") == "True"
 QWEN_API_KEY = os.getenv("QWEN_API_KEY", "")
 QWEN_BASE_URL = os.getenv("QWEN_BASE_URL", "https://dashscope-intl.aliyuncs.com/compatible-mode/v1")
 QWEN_MODEL = os.getenv("QWEN_MODEL", "qwen-plus")
-QWEN_MAX_TOKENS = int(os.getenv("QWEN_MAX_TOKENS", "1500"))
+QWEN_MAX_TOKENS = int(os.getenv("QWEN_MAX_TOKENS", "2500"))
 QWEN_TIMEOUT = int(os.getenv("QWEN_TIMEOUT", "60"))
 
 # Журнал: сообщения модуля llm (в том числе расход токенов) выводятся в консоль

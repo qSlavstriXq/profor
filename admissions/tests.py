@@ -209,6 +209,35 @@ class CourseCatalogTests(TestCase):
         with self.assertRaises(CourseDataError):
             load_courses({"courses": [bad]})
 
+    def test_new_fields_validated(self):
+        from .courses import validate_courses
+        bad = dict(self.COURSE, kind="party", grades=[8], subjects=["astrology"])
+        self.assertEqual(len(validate_courses({"courses": [bad]})), 3)
+
+    def test_fits_grade_and_display(self):
+        from .models import Course
+        course = Course(grades=[9, 10, 11])
+        self.assertTrue(course.fits_grade(9))
+        self.assertTrue(course.fits_grade(None))  # класс неизвестен
+        self.assertFalse(Course(grades=[11]).fits_grade(9))
+        self.assertTrue(Course(grades=[]).fits_grade(9))  # класс не важен
+        self.assertEqual(course.grades_display, "9–11 класс")
+        self.assertEqual(Course(grades=[10]).grades_display, "10 класс")
+
+    def test_fits_profession(self):
+        from careers.models import Profession
+
+        from .models import Course
+        programmer = Profession(directions=["09", "01.03.02"], subjects=["math", "informatics", "russian"])
+        # По направлению: группа и код внутри неё подходят друг к другу
+        self.assertTrue(Course(directions=["09.03.04"]).fits_profession(programmer))
+        self.assertTrue(Course(directions=["01"]).fits_profession(programmer))
+        # Есть направления, но другие: предметы уже не важны
+        self.assertFalse(Course(directions=["38"], subjects=["math"]).fits_profession(programmer))
+        # Нет направлений: по предметам, но не по одному русскому языку
+        self.assertTrue(Course(subjects=["math"]).fits_profession(programmer))
+        self.assertFalse(Course(subjects=["russian"]).fits_profession(programmer))
+
     def test_catalog_file_is_valid(self):
         import json
 

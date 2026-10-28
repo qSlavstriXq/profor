@@ -183,6 +183,18 @@ class TestProfessions(TestCase):
             "subjects": ["Математика"], "directions": ["09"],
         }])  # шкала Б с нулём баллов не в счёт
 
+    def test_courses_by_grade_and_profession(self):
+        from admissions.models import Course
+        it9 = Course.objects.create(code="it9", title="ИТ 9", provider="Вуз", url="https://e.ru/1",
+                                    directions=["09"], grades=[9])
+        Course.objects.create(code="it11", title="ИТ 11", provider="Вуз", url="https://e.ru/2",
+                              directions=["09"], grades=[11])
+        Course.objects.create(code="law", title="Право", provider="Вуз", url="https://e.ru/3",
+                              directions=["40"], grades=[9])
+        self.participant.grade = 9
+        # Баллов ЕГЭ нет, но профессия «Подходит А» ведёт в 09: подходит только курс ИТ для 9 класса
+        self.assertEqual([c["id"] for c in build_input(self.participant)["courses"]], [it9.pk])
+
     def test_unknown_profession_codes_are_removed(self):
         data = build_input(self.participant)
         direction = {"title": "Н", "why": "П", "profession_codes": ["fits-a", "fits-b", "astronaut"]}

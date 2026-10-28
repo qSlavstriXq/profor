@@ -2,7 +2,7 @@
 
 from django.conf import settings
 
-from admissions.models import Program, Subject
+from admissions.models import Course, Program, Subject
 from proftests.models import Scale
 from proftests.scoring import ranked
 
@@ -80,8 +80,14 @@ def profession_details(profession):
         programs = programs.filter(verified=True)
     programs = [p for p in programs if p.direction_code and profession.fits_direction(p.direction_code)]
 
+    courses = Course.objects.order_by("kind", "pk")
+    if not settings.SHOW_UNVERIFIED_DATA:
+        courses = courses.filter(verified=True)
+    courses = [c for c in courses if c.fits_profession(profession)]
+
     return {
         "subjects": subjects,
         "tests": [{"title": title, "scales": names} for title, names in tests.items()],
         "programs": programs,
+        "courses": courses,
     }

@@ -176,6 +176,8 @@ a { color: var(--color-primary); }
 .profession__section { margin-top: 2rem; }
 .professions-fit { padding-left: 1.2rem; }
 .professions-fit__item { margin-bottom: 0.5rem; }
+.courses { padding-left: 1.2rem; }
+.courses__item { margin-bottom: 0.75rem; }
 
 /* ---------- Подвал ---------- */
 

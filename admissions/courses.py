@@ -6,10 +6,11 @@ import re
 from django.db import transaction
 
 from .loader import DATA_DIR
-from .models import Course
+from .models import Course, Subject
 
 COURSES_FILE = DATA_DIR / "courses" / "courses.json"
 DIRECTION_RE = re.compile(r"\d\d(\.\d\d\.\d\d)?")
+GRADES = {9, 10, 11}  # классы, для которых работает сайт
 
 
 class CourseDataError(Exception):
@@ -33,6 +34,14 @@ def validate_courses(data):
         for direction in item.get("directions", []):
             if not DIRECTION_RE.fullmatch(direction):
                 errors.append(f"{where}: направление {direction!r} должно быть вида 09 или 09.03.04")
+        if item.get("kind", Course.Kind.COURSE) not in Course.Kind.values:
+            errors.append(f"{where}: неизвестный вид {item.get('kind')!r}")
+        for grade in item.get("grades", []):
+            if grade not in GRADES:
+                errors.append(f"{where}: класс {grade!r} должен быть 9, 10 или 11")
+        for subject in item.get("subjects", []):
+            if subject not in Subject.values:
+                errors.append(f"{where}: неизвестный предмет {subject!r}")
     return errors
 
 
@@ -47,11 +56,14 @@ def load_courses(data):
         Course.objects.update_or_create(
             code=item["code"],
             defaults={
+                "kind": item.get("kind", Course.Kind.COURSE),
                 "title": item["title"],
                 "provider": item["provider"],
                 "url": item["url"],
                 "description": item.get("description", ""),
                 "directions": item.get("directions", []),
+                "grades": item.get("grades", []),
+                "subjects": item.get("subjects", []),
                 "professions": item.get("professions", ""),
                 "is_free": item.get("is_free"),
                 "verified": item.get("verified", False),

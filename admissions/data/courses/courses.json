@@ -1,3 +1,605 @@
 {
-  "courses": []
+  "courses": [
+    {
+      "code": "hse-fdp-10class",
+      "kind": "course",
+      "title": "Программа «10 класс»",
+      "provider": "НИУ ВШЭ, факультет довузовской подготовки",
+      "url": "https://fdp.hse.ru/10class",
+      "description": "Подготовка к ЕГЭ для 10 класса: 8 месяцев, одно занятие в неделю по каждому предмету, онлайн или очно. Предметы выбираются по одному, оплата за модуль. Занятия с 5 октября 2026 года.",
+      "grades": [
+        10
+      ],
+      "subjects": [
+        "math",
+        "informatics",
+        "russian",
+        "english",
+        "social",
+        "history",
+        "literature",
+        "physics",
+        "chemistry",
+        "biology",
+        "geography"
+      ],
+      "is_free": false,
+      "verified": false
+    },
+    {
+      "code": "hse-fdp-11class",
+      "kind": "course",
+      "title": "Программа «11 класс»",
+      "provider": "НИУ ВШЭ, факультет довузовской подготовки",
+      "url": "https://fdp.hse.ru/11class",
+      "description": "Подготовка к ЕГЭ для 11 класса: 8 месяцев, одно занятие в неделю по каждому предмету, онлайн или очно. Предметы выбираются по одному, оплата за модуль. Занятия с 5 октября 2026 года.",
+      "grades": [
+        11
+      ],
+      "subjects": [
+        "math",
+        "informatics",
+        "russian",
+        "english",
+        "social",
+        "history",
+        "literature",
+        "physics",
+        "chemistry",
+        "biology",
+        "geography"
+      ],
+      "is_free": false,
+      "verified": false
+    },
+    {
+      "code": "hse-fdp-preferential",
+      "kind": "course",
+      "title": "Подготовительное отделение для льготных категорий граждан",
+      "provider": "НИУ ВШЭ, факультет довузовской подготовки",
+      "url": "https://fdp.hse.ru/po/",
+      "description": "Бесплатная подготовка к ЕГЭ для льготных категорий: социально-гуманитарное направление (русский язык, обществознание, история) или техническое (математика, информатика, русский язык). 100 мест, приём документов с 25 августа 2026 года.",
+      "grades": [
+        11
+      ],
+      "subjects": [
+        "russian",
+        "social",
+        "history",
+        "math",
+        "informatics"
+      ],
+      "is_free": true,
+      "verified": false
+    },
+    {
+      "code": "hse-design-preparation",
+      "kind": "course",
+      "title": "Довузовская подготовка Школы дизайна",
+      "provider": "НИУ ВШЭ, Школа дизайна",
+      "url": "https://design.hse.ru/edu/podgotovka",
+      "description": "Подготовка к творческим испытаниям по дизайну и современному искусству для 10–11 классов, очно, с 5 октября 2026 года.",
+      "grades": [
+        10,
+        11
+      ],
+      "directions": [
+        "54"
+      ],
+      "is_free": false,
+      "verified": false
+    },
+    {
+      "code": "hse-lyceum-online",
+      "kind": "online_school",
+      "title": "Лицей Онлайн",
+      "provider": "НИУ ВШЭ, Лицей",
+      "url": "https://school.hse.ru/lyceum-online/",
+      "description": "Онлайн-обучение по программам Лицея ВШЭ для 10–11 классов и два очных интенсива в год.",
+      "grades": [
+        10,
+        11
+      ],
+      "verified": false
+    },
+    {
+      "code": "hse-young-psychologist",
+      "kind": "school",
+      "title": "Школа юного психолога",
+      "provider": "НИУ ВШЭ, факультет социальных наук",
+      "url": "https://social.hse.ru/psy/sjp/",
+      "description": "Занятия по психологии для школьников с 9 класса.",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "directions": [
+        "37"
+      ],
+      "verified": false
+    },
+    {
+      "code": "hse-young-historian",
+      "kind": "school",
+      "title": "Школа юного историка",
+      "provider": "НИУ ВШЭ, школа исторических наук",
+      "url": "https://hist.hse.ru/school/",
+      "description": "Занятия по истории для школьников с 9 класса.",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "subjects": [
+        "history"
+      ],
+      "directions": [
+        "46"
+      ],
+      "verified": false
+    },
+    {
+      "code": "hse-young-philologist",
+      "kind": "school",
+      "title": "Школа юного филолога",
+      "provider": "НИУ ВШЭ, школа филологических наук",
+      "url": "https://philology.hse.ru/junior/",
+      "description": "Занятия по литературе и языку для школьников с 8 класса.",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "subjects": [
+        "literature",
+        "russian"
+      ],
+      "directions": [
+        "45"
+      ],
+      "verified": false
+    },
+    {
+      "code": "hse-open-law-school",
+      "kind": "school",
+      "title": "Открытая правовая школа",
+      "provider": "НИУ ВШЭ, факультет права",
+      "url": "https://pravo.hse.ru/school/",
+      "description": "Бесплатные занятия по праву для школьников с 7 класса.",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "subjects": [
+        "social"
+      ],
+      "directions": [
+        "40"
+      ],
+      "is_free": true,
+      "verified": false
+    },
+    {
+      "code": "hse-programming-school",
+      "kind": "school",
+      "title": "Школа программирования",
+      "provider": "НИУ ВШЭ, факультет компьютерных наук",
+      "url": "https://cs.hse.ru/informatics",
+      "description": "Занятия по программированию для школьников с 8 класса.",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "subjects": [
+        "informatics"
+      ],
+      "directions": [
+        "09",
+        "02",
+        "01.03.02"
+      ],
+      "verified": false
+    },
+    {
+      "code": "hse-young-orientalist",
+      "kind": "school",
+      "title": "Школа юного востоковеда",
+      "provider": "НИУ ВШЭ, институт классического Востока и античности",
+      "url": "https://oriental.hse.ru/syo/",
+      "description": "Занятия о странах и языках Востока для школьников с 9 класса.",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "directions": [
+        "58"
+      ],
+      "verified": false
+    },
+    {
+      "code": "hse-international-school",
+      "kind": "online_school",
+      "title": "Школа будущего международника",
+      "provider": "НИУ ВШЭ, факультет мировой экономики и мировой политики",
+      "url": "https://we.hse.ru/interschool/",
+      "description": "Онлайн-занятия о международных отношениях для 10–11 классов.",
+      "grades": [
+        10,
+        11
+      ],
+      "subjects": [
+        "history",
+        "social",
+        "english"
+      ],
+      "directions": [
+        "41"
+      ],
+      "verified": false
+    },
+    {
+      "code": "hse-social-lectures",
+      "kind": "event",
+      "title": "Лекторий факультета социальных наук",
+      "provider": "НИУ ВШЭ, факультет социальных наук",
+      "url": "https://social.hse.ru/lecture/",
+      "description": "Бесплатные лекции о психологии, социологии и политологии, очно и с онлайн-трансляцией, с 9 класса.",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "subjects": [
+        "social"
+      ],
+      "directions": [
+        "37",
+        "39",
+        "41"
+      ],
+      "is_free": true,
+      "verified": false
+    },
+    {
+      "code": "hse-economics-meetings",
+      "kind": "event",
+      "title": "Профориентационные встречи на факультете экономических наук",
+      "provider": "НИУ ВШЭ, факультет экономических наук",
+      "url": "https://economics.hse.ru/profvstrechi",
+      "description": "Встречи о профессиях в экономике для школьников с 9 класса.",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "subjects": [
+        "math",
+        "social"
+      ],
+      "directions": [
+        "38"
+      ],
+      "verified": false
+    },
+    {
+      "code": "hse-math-autumn-school",
+      "kind": "school",
+      "title": "Осенняя школа по математике",
+      "provider": "НИУ ВШЭ, факультет компьютерных наук",
+      "url": "https://cs.hse.ru/abitur/mathschool",
+      "description": "Осенняя математическая школа для школьников с 10 класса.",
+      "grades": [
+        10,
+        11
+      ],
+      "subjects": [
+        "math"
+      ],
+      "directions": [
+        "01",
+        "02",
+        "09"
+      ],
+      "verified": false
+    },
+    {
+      "code": "hse-chemistry-intensive",
+      "kind": "school",
+      "title": "Осенняя школа-интенсив по химии",
+      "provider": "НИУ ВШЭ, факультет химии",
+      "url": "https://chemistry.hse.ru/intensiv",
+      "description": "Интенсив по химии для 8–10 классов.",
+      "grades": [
+        9,
+        10
+      ],
+      "subjects": [
+        "chemistry"
+      ],
+      "directions": [
+        "04"
+      ],
+      "verified": false
+    },
+    {
+      "code": "hse-software-engineering-summer",
+      "kind": "school",
+      "title": "Летняя школа по программной инженерии",
+      "provider": "НИУ ВШЭ, факультет компьютерных наук",
+      "url": "https://cs.hse.ru/se/",
+      "description": "Бесплатная летняя школа по программной инженерии для школьников с 8 класса.",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "subjects": [
+        "informatics",
+        "math"
+      ],
+      "directions": [
+        "09.03.04"
+      ],
+      "is_free": true,
+      "verified": false
+    },
+    {
+      "code": "bmstu-oge-math-9",
+      "kind": "course",
+      "title": "Подготовка к ОГЭ по математике. Годовой курс. 9 класс",
+      "provider": "МГТУ им. Н. Э. Баумана, Центр дополнительного образования",
+      "url": "https://dovuz.bmstu.ru/podgotovka-k-oge/matematika/podgotovka-k-oge-po-matematike-godovoy-kurs-9-klass-1603/",
+      "description": "Годовой курс подготовки к ОГЭ по математике, очно в кампусе или онлайн.",
+      "grades": [
+        9
+      ],
+      "subjects": [
+        "math"
+      ],
+      "is_free": false,
+      "verified": false
+    },
+    {
+      "code": "bmstu-oge-physics-9",
+      "kind": "course",
+      "title": "Подготовка к ОГЭ по физике. Годовой курс. 9 класс",
+      "provider": "МГТУ им. Н. Э. Баумана, Центр дополнительного образования",
+      "url": "https://dovuz.bmstu.ru/podgotovka-k-oge/fizika/podgotovka-k-oge-po-fizike-godovoy-kurs-9-klass-1605/",
+      "description": "Годовой курс подготовки к ОГЭ по физике, очно в кампусе или онлайн.",
+      "grades": [
+        9
+      ],
+      "subjects": [
+        "physics"
+      ],
+      "is_free": false,
+      "verified": false
+    },
+    {
+      "code": "bmstu-ege-math-10",
+      "kind": "course",
+      "title": "Подготовка к ЕГЭ по профильной математике. Годовой курс. 10 класс",
+      "provider": "МГТУ им. Н. Э. Баумана, Центр дополнительного образования",
+      "url": "https://dovuz.bmstu.ru/podgotovka-k-ege/matematika/podgotovka-k-ege-po-profilnoy-matematike-godovoy-kurs-10-klass-1607/",
+      "description": "Годовой курс подготовки к ЕГЭ по профильной математике, очно в кампусе или онлайн.",
+      "grades": [
+        10
+      ],
+      "subjects": [
+        "math"
+      ],
+      "is_free": false,
+      "verified": false
+    },
+    {
+      "code": "bmstu-ege-math-11",
+      "kind": "course",
+      "title": "Подготовка к ЕГЭ по профильной математике. Годовой курс. 11 класс",
+      "provider": "МГТУ им. Н. Э. Баумана, Центр дополнительного образования",
+      "url": "https://dovuz.bmstu.ru/podgotovka-k-ege/matematika/podgotovka-k-ege-po-profilnoy-matematike-godovoy-kurs-11-klass-1611/",
+      "description": "Годовой курс подготовки к ЕГЭ по профильной математике, очно в кампусе или онлайн.",
+      "grades": [
+        11
+      ],
+      "subjects": [
+        "math"
+      ],
+      "is_free": false,
+      "verified": false
+    },
+    {
+      "code": "bmstu-ege-physics-10",
+      "kind": "course",
+      "title": "Подготовка к ЕГЭ по физике. Годовой курс. 10 класс",
+      "provider": "МГТУ им. Н. Э. Баумана, Центр дополнительного образования",
+      "url": "https://dovuz.bmstu.ru/podgotovka-k-ege/fizika/podgotovka-k-ege-po-fizike-godovoy-kurs-10-klass-1609/",
+      "description": "Годовой курс подготовки к ЕГЭ по физике, очно в кампусе или онлайн.",
+      "grades": [
+        10
+      ],
+      "subjects": [
+        "physics"
+      ],
+      "is_free": false,
+      "verified": false
+    },
+    {
+      "code": "bmstu-ege-physics-11",
+      "kind": "course",
+      "title": "Подготовка к ЕГЭ по физике. Годовой курс. 11 класс",
+      "provider": "МГТУ им. Н. Э. Баумана, Центр дополнительного образования",
+      "url": "https://dovuz.bmstu.ru/podgotovka-k-ege/fizika/podgotovka-k-ege-po-fizike-godovoy-kurs-11-klass-1613/",
+      "description": "Годовой курс подготовки к ЕГЭ по физике, очно в кампусе или онлайн.",
+      "grades": [
+        11
+      ],
+      "subjects": [
+        "physics"
+      ],
+      "is_free": false,
+      "verified": false
+    },
+    {
+      "code": "bmstu-ege-informatics-11",
+      "kind": "course",
+      "title": "Подготовка к ЕГЭ по информатике. Годовой курс. 11 класс",
+      "provider": "МГТУ им. Н. Э. Баумана, Центр дополнительного образования",
+      "url": "https://dovuz.bmstu.ru/podgotovka-k-ege/informatika/podgotovka-k-ege-po-informatike-godovoy-kurs-11-klass-1610/",
+      "description": "Годовой курс подготовки к ЕГЭ по информатике, очно в кампусе или онлайн.",
+      "grades": [
+        11
+      ],
+      "subjects": [
+        "informatics"
+      ],
+      "is_free": false,
+      "verified": false
+    },
+    {
+      "code": "bmstu-ege-russian-11",
+      "kind": "course",
+      "title": "Подготовка к ЕГЭ по русскому языку. Годовой курс. 11 класс",
+      "provider": "МГТУ им. Н. Э. Баумана, Центр дополнительного образования",
+      "url": "https://dovuz.bmstu.ru/podgotovka-k-ege/russkiy-yazyk/podgotovka-k-ege-po-russkomu-yazyku-godovoy-kurs-11-klass-1612/",
+      "description": "Годовой курс подготовки к ЕГЭ по русскому языку, очно в кампусе или онлайн.",
+      "grades": [
+        11
+      ],
+      "subjects": [
+        "russian"
+      ],
+      "is_free": false,
+      "verified": false
+    },
+    {
+      "code": "ranepa-intensive-ege",
+      "kind": "course",
+      "title": "Курсы подготовки к ЕГЭ и ОГЭ Центра интенсивной подготовки",
+      "provider": "РАНХиГС, Центр интенсивной подготовки",
+      "url": "https://www.ranepa.ru/pre-university/",
+      "description": "Очная подготовка: для 11 класса — математика (профиль), русский язык, история, обществознание и английский язык с сентября 2026 по май 2027 года; для 9 класса — подготовка к ОГЭ. Включает пробный ЕГЭ.",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "subjects": [
+        "math",
+        "russian",
+        "history",
+        "social",
+        "english"
+      ],
+      "is_free": false,
+      "verified": false
+    },
+    {
+      "code": "ranepa-igsu-journalist",
+      "kind": "school",
+      "title": "Школа молодого журналиста",
+      "provider": "РАНХиГС, Институт государственной службы и управления",
+      "url": "https://igsu.ranepa.ru/schools/",
+      "description": "Бесплатные занятия по журналистике для школьников 9–11 классов: лекции, семинары, встречи с экспертами.",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "subjects": [
+        "russian",
+        "literature"
+      ],
+      "directions": [
+        "42.03.02"
+      ],
+      "is_free": true,
+      "verified": false
+    },
+    {
+      "code": "ranepa-igsu-producer",
+      "kind": "school",
+      "title": "Школа молодого продюсера",
+      "provider": "РАНХиГС, Институт государственной службы и управления",
+      "url": "https://igsu.ranepa.ru/schools/",
+      "description": "Бесплатные занятия по медиакоммуникациям: теория и творческие задания, которые могут войти в портфолио.",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "directions": [
+        "42"
+      ],
+      "is_free": true,
+      "verified": false
+    },
+    {
+      "code": "ranepa-igsu-manager",
+      "kind": "school",
+      "title": "Школа молодого управленца",
+      "provider": "РАНХиГС, Институт государственной службы и управления",
+      "url": "https://igsu.ranepa.ru/schools/",
+      "description": "Бесплатный цикл занятий о том, как устроено государственное и муниципальное управление.",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "subjects": [
+        "social"
+      ],
+      "directions": [
+        "38.03.04"
+      ],
+      "is_free": true,
+      "verified": false
+    },
+    {
+      "code": "ranepa-igsu-economists",
+      "kind": "school",
+      "title": "Школа экономистов будущего",
+      "provider": "РАНХиГС, Институт государственной службы и управления",
+      "url": "https://igsu.ranepa.ru/schools/",
+      "description": "Бесплатные занятия по экономике и встречи о профессиях аудитора и финансового контролёра.",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "subjects": [
+        "math",
+        "social"
+      ],
+      "directions": [
+        "38.03.01"
+      ],
+      "is_free": true,
+      "verified": false
+    },
+    {
+      "code": "ranepa-igsu-law",
+      "kind": "school",
+      "title": "Школа правотворчества",
+      "provider": "РАНХиГС, Институт государственной службы и управления",
+      "url": "https://igsu.ranepa.ru/schools/",
+      "description": "Бесплатные занятия о том, как создаются законы, для школьников 9–11 классов.",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "subjects": [
+        "social"
+      ],
+      "directions": [
+        "40"
+      ],
+      "is_free": true,
+      "verified": false
+    }
+  ]
 }

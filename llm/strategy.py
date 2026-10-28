@@ -110,11 +110,10 @@ def create_strategy(participant, scores, llm_client=None):
     return strategy, source
 
 
-def pick_professions(participant):
-    """Профессии из каталога по самым выраженным шкалам профтестов.
+def matched_professions(participant):
+    """Профессии из каталога по самым выраженным шкалам профтестов: [(профессия, [шкалы])].
 
-    Модель выбирает профессии только из этого списка. Если профессия подходит
-    шкалам нескольких тестов, она идёт выше.
+    Если профессия подходит шкалам нескольких тестов, она идёт выше.
     """
     found = {}
     for attempt in latest_attempts(participant).values():
@@ -125,15 +124,20 @@ def pick_professions(participant):
             entry["fits"].extend(item["fits"])
     # sorted не меняет порядок равных: внутри остаётся порядок подбора по тесту
     entries = sorted(found.values(), key=lambda entry: -len(entry["fits"]))
+    return [(entry["profession"], entry["fits"]) for entry in entries[:MAX_PROFESSIONS]]
+
+
+def pick_professions(participant):
+    """Профессии для модели. Модель выбирает профессии только из этого списка."""
     return [
         {
-            "code": entry["profession"].code,
-            "title": entry["profession"].title,
-            "fits": entry["fits"],
-            "subjects": [Subject(code).label for code in entry["profession"].subjects],
-            "directions": entry["profession"].directions,
+            "code": profession.code,
+            "title": profession.title,
+            "fits": fits,
+            "subjects": [Subject(code).label for code in profession.subjects],
+            "directions": profession.directions,
         }
-        for entry in entries[:MAX_PROFESSIONS]
+        for profession, fits in matched_professions(participant)
     ]
 
 
@@ -186,22 +190,31 @@ def build_input(participant, programs=None):
     return {"grade": participant.grade, "tests": tests, "external_results": external_results,
             "available_tests": available_tests, "programs": programs,
             "professions": pick_professions(participant),
-            "courses": pick_courses(programs)}
+            "courses": pick_courses(programs, matched_professions(participant), participant.grade)}
 
 
-def pick_courses(programs):
-    """Курсы из каталога, подходящие к направлениям программ из подбора.
-    Если программ нет (школьник не ввёл баллы), отдаём любые курсы каталога."""
+def pick_courses(programs, professions=(), grade=None):
+    """Курсы из каталога для модели.
+
+    Подходят курсы для класса школьника и к направлениям программ из подбора
+    или к профессиям, подобранным по профтестам. Если нет ни программ, ни профессий,
+    отдаём любые курсы для этого класса.
+    """
     courses = Course.objects.order_by("pk")
     if not settings.SHOW_UNVERIFIED_DATA:
         courses = courses.filter(verified=True)
+    courses = [c for c in courses if c.fits_grade(grade)]
     codes = [p["direction_code"] for p in programs if p.get("direction_code")]
-    if codes:
-        courses = [c for c in courses if any(c.fits_direction(code) for code in codes)]
+    professions = [profession for profession, _fits in professions]
+    if codes or professions:
+        courses = [
+            c for c in courses
+            if any(c.fits_direction(code) for code in codes) or any(c.fits_profession(p) for p in professions)
+        ]
     return [
-        {"id": c.pk, "title": c.title, "provider": c.provider,
-         "description": c.description, "professions": c.professions}
-        for c in list(courses)[:MAX_COURSES]
+        {"id": c.pk, "kind": c.get_kind_display(), "title": c.title, "provider": c.provider,
+         "description": c.description, "grades": c.grades, "is_free": c.is_free}
+        for c in courses[:MAX_COURSES]
     ]
 
 

@@ -172,6 +172,17 @@ class SiteTests(TestCase):
         self.assertContains(response, "Человек — знак")
         self.assertNotContains(response, "Реалистический тип")  # Голланд скрыт на сайте
 
+    def test_detail_page_shows_courses(self):
+        from admissions.models import Course
+        Course.objects.create(code="c1", title="Школа программирования", provider="Вуз",
+                              url="https://e.ru/c1", directions=["09"], grades=[9, 10, 11], is_free=True)
+        Course.objects.create(code="c2", title="Школа права", provider="Вуз", url="https://e.ru/c2",
+                              directions=["40"])
+        response = self.client.get("/professions/both/")
+        self.assertContains(response, "Школа программирования")
+        self.assertContains(response, "9–11 класс, бесплатно")
+        self.assertNotContains(response, "Школа права")
+
     def test_unverified_hidden_by_setting(self):
         from django.test import override_settings
 

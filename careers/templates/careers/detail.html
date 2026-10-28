@@ -52,6 +52,22 @@
   {% endif %}
 </section>
 
+{% if courses %}
+<section class="profession__section">
+  <h2>Курсы и школы для школьников</h2>
+  <ul class="courses">
+    {% for course in courses %}
+      <li class="courses__item">
+        <a href="{{ course.url }}" target="_blank" rel="noopener">{{ course.title }}</a>
+        <span class="note">{{ course.provider }}{% if course.grades_display %}, {{ course.grades_display }}{% endif %}{% if course.is_free %}, бесплатно{% endif %}</span>
+        {% if not course.verified %}<span class="badge badge--unverified" title="Курс ещё не проверен вручную">Не проверено</span>{% endif %}
+        <br>{{ course.description }}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
 {% if profession.links %}
 <section class="profession__section">
   <h2>Подробнее</h2>
